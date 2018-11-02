@@ -1,0 +1,20 @@
+<div class="section" id="professional">
+  <h2> Professional Experience </h2>
+
+  {% for experience in site.data.experience %}
+  <div class="cv_entry">
+    <h4>{{ experience.institution }}</h4>
+    <div class="row">
+      <div class="col-md-12 col-lg-4 col-xl-3">
+        <strong>{{ experience.position }}</strong>
+        <p>{{ experience.dates }}</p>
+
+      </div>
+      <div class="col">
+        {{ experience.info | newline_to_br }}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+</div>

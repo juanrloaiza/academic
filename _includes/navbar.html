@@ -1,0 +1,34 @@
+<div class="navbar">
+    <a href="{{ site.baseurl }}/" class="navbar-brand d-lg-none">Juan R. Loaiza</a>
+    <button type="button" class="navbar-toggle d-lg-none" data-toggle="collapse" data-target="#thenavbar" aria-controls="thenavbar" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <i class="fas fa-angle-double-down"></i>
+    </button>
+
+  <div class="navbar-collapse collapse d-lg-block" id="thenavbar">
+    <ul class="nav flex-column">
+      {% for pg in site.data.navigation %}
+      <li class="nav-item">
+        {% if page.url == pg.url %}
+        {% assign class = 'nav-link active' %}
+        {% else %}
+        {% assign class = 'nav-link' %}
+        {% endif %}
+        <a class="{{ class }}" href={{ site.baseurl }}{{ pg.url }}>{{ pg.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+
+
+    <div id="contact">
+      <script language="javascript">
+          var loaiza = "loaiza."
+          var juan = "juan"
+          document.write('<a href="mailto:' + loaiza + juan + '@' + 'hu-berlin.de"><img src="{{ site.baseurl }}/assets/mail.png" width="48" /></a>');
+        </script>
+      <a href="https://www.researchgate.net/profile/Juan_Loaiza5"><img src="{{ site.baseurl }}/assets/researchgate.png" width="48" /></a>
+      <a href="https://hu-berlin.academia.edu/JuanRLoaiza"><img src="{{ site.baseurl }}/assets/academia.png" width="48" /></a>
+    </div>
+  </div>
+
+</div>

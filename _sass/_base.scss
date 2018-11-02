@@ -1,0 +1,162 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+#wrapper {
+  margin-bottom: 4em;
+}
+
+#header {
+  margin: 3em 0;
+  text-align: center;
+  font-family: $title-font;
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+}
+
+#content {
+  font-size: $base-font-size;
+  font-family: $base-font;
+
+  a {
+    color: #555;
+  }
+
+  h1,
+  h2,
+  h4,
+  h5 {
+    font-weight: 300;
+    font-family: $header-font;
+  }
+
+  h2,
+  h4,
+  h5 {
+    margin-bottom: 0.5em;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.75em;
+  }
+
+  .section {
+    border-top: 2px dashed $fade-color;
+    padding: 2em 0;
+  }
+  @media only screen and (max-width: 768px) {
+    margin-top: 2em;
+  }
+}
+
+.navbar {
+  padding-left: 1em !important;
+
+  a {
+    color: $text-color;
+    border-radius: 15px;
+
+    &:hover{
+      color: $text-color;
+      background-color: #eee;
+    }
+  }
+
+  .active {
+    font-weight: bold;
+  }
+
+  .navbar-toggle {
+    border: 1px solid $fade-color;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  .navbar-brand {
+    font-family: $title-font;
+  }
+
+
+  @media only screen and (max-width: 768px) {
+      text-align: center;
+      border-bottom: 1px solid $fade-color;
+    }
+  }
+
+#intro .lead{
+  font-size: 140%;
+  margin-bottom: 1em;
+}
+
+#publications {
+  .pub_entry {
+    margin-bottom: 1em;
+  }
+
+  .pub_info,
+  a {
+    color: $fade-color;
+    font-size: $base-font-size * 0.9;
+  }
+
+  img {
+    @media only screen and (max-width: 768px) {
+      margin-top: 0.5em;
+      margin-right: 0.25em;
+    }
+  }
+}
+
+.cv_entry {
+  padding-bottom: 1em;
+}
+
+#professional {
+  ul {
+    padding-top: 0.5em;
+  }
+}
+
+#contact {
+  text-align: center;
+  padding: 1em;
+  margin-top: 3em;
+}
+
+#talks {
+  .talk_info {
+    color: $fade-color;
+  }
+
+  .talk_entry {
+    margin: 1em 0;
+  }
+
+  .talk_title {
+    margin-bottom: 0.1em;
+  }
+}
+
+#scholarships {
+  .scholarship_info{
+    color: $fade-color;
+  }
+@media only screen and (min-width: 960px) {
+  .scholarship_date{
+
+      text-align: right;
+    }
+  }
+}
+
+footer {
+  color: $fade-color;
+  text-align: center;
+  height: 3em;
+  padding: 3em;
+  font-size: 80%;
+  position: absolute;
+  bottom: 0;
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+  <div class="container" id="wrapper">
+    {% include header.html %}
+
+      <div id="content">
+        <div class="container">
+          {{ content | markdownify }}
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

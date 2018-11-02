@@ -1,0 +1,28 @@
+<div id="talks">
+  <h1> Academic Talks </h1>
+
+  {% for talk in site.data.talks %}
+  <div class="row talk_entry">
+    <div class="col-md-12 col-lg-1">
+      {{ talk.date | date:'%m.%Y' }}
+    </div>
+    <div class="col">
+      <div class="talk_title">{{ talk.title }}</div>
+      <div class="talk_info">
+        {{ talk.conference }}<br>
+
+        {% if talk.organizer %}
+          {{ talk.organizer }}<br>
+        {% endif %}
+
+        {% if talk.institution %}
+          {{ talk.institution }}<br>
+        {% endif %}
+
+        {{ talk.city }}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+</div>

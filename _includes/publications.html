@@ -1,0 +1,39 @@
+<div id="publications">
+  {% assign pubs = site.data.publications | group_by:"year" %}
+
+  <h1>Publications </h1>
+  {% for year in pubs %}
+  <h4> {{ year.name }} </h4>
+
+  <div class="container-fluid">
+
+    {% for pub in year.items %}
+    <div class="row pub_entry">
+      <div class="col-lg-12 col-xl-10">
+        {{ pub.title }}<br>
+        <span class="pub_info">
+          {{ pub.authors }}<br>
+          {{ pub.reference }}<br>
+
+          {% if pub.doi %}
+            doi: <a href="http://doi.org/{{ pub.doi }}">{{ pub.doi }}</a>
+          {% endif %}
+        </span>
+      </div>
+      <div class="col-lg-12 col-xl-2">
+
+        {% if pub.url %}
+        <a href="{{ pub.url }}"><img src="{{ site.baseurl }}/assets/web.png" width="32" /></a>
+        {% endif %}
+
+        {% if pub.pdf %}
+        <a href="{{ site.baseurl }}{{ pub.pdf }}"><img src="{{ site.baseurl }}/assets/pdf.png" width="32" /></a>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  {% endfor %}
+
+</div>

@@ -1,0 +1,18 @@
+<div id="scholarships">
+  <h1> Scholarships, funding, and other prizes </h1>
+
+  {% for scholarship in site.data.scholarships %}
+  <div class="row scholarship_entry">
+    <div class="col-lg-3 scholarship_date">
+      {{ scholarship.date }}
+    </div>
+    <div class="col">
+      {{ scholarship.title }}<br>
+      <div class="scholarship_info">
+        {{ scholarship.organization }}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+</div>

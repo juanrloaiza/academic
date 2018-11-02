@@ -1,0 +1,38 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+$import-font: 'Assistant';
+$import-header-font: 'Roboto:300';
+
+@import url('https://fonts.googleapis.com/css?family='+$import-font+':300,400|Taviraj|'+$import-header-font);
+@charset "utf-8";
+
+// Our variables
+$base-font: $import-font, Helvetica, Arial, sans-serif;
+$title-font: 'Taviraj', serif;
+$header-font: 'Roboto';
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$fade-color:       #aaa;
+$mb-blue:          #0D5180;
+
+$base-font-size: 18px;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base"
+;
