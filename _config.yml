@@ -8,8 +8,8 @@
 # Site settings
 title: Juan R. Loaiza
 email: loaiza.juan@hu-berlin.de
-baseurl: "/~loaizaju" # the subpath of your site, e.g. /blog
-url: "http://juanrloaiza.me/" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "gavagai-53.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
