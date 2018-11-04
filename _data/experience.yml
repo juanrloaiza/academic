@@ -1,6 +1,7 @@
 - position: Lecturer
   dates: 10.2017 - present
   institution: Humboldt-Universität zu Berlin
+  city: Berlin, Germany
   info: |
     Berlin School of Mind and Brain
     Courses:
@@ -9,6 +10,7 @@
 - position: Research Assistant
   dates: 01.2013 - 12.2016
   institution: Universidad del Rosario
+  city: Bogotá, Colombia
   info: |
     Research project: "La pirámide visual: evolución de un instrumento conceptual"
     Grupo de Investigación en Lógica, Epistemología, y Filosofía de la Ciencia (PHILOGICA)

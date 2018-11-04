@@ -3,11 +3,11 @@
 
   {% for experience in site.data.additional %}
   <div class="cv_entry">
-    <h5>{{ experience.institution }}</h5>
-    <strong>{{ experience.position }}</strong>
+    <p class="add_title">{{ experience.institution }}</p>
+    <strong>{{ experience.position }}</strong><br>
+    {{ experience.city }}
     <p>{{ experience.dates }}</p>
-    {{ experience.info | newline_to_br }}
-
+    <div class="add_info">{{ experience.info |  markdownify }}</div>
   </div>
 {% endfor %}
 

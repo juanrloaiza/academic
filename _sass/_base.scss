@@ -45,6 +45,11 @@ html {
   .section {
     border-top: 2px dashed $fade-color;
     padding: 2em 0;
+
+    ul li {
+
+      list-style-type: '— ';
+    }
   }
   @media only screen and (max-width: 768px) {
     margin-top: 2em;
@@ -90,6 +95,12 @@ html {
   margin-bottom: 1em;
 }
 
+
+  .university_city{
+    margin-top: -0.5em;
+  }
+
+
 #publications {
   .pub_entry {
     margin-bottom: 1em;
@@ -116,6 +127,7 @@ html {
 #professional {
   ul {
     padding-top: 0.5em;
+    margin-bottom: -1em;
   }
 }
 
@@ -142,6 +154,22 @@ html {
 #scholarships {
   .scholarship_info{
     color: $fade-color;
+  }
+}
+
+#additional {
+  .add_title {
+    font-size: 110%;
+    margin-bottom: 0;
+  }
+
+  .add_info {
+    padding-left: 2em;
+    margin-top: -0.5em;
+
+    p {
+      margin-bottom: 0.5em;
+    }
   }
 }
 
