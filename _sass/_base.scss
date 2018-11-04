@@ -102,6 +102,10 @@ html {
 #publications {
   .pub_entry {
     margin-bottom: 1em;
+
+    p {
+      margin-bottom: 0;
+    }
   }
 
   .pub_info,

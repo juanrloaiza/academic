@@ -12,9 +12,8 @@
       <div class="col-lg-12 col-xl-10">
         {{ pub.title }}<br>
         <span class="pub_info">
-          {{ pub.authors }}<br>
-          {{ pub.reference }}<br>
-
+          {{ pub.authors }}
+          {{ pub.reference | markdownify }}
           {% if pub.doi %}
             doi: <a href="http://doi.org/{{ pub.doi }}">{{ pub.doi }}</a>
           {% endif %}
