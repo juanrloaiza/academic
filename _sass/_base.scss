@@ -47,7 +47,6 @@ html {
     padding: 2em 0;
 
     ul li {
-
       list-style-type: '— ';
     }
   }
@@ -96,10 +95,9 @@ html {
 }
 
 
-  .university_city{
-    margin-top: -0.5em;
-  }
-
+.university_city{
+  margin-top: -0.5em;
+}
 
 #publications {
   .pub_entry {
@@ -139,7 +137,8 @@ html {
 
 #talks {
   .talk_info {
-    color: $fade-color;
+    color: $fade-color
+    font-size: 80%;
   }
 
   .talk_entry {
