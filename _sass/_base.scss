@@ -1,6 +1,7 @@
 html {
   min-height: 100%;
   position: relative;
+  font-family: $base-font;
 }
 
 #wrapper {
@@ -17,7 +18,6 @@ html {
 
 #content {
   font-size: $base-font-size;
-  font-family: $base-font;
 
   a {
     color: #555;
