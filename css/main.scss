@@ -1,11 +1,11 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-$import-font: 'Catamaran:200,400,500';
+$import-font: 'Catamaran';
 // $import-header-font: 'Roboto:200,300,400,500';
 $import-header-font: '';
 
-@import url('https://fonts.googleapis.com/css?family='+$import-font+':300,400|Taviraj|'+$import-header-font);
+@import url('https://fonts.googleapis.com/css?family='+$import-font+':200,400,500|Taviraj|'+$import-header-font);
 @charset "utf-8";
 
 // Our variables
