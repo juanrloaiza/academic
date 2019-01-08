@@ -58,7 +58,7 @@ html {
 .navbar {
   padding-left: 1em !important;
   font-family: $base-font;
-  
+
 
   a {
     color: $text-color;
@@ -125,6 +125,10 @@ html {
 
 .cv_entry {
   padding-bottom: 1em;
+
+  strong {
+    font-weight: 600;
+  }
 }
 
 #professional {
