@@ -63,6 +63,7 @@ html {
   a {
     color: $text-color;
     border-radius: 15px;
+    outline: 0;
 
     &:hover{
       color: $text-color;
