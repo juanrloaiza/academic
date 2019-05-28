@@ -1,3 +1,8 @@
 <div id="header" class="container d-none d-lg-block">
   <h1 class="display-2"> Juan R. Loaiza </h1>
+  {% if page.lang == "en" %}
+  <b>EN</b> | <a href="{{ page.mirror }}">ES</a>
+  {% else %}
+  <a href="{{ page.mirror }}">EN</a> | <b>ES</b>
+  {% endif %}
 </div>

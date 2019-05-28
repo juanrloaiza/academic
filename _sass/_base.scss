@@ -13,6 +13,10 @@ html {
   font-family: $header-font;
   border-bottom: 1px solid black;
   padding-bottom: 1em;
+
+  a {
+    color: $fade-color;
+  }
 }
 
 #content {
@@ -190,4 +194,12 @@ footer {
   font-size: 80%;
   position: absolute;
   bottom: 0;
+}
+
+#foto {
+  max-width: 200px;
+  border-radius: 9999px;
+  border: 1px solid black;
+  float: left;
+  margin-right: 2em;
 }

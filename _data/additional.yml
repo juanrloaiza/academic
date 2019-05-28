@@ -1,28 +1,45 @@
-- position: Visiting scholar
+- position:
+    en: Visiting scholar
+    es: Investigador visitante
   institution: Instituto de Investigaciones Filosóficas -SADAF
   city: Buenos Aires, Argentina
   dates: 04.2019 - 05.2019
 
-- position: Member and cofounder
+- position:
+    en: Member and cofounder
+    es: Miembro y cofundador
   institution: Minorities and Philosophy - Berlin chapter
   dates: 2018 - present
 
-- position: Researcher
+- position:
+    en: Researcher
+    es: Investigador
   institution: Grupo de Investigación en Lógica, Epistemología, y Filosofía de la Ciencia (PHILOGICA)
   city: Bogotá, Colombia
   dates: 2015 - present
 
-- position: Editorial assistant & IT administrator
+- position:
+    en: Editorial assistant & IT administrator
+    es: Asistente editorial y administrador de tecnologías
   institution: Journal of Philosophy of Emotion
   dates: 2017 - 2018
 
-- position: Teaching assistant
+- position:
+    en: Teaching assistant
+    es: Monitor académico
   institution: Universidad del Rosario
   city: Bogotá, Colombia
   dates: 2010 - 2013
-  info: |
-    Courses:
-      * Philosophy of Natural Sciences (2013-I)
-      * Scientific thinking (2012-II)
-      * Fundamentals of mathematics (Set theory & Probability) (2011-II, 2012-I)
-      * Logic (2010-II, 2011-I)
+  info:
+    en: |
+      Courses:
+        * Philosophy of Natural Sciences (2013-I)
+        * Scientific thinking (2012-II)
+        * Fundamentals of mathematics (Set theory & Probability) (2011-II, 2012-I)
+        * Logic (2010-II, 2011-I)
+    es: |
+      Cursos:
+        * Filosofía de las ciencias naturales (2013-I)
+        * Pensamiento científico (2012-II)
+        * Fundamentos de matemáticas (Teoría de conjuntos y Probabilidad) (2011-II, 2012-I)
+        * Lógica E.C.H. (2010-II, 2011-I)

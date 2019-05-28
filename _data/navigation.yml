@@ -1,11 +1,27 @@
-- title: Home
-  url: /
+- title:
+    en: Home
+    es: Inicio
+  url:
+    en: /
+    es: /es/
 
-- title: Curriculum Vitae
-  url: /cv.html
+- title:
+    en: Curriculum Vitae
+    es: Curriculum Vitae
+  url:
+    en: /en/cv.html
+    es: /es/cv.html
 
-- title: Publications
-  url: /publications.html
+- title:
+    en: Publications
+    es: Publicaciones
+  url:
+    en: /en/publications.html
+    es: /es/publicaciones.html
 
-- title: Selected Talks
-  url: /talks.html
+- title:
+    en: Selected Talks
+    es: Charlas
+  url:
+    en: /en/talks.html
+    es: /es/charlas.html

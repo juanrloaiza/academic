@@ -1,26 +1,53 @@
-- degree: PhD in Philosophy
+- degree:
+    en: PhD in Philosophy
+    es: Doctorado en Filosofía
   university: Humboldt-Universität zu Berlin
   dates: 10.2016 - present
-  city: Berlin, Germany
-  info: |
-    Berlin School of Mind and Brain
-    Thesis: "Emotions, folk-psychology, and natural kinds"
-    Supervisors: Michael Pauen, Isabel Dziobek, and Jesse Prinz
+  city:
+    en: Berlin, Germany
+    es: Berlín, Alemania
+  info:
+    en: |
+      Berlin School of Mind and Brain
+      Thesis: "Emotions, folk-psychology, and natural kinds"
+      Supervisors: Michael Pauen, Isabel Dziobek, and Jesse Prinz
+    es: |
+      Berlin School of Mind and Brain
+      Tesis: "Emotions, folk-psychology, and natural kinds"
+      Supervisores: Michael Pauen, Isabel Dziobek, and Jesse Prinz
 
-- degree: Master of Arts
+- degree:
+    en: Master of Arts
+    es: Master of Arts
   university: Humboldt-Universität zu Berlin
   dates: 10.2014 - 08.2016
-  city: Berlin, Germany
-  info: |
-    Berlin School of Mind and Brain
-    Thesis: "Defining emotions scientifically: Folk-psychology and natural kinds"
-    Supervisors: Jesse Prinz and Michael Pauen
+  city:
+    en: Berlin, Germany
+    es: Berlín, Alemania
+  info:
+    en: |
+      Berlin School of Mind and Brain
+      Thesis: "Defining emotions scientifically: Folk-psychology and natural kinds"
+      Supervisors: Jesse Prinz and Michael Pauen
+    es: |
+      Berlin School of Mind and Brain
+      Tesis: "Defining emotions scientifically: Folk-psychology and natural kinds"
+      Supervisores: Jesse Prinz and Michael Pauen
 
-- degree: Pregrado en Filosofía
+- degree:
+    en: Pregrado en Filosofía
+    es: Filósofo
   university: Universidad del Rosario
-  city: Bogotá, Colombia
+  city:
+    en: Bogotá, Colombia
+    es: Bogotá, Colombia
   dates: 07.2009 - 03.2014
-  info: |
-    Escuela de Ciencias Humanas
-    Thesis: "La naturalización de las emociones: anotaciones a partir de Wittgenstein"
-    Supervisor: Carlos Alberto Cardona Suárez
+  info:
+    en: |
+      Escuela de Ciencias Humanas
+      Thesis: "La naturalización de las emociones: anotaciones a partir de Wittgenstein"
+      Supervisor: Carlos Alberto Cardona Suárez
+    es: |
+      Escuela de Ciencias Humanas
+      Tesis: "La naturalización de las emociones: anotaciones a partir de Wittgenstein"
+      Supervisor: Carlos Alberto Cardona Suárez

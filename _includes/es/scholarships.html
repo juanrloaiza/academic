@@ -1,0 +1,18 @@
+<div id="scholarships">
+  <h1> Becas, financiación y otros premios </h1>
+
+  {% for scholarship in site.data.scholarships_es %}
+  <div class="row scholarship_entry">
+    <div class="col-lg-2 scholarship_date">
+      {{ scholarship.date }}
+    </div>
+    <div class="col">
+      {{ scholarship.title }}<br>
+      <div class="scholarship_info">
+        {{ scholarship.organization }}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+</div>

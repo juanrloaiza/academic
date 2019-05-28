@@ -1,19 +1,19 @@
 <div class="section" id="professional">
-  <h2> Professional Experience </h2>
+  <h2> Experiencia Profesional </h2>
 
   {% for experience in site.data.experience %}
   <div class="cv_entry">
     <h4>{{ experience.institution }}</h4>
 
-    <p class="university_city">{{ experience.city }}</p>
+    <p class="university_city">{{ experience.city[page.lang] }}</p>
 
     <div class="row">
       <div class="col-md-12 col-lg-4 col-xl-3">
-        <strong>{{ experience.position }}</strong>
-        <p>{{ experience.dates }}</p>
+        <strong>{{ experience.position[page.lang] }}</strong>
+        <p>{{ experience.dates }}{% if experience.dates contains "present" %}e{% endif %}</p>
       </div>
       <div class="col">
-        {{ experience.info | newline_to_br }}
+        {{ experience.info[page.lang] | newline_to_br }}
       </div>
     </div>
   </div>

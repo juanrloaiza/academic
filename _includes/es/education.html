@@ -1,5 +1,5 @@
 <div id="education" style="padding-bottom:1em">
-  <h2> Education </h2>
+  <h2> Educación </h2>
 
   {% assign universities = site.data.education | group_by:"university" %}
 
@@ -7,17 +7,18 @@
   <div class="university">
     <h4>{{ education.name }}</h4>
 
-    <p class="university_city">{{ education.items[0].city }}</p>
+    <p class="university_city">{{ education.items[0].city[page.lang] }}</p>
 
     {% for item in education.items %}
     <div class="row cv_entry">
       <div class="col-md-12 col-lg-4 col-xl-3">
-        <strong>{{ item.degree }}</strong>
-        <p>{{ item.dates }}</p>
+        <strong>{{ item.degree[page.lang] }}</strong>
+        <p>{{ item.dates }}{% if item.dates contains "present" %}e{% endif %}
+        </p>
 
       </div>
       <div class="col">
-        {{ item.info | newline_to_br }}
+        {{ item.info[page.lang] | newline_to_br }}
       </div>
     </div>
     {% endfor %}

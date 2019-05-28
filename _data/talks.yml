@@ -4,18 +4,24 @@
   conference: >
     Emotions and Emotion Concepts Conference
   institution: >
-    University of Bern
-  city: Bern, Switzerland
+    Universität Bern
+  city:
+    en: Bern, Switzerland
+    es: Berna, Suiza
 
 - date: 2018-11-15
   title: >
     Can functionalism save emotions from elimination?
-  conference: >
-    IX Conference of the Spanish Society for Logic, Methodology and Philosophy of Science
-  organizer: >
-    Spanish Society for Logic, Methodology and Philosophy of Science
+  conference:
+    en: IX Conference of the Spanish Society for Logic, Methodology and Philosophy of Science
+    es: IX Congreso de la Sociedad Española de Lógica, Metodología y Filosofía de la Ciencia
+  organizer:
+    en: Spanish Society for Logic, Methodology and Philosophy of Science
+    es: Sociedad Española de Lógica, Metodología y Filosofía de la Ciencia
   institution: Universidad Nacional de Educación a Distancia (UNED)
-  city: Madrid, Spain
+  city:
+    en: Madrid, Spain
+    es: Madrid, España
 
 - date: 2018-10-05
   title: >
@@ -31,11 +37,12 @@
 - date: 2018-05-17
   title: >
     Non-human animal emotions and emotion kinds
-  conference: >
-    V Conference of the Latin American Association for Analytic Philosophy & V Colombian Conference on Logic, Epistemology and Philosophy of Science
+  conference:
+    en: V Conference of the Latin American Association for Analytic Philosophy & V Colombian Conference on Logic, Epistemology and Philosophy of Science
+    es: V Congreso de la Asociación Latinoamericana de Filosofía Analítica & V Congreso Colombiano de Lógica, Epistemología y Filosofía de la Ciencia
   organizer: >
     Asociación Latinoamericana de Filosofía Analítica (ALFAn) & Grupo de Investigación en Lógica, Epistemología, y Filosofía de la Ciencia (PHILOGICA)
-  institution: Universidad del Rosario and Universidad de Los Andes
+  institution: Universidad del Rosario & Universidad de Los Andes
   city: Bogotá, Colombia
 
 - date: 2017-10-21
@@ -44,7 +51,9 @@
   conference: >
     Analysis and explication – traditional and contemporary approaches (Workshop)
   institution: Heinrich-Heine Universität Düsseldorf
-  city: Düsseldorf, Germany
+  city:
+    en: Düsseldorf, Germany
+    es: Düsseldorf, Alemania
 
 - date: 2017-08-23
   title: >
@@ -53,7 +62,9 @@
     9th European Congress of Analytic Philosophy
   organizer: >
     European Society for Analytic Philosophy - Ludwig-Maximilians-Universität München
-  city: Munich, Germany
+  city:
+    en: Munich, Germany
+    es: Múnich, Alemania
 
 - date: 2017-08-17
   title: >
@@ -62,14 +73,18 @@
     European Society for Philosophy and Psychology Conference
   organizer: >
     European Society for Philosophy and Psychology - University of Hertfordshire
-  city: Hatfield, United Kingdom
+  city:
+    en: Hatfield, England
+    es: Hatfield, Inglaterra
 
 - date: 2017-04-22
   title: >
     Bridging the gap between philosophy and science (Workshop)
   conference: >
     IX Cracow Cognitive Science Conference. Jagiellonian University
-  city: Cracow, Poland
+  city:
+    en: Cracow, Poland
+    es: Cracovia, Polonia
 
 - date: 2016-02-18
   title: >
@@ -78,7 +93,7 @@
     IV Congreso Colombiano de Lógica, Epistemología, y Filosofía de la Ciencia.
   organizer: >
     Grupo de Investigación en Lógica, Epistemología, y Filosofía de la Ciencia (PHILOGICA)
-  institution: Universidad del Rosario and Universidad de Los Andes
+  institution: Universidad del Rosario & Universidad de Los Andes
   city: Bogotá, Colombia
 
 - date: 2015-03-21
@@ -88,7 +103,9 @@
     DAAD Stipendiatentreffen (Geistes- und Kulturwissenschaften).
   organizer: >
     Deutscher Akademischer Austauschdienst
-  city: Jena, Germany
+  city:
+    en: Jena, Germany
+    es: Jena, Alemania
 
 - date: 2014-09-16
   title: >

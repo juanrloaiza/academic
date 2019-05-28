@@ -4,10 +4,10 @@
   {% for experience in site.data.additional %}
   <div class="cv_entry">
     <p class="add_title">{{ experience.institution }}</p>
-    <strong>{{ experience.position }}</strong><br>
+    <strong>{{ experience.position[page.lang] }}</strong><br>
     {{ experience.city }}
     <p>{{ experience.dates }}</p>
-    <div class="add_info">{{ experience.info |  markdownify }}</div>
+    <div class="add_info">{{ experience.info[page.lang] |  markdownify }}</div>
   </div>
 {% endfor %}
 

@@ -1,4 +1,5 @@
 <div class="navbar">
+
     <a href="{{ site.baseurl }}/" class="navbar-brand d-lg-none">Juan R. Loaiza</a>
     <button type="button" class="navbar-toggle d-lg-none" data-toggle="collapse" data-target="#thenavbar" aria-controls="thenavbar" aria-expanded="false">
       <span class="sr-only">Toggle navigation</span>
@@ -14,7 +15,7 @@
         {% else %}
         {% assign class = 'nav-link' %}
         {% endif %}
-        <a class="{{ class }}" href={{ site.baseurl }}{{ pg.url }}>{{ pg.title }}</a>
+        <a class="{{ class }}" href={{ site.baseurl }}{{ pg.url[page.lang] }}>{{ pg.title[page.lang] }}</a>
       </li>
       {% endfor %}
     </ul>

@@ -1,16 +1,33 @@
-- position: Lecturer
-  dates: 10.2017 - present
+- position:
+    en: Lecturer
+    es: Docente de cátedra
+  dates: 10.2017 - 02.2019
   institution: Humboldt-Universität zu Berlin
-  city: Berlin, Germany
-  info: |
-    Berlin School of Mind and Brain
-    Courses:
-      <ul><li>Tutorial: Philosophy of Mind</li><li>Psychology of Emotions</li></ul>
+  city:
+    en: Berlin, Germany
+    es: Berlín, Alemania
+  info:
+    en: |
+      Berlin School of Mind and Brain
+      Courses:
+        <ul><li>Tutorial: Philosophy of Mind</li><li>Psychology of Emotions</li></ul>
+    es: |
+      Berlin School of Mind and Brain
+      Cursos:
+        <ul><li>Tutorial: Philosophy of Mind</li><li>Psychology of Emotions</li></ul>
 
-- position: Research Assistant
+- position:
+    en: Research Assistant
+    es: Asistente de investigación
   dates: 01.2013 - 12.2016
   institution: Universidad del Rosario
-  city: Bogotá, Colombia
-  info: |
-    Research project: "La pirámide visual: evolución de un instrumento conceptual"
-    Grupo de Investigación en Lógica, Epistemología, y Filosofía de la Ciencia (PHILOGICA)
+  city:
+    en: Bogotá, Colombia
+    es: Bogotá, Colombia
+  info:
+    en: |
+      Research project: "La pirámide visual: evolución de un instrumento conceptual"
+      Grupo de Investigación en Lógica, Epistemología, y Filosofía de la Ciencia (PHILOGICA)
+    es: |
+      Proyecto de investigación: "La pirámide visual: evolución de un instrumento conceptual"
+      Grupo de Investigación en Lógica, Epistemología, y Filosofía de la Ciencia (PHILOGICA)
