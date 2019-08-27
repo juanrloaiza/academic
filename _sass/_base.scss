@@ -11,7 +11,6 @@ html {
   justify-content: center;
   align-content: center;
   margin-bottom: 3em;
-  //text-align: center;
   font-family: $header-font;
   border-bottom: 1px solid black;
   padding: 3em 0;
@@ -31,16 +30,11 @@ html {
 
     img {
       border-radius: 999px;
-      //border: 2px solid black;
       box-shadow: 0 2px 3px #aaa;
       max-width: 200px;
     }
   }
 
-  h1 {
-    //margin-right: auto;
-    //display: inline;
-  }
 }
 
 #content {
@@ -206,6 +200,12 @@ html {
   }
 }
 
+#others{
+  h4{
+    margin-top: 2em;
+  }
+}
+
 footer {
   color: $fade-color;
   text-align: center;
@@ -214,12 +214,4 @@ footer {
   font-size: 80%;
   position: absolute;
   bottom: 0;
-}
-
-#foto {
-  max-width: 200px;
-  border-radius: 9999px;
-  border: 1px solid black;
-  float: left;
-  margin-right: 2em;
 }

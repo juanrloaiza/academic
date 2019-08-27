@@ -25,3 +25,10 @@
   url:
     en: /en/talks.html
     es: /es/charlas.html
+
+- title:
+    en: Other projects
+    es: Otros proyectos
+  url:
+    en: /en/others.html
+    es: /es/otros.html
