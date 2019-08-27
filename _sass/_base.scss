@@ -8,20 +8,44 @@ html {
 }
 
 #header {
-  margin: 3em 0;
-  text-align: center;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 3em;
+  //text-align: center;
   font-family: $header-font;
   border-bottom: 1px solid black;
-  padding-bottom: 1em;
+  padding: 3em 0;
 
   a {
     color: $fade-color;
+  }
+
+  #name {
+    align-self: center;
+    text-align: center;
+  }
+
+  #picture {
+    margin-left: 2em;
+    padding-left: 2em;
+
+    img {
+      border-radius: 999px;
+      //border: 2px solid black;
+      box-shadow: 0 2px 3px #aaa;
+      max-width: 200px;
+    }
+  }
+
+  h1 {
+    //margin-right: auto;
+    //display: inline;
   }
 }
 
 #content {
   font-size: $base-font-size;
-    font-family: $base-font;
+  font-family: $base-font;
 
   a {
     color: #555;
@@ -63,13 +87,12 @@ html {
   padding-left: 1em !important;
   font-family: $base-font;
 
-
   a {
     color: $text-color;
     border-radius: 15px;
     outline: 0;
 
-    &:hover{
+    &:hover {
       color: $text-color;
       background-color: #eee;
     }
@@ -88,21 +111,18 @@ html {
   .navbar-brand {
     font-family: $title-font;
   }
-
-
   @media only screen and (max-width: 768px) {
-      text-align: center;
-      border-bottom: 1px solid $fade-color;
-    }
+    text-align: center;
+    border-bottom: 1px solid $fade-color;
   }
+}
 
-#intro .lead{
+#intro .lead {
   font-size: 140%;
   margin-bottom: 1em;
 }
 
-
-.university_city{
+.university_city {
   margin-top: -0.5em;
 }
 
@@ -153,7 +173,7 @@ html {
   .talk_info {
     font-size: 90%;
     font-weight: 200;
-    }
+  }
 
   .talk_entry {
     margin-bottom: 1em;
@@ -165,7 +185,7 @@ html {
 }
 
 #scholarships {
-  .scholarship_info{
+  .scholarship_info {
     color: $fade-color;
   }
 }

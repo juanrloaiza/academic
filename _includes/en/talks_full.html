@@ -17,13 +17,13 @@
         <br>
 
         {% if talk.organizer %}
-          {% if talk.organizer.en %}
-          {{ talk.organizer.en }}<br>
+        {% if talk.organizer.en %}
+        {{ talk.organizer.en }}<br>
 
-          {% else %}
-          {{ talk.organizer }}<br>
+        {% else %}
+        {{ talk.organizer }}<br>
 
-          {% endif %}
+        {% endif %}
         {% endif %}
 
         {% if talk.institution %}
