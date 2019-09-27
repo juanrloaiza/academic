@@ -10,7 +10,7 @@
         {% else %}
         {% assign class = 'nav-link' %}
         {% endif %}
-        <a class="{{ class }}" href={{ site.baseurl }} {{ pg.url[page.lang] }}>
+        <a class="{{ class }}" href="{{ site.baseurl }}/{{ pg.url[page.lang] }}">
           {{ pg.title[page.lang] }}
         </a>
       </li>
