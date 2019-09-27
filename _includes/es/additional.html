@@ -1,12 +1,12 @@
-<div class="section" id="additional">
-  <h2> Experiencia adicional </h2>
+<div class="cv_section" id="additional">
+  <h2> Additional Experience </h2>
 
   {% for experience in site.data.additional %}
   <div class="cv_entry">
     <p class="add_title">{{ experience.institution }}</p>
     <strong>{{ experience.position[page.lang] }}</strong><br>
     {{ experience.city }}
-    <p>{{ experience.dates }}{% if experience.dates contains "present" %}e{% endif %}</p>
+    <p class="dates">{{ experience.dates }}</p>
     <div class="add_info">{{ experience.info[page.lang] |  markdownify }}</div>
   </div>
 {% endfor %}

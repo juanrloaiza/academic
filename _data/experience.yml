@@ -7,14 +7,12 @@
     en: Berlin, Germany
     es: Berlín, Alemania
   info:
-    en: |
-      Berlin School of Mind and Brain
-      Courses:
-        <ul><li>Tutorial: Philosophy of Mind</li><li>Psychology of Emotions</li></ul>
-    es: |
-      Berlin School of Mind and Brain
-      Cursos:
-        <ul><li>Tutorial: Philosophy of Mind</li><li>Psychology of Emotions</li></ul>
+    en: Berlin School of Mind and Brain
+    es: Berlin School of Mind and Brain
+  courses:
+    - "Tutorial: Philosophy of Mind (WiSe 18/19)"
+    - "Psychology of Emotions (SoSe 18)"
+    - "Tutorial: Philosophy of Mind (WiSe 17/18)"
 
 - position:
     en: Research Assistant

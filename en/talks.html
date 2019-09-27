@@ -1,6 +1,46 @@
 ---
-layout: default
+layout: main
+title: Selected talks
 lang: en
-mirror: /es/charlas.html
+mirror: es/charlas.html
 ---
-{% include en/talk.html %}
+
+{% for talk in site.data.talks limit:10 %}
+<div class="row talk_entry">
+  <div class="col-md-12 col-lg-2">
+    {{ talk.date | date:'%m.%Y' }}
+  </div>
+  <div class="col">
+    <div class="talk_title">{{ talk.title }}</div>
+    <div class="talk_info">
+      {% if talk.conference.en %}
+      {{ talk.conference.en }}
+      {% else %}
+      {{ talk.conference }}
+      {% endif %}
+
+      <br>
+
+      {% if talk.organizer %}
+      {% if talk.organizer.en %}
+      {{ talk.organizer.en }}<br>
+
+      {% else %}
+      {{ talk.organizer }}<br>
+
+      {% endif %}
+      {% endif %}
+
+      {% if talk.institution %}
+      {{ talk.institution }}<br>
+      {% endif %}
+
+      {% if talk.city.en %}
+      {{ talk.city.en }}
+      {% else %}
+      {{ talk.city }}
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endfor %}

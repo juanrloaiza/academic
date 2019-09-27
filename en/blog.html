@@ -1,0 +1,25 @@
+---
+title: Blog
+lang: en
+layout: main
+mirror: es/blog.html
+---
+Coming soon...
+
+<div class="card-deck">
+  {% for post in site.posts %}
+
+  <div class="card col-auto mb-4">
+    <div class="card-body">
+      {{ counter }}
+      <h5 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h5>
+      <h6 class="card-subtitle">{{ post.date | date: "%d.%m.%Y"}}</h6>
+      <p class="card-text">{{ post.excerpt | truncatewords: 50 }}</p>
+      <small class="card-text text-muted">
+        Tags: {{ post.tags  | join: ", "}}
+      </small>
+    </div>
+  </div>
+  {% endfor %}
+
+</div>

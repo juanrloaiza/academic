@@ -27,6 +27,13 @@
     es: /es/charlas.html
 
 - title:
+    en: Blog
+    es: Blog
+  url:
+    en: /en/blog.html
+    es: /es/blog.html
+
+- title:
     en: Other projects
     es: Otros proyectos
   url:

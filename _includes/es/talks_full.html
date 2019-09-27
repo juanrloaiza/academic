@@ -1,6 +1,5 @@
 <div id="talks">
-  <h1> Charlas y conferencias  </h1>
-
+  <h1> Academic Talks </h1>
   {% for talk in site.data.talks %}
   <div class="row talk_entry">
     <div class="col-md-12 col-lg-2">
@@ -9,8 +8,8 @@
     <div class="col">
       <div class="talk_title">{{ talk.title }}</div>
       <div class="talk_info">
-        {% if talk.conference.es %}
-        {{ talk.conference.es }}
+        {% if talk.conference.en %}
+        {{ talk.conference.en }}
         {% else %}
         {{ talk.conference }}
         {% endif %}
@@ -18,8 +17,8 @@
         <br>
 
         {% if talk.organizer %}
-        {% if talk.organizer.es %}
-        {{ talk.organizer.es }}<br>
+        {% if talk.organizer.en %}
+        {{ talk.organizer.en }}<br>
 
         {% else %}
         {{ talk.organizer }}<br>
@@ -31,8 +30,8 @@
         {{ talk.institution }}<br>
         {% endif %}
 
-        {% if talk.city.es %}
-        {{ talk.city.es }}
+        {% if talk.city.en %}
+        {{ talk.city.en }}
         {% else %}
         {{ talk.city }}
         {% endif %}

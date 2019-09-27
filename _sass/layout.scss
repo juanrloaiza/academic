@@ -1,0 +1,100 @@
+body {
+  padding-bottom: 2em;
+}
+
+div {
+  //border: 1px dotted #aaa;
+}
+// Main classes and sections
+
+#sidebar {
+  position: sticky;
+  @media only screen and (max-width: 992px) {
+    position: relative;
+  }
+  top: 2em;
+  height: 100%;
+}
+
+#lang-toggle {
+  font-size: $font-small * 0.9;
+  display: inline;
+  margin-left: 1em;
+  color: $primary;
+
+  a {
+    color: #aaa;
+  }
+}
+
+#main-area {
+  padding-top: 3em;
+}
+
+#content {
+  padding: 1em 3em;
+
+  @media only screen and (max-width: 992px) {
+    padding: 5em 3em;
+  }
+}
+// Areas of specialization and competence
+#areas {
+  margin-top: 2em;
+}
+// CV sections
+.cv_section {
+  margin-top: 2em;
+
+  h4 {
+    margin-bottom: 0;
+  }
+
+  .cv_entry {
+    padding: 0.5em 0;
+  }
+}
+// Publications and talks
+
+.pub_entry,
+.talk_entry {
+  margin-bottom: 1em;
+}
+// Blog archive cards
+$card-size: 22rem;
+
+.card {
+  min-width: $card-size;
+  max-width: $card-size;
+}
+// Blog posts
+
+#blog-content {
+  line-height: 150%;
+  max-width: 60ch;
+  font-family: 'Open Sans';
+}
+
+#blog-footer {
+  display: flex;
+  align-items: center;
+}
+
+#blog-photo {
+  width: 100px;
+  border-radius: 999px;
+  margin-right: 1em;
+}
+
+#share-bar {
+  margin: 2em 0;
+}
+
+.share-buttons {
+  text-align: center;
+
+  img {
+    max-width: 42px;
+    margin: 0 1em;
+  }
+}

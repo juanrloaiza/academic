@@ -1,0 +1,39 @@
+byline:
+  en: Doctoral candidate at the Berlin School of Mind and Brain
+  es: Candidato a doctor en la Berlin School of Mind and Brain
+
+contact:
+  - text: Luisenstraße 56, 10117 Berlin
+    icon: location
+    url: https://osm.org/go/0MbFD9ke6
+
+  - text: loaiza.juan(at)hu-berlin.de
+    icon: email
+
+  - text: Twitter
+    url: https://twitter.com/JuanRLoaiza
+    icon: twitter
+
+  - text: GitHub
+    icon: github
+    url: https://github.com/juanrloaiza
+
+  - text: ResearchGate
+    icon: research-gate
+    url: https://www.researchgate.net/profile/Juan_Loaiza5
+
+  - text: Academia
+    icon: academia
+    url: https://hu-berlin.academia.edu/JuanRLoaiza
+
+  - text: ORCID
+    icon: orcid
+    url: https://orcid.org/0000-0003-0570-3832
+
+  - text: Google Scholar
+    icon: google-scholar
+    url: https://scholar.google.com.co/citations?&user=NYVFSrwAAAAJ
+
+  - text: LinkedIn
+    icon: linkedin
+    url: https://www.linkedin.com/in/juanrloaiza/

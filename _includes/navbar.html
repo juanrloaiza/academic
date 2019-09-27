@@ -1,35 +1,35 @@
-<div class="navbar">
+<nav class="navbar navbar-expand-lg d-flex justify-content-between">
+  <div class="container">
 
-    <a href="{{ site.baseurl }}/" class="navbar-brand d-lg-none">Juan R. Loaiza</a>
-    <button type="button" class="navbar-toggle d-lg-none" data-toggle="collapse" data-target="#thenavbar" aria-controls="thenavbar" aria-expanded="false">
-      <span class="sr-only">Toggle navigation</span>
-      <i class="fas fa-angle-double-down"></i>
-    </button>
 
-  <div class="navbar-collapse collapse d-lg-block" id="thenavbar">
-    <ul class="nav flex-column">
-      {% for pg in site.data.navigation %}
+    <ul class="navbar-nav collapse navbar-collapse" id="the-navbar">
+      {% for pg in site.data.navbar %}
       <li class="nav-item">
         {% if page.url == pg.url %}
         {% assign class = 'nav-link active' %}
         {% else %}
         {% assign class = 'nav-link' %}
         {% endif %}
-        <a class="{{ class }}" href={{ site.baseurl }}{{ pg.url[page.lang] }}>{{ pg.title[page.lang] }}</a>
+        <a class="{{ class }}" href={{ site.baseurl }} {{ pg.url[page.lang] }}>
+          {{ pg.title[page.lang] }}
+        </a>
       </li>
       {% endfor %}
     </ul>
-
-
-    <div id="contact">
-      <script language="javascript">
-          var loaiza = "loaiza."
-          var juan = "juan"
-          document.write('<a href="mailto:' + loaiza + juan + '@' + 'hu-berlin.de"><img src="{{ site.baseurl }}/assets/mail.png" width="48" /></a>');
-        </script>
-      <a href="https://www.researchgate.net/profile/Juan_Loaiza5"><img src="{{ site.baseurl }}/assets/researchgate.png" width="48" /></a>
-      <a href="https://hu-berlin.academia.edu/JuanRLoaiza"><img src="{{ site.baseurl }}/assets/academia.png" width="48" /></a>
+    <div class="navbar-brand">
+      <a href="{{ site.url }}{% if page.lang=='es' %}/es/{% endif %}">Juan R. Loaiza</a>
+      <div id="lang-toggle">
+        {% if page.lang == 'es' %}
+        <a href="{{ site.baseurl }}/{{ page.mirror }}">EN/</a>ES
+        {% else %}
+        EN<a href="{{ site.baseurl }}/{{ page.mirror }}">/ES</a>
+        {% endif %}
+      </div>
     </div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#the-navbar" aria-controls="the-navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <img class="navbar-toggler-icon" src="/img/icons/menu-collapse.png"/></button>
   </div>
 
-</div>
+
+</nav>

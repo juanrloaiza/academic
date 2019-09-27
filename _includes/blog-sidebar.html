@@ -1,0 +1,14 @@
+<div class="col-3">
+  <h2>
+    {% if page.lang == 'en' %}
+    Archive
+    {% else %}
+    Archivo
+    {% endif %}
+    </h2>
+  <ul class="list-unstyled">
+  {% for post in site.posts %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+  </ul>
+</div>

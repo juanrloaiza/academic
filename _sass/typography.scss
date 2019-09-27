@@ -1,0 +1,46 @@
+body {
+  font-family: $primary-font;
+  font-weight: $font-normal;
+  font-size: $font-size;
+}
+// Navbar
+
+nav {
+  font-size: $font-small;
+}
+
+// Headers
+h1 {
+  margin-bottom: 0.5em;
+}
+
+//
+// Other general classes
+// All of these share the same light weight font.
+
+.dates,
+.pub_info,
+.talk_info,
+.university_city {
+  font-weight: $font-light;
+}
+// Additional Experience classes
+
+.add_title {
+  margin-bottom: 0;
+  font-size: 110%;
+}
+
+.add_info {
+  margin-left: 2em;
+}
+// Talks
+
+.talk_title {
+  margin-bottom: 0.1em;
+}
+// Card footers for blog entries
+
+.card-footer {
+  font-size: $font-small;
+}

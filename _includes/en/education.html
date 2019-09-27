@@ -1,10 +1,10 @@
-<div id="education" style="padding-bottom:1em">
+<div id="education" class="cv_section">
   <h2> Education </h2>
 
   {% assign universities = site.data.education | group_by:"university" %}
 
   {% for education in universities %}
-  <div class="university">
+  <div class="cv_section">
     <h4>{{ education.name }}</h4>
 
     <p class="university_city">{{ education.items[0].city[page.lang] }}</p>
@@ -13,7 +13,7 @@
     <div class="row cv_entry">
       <div class="col-md-12 col-lg-4 col-xl-3">
         <strong>{{ item.degree[page.lang] }}</strong>
-        <p>{{ item.dates }}</p>
+        <p class="dates">{{ item.dates }}</p>
 
       </div>
       <div class="col">

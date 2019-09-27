@@ -1,0 +1,42 @@
+---
+# This is the main css file. I will use imports to handle different
+# sections of css styles.
+---
+
+// MY THEME
+
+$primary: #68779B;
+$primary-light: #A8B0C3;
+
+$accent: #4D5F8A;
+
+$light-bg: $primary-light;
+
+$font-normal: 400;
+$font-light: 200;
+$font-bold: 500;
+$font-bolder: 600;
+
+$font-size: 18px;
+$font-small: 90%;
+
+$primary-font: 'Catamaran';
+@import url('https://fonts.googleapis.com/css?family='+$primary-font+':200,400,500,600|');
+
+
+a {
+  color: $primary;
+
+  &:hover{
+    color: $accent;
+  }
+}
+
+
+// IMPORTS
+
+@import "layout";
+@import "typography";
+
+@import "navbar";
+@import "sidebar";

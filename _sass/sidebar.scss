@@ -1,0 +1,27 @@
+#sidebar{
+  font-size: $font-small;
+}
+
+#photo{
+  max-width: 250px;
+  border-radius: 999px;
+  box-shadow: 1px 1px 5px 0px $primary-light;
+  margin-bottom: 2em;
+}
+
+.icon {
+  display: inline;
+  max-width: 24px;
+  padding: 2px;
+}
+
+.contact-list{
+  display: flex;
+  height: 32px;
+  align-items: center;
+
+  padding-left: 28px;
+  text-indent: -28px;
+
+  margin-bottom: 0.2em;
+}
