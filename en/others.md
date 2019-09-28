@@ -7,6 +7,10 @@ title: Other projects
 
 Besides my academic work in philosophy, I sometimes like to code and engage in small projects. You can find some of these projects on [GitHub](https://github.com/juanrloaiza). Here's some that I would mention:
 
+
+#### Personal website
+This site's code is available on GitHub! You can find it in [this repository](https://github.com/juanrloaiza/academic/). This site is powered by [Jekyll](https://jekyllrb.com/).
+
 #### Mining the Stanford Encyclopedia of Philosophy.
 I've been visiting the Stanford Encyclopedia of Philosophy to do some text analyses. Some of these you can find in [this repository](https://github.com/juanrloaiza/SEP_TextMining). Any help or suggestions are more than welcome!
 
