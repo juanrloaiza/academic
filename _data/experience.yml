@@ -1,4 +1,19 @@
 - position:
+    en: Adjunct professor
+    es: Profesor de hora cátedra
+  dates: 01.2020 - present
+  institution: Universidad del Rosario
+  city:
+    en: Bogotá, Colombia
+    es: Bogotá, Colombia
+  info:
+    en: Escuela de Ciencias Humanas
+    es: Escuela de Ciencias Humanas
+  courses:
+    - "Lógica ECH (2020-I)"
+    - "Metodologías de Investigación (2020-I)"
+
+- position:
     en: Lecturer
     es: Docente de cátedra
   dates: 10.2017 - 02.2019

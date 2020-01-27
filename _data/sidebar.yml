@@ -1,13 +1,11 @@
 byline:
-  en: Doctoral candidate at the Berlin School of Mind and Brain
-  es: Candidato a doctor en la Berlin School of Mind and Brain
+  en: >
+    Adjunct professor at Universidad del Rosario (Bogotá, Colombia).
+    Doctoral candidate at the Berlin School of Mind and Brain.
+  es: Profesor en la Universidad del Rosario (Bogotá, Colombia). Candidato a doctor en la Berlin School of Mind and Brain.
 
 contact:
-  - text: Luisenstraße 56, 10117 Berlin
-    icon: location
-    url: https://osm.org/go/0MbFD9ke6
-
-  - text: loaiza.juan(at)hu-berlin.de
+  - text: loaiza.juan(at)urosario.edu.co
     icon: email
 
   - text: Twitter
