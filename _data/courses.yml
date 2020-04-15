@@ -1,0 +1,30 @@
+- university: Universidad del Rosario
+  courses:
+    - name: Lógica ECH
+      description:
+        en: This is an introductory course to formal logic for first year humanities students. Here we present the basics of predicate logic up to natural deduction. Course design due to Fabio Fang.
+        es: Curso introductorio a la lógica formal para estudiantes de primer semestre de la Escuela de Ciencias Humanas. El curso presenta las bases de la lógica de predicados hasta deducción natural. Diseño del curso por Fabio Fang.
+      semesters: 2020-I
+    - name: Metodologías de Investigación
+      description:
+        en: Introduction to research methods for humanities and social sciences. It covers basic concepts in research design and presents an overview of both qualitative and quantitative research.
+        es: Introducción a los métodos de investigación para humanidades y ciencias sociales. Cubre los conceptos básicos de diseño de investigación y presenta un paneo de métodos cualitativos y cuantitativos.
+      syllabus: Loaiza_Metodologias2020-I.pdf
+      website: https://juanrloaiza.github.io/metodologias-ur
+      semesters: 2020-I
+
+- university: Berlin School of Mind and Brain
+  courses:
+    - name: Psychology of Emotions
+      description:
+        en: Master's level seminar on the psychology of emotions, including both theoretical and empirical literature. Co-taught with Dr. Dorota Koblyńska.
+        es: Seminario de maestría sobre la psicología de las emociones, incluyendo aspectos teóricos y empíricos de la investigación actual sobre el tema. En colaboración con la Dra. Dorota Koblyńska.
+      semesters: Summer Semester 2018
+    - name: "Tutorial: Philosophy of Mind"
+      pdf: "/pdf/PoM_WiSe18-19_web.pdf"
+      description:
+        en: Master's level tutorial for the corresponding lecture on Philosophy of Mind. Served as an introductory seminar to the main ideas in philosophy of mind, as well as some general concepts in philosophy for an interdisciplinary audience.
+        es: Curso de maestría para acompañar la cátedra de "Filosofía de la Mente". Cubre las posiciones principales en filosofía de la mente así como algunos conceptos generales de filosofía para una audiencia interdisciplinar.
+      semesters:
+        - Winter Semester 17/18
+        - Winter Semester 18/19

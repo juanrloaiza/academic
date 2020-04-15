@@ -26,6 +26,12 @@
     en: /en/talks.html
     es: /es/charlas.html
 
+- title:
+    en: Teaching
+    es: Cursos y docencia
+  url:
+    en: /en/teaching.html
+    es: /es/cursos.html
 # - title:
 #     en: Blog
 #     es: Blog
