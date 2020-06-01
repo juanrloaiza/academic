@@ -1,11 +1,11 @@
 ---
 layout: main
-title: Selected talks
+title: Complete talks
 lang: en
 mirror: es/charlas.html
 ---
-For a complete list of my talks, click [here](/en/fulltalks.html).
-{% for talk in site.data.talks limit:10 %}
+
+{% for talk in site.data.talks %}
 <div class="row talk_entry">
   <div class="col-md-12 col-lg-2">
     {{ talk.date | date:'%m.%Y' }}
