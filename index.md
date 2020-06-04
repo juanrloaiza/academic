@@ -5,7 +5,7 @@ title: About
 mirror: es
 ---
 
-I am an adjunct professor at the [Escuela de Ciencias Humanas](http://www.urosario.edu.co/Escuela-de-Ciencias-Humanas/inicio/) at Universidad del Rosario (Bogotá, Colombia) and a doctoral candidate at the [Berlin School of Mind and Brain](http://www.mind-and-brain.de/home/) and the [Institut für Philosophie](https://www.philosophie.hu-berlin.de/) at the Humboldt-Universität zu Berlin.
+I am an adjunct lecturer at the [Escuela de Ciencias Humanas](http://www.urosario.edu.co/Escuela-de-Ciencias-Humanas/inicio/) at Universidad del Rosario (Bogotá, Colombia) and a doctoral candidate at the [Berlin School of Mind and Brain](http://www.mind-and-brain.de/home/) and the [Institut für Philosophie](https://www.philosophie.hu-berlin.de/) at the Humboldt-Universität zu Berlin.
 
 My interests lie in the frontier between philosophy, psychology and neuroscience. I recently submitted my doctoral dissertation, where I examine some challenges that scientific theories of emotions face and that threaten the elimination of emotions from our scientific vocabulary. I argue that in order to meet these challenges, we must take a step back and examine our folk emotional vocabulary in order to 'reconstitute' the phenomena, and then make clear on what grounds can a scientific theory of emotions construct projectible categories that capture emotion kinds. I conclude by recommending that emotion theorists rely on functional characterizations to formulate theories that can overcome the challenges other theories have faced while maintaining the unity of emotion concepts.
 
