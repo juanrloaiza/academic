@@ -32,6 +32,10 @@ contact:
     icon: google-scholar
     url:  https://scholar.google.com.co/citations?&user=NYVFSrwAAAAJ
 
+  - text: PhilPapers
+    icon: philpapers
+    url: https://philpeople.org/profiles/j-r-loaiza
+
   - text: LinkedIn
     icon: linkedin
     url:  https://www.linkedin.com/in/juanrloaiza/
