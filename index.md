@@ -4,12 +4,11 @@ lang: en
 title: About
 mirror: es
 ---
+I'm a philosopher interested in interdisciplinary approaches to emotions, particularly in the frontier between philosophy, psychology and neuroscience.
 
-I am an adjunct lecturer at the [Escuela de Ciencias Humanas](http://www.urosario.edu.co/Escuela-de-Ciencias-Humanas/inicio/) at Universidad del Rosario (Bogotá, Colombia) and a doctoral candidate at the [Berlin School of Mind and Brain](http://www.mind-and-brain.de/home/) and the [Institut für Philosophie](https://www.philosophie.hu-berlin.de/) at the Humboldt-Universität zu Berlin.
+I recently defended my doctoral dissertation at the [Berlin School of Mind and Brain](http://www.mind-and-brain.de/home/) and the [Institut für Philosophie](https://www.philosophie.hu-berlin.de/) at the Humboldt-Universität zu Berlin. In my dissertation I examined some challenges that scientific theories of emotions face and that threaten the elimination of emotions from our scientific vocabulary. I argued that in order to meet these challenges, we must take a step back and examine our folk emotional vocabulary in order to 'reconstitute' the phenomena, and then make clear on what grounds can a scientific theory of emotions construct projectible categories that capture emotion kinds. The dissertation was qualified _summa cum laude_ and is pending publication. 
 
-My interests lie in the frontier between philosophy, psychology and neuroscience. I recently defended my doctoral dissertation, where I examine some challenges that scientific theories of emotions face and that threaten the elimination of emotions from our scientific vocabulary. I argue that in order to meet these challenges, we must take a step back and examine our folk emotional vocabulary in order to 'reconstitute' the phenomena, and then make clear on what grounds can a scientific theory of emotions construct projectible categories that capture emotion kinds. I conclude by recommending that emotion theorists rely on functional characterizations to formulate theories that can overcome the challenges other theories have faced while maintaining the unity of emotion concepts. The dissertation was qualified _summa cum laude_ and is pending publication. 
-
-In the past I have been a research assistant at the Universidad del Rosario, where I did work on the history and philosophy of science, specifically on the history of theories of visual perception. More recently I also had the chance of being a visiting scholar at the Instituto de Investigaciones Filosóficas of the [Sociedad Argentina de Análisis Filosófico (SADAF)](http://www.sadaf.org.ar/es/).
+In the meantime I am an adjunct lecturer at the [Escuela de Ciencias Humanas](http://www.urosario.edu.co/Escuela-de-Ciencias-Humanas/inicio/) at Universidad del Rosario (Bogotá, Colombia). In the past I had the chance of being a visiting scholar at the Instituto de Investigaciones Filosóficas of the [Sociedad Argentina de Análisis Filosófico (SADAF)](http://www.sadaf.org.ar/es/).
 
 <hr>
 
