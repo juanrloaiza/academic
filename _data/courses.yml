@@ -1,17 +1,43 @@
 - university: Universidad del Rosario
   courses:
+    - name: Argumentación
+      description:
+        en: "Course on basic argumentation skills for humanities students. I developed a syllabus based on a cooperative view of argumentation. The course is divided in four core modules: logic, rhetoric, and pragmatics of argumentation, and the study of common fallacies.
+
+
+        *Note: Course adapted for online teaching due to the COVID-19 pandemic.*"
+        es: "Curso de habilidades básicas de argumentación para estudiantes de ciencias sociales y humanidades. El sílabo desarrolla una visión cooperativa de la argumentación. El curso se divide en cuatro módulos principales: lógica, retórica y pragmática de la argumentación, y el estudio de falacias comunes.
+
+
+        *Nota: Curso acaptado para docencia en línea por la pandemia del COVID-19.*"
+      semesters: 2020-II
+
     - name: Lógica ECH
       description:
-        en: This is an introductory course to formal logic for first year humanities students. Here we present the basics of predicate logic up to natural deduction. Course design due to Fabio Fang.
-        es: Curso introductorio a la lógica formal para estudiantes de primer semestre de la Escuela de Ciencias Humanas. El curso presenta las bases de la lógica de predicados hasta deducción natural. Diseño del curso por Fabio Fang.
-      semesters: 2020-I
+        en: "This is an introductory course to formal logic for first year humanities students. Here we present the basics of predicate logic up to natural deduction. Course design due to Fabio Fang.
+
+
+        *Note: Course adapted for online teaching due to the COVID-19 pandemic.*"
+
+        es: "Curso introductorio a la lógica formal para estudiantes de primer semestre de la Escuela de Ciencias Humanas. El curso presenta las bases de la lógica de predicados hasta deducción natural. Diseño del curso por Fabio Fang.
+
+
+        *Nota: Curso acaptado para docencia en línea por la pandemia del COVID-19.*"
+      semesters: 2020-I, 2020-IS, 2020-II
     - name: Metodologías de Investigación
       description:
-        en: Introduction to research methods for humanities and social sciences. It covers basic concepts in research design and presents an overview of both qualitative and quantitative research.
-        es: Introducción a los métodos de investigación para humanidades y ciencias sociales. Cubre los conceptos básicos de diseño de investigación y presenta un paneo de métodos cualitativos y cuantitativos.
+        en: "Introduction to research methods for humanities and social sciences. It covers basic concepts in research design and presents an overview of both qualitative and quantitative research.
+
+
+        *Note: Course adapted for online teaching due to the COVID-19 pandemic.*"
+        
+        es: "Introducción a los métodos de investigación para humanidades y ciencias sociales. Cubre los conceptos básicos de diseño de investigación y presenta un paneo de métodos cualitativos y cuantitativos.
+
+
+        *Nota: Curso acaptado para docencia en línea por la pandemia del COVID-19.*"
       syllabus: Loaiza_Metodologias2020-I.pdf
       website: https://juanrloaiza.github.io/metodologias-ur
-      semesters: 2020-I
+      semesters: 2020-I, 2020-II
 
 - university: Berlin School of Mind and Brain
   courses:

@@ -4,6 +4,7 @@ lang: es
 mirror: en/teaching.html
 title: Cursos y docencia
 ---
+Abajo encontrarán una descripción breve de los cursos que he dictado. Para más información o una copia de los programas de asignatura, no dude en contactarme.
 
 {% assign universities = site.data.courses | group_by: 'university' %}
 {% for university in universities %}
@@ -38,4 +39,5 @@ title: Cursos y docencia
   {% endfor %}
 {% endfor %}
 </div>
+<br>
 {% endfor %}

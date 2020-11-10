@@ -4,6 +4,8 @@ lang: en
 mirror: es/cursos.html
 title: Teaching
 ---
+Below you will find a brief description of the courses I have taught. If you are interested in more information or in having a copy of the syllabi, do not hesitate to contact me.
+
 
 {% assign universities = site.data.courses | group_by: 'university' %}
 {% for university in universities %}
