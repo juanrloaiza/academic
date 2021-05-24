@@ -5,7 +5,7 @@ title: Publications
 mirror: es/publicaciones.html
 ---
 
-{% assign pubs = site.data.publications | sort:"year" | group_by:"year" %}
+{% assign pubs = site.data.publications | sort: "year" | reverse | group_by: "year" %}
 
 {% for year in pubs %}
 <h4> {{ year.name }} </h4>
