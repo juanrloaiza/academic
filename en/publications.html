@@ -5,7 +5,7 @@ title: Publications
 mirror: es/publicaciones.html
 ---
 
-{% assign pubs = site.data.publications | group_by:"year" %}
+{% assign pubs = site.data.publications | sort:"year" | reverse | group_by:"year" %}
 
 {% for year in pubs %}
 <h4> {{ year.name }} </h4>
@@ -17,8 +17,8 @@ mirror: es/publicaciones.html
     <div class="col-lg-12 col-xl-10">
       {{ pub.title }}<br>
       <span class="pub_info">
-        {{ pub.authors }}
-        {{ pub.reference | markdownify | remove: '<p>' | remove: '</p>' }}<br>
+        {{ pub.authors }} <br>
+        {{ pub.reference | markdownify | remove: '<p>' | remove: '</p>' | newline_to_br }}
         {% if pub.doi %}
         doi: <a href="http://doi.org/{{ pub.doi }}">{{ pub.doi }}</a>
         {% endif %}
