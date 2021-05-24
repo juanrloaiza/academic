@@ -1,14 +1,14 @@
 ---
 layout: main
-lang: en
-title: Publications
-mirror: es/publicaciones.html
+lang: es
+title: Publicaciones
+mirror: en/publications.html
 ---
 
-{% assign pubs = site.data.publications | group_by: "year" %}
+{% assign pubs = site.data.publications | group_by:"year" %}
 
 {% for year in pubs %}
-<h4> {{ year.name }} </h4>
+<h4> {{ year.name | replace: "Forthcoming", "En prensa"}} </h4>
 
 <div class="container-fluid">
 
