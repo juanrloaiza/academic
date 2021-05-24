@@ -1,0 +1,41 @@
+---
+layout: main
+lang: en
+title: Publications
+mirror: es/publicaciones.html
+---
+
+{% assign pubs = site.data.publications | sort:"year" | reverse | group_by:"year" %}
+
+{% for year in pubs %}
+<h4> {{ year.name }} </h4>
+
+<div class="container-fluid">
+
+  {% for pub in year.items %}
+  <div class="row pub_entry">
+    <div class="col-lg-12 col-xl-10">
+      {{ pub.title }}<br>
+      <span class="pub_info">
+        {{ pub.authors }} <br>
+        {{ pub.reference | markdownify | remove: '<p>' | remove: '</p>' | newline_to_br }}
+        {% if pub.doi %}
+        doi: <a href="http://doi.org/{{ pub.doi }}">{{ pub.doi }}</a>
+        {% endif %}
+      </span>
+    </div>
+    <div class="col-lg-12 col-xl-2">
+      {% if pub.url %}
+      <a href="{{ pub.url }}"><img src="{{ site.baseurl }}/img/icons/web.png" width="32" /></a>
+      {% endif %}
+
+      {% if pub.pdf %}
+      <a href="{{ site.baseurl }}/pdf/{{ pub.pdf }}"><img src="{{ site.baseurl }}/img/icons/pdf.png" width="32" /></a>
+      {% endif %}
+
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endfor %}
