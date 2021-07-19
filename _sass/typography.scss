@@ -14,6 +14,10 @@ h1 {
   margin-bottom: 0.5em;
 }
 
+strong {
+  font-weight: $font-bold;
+}
+
 //
 // Other general classes
 // All of these share the same light weight font.
