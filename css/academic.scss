@@ -20,8 +20,9 @@ $font-bolder: 600;
 $font-size: 18px;
 $font-small: 90%;
 
-$primary-font: 'Catamaran';
-@import url('https://fonts.googleapis.com/css?family='+$primary-font+':200,400,500,600|');
+$primary-font: 'Roboto';
+
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;500;600&display=swap";
 
 
 a {
