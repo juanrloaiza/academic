@@ -20,18 +20,18 @@ For a complete list of my talks, click <a href='/en/full_talks.html'>here</a>.
       {% else %}
       {{ talk.conference }}
       {% endif %}
-
       <br>
 
-      {% if talk.organizer %}
-      {% if talk.organizer.en %}
-      {{ talk.organizer.en }}<br>
+        {% if talk.organizer %}
+        {% if talk.organizer.en %}
+        {{ talk.organizer.en }}<br>
 
-      {% else %}
-      {{ talk.organizer }}<br>
+        {% else %}
+        {{ talk.organizer }}<br>
 
-      {% endif %}
-      {% endif %}
+        {% endif %}
+        {% endif %}
+
 
       {% if talk.institution %}
       {{ talk.institution }}<br>

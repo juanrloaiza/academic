@@ -16,9 +16,7 @@ Below you will find a brief description of the courses I have taught. If you are
 
 {% for course in item.courses %}
 
-### {{ course.name }}
-{{ course.semesters | join: ", "}}
-
+#### {{ course.name }}
 <div class="row">
 <div class="col" markdown="1">
 {{ course.description[page.lang] }}

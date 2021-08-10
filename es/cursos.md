@@ -15,8 +15,7 @@ Abajo encontrarán una descripción breve de los cursos que he dictado. Para má
 
 {% for course in item.courses %}
 
-### {{ course.name }}
-{{ course.semesters | join: ", "}}
+#### {{ course.name }}
 
 <div class="row">
 <div class="col" markdown="1">

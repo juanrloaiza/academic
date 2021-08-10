@@ -10,9 +10,9 @@
     en: Escuela de Ciencias Humanas
     es: Escuela de Ciencias Humanas
   courses:
-    - "Argumentación (2020-II)"
-    - "Lógica ECH (2020-I, 2020-IS, 2020-II)"
-    - "Metodologías de Investigación (2020-I, 2020-II)"
+    - "Argumentación"
+    - "Lógica ECH"
+    - "Metodologías de Investigación"
 
 - position:
     en: Lecturer
@@ -26,9 +26,8 @@
     en: Berlin School of Mind and Brain
     es: Berlin School of Mind and Brain
   courses:
-    - "Tutorial: Philosophy of Mind (WiSe 18/19)"
-    - "Psychology of Emotions (SoSe 18)"
-    - "Tutorial: Philosophy of Mind (WiSe 17/18)"
+    - "Tutorial: Philosophy of Mind"
+    - "Psychology of Emotions"
 
 - position:
     en: Research Assistant
