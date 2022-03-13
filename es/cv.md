@@ -5,7 +5,7 @@ mirror: en/cv.html
 title: Curriculum Vitae
 ---
 
-* Para ver el CV completo: [PDF.]({{ site.baseurl }}/pdf/LoaizaCV_2021-1.pdf)
+* Para ver el CV completo: [PDF.]({{ site.baseurl }}/pdf/LoaizaCV_2022-1.pdf)
 
 {% include es/education.html %}
 ---
