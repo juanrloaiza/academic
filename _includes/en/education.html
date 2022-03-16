@@ -1,27 +1,23 @@
-<div id="education" class="cv_section">
+<div>
   <h2> Education </h2>
 
-  {% assign universities = site.data.education | group_by:"university" %}
+  {% for education in site.data.education %}
+  <div class="columns">
 
-  {% for education in universities %}
-  <div class="cv_section">
-    <h4>{{ education.name }}</h4>
-
-    <p class="university_city">{{ education.items[0].city[page.lang] }}</p>
-
-    {% for item in education.items %}
-    <div class="row cv_entry">
-      <div class="col-md-12 col-lg-4 col-xl-3">
-        <strong>{{ item.degree[page.lang] }}</strong>
-        <p class="dates">{{ item.dates }}</p>
-
-      </div>
-      <div class="col">
-        {{ item.info[page.lang] | newline_to_br }}
-      </div>
+    <div class="column is-3">
+      {{ education.dates }}
     </div>
-    {% endfor %}
+
+    <div class="column">
+
+      <h4>{{education.degree[page.lang]}}</h4>
+      <strong>{{ education.university }}</strong>
+      <div>
+        {{ education.info[page.lang] | newline_to_br }}
+      </div>
+
+    </div>
+
   </div>
   {% endfor %}
-
 </div>

@@ -4,34 +4,32 @@ title: Selected talks
 lang: en
 mirror: es/charlas.html
 ---
-For a complete list of my talks, click <a href='/en/full_talks.html'>here</a>.
-<hr>
 
 {% for talk in site.data.talks limit:10 %}
-<div class="row talk_entry">
-  <div class="col-md-12 col-lg-2">
+<div class="columns">
+  <div class="column is-1">
     {{ talk.date | date:'%m.%Y' }}
   </div>
-  <div class="col">
-    <div class="talk_title">{{ talk.title }}</div>
-    <div class="talk_info">
+  <div class="column">
+    <strong class="">{{ talk.title }}</strong>
+    <div class="">
       {% if talk.conference.en %}
       {{ talk.conference.en }}
       {% else %}
       {{ talk.conference }}
       {% endif %}
+
       <br>
 
-        {% if talk.organizer %}
-        {% if talk.organizer.en %}
-        {{ talk.organizer.en }}<br>
+      {% if talk.organizer %}
+      {% if talk.organizer.en %}
+      {{ talk.organizer.en }}<br>
 
-        {% else %}
-        {{ talk.organizer }}<br>
+      {% else %}
+      {{ talk.organizer }}<br>
 
-        {% endif %}
-        {% endif %}
-
+      {% endif %}
+      {% endif %}
 
       {% if talk.institution %}
       {{ talk.institution }}<br>

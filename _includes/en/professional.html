@@ -1,28 +1,29 @@
-<div class="cv_section">
-  <h2> Professional Experience </h2>
+<div>
+  <h2> Professional experience </h2>
 
   {% for experience in site.data.experience %}
-  <div class="cv_entry">
-    <h4>{{ experience.institution }}</h4>
+  <div class="columns">
+    <div class="column is-3">
+     {{ experience.dates | replace: "present", "presente"  }}
+    </div>
 
-    <p class="university_city">{{ experience.city[page.lang] }}</p>
+    <div class="column">
+      <h4>{{ experience.institution }}</h4>
+    <p>{{ experience.city[page.lang] }}</p>
 
-    <div class="row">
-      <div class="col-md-12 col-lg-4 col-xl-3">
-        <strong>{{ experience.position[page.lang] }}</strong>
-        <p class="dates">{{ experience.dates }}</p>
-      </div>
-      <div class="col">
-        {{ experience.info[page.lang] | newline_to_br }}<br>
-        {% if experience.courses %}
-          Courses:
-          {% for course in experience.courses %}
-            <li>{{ course }}</li>
-          {% endfor%}
-        {% endif %}
-      </div>
+      <strong>{{ experience.position[page.lang] }}</strong><br>
+
+      {{ experience.info[page.lang] | newline_to_br }}<br>
+      {% if experience.courses %}
+      Cursos:
+      {% for course in experience.courses %}
+      <li>{{ course }}</li>
+      {% endfor%}
+      {% endif %}
     </div>
   </div>
+
+
   {% endfor %}
 
 </div>

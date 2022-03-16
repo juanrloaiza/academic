@@ -3,26 +3,26 @@
 # sections of css styles.
 ---
 
-// MY THEME
+// Hello
 
-$primary: #68779B;
-$primary-light: #A8B0C3;
+$primary: #005588;
 
-$accent: #4D5F8A;
+$primary-light: #e6e6e6;
+
+$accent: #3872ee;
 
 $light-bg: $primary-light;
 
-$font-normal: 300;
+$font-normal: 400;
 $font-light: 200;
 $font-bold: 500;
 $font-bolder: 700;
 
-$font-size: 18px;
 $font-small: 90%;
 
-$primary-font: 'Roboto';
+$primary-font: 'Roboto Mono';
 
-@import "https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;500;600&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600&display=swap";
 
 
 a {
@@ -33,11 +33,17 @@ a {
   }
 }
 
+#logos {
+  display: flex;
+  justify-content: center;
+  img {
+  height: 1.5rem;
+  margin: 1rem;
+}
+}
 
 // IMPORTS
 
-@import "layout";
 @import "typography";
-
 @import "navbar";
-@import "sidebar";
+

@@ -1,35 +1,37 @@
-<nav class="navbar navbar-expand-lg d-flex justify-content-between">
-  <div class="container">
+<div class="container the-navbar">
+
+  <div class="columns">
+    <div class="column"></div>
+
+    <div class="column is-three-quarters">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
 
 
-    <ul class="navbar-nav collapse navbar-collapse" id="the-navbar">
-      {% for pg in site.data.navbar %}
-      <li class="nav-item">
-        {% if page.url == pg.url %}
-        {% assign class = 'nav-link active' %}
-        {% else %}
-        {% assign class = 'nav-link' %}
-        {% endif %}
-        <a class="{{ class }}" href="{{ site.baseurl }}{{ pg.url[page.lang] }}">
-          {{ pg.title[page.lang] }}
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-    <div class="navbar-brand">
-      <a href="{{ site.url }}{% if page.lang=='es' %}/es/{% endif %}">Juan R. Loaiza</a>
-      <div id="lang-toggle">
-        {% if page.lang == 'es' %}
-        <a href="{{ site.baseurl }}/{{ page.mirror }}">EN/</a>ES
-        {% else %}
-        EN<a href="{{ site.baseurl }}/{{ page.mirror }}">/ES</a>
-        {% endif %}
-      </div>
+        <div class="navbar-menu">
+          <div class="navbar-start">
+            {% for pg in site.data.navbar %}
+            <a class="navbar-item" href="{{ site.baseurl }}{{ pg.url[page.lang] }}">
+              {{ pg.title[page.lang] }}
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="navbar-brand">
+          <a class="navbar-item" href="{{ site.baseurl }}{% if page.lang=='es' %}/{% endif %}">Juan R. Loaiza</a>
+          <div class="navbar-item" id="lang-toggle">
+            {% if page.lang == 'es' %}
+            <a href="{{ site.baseurl }}/{{ page.mirror }}">EN/</a>ES
+            {% else %}
+            EN<a href="{{ site.baseurl }}/{{ page.mirror }}">/ES</a>
+            {% endif %}
+          </div>
+        </div>
+      </nav>
     </div>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#the-navbar" aria-controls="the-navbar" aria-expanded="false" aria-label="Toggle navigation">
-      <img class="navbar-toggler-icon" src="/img/icons/menu-collapse.png"/></button>
+    <div class="column"></div>
+
   </div>
 
-
-</nav>
+</div>

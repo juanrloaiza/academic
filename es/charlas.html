@@ -5,14 +5,15 @@ lang: es
 mirror: en/talks.html
 ---
 
+
 {% for talk in site.data.talks limit:10 %}
-<div class="row talk_entry">
-  <div class="col-md-12 col-lg-2">
+<div class="columns">
+  <div class="column is-1">
     {{ talk.date | date:'%m.%Y' }}
   </div>
-  <div class="col">
-    <div class="talk_title">{{ talk.title }}</div>
-    <div class="talk_info">
+  <div class="column">
+    <strong class="">{{ talk.title }}</strong>
+    <div class="">
       {% if talk.conference.en %}
       {{ talk.conference.en }}
       {% else %}
@@ -22,7 +23,7 @@ mirror: en/talks.html
       <br>
 
       {% if talk.organizer %}
-      {% if talk.organizer.en %}
+      {% if talk.organizer.es %}
       {{ talk.organizer.en }}<br>
 
       {% else %}
@@ -36,7 +37,7 @@ mirror: en/talks.html
       {% endif %}
 
       {% if talk.city.en %}
-      {{ talk.city.en }}
+      {{ talk.city.es }}
       {% else %}
       {{ talk.city }}
       {% endif %}
