@@ -40,15 +40,15 @@ En el momento me encuentro buscando plaza de investigador postdoctoral o como do
     <ul>
       <li>Filosofía de las emociones</li>
       <li>Filosofía de la psicología y de las neurociencias</li>
-      <li>Historia y filosofía de la ciencia</li>
+      <li>Ontología y clases naturales</li>
     </ul>
   </div>
   <div class="column">
     <h1>Áreas de competencia</h1>
     <ul>
-      <li>Filosofía de la mente </li>
-      <li>Filosofía moderna</li>
+      <li>Ontología social</li>
       <li>Filosofía analítica</li>
+      <li>Filosofía moderna</li>
     </ul>
   </div>
 </div>

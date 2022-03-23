@@ -33,15 +33,15 @@ I am currently looking for an opportunity as a postdoctoral researcher. If you h
     <ul>
     <li>Philosophy of emotions</li>
     <li>Philosophy of psychology and neuroscience</li>
-    <li>History and philosophy of science</li>
+    <li>Ontology and natural kinds</li>
     </ul>
   </div>
 <div class="column">
   <h5>Areas of competence</h5>
   <ul>
-  <li>Philosophy of mind</li>
-  <li>Modern philosophy</li>
+  <li>Social ontology</li>
   <li>Analytic philosophy</li>
+  <li>Modern philosophy</li>
   </ul>
   </div>
 </div>
