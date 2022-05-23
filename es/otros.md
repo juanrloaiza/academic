@@ -22,12 +22,8 @@ He estado visitando la Stanford Encyclopedia of Philosophy para hacer análisis 
 
 Como un ejercicio de práctica hice algunos análisis de minería de texto con mi disertación *Emotions as functional kinds: a meta-theoretical approach to constructing scientific theories of emotions* (HU Berlin). Pueden encontrarlos en [este repositorio](https://github.com/juanrloaiza/dissertation-analyses).
 
-### Proyectos Web
+---
 
 #### Página personal
 
 ¡Este sitio está disponible en GitHub! Pueden encontrar el código en [este repositorio](https://github.com/juanrloaiza/academic/). El sitio está desarrollado con [Jekyll](https://jekyllrb.com/).
-
-#### Revistas de filosofía en español
-
-También compilé una lista de revistas de filosofía en español. Pueden encontrar la lista  [aquí](https://juanrloaiza.github.io/revistas_filosofia/). A pesar de ser un sitio muy simple, también pueden ver su código en [este repositorio](https://github.com/juanrloaiza/revistas_filosofia).

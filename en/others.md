@@ -20,12 +20,8 @@ I've been visiting the Stanford Encyclopedia of Philosophy to do some text analy
 
 As a practice exercise I ran some text mining analyses on my dissertation _Emotions as functional kinds: a meta-theoretical approach to constructing scientific theories of emotions_ (HU Berlin). You can find them in [this repository](https://github.com/juanrloaiza/dissertation-analyses).
 
-### Web projects
+---
 
 #### Personal website
 
 This site's code is available on GitHub! You can find it in [this repository](https://github.com/juanrloaiza/academic/). This site is powered by [Jekyll](https://jekyllrb.com/).
-
-#### Philosophy Journals in Spanish
-
-I also compiled a list of philosophy journals publishing in Spanish. You can find this list [here](https://juanrloaiza.github.io/revistas_filosofia/). Even though it is a very simple site, you can also see how it's coded in [this repository](https://github.com/juanrloaiza/revistas_filosofia).
