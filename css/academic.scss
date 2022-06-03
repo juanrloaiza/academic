@@ -1,15 +1,12 @@
----
-# This is the main css file. I will use imports to handle different
-# sections of css styles.
----
+--- 
+# This is the main css file. I will use imports to handle different # sections of css styles. 
+--- 
 
-// Hello
-
-$primary: #005588;
+$primary: #2B5598;
 
 $primary-light: #e6e6e6;
 
-$accent: #3872ee;
+$accent: #7690A7;
 
 $font-normal: 400;
 $font-light: 200;
@@ -26,7 +23,7 @@ $primary-font: 'Roboto Mono';
 a {
   color: $primary;
 
-  &:hover{
+  &:hover {
     color: $accent;
   }
 }
@@ -34,14 +31,14 @@ a {
 #logos {
   display: flex;
   justify-content: center;
+
   img {
-  height: 1.5rem;
-  margin: 1rem;
-}
+    height: 1.5rem;
+    margin: 1rem;
+  }
 }
 
 // IMPORTS
 
 @import "typography";
 @import "navbar";
-
