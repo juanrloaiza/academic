@@ -27,12 +27,12 @@
           <div class="">
             <h1 class="title has-text-centered">Juan R. Loaiza</h1>
             <div class="container" id="logos">
-              <a href="https://twitter.com/JuanRLoaiza">
-                <img src="{{ site.baseurl}}/img/icons/twitter.png" />
+
+              {% for item in site.data.sidebar.contact %}
+              <a href="{{ item.url }}">
+                <img src="{{ site.baseurl}}/img/icons/{{ item.icon }}.png" />
               </a>
-              <a href="https://www.researchgate.net/profile/Juan_Loaiza5"><img src="{{ site.baseurl}}/img/icons/research-gate.png" /></a>
-              <a href="https://philpeople.org/profiles/j-r-loaiza"><img src="{{ site.baseurl}}/img/icons/philpapers.png" /></a>
-             <a href="https://www.linkedin.com/in/juanrloaiza/"> <img src="{{ site.baseurl}}/img/icons/linkedin.png" /></a>
+              {% endfor %}
             </div>
           </div>
 
