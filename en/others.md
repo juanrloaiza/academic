@@ -24,4 +24,4 @@ As a practice exercise I ran some text mining analyses on my dissertation _Emoti
 
 #### Personal website
 
-This site's code is available on GitHub! You can find it in [this repository](https://github.com/juanrloaiza/academic/). This site is powered by [Jekyll](https://jekyllrb.com/).
+This site's code is available on GitHub! You can find it in [this repository](https://github.com/juanrloaiza/juanrloaiza.github.io/). This site is powered by [Jekyll](https://jekyllrb.com/).

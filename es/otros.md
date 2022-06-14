@@ -24,4 +24,4 @@ Como un ejercicio de práctica hice algunos análisis de minería de texto con m
 
 #### Página personal
 
-¡Este sitio está disponible en GitHub! Pueden encontrar el código en [este repositorio](https://github.com/juanrloaiza/academic/). El sitio está desarrollado con [Jekyll](https://jekyllrb.com/).
+¡Este sitio está disponible en GitHub! Pueden encontrar el código en [este repositorio](https://github.com/juanrloaiza/juanrloaiza.github.io/). El sitio está desarrollado con [Jekyll](https://jekyllrb.com/).
