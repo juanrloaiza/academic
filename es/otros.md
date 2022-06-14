@@ -1,10 +1,8 @@
 ---
-
 layout: main
 lang: es
 mirror: en/others.html
 title: Otros proyectos
-
 ---
 
 Aparte de mi trabajo académico, me gusta a ratos escribir código y llevar a cabo proyectos pequeños. Algunos de estos se pueden encontrar en [GitHub](https://github.com/juanrloaiza). Aquí hay algunos que me gustaría mencionar:
