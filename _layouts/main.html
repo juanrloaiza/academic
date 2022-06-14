@@ -1,17 +1,6 @@
 <html>
 
-<head>
-  <title> {{ page.title }} - Juan R. Loaiza</title>
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/academic.css">
-
-  <link rel="icon" type="image/png" href="{{site.baseurl}}/img/favicon.png">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-</head>
+{% include head.html %}
 
 <body>
 
@@ -26,14 +15,8 @@
 
           <div class="">
             <h1 class="title has-text-centered">Juan R. Loaiza</h1>
-            <div class="container" id="logos">
+            {% include logos.html %}
 
-              {% for item in site.data.sidebar.contact %}
-              <a href="{{ item.url }}">
-                <img src="{{ site.baseurl}}/img/icons/{{ item.icon }}.png" />
-              </a>
-              {% endfor %}
-            </div>
           </div>
 
           <div class="content">

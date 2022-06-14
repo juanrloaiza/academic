@@ -1,0 +1,8 @@
+<div class="container" id="logos">
+
+    {% for item in site.data.sidebar.contact %}
+    <a href="{{ item.url }}">
+        <img src="{{ site.baseurl}}/img/icons/{{ item.icon }}.png" />
+    </a>
+    {% endfor %}
+</div>
