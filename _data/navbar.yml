@@ -32,12 +32,13 @@
   url:
     en: /en/teaching.html
     es: /es/cursos.html
-# - title:
-#     en: Blog
-#     es: Blog
-#   url:
-#     en: /en/blog.html
-#     es: /es/blog.html
+
+- title:
+    en: Blog
+    es: Blog
+  url:
+    en: /es/blog.html
+    es: /es/blog.html
 
 - title:
     en: Other projects

@@ -14,3 +14,9 @@ sass:
     sass_dir: _sass
 
 highlighter: rouge
+
+defaults:
+    - scope:
+          path: "_posts/"
+      values:
+          layout: post

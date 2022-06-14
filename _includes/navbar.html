@@ -6,12 +6,11 @@
     <div class="column is-three-quarters">
       <nav class="navbar" role="navigation" aria-label="main navigation">
 
-
-        <div class="navbar-menu">
+        <div class="navbar-menu" id="navMenu">
           <div class="navbar-start">
             {% for pg in site.data.navbar %}
-            <a class="navbar-item" href="{{ site.baseurl }}{{ pg.url[page.lang] }}">
-              {{ pg.title[page.lang] }}
+            <a class="navbar-item" href="{{ site.baseurl }}{{ pg.url[page.lang] | default: pg.url['es'] }}">
+              {{ pg.title[page.lang] | default: pg.title["es"] }}
             </a>
             {% endfor %}
           </div>
@@ -26,6 +25,11 @@
             EN<a href="{{ site.baseurl }}/{{ page.mirror }}">/ES</a>
             {% endif %}
           </div>
+          <span class="navbar-burger burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
         </div>
       </nav>
     </div>
@@ -35,3 +39,17 @@
   </div>
 
 </div>
+
+<script>
+
+  (function () {
+    var burger = document.querySelector('.burger');
+    var nav = document.querySelector('#' + burger.dataset.target);
+
+    burger.addEventListener('click', function () {
+      burger.classList.toggle('is-active');
+      nav.classList.toggle('is-active');
+    });
+  })();
+
+</script>
