@@ -1,5 +1,7 @@
+---
 --- 
---- 
+
+// Main colors
 
 $primary: #2B5598;
 
@@ -37,7 +39,7 @@ a {
   }
 }
 
-.titlebox{
+.titlebox {
   margin-bottom: 2rem;
 }
 
@@ -46,4 +48,4 @@ a {
 @import "typography";
 @import "navbar";
 @import "blog";
-@import "syntax-highlighter";
+@import "syntaxP";
