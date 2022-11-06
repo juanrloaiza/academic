@@ -1,8 +1,7 @@
-<div class="container" id="logos">
+<div id="logos">
 
     {% for item in site.data.sidebar.contact %}
-    <a href="{{ item.url }}">
-        <img src="{{ site.baseurl}}/img/icons/{{ item.icon }}.png" />
-    </a>
+    <a href="{{ item.url }}" rel="me"><i class="{{ item.icon }} fa-2xl"></i></a>
     {% endfor %}
+
 </div>
