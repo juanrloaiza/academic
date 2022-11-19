@@ -1,9 +1,15 @@
 - position:
+    en: Communications coordinator
+    es: Coordinador de comunicaciones
+  institution: Asociación Latinoamericana de Filosofía Analítica (ALFAn)
+  dates: 10.2022 - present
+
+- position:
     en: Co-organizer
     es: Co-organizador
   institution: Cátedra Interuniversitaria de Filosofía
   city: Bogotá, Colombia
-  dates: 08.2020 - present
+  dates: 08.2020 - 08.2021
 
 - position:
     en: Visiting scholar
@@ -30,23 +36,3 @@
     es: Asistente editorial y administrador de tecnologías
   institution: Journal of Philosophy of Emotion
   dates: 2017 - 2018
-
-# - position:
-#     en: Teaching assistant
-#     es: Monitor académico
-#   institution: Universidad del Rosario
-#   city: Bogotá, Colombia
-#   dates: 2010 - 2013
-#   info:
-#     en: |
-#       Courses:
-#         * Philosophy of Natural Sciences (2013-I)
-#         * Scientific thinking (2012-II)
-#         * Fundamentals of mathematics (Set theory & Probability) (2011-II, 2012-I)
-#         * Logic (2010-II, 2011-I)
-#     es: |
-#       Cursos:
-#         * Filosofía de las ciencias naturales (2013-I)
-#         * Pensamiento científico (2012-II)
-#         * Fundamentos de matemáticas (Teoría de conjuntos y Probabilidad) (2011-II, 2012-I)
-#         * Lógica E.C.H. (2010-II, 2011-I)

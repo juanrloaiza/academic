@@ -9,8 +9,7 @@
     - name: Lógica ECH
       description:
         en: "This is an introductory course to formal logic for first year humanities students. Here we present the basics of predicate logic up to natural deduction."
-        es: "Curso introductorio a la lógica formal para estudiantes de primer semestre de la Escuela de Ciencias Humanas. El curso presenta las bases de la lógica de predicados hasta deducción natural.
-"
+        es: "Curso introductorio a la lógica formal para estudiantes de primer semestre de la Escuela de Ciencias Humanas. El curso presenta las bases de la lógica de predicados hasta deducción natural."
       semesters:
     - name: Metodologías de Investigación
       description:
