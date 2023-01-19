@@ -24,9 +24,6 @@ En el 2020 obtuve mi doctorado en la [Berlin School of Mind and Brain](http://ww
 Actualmente soy profesor de hora cátedra en la [Escuela de Ciencias
       Humanas](http://www.urosario.edu.co/Escuela-de-Ciencias-Humanas/inicio/) de la Universidad del Rosario (Bogotá,
       Colombia).
- 
-En el momento me encuentro buscando plaza de investigador postdoctoral o como docente investigador. Agradezco
-      cualquier información de alguna oportunidad o proyecto al que pueda contribuir.
 
   </div>
   

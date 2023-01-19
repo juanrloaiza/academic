@@ -20,7 +20,6 @@ I wrote my doctoral dissertation at the [Berlin School of Mind and Brain](http:/
 
 At the time I am an adjunct lecturer at the [Escuela de Ciencias Humanas](http://www.urosario.edu.co/Escuela-de-Ciencias-Humanas/inicio/) at Universidad del Rosario (Bogotá, Colombia).
 
-I am currently looking for an opportunity as a postdoctoral researcher. If you have any information, please contact me!
 
 </div>
 </div>
