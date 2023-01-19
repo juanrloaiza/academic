@@ -14,16 +14,11 @@ mirror: en
 
   <div class="column" markdown="1">
     
-Soy un filósofo interesado en las aproximaciones interdisciplinares a las emociones, particularmente en la
-      frontera entre la filosofía, la psicología y la neurociencia. También me intereso por conectar la metodología de
-      la investigación empírica en psicología y ciencias sociales con reflexiones filosóficas.
+Soy un filósofo interesado en las aproximaciones interdisciplinares a las emociones, particularmente en la       frontera entre la filosofía, la psicología y la neurociencia.
 
-En el 2020 obtuve mi doctorado en la [Berlin School of Mind and Brain](http://www.mind-and-brain.de/home/) y el
-      [Institut für Philosophie](https://www.philosophie.hu-berlin.de/) de la Humboldt-Universität zu Berlin.
+En el 2020 obtuve mi doctorado en la [Berlin School of Mind and Brain](http://www.mind-and-brain.de/home/) y el [Institut für Philosophie](https://www.philosophie.hu-berlin.de/) de la Humboldt-Universität zu Berlin. También cuento con una maestría en estudios de la mente y el cerebro de la [Berlin School of Mind and Brain](http://www.mind-and-brain.de/home/) (2016).
  
-Actualmente soy profesor de hora cátedra en la [Escuela de Ciencias
-      Humanas](http://www.urosario.edu.co/Escuela-de-Ciencias-Humanas/inicio/) de la Universidad del Rosario (Bogotá,
-      Colombia).
+Próximamente me vincularé al [Departamento de Filosofía](https://filosofiahumanidades.uahurtado.cl/departamentos/filosofia/) de la [Universidad Alberto Hurtado](https://www.uahurtado.cl/) (Santiago, Chile) como académico de planta ordinaria. Antes de esto fui profesor de hora cátedra en la [Escuela de Ciencias Humanas](http://www.urosario.edu.co/Escuela-de-Ciencias-Humanas/inicio/) de la [Universidad del Rosario](http://www.urosario.edu.co/) (Bogotá, Colombia).
 
   </div>
   
@@ -33,7 +28,7 @@ Actualmente soy profesor de hora cátedra en la [Escuela de Ciencias
 
 <div class="columns">
   <div class="column">
-    <h1>Áreas de especialización</h1>
+    <h5>Áreas de especialización</h5>
     <ul>
       <li>Filosofía de las emociones</li>
       <li>Filosofía de la psicología y de las neurociencias</li>
@@ -41,7 +36,7 @@ Actualmente soy profesor de hora cátedra en la [Escuela de Ciencias
     </ul>
   </div>
   <div class="column">
-    <h1>Áreas de competencia</h1>
+    <h5>Áreas de competencia</h5>
     <ul>
       <li>Ontología social</li>
       <li>Filosofía analítica</li>

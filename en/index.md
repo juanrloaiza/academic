@@ -16,9 +16,9 @@ mirror: ""
 
 I'm a philosopher interested in interdisciplinary approaches to emotions, particularly in the frontier between philosophy, psychology and neuroscience.
 
-I wrote my doctoral dissertation at the [Berlin School of Mind and Brain](http://www.mind-and-brain.de/home/) and the [Institut für Philosophie](https://www.philosophie.hu-berlin.de/) at the Humboldt-Universität zu Berlin. 
+In 2020 I received my PhD from the [Berlin School of Mind and Brain](http://www.mind-and-brain.de/home/) and the [Institut für Philosophie](https://www.philosophie.hu-berlin.de/) at the Humboldt-Universität zu Berlin. I also hold a master's degree in mind and brain studies from the [Berlin School of Mind and Brain](http://www.mind-and-brain.de/home/) (2016).
 
-At the time I am an adjunct lecturer at the [Escuela de Ciencias Humanas](http://www.urosario.edu.co/Escuela-de-Ciencias-Humanas/inicio/) at Universidad del Rosario (Bogotá, Colombia).
+ I will soon be joining the [philosophy department](https://filosofiahumanidades.uahurtado.cl/departamentos/filosofia/) at the [Universidad Alberto Hurtado](https://www.uahurtado.cl/) (Santiago, Chile) as a full-time professor. Before that I was an adjunct lecturer at the [Escuela de Ciencias Humanas](http://www.urosario.edu.co/Escuela-de-Ciencias-Humanas/inicio/) at the [Universidad del Rosario](http://www.urosario.edu.co/) (Bogotá, Colombia).
 
 
 </div>
