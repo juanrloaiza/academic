@@ -17,6 +17,9 @@ p {
 // Headers
 .content h1 {
   font-size: 28px;
+  display: grid;
+  justify-content: center;
+  padding-bottom: 1rem;
 }
 
 strong {
