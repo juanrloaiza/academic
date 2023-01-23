@@ -8,9 +8,8 @@ mirror: en
 <div class="columns">
 
   <div class="column is-one-quarter">
-  <img style="border: 1px solid black" src="{{ site.baseurl }}/img/academic_loaiza.png" />
+    <img style="border: 1px solid black" src="{{ site.baseurl }}/img/academic_loaiza.png" />
   </div>
-
 
   <div class="column" markdown="1">
     
