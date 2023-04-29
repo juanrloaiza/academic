@@ -1,0 +1,21 @@
+@use "partials/typography.scss";
+@use "partials/navbar";
+@use "partials/logos";
+@import "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600&display=swap";
+
+// Main colors
+$primary: #2B5598;
+$accent: #7690A7;
+
+a {
+  color: $primary;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+
+.titlebox {
+  margin-bottom: 2rem;
+}

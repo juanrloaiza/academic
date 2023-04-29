@@ -1,0 +1,17 @@
+#logos {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1rem;
+    margin-top: 2.5rem;
+
+    i {
+        color: #363636;
+    }
+}
+
+
+.fa-brands {
+    &:hover {
+        color: #485fc7 !important;
+    }
+}

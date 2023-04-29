@@ -1,0 +1,5 @@
+<div>
+    <h1>{{ i18n "contact" }}</h1>
+    {{ $email := site.Data.contact.email }}
+    {{ i18n "email" }}: <a href="mailto:{{ $email }}">{{ $email }}</a>
+</div>

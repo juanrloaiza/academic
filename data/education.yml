@@ -1,0 +1,39 @@
+- degree:
+    en: PhD in Philosophy
+    es: Doctorado en Filosofía
+  university: Humboldt-Universität zu Berlin
+  faculty: Berlin School of Mind and Brain & Institut für Philosophie
+  thesis:
+    title: "Emotions as functional kinds: a meta-theoretical approach to constructing scientific theories of emotions."
+    supervisors:
+      - Michael Pauen
+      - Jesse Prinz
+      - Isabel Dziobek
+    examiners: Michael Pauen, Jesse Prinz, and Henrik Walter
+    qualification: Summa Cum Laude
+  dates: 10.2016 - 07.2020
+
+- degree:
+    en: Master of Arts
+    es: Master of Arts
+  university: Humboldt-Universität zu Berlin
+  dates: 10.2014 - 08.2016
+  faculty: Berlin School of Mind and Brain
+  thesis:
+    title: "Defining emotions scientifically: Folk-psychology and natural kinds"
+    supervisors:
+      - Jesse Prinz
+      - Michael Pauen
+    qualification: 1.0 (highest grade)
+
+- degree:
+    en: Philosophy
+    es: Filósofo
+  dates: 07.2009 - 03.2014
+  university: Universidad del Rosario
+  faculty: Escuela de Ciencias Humanas
+  thesis:
+    title: "La naturalización de las emociones: anotaciones a partir de Wittgenstein"
+    supervisors:
+      - Carlos Alberto Cardona Suárez
+    qualification: Meritoria

@@ -1,0 +1,39 @@
+email: juan.loaiza@urosario.edu.co
+
+main:
+  - text: Twitter
+    url: https://twitter.com/JuanRLoaiza
+    icon: "fa-brands fa-twitter"
+
+  - text: Mastodon
+    url: https://hcommons.social/@juanrloaiza
+    icon: "fa-brands fa-mastodon"
+
+  - text: ResearchGate
+    icon: fa-brands fa-researchgate
+    url: https://www.researchgate.net/profile/Juan_Loaiza5
+
+  - text: ORCID
+    icon: fa-brands fa-orcid
+    url: https://orcid.org/0000-0003-0570-3832
+
+  - text: LinkedIn
+    icon: fa-brands fa-linkedin
+    url: https://www.linkedin.com/in/juanrloaiza/
+
+  - text: GitHub
+    icon: fa-brands fa-github
+    url: https://github.com/juanrloaiza
+
+others:
+  - text: Academia
+    icon: academia
+    url: https://hu-berlin.academia.edu/JuanRLoaiza
+
+  - text: Google Scholar
+    icon: google-scholar
+    url: https://scholar.google.com.co/citations?&user=NYVFSrwAAAAJ
+
+  - text: PhilPapers
+    icon: fa-brands fa-philpapers
+    url: https://philpeople.org/profiles/j-r-loaiza

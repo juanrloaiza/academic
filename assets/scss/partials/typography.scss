@@ -1,0 +1,37 @@
+// Font weights
+$font-light: 200;
+$font-normal: 400;
+$font-bold: 500;
+$font-bolder: 700;
+
+// Font sizes
+$font-small: 90%;
+
+// Primary font
+$primary-font: 'Roboto Mono';
+
+body {
+  font-family: $primary-font;
+  font-weight: $font-normal;
+}
+
+.title {
+  font-size: 60px;
+  font-weight: 400;
+  font-family: "Roboto Mono";
+  margin-bottom: 2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+// Headers
+
+strong {
+  font-weight: $font-bold;
+}
+
+table {
+  font-size: 18px;
+}

@@ -1,0 +1,46 @@
+{{ define "title" }}
+&puncsp;
+{{ end }}
+
+{{ define "main" }}
+
+<div class="columns">
+
+    <div class="column is-one-quarter-desktop is-one-third-tablet">
+        {{ $image := resources.Get "images/academic_loaiza.png" }}
+        <img style="border: 1px solid black;" src="{{ $image.RelPermalink }}" />
+    </div>
+
+
+    <div class="column">
+
+        {{ .Content }}
+
+    </div>
+</div>
+<hr>
+
+<div class="columns">
+    <div class="column">
+        <h5>{{ i18n "specialization" }}</h5>
+        <ul>
+            {{ $data := index site.Data.areas site.Language.Lang }}
+            {{ range $data.specialization }}
+            <li>{{ . }}</li>
+            {{ end }}
+        </ul>
+    </div>
+    <div class="column">
+        <h5>{{ i18n "competence" }}</h5>
+        <ul>
+            {{ $data := index site.Data.areas site.Language.Lang }}
+            {{ range $data.competence }}
+            <li>{{ . }}</li>
+            {{ end }}
+        </ul>
+    </div>
+</div>
+<hr>
+{{ partial "contact" }}
+
+{{ end }}

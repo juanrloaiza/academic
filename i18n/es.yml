@@ -1,0 +1,28 @@
+contact: "Contacto"
+email: "Correo electrónico"
+competence: "Áreas de competencia"
+specialization: "Áreas de especializacion"
+
+education:
+  title: "Educación"
+  thesis:
+    title: "Tesis"
+    supervisors:
+      one: "Supervisor"
+      other: "Supervisores"
+    examiners: "Examinadores"
+    qualification: "Calificación"
+
+employment: "Experiencia académica"
+courses: "Cursos"
+present: "Presente"
+service: "Servicio académico"
+
+Poland: Polonia
+Italy: Italia
+Switzerland: Suiza
+Bern: "Berna"
+Spain: España
+Germany: Alemania
+United Kingdom: "Reino Unido"
+Cracow: Cracovia

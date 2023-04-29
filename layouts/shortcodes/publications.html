@@ -1,0 +1,26 @@
+{{ $years := slice }}
+{{ range .Site.Data.publications }}
+{{ $years = $years | append .year }}
+{{ end }}
+{{ $years := uniq $years }}
+
+{{ range $year := $years }}
+
+
+<h4 style="margin-top: 2rem">{{ if $year }} {{ . }} {{ else }} Online first {{ end }}</h4>
+
+{{ range where $.Site.Data.publications "year" $year }}
+<div style="margin-top: 1rem" class="">
+    <strong> {{ .title }} </strong><br>
+    <div>
+        {{.authors}} <br>
+        {{.reference | markdownify }} <br>
+        {{ if .doi }}
+        <a href="http://doi.org/ pub.doi "> {{.doi}} </a>
+        {{ else if .url }}
+        <a href=" pub.url ">{{ .url }}</a>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
+{{ end }}

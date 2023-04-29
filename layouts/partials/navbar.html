@@ -1,0 +1,47 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+
+  <div class="navbar-menu" id="navMenu">
+    <div class="navbar-start">
+      {{- range site.Menus.main }}
+      <a class="navbar-item" href="{{ .URL }}">
+        {{ .Name }}
+        {{- with .Page }}
+        {{- with .Params.version -}}
+        ({{ . }})
+        {{- end }}
+        {{- end }}
+      </a>
+      {{- end }}
+    </div>
+    <div class="navbar-end">
+      {{ range $.Translations }}
+      <div class="navbar-item">
+        <a class="button is-small" title="{{ .Language.LanguageName }}" href="{{ .Permalink }}">
+          <i class="fa-solid fa-globe mr-2"></i>
+          {{ .Language | upper }}
+        </a>
+        {{ end }}
+      </div>
+    </div>
+
+  </div>
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+</nav>
+
+<script>
+  (function () {
+    var burger = document.querySelector('.navbar-burger');
+    var menu = document.querySelector('.navbar-menu');
+    burger.addEventListener('click', function () {
+      burger.classList.toggle('is-active');
+      menu.classList.toggle('is-active');
+    });
+  })();
+</script>
