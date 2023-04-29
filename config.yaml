@@ -1,0 +1,14 @@
+baseURL: "http://www.juanrloaiza.com/"
+title: "Juan R. Loaiza"
+defaultContentLanguage: es
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+
+languages:
+    en:
+        contentDir: content/en
+    es:
+        contentDir: content/es

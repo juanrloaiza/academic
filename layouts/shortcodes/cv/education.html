@@ -1,0 +1,27 @@
+<h2>{{ i18n "education.title" }}</h2>
+
+{{ range site.Data.education }}
+<div class="columns">
+
+    <div class="column is-3">
+        {{ .dates }}
+    </div>
+
+    <div class="column">
+        <h4 class="mb-1">{{ index .degree site.Language.Lang }}</h4>
+        <strong>{{ .university }}</strong>
+        <div>
+            {{ .faculty }}<br>
+            {{/* {{ i18n "education.thesis.title" }}: {{ .thesis.title }}<br>
+            {{ $num_supervisors := .thesis.supervisors | len}}
+            {{ i18n "education.thesis.supervisors" (dict "Count" $num_supervisors) }}: {{ delimit
+            .thesis.supervisors ", "
+            }}<br>
+            {{ if .thesis.examiners }}
+            {{ i18n "education.thesis.examiners" }}: {{ .thesis.examiners }}<br>
+            {{ end }}
+            {{ i18n "education.thesis.qualification" }}: {{ .thesis.qualification }} */}}
+        </div>
+    </div>
+</div>
+{{ end }}

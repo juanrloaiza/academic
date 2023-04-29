@@ -1,0 +1,15 @@
+<h2> {{ i18n "service" }} </h2>
+
+{{ range site.Data.service }}
+<div class="columns">
+    <div class="column is-3">
+        {{ .start_date }}{{ if .end_date }} - {{ .end_date }}{{ else }} - {{ i18n "present" }}{{ end}}
+    </div>
+    <div class="column">
+        <strong>{{index .position site.Language.Lang }}</strong><br>
+        {{ .institution }}<br>
+        {{ .city }}
+        {{ .info }}
+    </div>
+</div>
+{{ end }}

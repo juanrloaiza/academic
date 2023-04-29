@@ -1,0 +1,44 @@
+- position:
+    en: Professor
+    es: Académico de planta
+  start_date: "03.2023"
+  institution: Universidad Alberto Hurtado
+  faculty: Departamento de Filosofía, Facultad de Filosofía y Humanidades
+
+- position:
+    en: Adjunct lecturer
+    es: Profesor de hora cátedra
+  start_date: "01.2020"
+  end_date: "12.2022"
+  institution: Universidad del Rosario
+  faculty: Escuela de Ciencias Humanas
+  courses:
+    - "Argumentación"
+    - "Lógica ECH"
+    - "Metodologías de Investigación"
+
+- position:
+    en: Lecturer
+    es: Docente de cátedra
+  start_date: "10.2017"
+  end_date: "02.2019"
+  institution: Humboldt-Universität zu Berlin
+  faculty: Berlin School of Mind and Brain
+  courses:
+    - "Tutorial: Philosophy of Mind"
+    - "Psychology of Emotions"
+
+- position:
+    en: Research Assistant
+    es: Asistente de investigación
+  start_date: "01.2013"
+  end_date: "12.2016"
+  institution: Universidad del Rosario
+  faculty: Escuela de Ciencias Humanas
+  info:
+    en: |
+      Research project: "La pirámide visual: evolución de un instrumento conceptual" <br/>
+      Grupo de Investigación en Lógica, Epistemología, y Filosofía de la Ciencia (PHILOGICA)
+    es: |
+      Proyecto de investigación: "La pirámide visual: evolución de un instrumento conceptual" <br/>
+      Grupo de Investigación en Lógica, Epistemología, y Filosofía de la Ciencia (PHILOGICA)

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ .Site.Title }} - Juan R. Loaiza
+    </title>
+    <script src="https://kit.fontawesome.com/56ed2b6624.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+    {{ $style := resources.Get "css/main.css" }}
+    <link href="{{ $style.RelPermalink }}" rel="stylesheet">
+
+
+    <link rel="icon" type="image/png" href="#">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <div class="container mb-6">
+        <div class="columns">
+            <div class="column is-hidden-mobile"></div>
+            <div class="column is-three-quarters">
+                {{ partial "navbar" . }}
+
+                {{ partial "header" . }}
+
+                <div class="content container is-fluid">
+                    {{ block "title" .}}
+                    <h1>{{ .Title }}</h1>
+                    {{ end }}
+                    <!-- Code that all your templates share, like a header -->
+                    {{ block "main" . }}
+                    <!-- The part of the page that begins to differ between templates -->
+                    {{ end }}
+                </div>
+            </div>
+            <div class="column"></div>
+        </div>
+
+    </div>
+
+
+    {{ block "footer" . }}
+    <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+    {{ end }}
+</body>
+
+</html>

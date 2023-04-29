@@ -1,0 +1,19 @@
+contact: "Contact"
+email: "Email"
+competence: "Areas of competence"
+specialization: "Areas of specialization"
+
+education:
+  title: "Education"
+  thesis:
+    title: "Thesis"
+    supervisors:
+      one: "Supervisor"
+      other: "Supervisors"
+    examiners: "Examiners"
+    qualification: "Qualification"
+
+employment: "Academic employment"
+courses: "Courses"
+present: "Present"
+service: "Academic service"

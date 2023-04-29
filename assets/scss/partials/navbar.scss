@@ -1,0 +1,29 @@
+$primary-light: #e6e6e6;
+
+
+.navbar {
+  font-weight: 500;
+  font-size: 80%;
+
+  a {
+    position: relative;
+
+    &:after {
+      transition: all 0.5s;
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0;
+      content: '.';
+      color: transparent;
+      background: $primary-light;
+      height: 2px;
+    }
+
+    &:hover:after {
+      width: 100%;
+    }
+  }
+}

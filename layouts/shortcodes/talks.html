@@ -1,0 +1,22 @@
+<div>
+    {{ range site.Data.talks }}
+    <div class="columns">
+        <div class="column is-2">
+            {{ .date }}
+        </div>
+        <div class="column">
+            <strong>{{ .title }}</strong><br>
+            {{ .conference }}.
+            {{ .institution }}.<br>
+
+            {{ if .url}}
+            <a href="{{ .url }}">Online</a>
+            {{ else }}
+            {{ if i18n .city }}{{ i18n .city }}{{ else }}{{ .city }}{{end}},
+            {{ if i18n .country }}{{ i18n .country }}{{ else }}{{ .country }}{{ end }}
+            {{end}}
+        </div>
+    </div>
+
+    {{ end }}
+</div>
