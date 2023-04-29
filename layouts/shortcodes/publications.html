@@ -16,9 +16,9 @@
         {{.authors}} <br>
         {{.reference | markdownify }} <br>
         {{ if .doi }}
-        <a href="http://doi.org/ pub.doi "> {{.doi}} </a>
+        <a href="http://doi.org/{{ .doi }}"> {{.doi}} </a>
         {{ else if .url }}
-        <a href=" pub.url ">{{ .url }}</a>
+        <a href="{{ .url }}">{{ .url }}</a>
         {{ end }}
     </div>
 </div>
