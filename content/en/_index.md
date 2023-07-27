@@ -12,5 +12,5 @@ I have published papers in international journals such as [Review of Philosophy 
 
 Besides my research, I was a co-founding member of the Minorities and Philosophy (MAP) Berlin Chapter, I am a member of the [Sociedad Colombiana de Filosofía (SCF)](https://www.socolfil.org/), and a member and communications coordinator of the [Asociación Latinoamericana de Filosofía Analítica (ALFAn)](http://alfa-n.org/en/).
 
-I will soon be joining the [philosophy department](https://filosofiahumanidades.uahurtado.cl/departamentos/filosofia/) at the [Universidad Alberto Hurtado](https://www.uahurtado.cl/) (Santiago, Chile) as a full-time tenure-track professor.
+I recently joined the [philosophy department](https://filosofiahumanidades.uahurtado.cl/departamentos/filosofia/) at the [Universidad Alberto Hurtado](https://www.uahurtado.cl/) (Santiago, Chile) as a full-time tenure-track professor.
 

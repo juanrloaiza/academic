@@ -12,4 +12,4 @@ He publicado artículos en revistas académicas internacionales como [Review of 
 
 Además de mi investigación, fui miembro co-fundador del capítulo de Minorities and Philosophy Berlin, y soy miembro de la [Sociedad Colombiana de Filosofía (SCF)](https://www.socolfil.org/), y miembro y coordinador de comunicaciones de la [Asociación Latinoamericana de Filosofía Analítica (ALFAn)](http://alfa-n.org/es/).
 
-Próximamente me vincularé al [Departamento de Filosofía](https://filosofiahumanidades.uahurtado.cl/departamentos/filosofia/) de la [Universidad Alberto Hurtado](https://www.uahurtado.cl/) (Santiago, Chile) como académico de planta.
+Recientemente me vinculé al [Departamento de Filosofía](https://filosofiahumanidades.uahurtado.cl/departamentos/filosofia/) de la [Universidad Alberto Hurtado](https://www.uahurtado.cl/) (Santiago, Chile) como académico de planta.
