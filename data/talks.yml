@@ -1,3 +1,10 @@
+- date: 2023-09-20
+  title: La construcción social de la ciencia de la emoción
+  conference: "Workshop: Ontología Social en América Latina"
+  institution: Pontoficia Universidad Javeriana
+  city: Bogotá
+  country: Colombia
+
 - date: 2023-06-14
   title: The ontology, epistemology, and politics of folk emotion concepts in the science of emotion
   conference: '"Emotions – More Like Stars or Constellations?" Pre-Conference Workshop'
@@ -156,22 +163,23 @@
 
 - date: 2015-03-21
   title: "Blurring the lines between the natural sciences and the humanities: a case study on the research on emotions."
-  conference: DAAD Stipendiatentreffen (Geistes- und Kulturwissenschaften).
+  conference: DAAD Stipendiatentreffen (Geistes- und Kulturwissenschaften)
   organizer: Deutscher Akademischer Austauschdienst
   city: Jena
   country: Germany
 
 - date: 2014-09-16
   title: Una lectura del hombre de Molyneux en el Ensayo de una Nueva Teoría de la Visión de Berkeley (with Nicolás Montenegro).
-  conference: IX Encuentro de Filosofía e Historia de la Ciencia del Cono Sur.
-  organizer: Asociación de Filosofía e Historia de la Ciencia del Cono Sur
+  conference: IX Encuentro de Filosofía e Historia de la Ciencia del Cono Sur
+  organizer: Asociación de Filosofía e Historia de la Ciencia del Cono Sur (AFHIC)
   city: Córdoba
   country: Argentina
 
 - date: 2014-07-30
   title: "La naturalización de las emociones: dos confusiones gramaticales."
-  conference: V Congreso Colombiano de Filosofía.
-  organizer: Sociedad Colombiana de Filosofía – Universidad de Antioquia
+  conference: V Congreso Colombiano de Filosofía
+  organizer: Sociedad Colombiana de Filosofía
+  institution: Universidad de Antioquia
   city: Medellín
   country: Colombia
 
