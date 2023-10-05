@@ -1,10 +1,6 @@
 email: jloaiza@uahurtado.cl
 
 main:
-  - text: Twitter
-    url: https://twitter.com/JuanRLoaiza
-    icon: "fa-brands fa-twitter"
-
   - text: Mastodon
     url: https://hcommons.social/@juanrloaiza
     icon: "fa-brands fa-mastodon"
@@ -37,3 +33,7 @@ others:
   - text: PhilPapers
     icon: fa-brands fa-philpapers
     url: https://philpeople.org/profiles/j-r-loaiza
+
+  - text: Twitter
+    url: https://twitter.com/JuanRLoaiza
+    icon: "fa-brands fa-twitter"
