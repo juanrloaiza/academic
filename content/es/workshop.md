@@ -4,4 +4,4 @@ lang: es
 menu: main
 ---
 
-Organizadores: Juan R. Loaiza y Francisco Pereira
+blah
