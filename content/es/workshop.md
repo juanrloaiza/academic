@@ -1,7 +1,7 @@
 ---
 title: "Workshop: Emociones y comprensión"
-layout: main
 lang: es
+menu: main
 ---
 
 Organizadores: Juan R. Loaiza y Francisco Pereira
@@ -14,19 +14,9 @@ Universidad Alberto Hurtado
 
 # Información general
 
-+--------+-------------------------------------------------------------+
-| **F    | Jueves 16 de noviembre de 2023                              |
-| echa** |                                                             |
-+========+=============================================================+
-| **Hor  | 14:00-17:50                                                 |
-| ario** |                                                             |
-+--------+-------------------------------------------------------------+
-| **L    | Sala de Investigación, Casa Esperanza                       |
-| ugar** |                                                             |
-|        | Universidad Alberto Hurtado                                 |
-|        |                                                             |
-|        | Almirante Barroso 10                                        |
-+--------+-------------------------------------------------------------+
+**Fecha:** Jueves 16 de noviembre de 2023                              
+**Hora:**  14:00-17:50                                                 
+**Lugar:** Sala de Investigación, Casa Esperanza, Universidad Alberto Hurtado, Almirante Barroso 10 
 
 # Conferencistas
 
