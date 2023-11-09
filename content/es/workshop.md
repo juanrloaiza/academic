@@ -12,13 +12,13 @@ Departamento de Filosofía
 
 Universidad Alberto Hurtado
 
-# Información general
+## Información general
 
 **Fecha:** Jueves 16 de noviembre de 2023                              
 **Hora:**  14:00-17:50                                                 
 **Lugar:** Sala de Investigación, Casa Esperanza, Universidad Alberto Hurtado, Almirante Barroso 10 
 
-# Conferencistas
+## Conferencistas
 
 -   Dra. Andrea Melamed (UBA/SADAF, Argentina)
 
@@ -26,7 +26,7 @@ Universidad Alberto Hurtado
 
 -   Dr. Juan R. Loaiza (UAH, Chile)
 
-# Programa
+## Programa
 
 | **Hora**       | **Charla**                                                                                                                                                    |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -37,7 +37,7 @@ Universidad Alberto Hurtado
 | 16:30 -- 16:50 | Receso                                                                                                                                                        |
 | 16:50 -- 17:50 | Felipe de Nogueira Carvalho (UFMG, Brasil):  "Emotional engagements with fictional narratives: from the paradox of fiction to shared sociocultural practices" |
 
-# Resumen general
+## Resumen general
 
 El Departamento de Filosofía invita al Workshop \"Emociones y
 comprensión\". En este workshop contaremos con Andrea Melamed (Sociedad
@@ -70,9 +70,9 @@ emoción, realidad y ficción, y exploraremos la pregunta de cómo pueden
 surgir emociones en contextos de ficción y cómo esta relación nos da
 luces sobre el rol de las emociones en la interacción social.
 
-# Resúmenes de charlas
+## Resúmenes de charlas
 
-## Andrea Melamed (SADAF/UBA, Argentina): "Una aproximación al rol de las emociones en nuestra comprensión del mundo"
+### Andrea Melamed (SADAF/UBA, Argentina): "Una aproximación al rol de las emociones en nuestra comprensión del mundo"
 
 El debate sobre el pretendido carácter cognitivo de las emociones ha
 ocupado gran parte de los debates sobre la naturaleza de las emociones.
@@ -93,7 +93,7 @@ función de cómo percibimos un mundo (objetivo), sino que, por el
 contrario, sean nuestras emociones quiénes constituyen nuestra
 percepción del mundo.
 
-## Juan R. Loaiza (UAH, Chile): "Anglocentrismo en la ciencia de la emoción: retos epistémicos y prácticos"
+### Juan R. Loaiza (UAH, Chile): "Anglocentrismo en la ciencia de la emoción: retos epistémicos y prácticos"
 
 Un problema importante en la ciencia de las emociones es cuál es el
 origen de los conceptos de emoción utilizados en la práctica científica.
@@ -125,7 +125,7 @@ emociones corre el riesgo de producir lagunas en formas que son
 perjudiciales para la investigación científica y erosionan la
 objetividad y validez de la investigación actual.
 
-## Felipe de Nogueira Carvalho (UFMG, Brasil): "Emotional engagements with fictional narratives: from the paradox of fiction to shared sociocultural practices"
+### Felipe de Nogueira Carvalho (UFMG, Brasil): "Emotional engagements with fictional narratives: from the paradox of fiction to shared sociocultural practices"
 
 Emotions are central to our engagements with fictional narratives, and
 partly ground our evaluations of literary works. Nevertheless, there are
