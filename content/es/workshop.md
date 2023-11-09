@@ -28,30 +28,14 @@ Universidad Alberto Hurtado
 
 # Programa
 
-  -----------------------------------------------------------------------
-  **Hora**      **Charla**
-  ------------- ---------------------------------------------------------
-  14:00 --      Bienvenida
-  14:10         
-
-  14:10 --      Andrea Melamed (SADAF/UBA, Argentina):\
-  15:10         "Una aproximación al rol de las emociones en nuestra
-                comprensión del mundo"
-
-  15:10 --      Receso
-  15:30         
-
-  15:30 --      Juan R. Loaiza (UAH, Chile):\
-  16:30         "Anglocentrismo en la ciencia de la emoción: retos
-                epistémicos y prácticos"
-
-  16:30 --      Receso
-  16:50         
-
-  16:50 - 17:50 Felipe de Nogueira Carvalho (UFMG, Brasil):\
-                "Emotional engagements with fictional narratives: from
-                the paradox of fiction to shared sociocultural practices"
-  -----------------------------------------------------------------------
+| **Hora**       | **Charla**                                                                                                                                                    |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 14:00 -- 14:10 | Bienvenida                                                                                                                                                    |
+| 14:10 -- 15:10 | Andrea Melamed (SADAF/UBA, Argentina):  "Una aproximación al rol de las emociones en nuestra comprensión del mundo"                                           |
+| 15:10 -- 15:30 | Receso                                                                                                                                                        |
+| 15:30 -- 16:30 | Juan R. Loaiza (UAH, Chile): "Anglocentrismo en la ciencia de la emoción: retos epistémicos y prácticos"                                                      |
+| 16:30 -- 16:50 | Receso                                                                                                                                                        |
+| 16:50 -- 17:50 | Felipe de Nogueira Carvalho (UFMG, Brasil):  "Emotional engagements with fictional narratives: from the paradox of fiction to shared sociocultural practices" |
 
 # Resumen general
 
