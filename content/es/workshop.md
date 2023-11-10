@@ -4,4 +4,5 @@ lang: es
 menu: main
 ---
 
-blah
+<div>blah
+</div>
