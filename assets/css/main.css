@@ -1,14 +1,15 @@
-@import "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600&family=Roboto:wght@300;400;500;600&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600&family=Atkinson+Hyperlegible:wght@300;400;500;600&display=swap";
 
 body {
-  font-family: "Roboto";
+  font-family: "Atkinson Hyperlegible", "Roboto", sans-serif;
   font-weight: 400;
+  font-size: 14pt;
 }
 
 .title {
   font-size: 60px;
   font-weight: 400;
-  font-family: "Roboto Mono";
+  font-family: "Roboto Slab";
   margin-bottom: 2rem;
 }
 
@@ -81,6 +82,5 @@ a:hover {
 /*# sourceMappingURL=main.css.map */
 
 td {
-  font-size: 12pt;
   max-width: 35em;
 }
