@@ -17,9 +17,9 @@ Universidad Alberto Hurtado<br/>
 
 ### Información general
 
-**Fecha**: Jueves 16 de noviembre de 2023<br/>
-**Horario**: 14:00-17:50<br/>
-**Lugar**: Sala de Investigación, Casa Esperanza<br/>
+**Fecha y hora**: Jueves 16 de noviembre de 2023, 14:00-17:50<br/>
+**Salón**: Sala de Investigación, Casa Esperanza </br>
+**Dirección**: [Universidad Alberto Hurtado (Almirante Barroso 10, Santiago)](https://maps.app.goo.gl/RzFFUGY1Z4FrcHMw5)
 
 <a class="button is-warning" href="https://docs.google.com/forms/d/e/1FAIpQLSfPa5x5pDvXHhYDdu2U0S7E9vzdUwRnltMqAW_I6aSxdhhKag/viewform">
 Inscríbete aquí</a>
