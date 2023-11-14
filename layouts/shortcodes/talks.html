@@ -1,21 +1,22 @@
 <div>
     {{ range site.Data.talks }}
-    <div class="columns">
-        <div class="column is-2">
-            {{ .date }}
+    <div class="columns is-tablet">
+        <div class="column is-2-tablet is-1-widescreen mr-3">
+            {{ time.Format "01.2006" .date }}
         </div>
         <div class="column">
             <strong>{{ .title }}</strong><br>
-            {{ .conference }}.
-            {{ if .organizer }}{{ .organizer}}.{{ end }}
-            {{ if .institution }}{{ .institution }}.{{ end }}<br>
+            {{ .conference }}<br>
+            <small>
+                {{ if .organizer }}{{ .organizer}} - {{ end }}
+                {{ if .institution }}{{ .institution }}{{ end }}
 
-            {{ if .url}}
-            <a href="{{ .url }}">Online</a>
-            {{ else }}
-            {{ if i18n .city }}{{ i18n .city }}{{ else }}{{ .city }}{{end}},
-            {{ if i18n .country }}{{ i18n .country }}{{ else }}{{ .country }}{{ end }}
-            {{end}}
+                {{ if .url}}
+                <a href="{{ .url }}">(Online)</a>
+                {{ else }}
+                ({{ if i18n .city }}{{ i18n .city }}{{ else }}{{ .city }}{{end}},
+                {{ if i18n .country }}{{ i18n .country }}{{ else }}{{ .country }}{{ end }})
+                {{end}}</small>
         </div>
     </div>
 
