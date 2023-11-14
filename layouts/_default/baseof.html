@@ -26,21 +26,26 @@
             <div class="column is-three-quarters">
                 {{ partial "navbar" . }}
 
+                {{ with .Params.skipHeader }}
+                <div class="mb-6"></div>
+                {{ else }}
                 {{ partial "header" . }}
+                {{ end }}
+
 
                 <div class="content container is-fluid">
+
                     {{ block "title" .}}
                     <h1 class="has-text-centered">{{ .Title }}</h1>
                     {{ end }}
-                    <!-- Code that all your templates share, like a header -->
+
                     {{ block "main" . }}
                     <!-- The part of the page that begins to differ between templates -->
                     {{ end }}
+
                 </div>
                 <hr />
-                <div class="has-text-centered is-size-7 has-text-grey mt-4">
-                    <div class="">{{ i18n "update" }}: {{ now.Format "Jan 2006" }}</div>
-                </div>
+                {{ partial "footer" . }}
             </div>
             <div class="column"></div>
         </div>

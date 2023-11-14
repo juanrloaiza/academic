@@ -1,6 +1,7 @@
-@import "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600&family=Roboto:wght@300;400;500;600&display=swap";
+
 body {
-  font-family: "Roboto Mono";
+  font-family: "Roboto";
   font-weight: 400;
 }
 
@@ -27,9 +28,11 @@ table {
   font-weight: 500;
   font-size: 80%;
 }
+
 .navbar a {
   position: relative;
 }
+
 .navbar a:after {
   transition: all 0.5s;
   position: absolute;
@@ -43,6 +46,7 @@ table {
   background: #e6e6e6;
   height: 2px;
 }
+
 .navbar a:hover:after {
   width: 100%;
 }
@@ -53,6 +57,7 @@ table {
   letter-spacing: 1rem;
   margin-top: 2.5rem;
 }
+
 #logos i {
   color: #363636;
 }
@@ -64,6 +69,7 @@ table {
 a {
   color: #2B5598;
 }
+
 a:hover {
   color: #7690A7;
 }
@@ -73,3 +79,8 @@ a:hover {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+td {
+  font-size: 12pt;
+  max-width: 35em;
+}
