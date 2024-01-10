@@ -12,3 +12,9 @@ languages:
         contentDir: content/en
     es:
         contentDir: content/es
+
+menus:
+    main:
+        - name: Blog
+          url: "https://blog.juanrloaiza.com/"
+          weight: 10
