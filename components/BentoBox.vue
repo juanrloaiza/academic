@@ -8,7 +8,10 @@ const props = defineProps({
         type: Number,
         required: true
     },
-    target: String
+    target: {
+        type: String,
+        default: "TARGET"
+    }
 })
 
 // We need to use this map because Tailwind
@@ -32,10 +35,15 @@ const rowsMap: { [rows: number]: string} = {
     6: 'row-span-6',
 }
 
+const localePath = useLocalePath();
+
 </script>
 
 <template>
-    <div :class="`${colsMap[cols]} ${rowsMap[rows]} border min-h-5`">
-        {{ target }}
-    </div>
+    <NuxtLink :to="localePath(target)" :class="`${colsMap[cols]} ${rowsMap[rows]}`"
+        class="border min-h-40 p-3 rounded-md
+        hover:border-4">
+        <h4 class="text-2xl mb-1">{{ $t(`${target}.title`) }}</h4>
+        <div>{{ $t(`${target}.description`) }}</div>
+    </NuxtLink>
 </template>
