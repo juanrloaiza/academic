@@ -11,5 +11,17 @@ export default defineNuxtConfig({
     locales: ['es', 'en'],
     defaultLocale: 'es',
     strategy: 'prefix'
+  },
+  tailwindcss: {
+    config: 
+    {
+      content: [
+        "./pages/**/*.{vue,html,js}",
+        "./components/**/*.{vue,html,js}",
+      ],
+      theme: {
+
+      }
+    }
   }
 })
