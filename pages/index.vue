@@ -1,3 +1,4 @@
 <template>
-    This is the home page!
+    <LangSwitcher/>
+    {{ $t('homePage') }}
 </template>
