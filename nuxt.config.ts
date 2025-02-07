@@ -24,8 +24,5 @@ export default defineNuxtConfig({
 
       }
     }
-  },
-  content: {
-    
   }
 })
