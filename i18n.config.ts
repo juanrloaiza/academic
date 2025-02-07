@@ -3,13 +3,31 @@ export default defineI18nConfig(() => ({
   locale: "es",
   messages: {
     en: {
-      homePage: "This is the home page!",
-      about: "About me",
-      cv: "CV",
-      pubs: "Publications",
-      teaching: "Teaching",
-      talks: "Selected talks",
-      other: "Other projects",
+      homePage: "¡Este es el inicio!",
+      about: {
+        title: "About me",
+        description: "Interests · Research areas · Contact",
+      },
+      cv: {
+        title: "CV",
+        description: "Education · Experience · Service",
+      },
+      pubs: {
+        title: "Publications",
+        description: "Articles · Book chapters",
+      },
+      teaching: {
+        title: "Teaching",
+        description: "Courses · Programs",
+      },
+      talks: {
+        title: "Selected talks",
+        description: "Latest selected talks",
+      },
+      other: {
+        title: "Other projects",
+        description: "Projects outside my main research",
+      },
     },
     es: {
       homePage: "¡Este es el inicio!",
