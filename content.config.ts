@@ -8,13 +8,15 @@ export default defineContentConfig({
       schema: z.object({
         authors: z.string(),
         title: z.string(),
-        year: z.number(),
+        year: z.number().or(z.string()),
         journal: z.string().optional(),
         volume: z.number().optional(),
         issue: z.number().optional(),
         booktitle: z.string().optional(),
         doi: z.string().optional(),
-        openaccess: z.boolean().optional()
+        openaccess: z.boolean().optional(),
+        url: z.string().url().optional(),
+        pages: z.string().regex(/^\d+\-\d+/).optional()
       })
     })
   }
