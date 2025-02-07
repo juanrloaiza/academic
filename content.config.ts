@@ -16,7 +16,8 @@ export default defineContentConfig({
         doi: z.string().optional(),
         openaccess: z.boolean().optional(),
         url: z.string().url().optional(),
-        pages: z.string().regex(/^\d+\-\d+/).optional()
+        pages: z.string().regex(/^\d+\-\d+/).optional(),
+        abstract: z.string().optional()
       })
     })
   }
