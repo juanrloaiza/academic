@@ -5,7 +5,7 @@ const config = useAppConfig();
 <template>
   <div>
     <div class="max-w-6xl mx-auto pt-6">
-      <div class="flex justify-between items-center">
+      <div class="flex justify-between items-center min-h-[5rem]">
         <NuxtLink to="/">
           <h1 class="text-4xl font-extrabold">{{ config.title }}</h1>
         </NuxtLink>
