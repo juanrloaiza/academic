@@ -1,3 +1,4 @@
 export default defineAppConfig({
-    title: 'Juan R. Loaiza'
-})
+  title: "Juan R. Loaiza",
+  
+});
