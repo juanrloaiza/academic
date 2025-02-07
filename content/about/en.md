@@ -1,7 +1,15 @@
 ---
-title: Home
-menu: main
-weight: 1
+photo: '/'
+lang: en
+areas:
+    specialization:
+    - Philosophy of emotions
+    - Philosophy of psychology and neuroscience
+    - Ontology and natural kinds
+    competence:
+    - Social ontology
+    - Analytic philosophy
+    - Modern philosophy
 ---
 
 I'm a philosopher interested in interdisciplinary approaches to emotions, particularly in the frontier between philosophy, psychology, neuroscience, and the social sciences.
@@ -11,6 +19,5 @@ Since 2023 I'm an associate professor in the [Department of Philosophy](https://
 I have published papers in international journals such as [Review of Philosophy and Psychology (2021)](https://link.springer.com/article/10.1007%2Fs13164-020-00492-8) and [The British Journal for the Philosophy of Science (2024)](https://www.journals.uchicago.edu/doi/abs/10.1086/715207), as well as in Latin American journals such as [Ideas y Valores (2022)](https://revistas.unal.edu.co/index.php/idval/article/view/103859) and [Perspectiva Filosófica (2022)](https://periodicos.ufpe.br/revistas/perspectivafilosofica/article/view/256754/42986).
 
 Besides my research, I am a member of the [Sociedad Colombiana de Filosofía (SCF)](https://www.socolfil.org/), and a member and communications coordinator of the [Asociación Latinoamericana de Filosofía Analítica (ALFAn)](http://alfan.org/en/).
-
 
 

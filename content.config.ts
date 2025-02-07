@@ -19,6 +19,19 @@ export default defineContentConfig({
         pages: z.string().regex(/^\d+\-\d+/).optional(),
         abstract: z.string().optional()
       })
+    }),
+    about: defineCollection({
+      type: 'page',
+      source: 'about/*.md',
+      schema: z.object({
+        photo: z.string(),
+        lang: z.string(),
+        areas: z.object({
+          competence: z.array(z.string()),
+          specialization: z.array(z.string())
+        })
+        //body: z.string(), // See https://github.com/nuxt/content/issues/3052#issuecomment-2619468128
+      })
     })
   }
 })

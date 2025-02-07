@@ -28,6 +28,8 @@ export default defineI18nConfig(() => ({
         title: "Other projects",
         description: "Projects outside my main research",
       },
+      competence: "Areas of competence",
+      specialization: "Areas of specialization"
     },
     es: {
       homePage: "¡Este es el inicio!",
@@ -55,6 +57,8 @@ export default defineI18nConfig(() => ({
         title: "Otros proyectos",
         description: "Proyectos fuera de mi investigación principal",
       },
+            competence: "Áreas de competencia",
+      specialization: "Áreas de especialización"
     },
   },
 }));

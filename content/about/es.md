@@ -1,7 +1,15 @@
 ---
-title: Inicio
-menu: main
-weight: 1
+photo: /
+lang: es
+areas:
+    specialization:
+    - Filosofía de las emociones
+    - Filosofía de la psicología y de la neurociencia
+    - Ontología y clases naturales
+    competence:
+    - Ontología social
+    - Filosofía analítica
+    - Filosofía moderna
 ---
 
 Soy un filósofo interesado en las aproximaciones interdisciplinares a las emociones, particularmente en la frontera entre la filosofía, la psicología, la neurociencia y las ciencias sociales.
