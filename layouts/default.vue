@@ -6,9 +6,9 @@ const config = useAppConfig();
   <div>
     <div class="max-w-6xl mx-auto pt-6">
       <div class="flex justify-between items-center min-h-[5rem]">
-        <NuxtLink to="/">
+        <NuxtLinkLocale to="/">
           <h1 class="text-4xl font-extrabold">{{ config.title }}</h1>
-        </NuxtLink>
+        </NuxtLinkLocale>
         <LangSwitcher />
       </div>
       <div class="mt-6 text-xl">
