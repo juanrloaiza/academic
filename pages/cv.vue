@@ -1,3 +1,7 @@
+<script setup lang="ts">
+
+</script>
+
 <template>
-    This is my CV.
+    <PageTitle title="CV" />
 </template>

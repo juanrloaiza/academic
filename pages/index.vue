@@ -3,10 +3,7 @@ const config = useAppConfig();
 </script>
 
 <template>
-  <LangSwitcher />
-  <div class="max-w-6xl mx-auto pt-6">
-    <h1 class="text-4xl font-extrabold">{{ config.title }}</h1>
-    <div class="my-6 grid grid-cols-12 grid-flow-dense gap-4">
+  <div class="my-6 grid grid-cols-12 grid-flow-dense gap-4">
       <BentoBox :cols="3" :rows="1" target="about"></BentoBox>
       <BentoBox :cols="4" :rows="1" target="cv"></BentoBox>
       <BentoBox :cols="5" :rows="1" target="pubs"></BentoBox>
@@ -14,5 +11,4 @@ const config = useAppConfig();
       <BentoBox :cols="4" :rows="1" target="teaching"></BentoBox>
       <BentoBox :cols="4" :rows="1" target="other"></BentoBox>
     </div>
-  </div>
 </template>

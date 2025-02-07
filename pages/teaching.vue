@@ -3,5 +3,5 @@
 </script>
 
 <template>
-    <PageTitle :title='$t("talks.title")' />
+    <PageTitle :title='$t("teaching.title")' />
 </template>
