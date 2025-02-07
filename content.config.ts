@@ -6,8 +6,15 @@ export default defineContentConfig({
       type: 'data',
       source: 'publications/*.yml',
       schema: z.object({
-        doi: z.string(),
-        title: z.string()
+        authors: z.string(),
+        title: z.string(),
+        year: z.number(),
+        journal: z.string().optional(),
+        volume: z.number().optional(),
+        issue: z.number().optional(),
+        booktitle: z.string().optional(),
+        doi: z.string().optional(),
+        openaccess: z.boolean().optional()
       })
     })
   }

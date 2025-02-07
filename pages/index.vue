@@ -12,3 +12,6 @@ const config = useAppConfig();
       <BentoBox :cols="4" :rows="1" target="other"></BentoBox>
     </div>
 </template>
+
+<style>
+</style>
