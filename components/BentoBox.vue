@@ -43,7 +43,7 @@ const localePath = useLocalePath();
     <NuxtLink :to="localePath(target)" :class="`${colsMap[cols]} ${rowsMap[rows]}`"
         class="border border-black min-h-40 p-3 rounded-md
         hover:border-4 hover:border-orange-300">
-        <h4 class="text-2xl mb-1">{{ $t(`${target}.title`) }}</h4>
+        <h4 class="text-2xl font-bold mb-1">{{ $t(`${target}.title`) }}</h4>
         <div>{{ $t(`${target}.description`) }}</div>
     </NuxtLink>
 </template>

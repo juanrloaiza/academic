@@ -8,7 +8,8 @@ const availableLocales = computed(() => {
 </script>
 
 <template>
-  <NuxtLink v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale)">
+  <NuxtLink v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale)"
+  class="px-3 py-1 border border-black my-5 hover:border-4">
     {{ locale.toUpperCase() }}
   </NuxtLink>
 </template>
