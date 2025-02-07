@@ -11,6 +11,10 @@ const props = defineProps({
     target: {
         type: String,
         default: "TARGET"
+    },
+    color: {
+        type: String,
+        default: 'none'
     }
 })
 
@@ -35,15 +39,25 @@ const rowsMap: { [rows: number]: string} = {
     6: 'row-span-6',
 }
 
+const colorMap: { [color: string]: string} = {
+    'green': 'bg-green-300',
+    'blue': 'bg-blue-300',
+    'purple': 'bg-purple-300',
+    'red': 'bg-red-300',
+    'orange': 'bg-orange-300',
+    'yellow': 'bg-yellow-300',
+    'none': 'bg-none'
+}
+
 const localePath = useLocalePath();
 
 </script>
 
 <template>
-    <NuxtLink :to="localePath(target)" :class="`${colsMap[cols]} ${rowsMap[rows]}`"
-        class="border border-black min-h-40 p-3 rounded-md
-        hover:border-4 hover:border-orange-300">
+    <NuxtLink :to="localePath(target)" :class="`${colsMap[cols]} ${rowsMap[rows]} ${colorMap[color]}`"
+        class="min-h-60 p-3 rounded-md
+        hover:border-4 hover:border-black hover:border-1">
         <h4 class="text-2xl font-bold mb-1">{{ $t(`${target}.title`) }}</h4>
-        <div>{{ $t(`${target}.description`) }}</div>
+        <div class="text-xl">{{ $t(`${target}.description`) }}</div>
     </NuxtLink>
 </template>
