@@ -9,7 +9,7 @@ const openAbstract = () => {
 </script>
 
 <template>
-  <div class="flex">
+  <div class="flex justify-between">
     <div>
       <a
         :href="pub.doi ? `https://doi.org/${pub.doi}` : pub.url ? pub.url : '#'"
@@ -37,7 +37,7 @@ const openAbstract = () => {
     <button
       v-if="pub.abstract"
       @click="openAbstract"
-      class="min-w-10"
+      class="mx-4"
       :class="isAbstractOpen ? 'self-start' : ''"
     >
       <Icon
