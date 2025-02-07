@@ -11,7 +11,7 @@ const config = useAppConfig();
         </NuxtLink>
         <LangSwitcher />
       </div>
-      <div class="mt-6">
+      <div class="mt-6 text-xl">
         <slot />
       </div>
     </div>
