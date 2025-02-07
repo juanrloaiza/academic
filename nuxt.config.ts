@@ -4,7 +4,8 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   modules: [
     '@nuxtjs/i18n',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxt/content'
   ],
   i18n: {
     vueI18n: './i18n.config.ts',
@@ -23,5 +24,8 @@ export default defineNuxtConfig({
 
       }
     }
+  },
+  content: {
+    
   }
 })
