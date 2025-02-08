@@ -8,7 +8,7 @@ const config = useAppConfig();
       <BentoBox color="green" :cols="3" :rows="1" target="about"></BentoBox>
       <BentoBox color="blue" :cols="4" :rows="1" target="cv"></BentoBox>
       <BentoBox color="yellow" :cols="5" :rows="1" target="pubs"></BentoBox>
-      <BentoBox color="orange" :cols="4" :rows="1" target="talks"></BentoBox>
+      <BentoBox color="orange" :cols="4" :rows="1" target="blog"></BentoBox>
       <BentoBox color="purple" :cols="4" :rows="1" target="teaching"></BentoBox>
       <BentoBox color="red" :cols="4" :rows="1" target="other"></BentoBox>
     </div>
