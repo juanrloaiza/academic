@@ -10,9 +10,6 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@citation-js/core": "^0.7.18",
-    "@citation-js/plugin-csl": "^0.7.18",
-    "@citation-js/plugin-doi": "^0.7.18",
     "@nuxt/content": "^3.1.0",
     "@nuxt/icon": "1.10.3",
     "@nuxtjs/i18n": "9.1.5",
