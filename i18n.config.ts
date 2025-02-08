@@ -34,6 +34,14 @@ export default defineI18nConfig(() => ({
       },
       competence: "Areas of competence",
       specialization: "Areas of specialization",
+      education: "Education",
+      thesis: "Thesis",
+      supervisors: "Supervisors",
+      examiners: "Examiners",
+      qualification: "Qualification",
+      employment: "Academic employment",
+      service: "Academic service and appointments",
+      present: "Present"
     },
     es: {
       homePage: "¡Este es el inicio!",
@@ -67,6 +75,14 @@ export default defineI18nConfig(() => ({
       },
       competence: "Áreas de competencia",
       specialization: "Áreas de especialización",
+      education: "Educación",
+      thesis: "Tesis",
+      supervisors: "Supervisión",
+      examiners: "Examen",
+      qualification: "Calificación",
+      employment: "Experiencia académica",
+      service: "Servicio académico y otros roles",
+      present: "Presente"
     },
   },
 }));

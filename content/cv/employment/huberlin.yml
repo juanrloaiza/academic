@@ -1,0 +1,13 @@
+type: employment
+role:
+  en: Lecturer
+  es: Docente de cátedra
+start_date: "10.2017"
+end_date: "02.2019"
+startYear: 2017
+endYear: 2019
+institution: Humboldt-Universität zu Berlin
+faculty: Berlin School of Mind and Brain
+courses:
+  - "Tutorial: Philosophy of Mind"
+  - "Psychology of Emotions"

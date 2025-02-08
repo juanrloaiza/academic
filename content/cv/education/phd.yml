@@ -1,0 +1,20 @@
+type: education
+role:
+  en: PhD in Philosophy
+  es: Doctorado en Filosofía
+startYear: 2016
+endYear: 2020
+institution: Humboldt-Universität zu Berlin
+faculty: Berlin School of Mind and Brain
+thesis:
+  title: "Emotions as functional kinds: a meta-theoretical approach to constructing scientific theories of emotions."
+  supervisors:
+    - Michael Pauen
+    - Jesse Prinz
+    - Isabel Dziobek
+  examiners: 
+  - Michael Pauen
+  - Jesse Prinz
+  - Henrik Walter
+  qualification: Summa Cum Laude
+dates: 10.2016 - 07.2020

@@ -1,0 +1,14 @@
+type: education
+role:
+  en: Philosophy
+  es: Filósofo
+startYear: 2009
+endYear: 2014
+dates: 07.2009 - 03.2014
+institution: Universidad del Rosario
+faculty: Escuela de Ciencias Humanas
+thesis:
+  title: "La naturalización de las emociones: anotaciones a partir de Wittgenstein"
+  supervisors:
+    - Carlos Alberto Cardona Suárez
+  qualification: Tesis meritoria

@@ -1,11 +1,11 @@
-- position:
+- role:
     en: Associate Professor
     es: Profesor asociado
   start_date: "03.2023"
   institution: Universidad Alberto Hurtado
   faculty: Departamento de Filosofía, Facultad de Filosofía y Humanidades
 
-- position:
+- role:
     en: Adjunct lecturer
     es: Profesor de hora cátedra
   start_date: "01.2020"
@@ -17,7 +17,7 @@
     - "Lógica ECH"
     - "Metodologías de Investigación"
 
-- position:
+- role:
     en: Lecturer
     es: Docente de cátedra
   start_date: "10.2017"
@@ -28,7 +28,7 @@
     - "Tutorial: Philosophy of Mind"
     - "Psychology of Emotions"
 
-- position:
+- role:
     en: Research Assistant
     es: Asistente de investigación
   start_date: "01.2013"
