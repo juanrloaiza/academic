@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { CourseDescription } from '#components';
 
-const { data: courses } = await useAsyncData(()=>queryCollection('courses').all())
+const { data: courses } = await useAsyncData(()=>queryCollection('courses').all(),
+{
+  transform: (courses) => courses.reverse()
+})
 
 </script>
 
