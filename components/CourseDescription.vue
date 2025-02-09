@@ -10,6 +10,7 @@ defineProps<{
   name: Partial<Record<'en' | 'es', string>>,
   level: string,
   description?: String,
+  syllabus?: string
 }>();
 
 const isAbstractOpen = ref(false);
@@ -42,7 +43,7 @@ const openAbstract = () => {
       class="text-base my-3 max-w-[75ch] pl-5 border-l-2"
     >
       {{ description || lorem.generateWords(50) }}
-      <div class="text-blue-800 mt-3"><a>{{ $t('syllabus') }}</a></div>
+      <div v-if="syllabus" class="text-blue-800 mt-3"><a>{{ $t('syllabus') }}</a></div>
     </div>
   </div>
 </template>

@@ -2,7 +2,8 @@
 
 ## Hacia el MVP
 
-- [ ] Construir el sitio de docencia
+- [X] Construir el sitio de docencia
+  - [X] Implementar lógica para programas
 - [ ] Arreglar las imágenes del blog
 - [ ] Construir el sitio de otros proyectos
 - [ ] Hacer los botones de redes sociales
