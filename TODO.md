@@ -14,3 +14,8 @@
 - [ ] Decidir un subtítulo para la navegación
 - [ ] Decidir una paleta de color
 - [ ] Implementar estilos de tema oscuro
+
+## Refactor
+
+- [ ] Pubs and teaching items have abstracts with the same styles. We can abstract to a component.
+- [ ] Pubs and teaching items reveal the abstract with a button. We can abstract to a component.
