@@ -67,6 +67,16 @@ export default defineContentConfig({
         tags: z.array(z.string()).optional(),
         summary: z.string().optional()
       })
+    }),
+    courses: defineCollection({
+      type: 'data',
+      source: 'courses/**/*.md',
+      schema: z.object({
+        name: z.string(),
+        level: z.string(),
+        description: z.string().optional(),
+        syllabus: z.string().optional()
+      })
     })
   },
 });
