@@ -18,8 +18,8 @@ const { data: forthcoming } = await useAsyncData(() =>
 <template>
   <PageTitle :title="$t('pubs.title')" />
 
-  <Article v-for="(pub, index) in forthcoming" :pub="pub" :key="index" class="mb-2" />
+  <Article v-for="(pub, index) in forthcoming" :pub="pub" :key="`pub-${index}-f`" class="mb-2" />
 
-  <Article v-for="(pub, index) in pubs" :pub="pub" :key="index" class="mb-2" />
+  <Article v-for="(pub, index) in pubs" :pub="pub" :key="`pub-${index}-p`" class="mb-2" />
     
 </template>
