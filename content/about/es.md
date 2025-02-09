@@ -2,11 +2,11 @@
 photo: /
 lang: es
 areas:
-    specialization:
+  specialization:
     - Filosofía de las emociones
     - Filosofía de la psicología y de la neurociencia
     - Ontología y clases naturales
-    competence:
+  competence:
     - Ontología social
     - Filosofía analítica
     - Filosofía moderna
@@ -19,4 +19,3 @@ Desde 2023 soy profesor asociado del [Departamento de Filosofía](https://filoso
 He publicado artículos en revistas académicas internacionales como [Review of Philosophy and Psychology (2021)](https://link.springer.com/article/10.1007%2Fs13164-020-00492-8) y [The British Journal for the Philosophy of Science (en prensa)](https://www.journals.uchicago.edu/doi/abs/10.1086/715207), y en revistas académicas latinoamericanas como [Ideas y Valores (2022)](https://revistas.unal.edu.co/index.php/idval/article/view/103859) y [Perspectiva Filosófica (2022)](https://periodicos.ufpe.br/revistas/perspectivafilosofica/article/view/256754/42986).
 
 Además de mi investigación, soy miembro de la [Sociedad Colombiana de Filosofía (SCF)](https://www.socolfil.org/), y miembro y coordinador de comunicaciones de la [Asociación Latinoamericana de Filosofía Analítica (ALFAn)](http://alfan.org/es/).
-

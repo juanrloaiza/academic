@@ -77,6 +77,13 @@ export default defineContentConfig({
         description: z.string().optional(),
         syllabus: z.string().optional()
       })
+    }),
+    otherProjects: defineCollection({
+      type: 'page',
+      source: 'others/*.md',
+      schema: z.object({
+        lang: z.enum(['en', 'es'])
+      })
     })
   },
 });
