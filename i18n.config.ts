@@ -45,7 +45,8 @@ export default defineI18nConfig(() => ({
       backblog: "Back to the blog",
       pregrado: "Undergraduate",
       master: "Masters",
-      phd: "Doctorate"
+      phd: "Doctorate",
+      syllabus: "Syllabus",
     },
     es: {
       homePage: "¡Este es el inicio!",
@@ -90,7 +91,8 @@ export default defineI18nConfig(() => ({
       backblog: "Regreso al blog",
       pregrado: "Pregrado",
       master: "Maestría",
-      phd: "Doctorado"
+      phd: "Doctorado",
+      syllabus: "Programa",
     },
   },
 }));
