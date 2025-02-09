@@ -20,7 +20,7 @@ The post invited the reader to do the following:
 
 If you run the simulation and calculate how much change occurs after each type of feedback (I'll post the code at the end), the results are the following:
 
-![](example.png)
+![](/blog/2024.teaching-feedback-example.png)
 
 Amazing! The dice that performed poorly, after receiving negative feedback, improved substantially! Conversely, the dice that did well, after receiving positive feedback, did worse at the next try. One could therefore conclude that negative feedback improves performance, while positive feedback hinders it. This aligns well with the intuition some teachers may have that we should focus on negative feedback and prevent our students from becoming lazy after getting positive feedback. However, it would be very strange to think that giving the dice feedback somehow changed their performance. Therefore, we must conclude that something else is going on.
 
