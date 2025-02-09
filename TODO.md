@@ -25,3 +25,7 @@
 
 - [ ] Pubs and teaching items have abstracts with the same styles. We can abstract to a component.
 - [ ] Pubs and teaching items reveal the abstract with a button. We can abstract to a component.
+
+## Future
+
+- [ ] Check if [nuxt-content-assets](https://github.com/davestewart/nuxt-content-assets/issues/90) suppors Nuxt Content V3.
