@@ -1,5 +1,5 @@
 <script setup lang="ts">
-//import dayjs from 'dayjs';
+import dayjs from 'dayjs';
 
 const { slug, year } = useRoute().params;
 
@@ -7,9 +7,7 @@ const { data: post } = await useAsyncData(() =>
 	queryCollection('blog').path(`/blog/${year}/${slug}`).first()
 );
 
-const formatDate = (dateString: string) =>
-dateString	
-//dayjs(dateString).format('YYYY.MM.DD');
+const formatDate = (dateString: string) => dayjs(dateString).format('YYYY.MM.DD');
 </script>
 
 <template>
