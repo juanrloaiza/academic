@@ -3,6 +3,7 @@
 @import "./markdown.css";  /* Custom for markdown related stuff */
 
 @theme {
+    --font-sans: ui-sans-serif, system-ui, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 html {
