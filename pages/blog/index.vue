@@ -31,16 +31,25 @@ if (blogpostsByYear.value) {
 
 <template>
   <PageTitle title="Blog" />
-  <div v-for="year of years" class="blog-list grid grid-cols-12 gap-x-4">
-    <div class="col-span-1">{{ year }}</div>
+  <div v-for="year of years" class="blog-list grid grid-cols-12 gap-x-4 items-baseline">
+    <div class="col-span-1 text-sm">{{ year }}</div>
     <div class="col-span-11">
       <div
         v-if="blogpostsByYear"
         v-for="post of blogpostsByYear[Number(year)]"
-        class="mb-3"
+        class="mb-5"
       >
         <NuxtLink :to="post.path"><MDC :value="post.title" /></NuxtLink>
+
         <div v-if="post.summary" class="text-base">{{ post.summary }}</div>
+        <div class="flex">
+          <div
+            v-for="tag in post.tags"
+            class="text-xs bg-gray-200 align-baseline mr-3 mt-2 py-0.5 px-1.5 rounded-sm"
+          >
+            {{ tag }}
+          </div>
+        </div>
       </div>
     </div>
   </div>
