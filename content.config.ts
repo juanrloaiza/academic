@@ -72,7 +72,7 @@ export default defineContentConfig({
       type: 'data',
       source: 'courses/**/*.yml',
       schema: z.object({
-        name: z.string(),
+        name: z.object({en: z.string(), es: z.string()}),
         level: z.string(),
         description: z.string().optional(),
         syllabus: z.string().optional()

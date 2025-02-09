@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { CourseDescription } from '#components';
+
 const { data: courses } = await useAsyncData(()=>queryCollection('courses').all())
 
 </script>
@@ -8,12 +10,6 @@ const { data: courses } = await useAsyncData(()=>queryCollection('courses').all(
 
   <h3 class="text-2xl font-bold mb-3">Cursos</h3>
 
-  <CourseDescription v-for="course in courses" v-bind="course"/>
-  <CourseDescription courseName="Wittgenstein" courseLevel="Pregrado"/>
-  <CourseDescription courseName="Seminario: Emociones básicas y clases naturales" courseLevel="Doctorado"/>
-
-  <CourseDescription courseName="Teoría del Conocimiento" courseLevel="Pregrado"/>
-
-  
+  <CourseDescription v-if="courses" v-for="course in courses" v-bind="course"/>  
   
 </template>

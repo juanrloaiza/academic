@@ -42,7 +42,10 @@ export default defineI18nConfig(() => ({
       employment: "Academic employment",
       service: "Academic service and appointments",
       present: "Present",
-      backblog: "Back to the blog"
+      backblog: "Back to the blog",
+      pregrado: "Undergraduate",
+      master: "Masters",
+      phd: "Doctorate"
     },
     es: {
       homePage: "¡Este es el inicio!",
@@ -84,7 +87,10 @@ export default defineI18nConfig(() => ({
       employment: "Experiencia académica",
       service: "Servicio académico y otros roles",
       present: "Presente",
-      backblog: "Regreso al blog"
+      backblog: "Regreso al blog",
+      pregrado: "Pregrado",
+      master: "Maestría",
+      phd: "Doctorado"
     },
   },
 }));

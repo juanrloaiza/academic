@@ -15,6 +15,7 @@
 - [ ] Decidir una paleta de color
 - [ ] Implementar estilos de tema oscuro
 - [ ] Implement stricter zod schemas in collection definitions
+- [ ] Have translations for course abstracts
 
 ## Refactor
 
