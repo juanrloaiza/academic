@@ -123,4 +123,7 @@
   #footnote-label {
     display: none;
   }
+  img {
+    margin: auto
+  }
 }
