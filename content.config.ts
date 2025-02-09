@@ -70,7 +70,7 @@ export default defineContentConfig({
     }),
     courses: defineCollection({
       type: 'data',
-      source: 'courses/**/*.md',
+      source: 'courses/**/*.yml',
       schema: z.object({
         name: z.string(),
         level: z.string(),
