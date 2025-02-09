@@ -9,14 +9,46 @@
 }
 
 .blog-content {
-  p {
+  h1,h2,h3{
+    font-weight: bold;
+  }
+
+  h2{
+    font-size: var(--text-2xl);
     margin-bottom: 0.75rem;
+    margin-top: 2rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
     line-height: 150%;
   }
 
   a {
     color: var(--color-blue-800);
     font-variant-emoji: revert;
+  }
+
+  ol {
+    margin-top: 1rem;
+    list-style: decimal;
+    padding-left: 1rem;
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  ul {
+    margin: 1.5rem 0;
+    list-style-type: disc;
+    margin-left: 1rem;
+    padding-left: 1rem;
+
+    li {
+      margin-bottom: 0.5rem;
+      padding-left: 0.5rem
+    }
   }
 
   blockquote {
@@ -57,9 +89,9 @@
   }
   .footnotes {
     font-size: var(--text-sm);
-	border-top: 1px solid var(--color-gray-300);
-	padding-top: 1rem;
-	margin-top: 2rem;
+    border-top: 1px solid var(--color-gray-300);
+    padding-top: 1rem;
+    margin-top: 2rem;
 
     ol {
       list-style-type: decimal;
@@ -68,6 +100,6 @@
     }
   }
   #footnote-label {
-	display: none;
+    display: none;
   }
 }
