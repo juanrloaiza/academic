@@ -41,7 +41,8 @@ export default defineI18nConfig(() => ({
       qualification: "Qualification",
       employment: "Academic employment",
       service: "Academic service and appointments",
-      present: "Present"
+      present: "Present",
+      backblog: "Back to the blog"
     },
     es: {
       homePage: "¡Este es el inicio!",
@@ -82,7 +83,8 @@ export default defineI18nConfig(() => ({
       qualification: "Calificación",
       employment: "Experiencia académica",
       service: "Servicio académico y otros roles",
-      present: "Presente"
+      present: "Presente",
+      backblog: "Regreso al blog"
     },
   },
 }));
