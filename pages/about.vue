@@ -28,15 +28,3 @@ const { data: content } = await useAsyncData(() =>
     </div>
   </div>
 </template>
-
-<style>
-.md-content {
-  p {
-    margin-bottom: 0.75rem;
-  }
-
-  a {
-    color: var(--color-blue-800)
-  }
-}
-</style>

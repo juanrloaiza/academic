@@ -40,12 +40,12 @@ const openAbstract = () => {
       class="mx-4"
       :class="isAbstractOpen ? 'self-start' : ''"
     >
-      <Icon
+      <!-- <Icon
         v-if="isAbstractOpen"
         name="material-symbols:check-indeterminate-small"
         class="my-4"
       />
-      <Icon v-else name="material-symbols:add" />
+      <Icon v-else name="material-symbols:add" /> -->
     </button>
   </div>
 </template>

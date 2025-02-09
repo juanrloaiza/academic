@@ -1,4 +1,10 @@
 @import "tailwindcss";
 
+@import "./markdown.css";  /* Custom for markdown related stuff */
+
 @theme {
+}
+
+html {
+    padding-bottom: 50px;
 }

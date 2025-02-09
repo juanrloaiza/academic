@@ -5,7 +5,7 @@ export default defineNuxtConfig({
 	compatibilityDate: '2024-11-01',
 	devtools: { enabled: false },
 	css: ['/assets/css/main.css'],
-	modules: ['@nuxtjs/i18n', '@nuxt/content', '@nuxt/icon'],
+	modules: ['@nuxt/content', '@nuxtjs/i18n', '@nuxt/icon'],
 	app: {
 		head: {
 			link: [
@@ -26,23 +26,16 @@ export default defineNuxtConfig({
 		plugins: [tailwindcss()],
 	},
 	content: {
-		highlight: {
-			theme: {
-				default: 'github-light',
-				dark: 'github-dark',
+		build: {
+			markdown: {
+				highlight: {
+					theme: {
+						default: 'one-light',
+						dark: 'nord',
+					},
+					langs: ['python', 'js', 'md', 'yaml'],
+				},
 			},
-			langs: ['python', 'js', 'md', 'yaml'],
-			lineNumbers: true
 		},
-	},
-	// tailwindcss: {
-	//   config: {
-	//     content: [
-	//       "./pages/**/*.{vue,html,js}",
-	//       "./components/**/*.{vue,html,js}",
-	//     ],
-	//     theme: {
-	//     }
-	//   },
-	// },
+	}
 });
