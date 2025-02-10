@@ -19,7 +19,7 @@ const openAbstract = () => {
 <template>
   <div class="mb-4">
     <div class="flex">
-      <h4 class="text-xl font-bold">{{ name[locale] }}</h4>
+      <h4 class="text-xl font-semibold">{{ name[locale] }}</h4>
 
       <button
         @click="openAbstract"
