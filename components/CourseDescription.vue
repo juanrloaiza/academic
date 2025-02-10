@@ -1,8 +1,4 @@
 <script setup lang="ts">
-import { LoremIpsum } from "lorem-ipsum";
-
-const lorem = new LoremIpsum();
-
 const { locale } = useI18n();
 
 // Define the prop with Partial<Record<>> to allow missing translations
