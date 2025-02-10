@@ -58,12 +58,12 @@ const localePath = useLocalePath();
     :to="localePath(target)"
   >
     <div
-      class="bg-white min-h-60 p-3 rounded-md border-2 border-black hover:border-3 hover:border-primary hover:text-primary"
+      class="md:min-h-60 m-3 md:m-0 p-3 rounded-md border-2 border-black hover:border-3 hover:border-primary hover:text-primary"
     >
-      <h4 class="text-2xl font-bold mb-1">
+      <h4 class="text-xl md:text-2xl font-bold mb-1">
         {{ $t(`${target}.title`) }}
       </h4>
-      <div class="text-xl">{{ $t(`${target}.description`) }}</div>
+      <div class="text-lg md:text-xl">{{ $t(`${target}.description`) }}</div>
     </div>
   </NuxtLink>
 </template>
