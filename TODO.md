@@ -8,12 +8,12 @@
 - [X] Arreglar las imágenes del blog
 - [X] Construir el sitio de otros proyectos
 - [X] Hacer los botones de redes sociales
-- [ ] Implementar diseño en celulares
+- [X] Implementar diseño en celulares
 - [X] Terminar de pasar las publicaciones
   - [X] Implementar capítulos de libro y libro
 - [X] Arreglar el estilo de los links en About y Others
-- [ ] Decidir una paleta de color
-- [ ] Decidir un subtítulo para la navegación
+- [X] Decidir una paleta de color
+- [X] Decidir un subtítulo para la navegación
 
 ## Extra
 
@@ -22,11 +22,12 @@
 - [ ] Have translations for course abstracts
 - [ ] Blog and course sections are fairly similar (title with small description). Consider same styles?
 - [ ] Upload favicon
+- [ ] Make publication info smaller
 
 ## Refactor
 
 - [ ] Pubs and teaching items have abstracts with the same styles. We can abstract to a component.
-- [ ] Pubs and teaching items reveal the abstract with a button. We can abstract to a component.
+- [X] Pubs and teaching items reveal the abstract with a button. We can abstract to a component.
 - [ ] Pubs are passed entirely to component, not bound to the component. Binding would simplify syntax.
 
 ## Future

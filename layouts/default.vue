@@ -4,7 +4,7 @@ const config = useAppConfig();
 
 <template>
   <div>
-    <div class="max-w-6xl mx-auto pt-6">
+    <div class="max-w-6xl mx-auto pt-6 px-6">
       <div class="block text-center md:flex md:justify-between items-center min-h-[5rem]">
         <div>
           <NuxtLinkLocale to="/" class="md:flex items-center">
@@ -18,7 +18,7 @@ const config = useAppConfig();
           <LangSwitcher />
         </div>
       </div>
-      <div class="mt-6 text-lg mx-6 md:m-0">
+      <div class="mt-6 text-lg">
         <slot />
       </div>
     </div>
