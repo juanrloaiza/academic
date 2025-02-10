@@ -21,12 +21,7 @@ const openAbstract = () => {
         ></i
         ><br />
         {{ pub.authors }} ({{ pub.year }}).
-        <em>{{ pub.journal }}</em>
-        <span v-if="pub.volume">
-          <em>, {{ pub.volume }}</em
-          >({{ pub.issue }})</span
-        ><span v-if="pub.pages">, {{ pub.pages }}</span
-        >.
+        <span>{{ pub.publisher }}. </span>
         <span v-if="pub.doi">doi: {{ pub.doi }}</span>
         <span v-else="pub.url">{{ pub.url }}</span>
       </a>
