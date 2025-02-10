@@ -10,16 +10,16 @@ const { data: content } = await useAsyncData(() =>
 <template>
   <PageTitle :title="$t('about.title')" />
 
-  <div class="grid grid-cols-4 gap-x-15 gap-y-6">
-    <img src="https://www.juanrloaiza.com/images/academic_loaiza.png" />
+  <div class="md:grid grid-cols-4 gap-x-15 gap-y-6">
+    <img class="mx-auto w-2/3 my-6 md:w-full" src="https://www.juanrloaiza.com/images/academic_loaiza.png" />
 
     <ContentRenderer
       v-if="content"
       :value="content"
       class="col-span-3 md-content"
     />
-    <div class="flex col-span-3 col-start-2 justify-around">
-      <div class="w-1/3" v-for="(areaType, key) in content?.areas">
+    <div class="md:flex col-span-3 col-start-2 justify-around">
+      <div class="my-6 md:my-0 md:w-1/3" v-for="(areaType, key) in content?.areas">
         <h4 class="font-bold">{{ $t(key) }}</h4>
         <ul class="list-disc pl-4">
           <li v-for="area in areaType">{{ area }}</li>

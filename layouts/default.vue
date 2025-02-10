@@ -18,7 +18,7 @@ const config = useAppConfig();
           <LangSwitcher />
         </div>
       </div>
-      <div class="mt-6 text-lg">
+      <div class="mt-6 text-lg mx-6 md:m-0">
         <slot />
       </div>
     </div>

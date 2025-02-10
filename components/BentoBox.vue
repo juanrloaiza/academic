@@ -58,7 +58,7 @@ const localePath = useLocalePath();
     :to="localePath(target)"
   >
     <div
-      class="md:min-h-60 m-3 md:m-0 p-3 rounded-md border-2 border-black hover:border-3 hover:border-primary hover:text-primary"
+      class="md:min-h-60 my-3 md:m-0 p-3 rounded-md border-2 border-black hover:border-3 hover:border-primary hover:text-primary"
     >
       <h4 class="text-xl md:text-2xl font-bold mb-1">
         {{ $t(`${target}.title`) }}
