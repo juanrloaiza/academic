@@ -4,7 +4,7 @@
 
 - [X] Construir el sitio de docencia
   - [X] Implementar lógica para programas
-  - [ ] Arreglar el markdown de la descripción
+  - [X] Arreglar el markdown de la descripción
 - [X] Arreglar las imágenes del blog
 - [X] Construir el sitio de otros proyectos
 - [X] Hacer los botones de redes sociales
