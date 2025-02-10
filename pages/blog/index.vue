@@ -31,8 +31,8 @@ if (blogpostsByYear.value) {
 
 <template>
   <PageTitle title="Blog" />
-  <div v-for="year of years" class="blog-list grid grid-cols-12 gap-x-4 items-baseline">
-    <div class="col-span-1 text-sm">{{ year }}</div>
+  <div v-for="year of years" class="blog-list md:grid grid-cols-12 gap-x-4 items-baseline">
+    <div class="col-span-1 text-xl font-semibold md:font-normal mb-2 md:text-sm">{{ year }}</div>
     <div class="col-span-11">
       <div
         v-if="blogpostsByYear"
