@@ -11,7 +11,7 @@ export default defineContentConfig({
         year: z.number().or(z.string()),
         journal: z.string().optional(),
         volume: z.number().optional(),
-        issue: z.number().optional(),
+        issue: z.number().or(z.string()).optional(),
         booktitle: z.string().optional(),
         doi: z.string().optional(),
         openaccess: z.boolean().optional(),
