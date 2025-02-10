@@ -12,29 +12,21 @@
   --font-sans: "Schibsted Grotesk", ui-sans-serif, system-ui, sans-serif,
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-  /* CSS HEX */
-  --color-highlight: #326789;
+  --font-heading: "Fira Sans";
 
-  /* Colors */
-  --color-red: var(--nord-aurora-red);
-  --color-yellow: var(--nord-aurora-yellow);
-  --color-green: var(--nord-aurora-green);
-  --color-purple: var(--nord-aurora-purple);
-  --color-orange: var(--nord-aurora-orange);
+  /* CSS HEX */
+  --color-background: #fdfdfd;
+  --color-primary: #2467b2;
+  --color-primary-light: #b8bccc;
+  --color-accent: #bf616a;
 }
 
 html {
   padding-bottom: 50px;
+  background-color: var(--color-background);
 }
 
 h1,
 h2 {
-  font-family: "Fira Sans";
-}
-
-a {
-  color: var(--color-highlight);
-  &:hover {
-    color: var(--color-red);
-  }
+  font-family: var(--font-heading);
 }

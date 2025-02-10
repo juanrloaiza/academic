@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import PubTitle from './PubTitle.vue'
 defineProps(["pub"]);
 
 const isAbstractOpen = ref(false);
@@ -14,13 +15,7 @@ const openAbstract = () => {
       <a
         :href="pub.doi ? `https://doi.org/${pub.doi}` : pub.url ? pub.url : '#'"
       >
-        <div class="font-medium">
-          {{ pub.title }}
-          <i
-            v-if="pub.openaccess"
-            class="mx-2 text-2xl text-orange-600 ai ai-open-access"
-          ></i>
-        </div>
+        <PubTitle :title="pub.title" :openaccess="pub.openaccess" />
       </a>
       {{ pub.authors }} ({{ pub.year }}).
       <em>{{ pub.journal }}</em>
