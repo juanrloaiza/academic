@@ -5,9 +5,9 @@
 - [X] Construir el sitio de docencia
   - [X] Implementar lógica para programas
   - [ ] Arreglar el markdown de la descripción
-- [ ] Arreglar las imágenes del blog
+- [X] Arreglar las imágenes del blog
 - [X] Construir el sitio de otros proyectos
-- [ ] Hacer los botones de redes sociales
+- [X] Hacer los botones de redes sociales
 - [ ] Implementar diseño en celulares
 - [ ] Terminar de pasar las publicaciones
 - [ ] Arreglar el estilo de los links en About y Others
@@ -20,6 +20,7 @@
 - [ ] Implement stricter zod schemas in collection definitions
 - [ ] Have translations for course abstracts
 - [ ] Blog and course sections are fairly similar (title with small description). Consider same styles?
+- [ ] Upload favicon
 
 ## Refactor
 

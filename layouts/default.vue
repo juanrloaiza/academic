@@ -9,7 +9,10 @@ const config = useAppConfig();
         <NuxtLinkLocale to="/">
           <h1 class="text-4xl font-extrabold">{{ config.title }}</h1>
         </NuxtLinkLocale>
-        <LangSwitcher />
+        <div class="flex items-center">
+          <SocialMediaButtons />
+          <LangSwitcher />
+        </div>
       </div>
       <div class="mt-6 text-xl">
         <slot />
