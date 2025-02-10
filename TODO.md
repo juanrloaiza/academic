@@ -11,12 +11,12 @@
 - [ ] Implementar diseño en celulares
 - [X] Terminar de pasar las publicaciones
   - [X] Implementar capítulos de libro y libro
-- [ ] Arreglar el estilo de los links en About y Others
+- [X] Arreglar el estilo de los links en About y Others
+- [ ] Decidir una paleta de color
+- [ ] Decidir un subtítulo para la navegación
 
 ## Extra
 
-- [ ] Decidir un subtítulo para la navegación
-- [ ] Decidir una paleta de color
 - [ ] Implementar estilos de tema oscuro
 - [ ] Implement stricter zod schemas in collection definitions
 - [ ] Have translations for course abstracts
@@ -31,4 +31,4 @@
 
 ## Future
 
-- [ ] Check if [nuxt-content-assets](https://github.com/davestewart/nuxt-content-assets/issues/90) suppors Nuxt Content V3.
+- [ ] Check if [nuxt-content-assets](https://github.com/davestewart/nuxt-content-assets/issues/90) supports Nuxt Content V3.

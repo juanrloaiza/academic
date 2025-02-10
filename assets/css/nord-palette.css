@@ -1,0 +1,21 @@
+:root {
+  --nord-polar-night-0: #2e3440;
+  --nord-polar-night-1: #3b4252;
+  --nord-polar-night-2: #434c5e;
+  --nord-polar-night-3: #4c566a;
+
+  --nord-snow-storm-0: #d8dee9;
+  --nord-snow-storm-1: #e5e9f0;
+  --nord-snow-storm-2: #eceff4;
+
+  --nord-frost-0: #8fbcbb;
+  --nord-frost-1: #88c0d0;
+  --nord-frost-2: #81a1c1;
+  --nord-frost-3: #5e81ac;
+
+  --nord-aurora-red: #bf616a;
+  --nord-aurora-orange: #d08770;
+  --nord-aurora-yellow: #ebcb8b;
+  --nord-aurora-green: #a3be8c;
+  --nord-aurora-purple: #b48ead;
+}

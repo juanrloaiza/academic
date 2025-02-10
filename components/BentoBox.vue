@@ -40,12 +40,12 @@ const rowsMap: { [rows: number]: string} = {
 }
 
 const colorMap: { [color: string]: string} = {
-    'green': 'bg-green-300',
-    'blue': 'bg-blue-300',
-    'purple': 'bg-purple-300',
-    'red': 'bg-red-300',
-    'orange': 'bg-orange-300',
-    'yellow': 'bg-yellow-300',
+    'green': 'bg-stone-300',
+    'blue': 'bg-slate-300',
+    'purple': 'bg-purple/50',
+    'red': 'bg-red/50',
+    'orange': 'bg-orange/50',
+    'yellow': 'bg-yellow/50',
     'none': 'bg-none'
 }
 
@@ -54,10 +54,10 @@ const localePath = useLocalePath();
 </script>
 
 <template>
-    <NuxtLink :to="localePath(target)" :class="`${colsMap[cols]} ${rowsMap[rows]} ${colorMap[color]}`"
-        class="min-h-60 p-3 rounded-md
+    <NuxtLink :to="localePath(target)" :class="`${colsMap[cols]} ${rowsMap[rows]} bg-slate-300`"
+        class="min-h-60 p-3 rounded-md border-2 border-black
         hover:border-4 hover:border-black">
-        <h4 class="text-2xl font-bold mb-1">{{ $t(`${target}.title`) }}</h4>
-        <div class="text-xl">{{ $t(`${target}.description`) }}</div>
+        <h4 class=" text-black text-2xl font-bold mb-1">{{ $t(`${target}.title`) }}</h4>
+        <div class=" text-black text-xl">{{ $t(`${target}.description`) }}</div>
     </NuxtLink>
 </template>

@@ -54,14 +54,3 @@ if (blogpostsByYear.value) {
     </div>
   </div>
 </template>
-
-<style>
-.blog-list {
-  a {
-    color: var(--color-blue-800);
-  }
-  a:hover {
-    color: var(--color-yellow-700);
-  }
-}
-</style>
