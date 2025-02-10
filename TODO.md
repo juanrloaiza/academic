@@ -27,6 +27,7 @@
 
 - [ ] Pubs and teaching items have abstracts with the same styles. We can abstract to a component.
 - [ ] Pubs and teaching items reveal the abstract with a button. We can abstract to a component.
+- [ ] Pubs are passed entirely to component, not bound to the component. Binding would simplify syntax.
 
 ## Future
 

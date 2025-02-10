@@ -3,6 +3,9 @@ authors: Loaiza, J. R.
 year: 2022
 openaccess: true
 url: http://suafem.unam.mx/index.php/la-vida-emocional-en-la-pandemia/
-reference: |
-  En Fajardo-Chica, D. y Hansberg, O. (eds.), *La vida emocional en la pandemia* (pp. 181-197). Universidad Nacional Autónoma de México. ISBN: 978-607-30-5488-1
-type: bookchapter
+editors: Fajardo-Chica, D. y Hansberg, O. (eds.)
+booktitle: La vida emocional en la pandemia
+pages: 181-197
+publisher: Universidad Nacional Autónoma de México
+isbn: 9786073054881
+pubType: bookchapter
