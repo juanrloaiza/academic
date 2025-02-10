@@ -28,18 +28,10 @@ const openAbstract = () => {
         {{ pub.abstract }}
       </div>
     </div>
-    <button
+    <AbstractOpenButton
       v-if="pub.abstract"
       @click="openAbstract"
-      class="mx-4"
-      :class="isAbstractOpen ? 'self-start' : ''"
-    >
-      <Icon
-        v-if="isAbstractOpen"
-        name="material-symbols:check-indeterminate-small"
-        class="my-4"
-      />
-      <Icon v-else name="material-symbols:add" />
-    </button>
+      :isAbstractOpen="isAbstractOpen"
+    />
   </div>
 </template>
