@@ -14,12 +14,13 @@ const openAbstract = () => {
       <a
         :href="pub.doi ? `https://doi.org/${pub.doi}` : pub.url ? pub.url : '#'"
       >
-        <strong>{{ pub.title }}</strong>
-        <i
-          v-if="pub.openaccess"
-          class="mx-2 text-2xl text-orange-600 ai ai-open-access"
-        ></i
-        ><br />
+      <div class="font-medium">
+          {{ pub.title }}
+          <i
+            v-if="pub.openaccess"
+            class="mx-2 text-2xl text-orange-600 ai ai-open-access"
+          ></i>
+        </div>
         {{ pub.authors }} ({{ pub.year }}).
         <em>{{ pub.journal }}</em>
         <span v-if="pub.volume">
