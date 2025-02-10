@@ -19,19 +19,13 @@ const openAbstract = () => {
 <template>
   <div class="mb-4">
     <div class="flex">
-      <h4 class="text-xl font-semibold">{{ name[locale] }}</h4>
+      <h4 class="md:text-xl font-semibold">{{ name[locale] }}</h4>
 
-      <button
-        @click="openAbstract"
-        class="mx-4"
-        :class="isAbstractOpen ? 'self-start' : ''"
-      >
-        <Icon
-          v-if="isAbstractOpen"
-          name="material-symbols:check-indeterminate-small"
-        />
-        <Icon v-else name="material-symbols:add" />
-      </button>
+      <AbstractOpenButton
+      v-if="description"
+      @click="openAbstract"
+      :isAbstractOpen="isAbstractOpen"
+    />
     </div>
     <div>{{ $t(level) }}</div>
     <div
