@@ -47,6 +47,7 @@ export default defineI18nConfig(() => ({
       master: "Masters",
       phd: "Doctorate",
       syllabus: "Syllabus",
+      courses: "Courses"
     },
     es: {
       homePage: "¡Este es el inicio!",
@@ -93,6 +94,7 @@ export default defineI18nConfig(() => ({
       master: "Maestría",
       phd: "Doctorado",
       syllabus: "Programa",
+      courses: "Cursos"
     },
   },
 }));

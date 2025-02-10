@@ -42,7 +42,7 @@ const openAbstract = () => {
       v-if="isAbstractOpen"
       class="text-base my-3 max-w-[75ch] pl-5 border-l-2"
     >
-      {{ description || lorem.generateWords(50) }}
+      <MDC v-if="description" :value='description' />
       <div v-if="syllabus" class="text-blue-800 mt-3"><a>{{ $t('syllabus') }}</a></div>
     </div>
   </div>

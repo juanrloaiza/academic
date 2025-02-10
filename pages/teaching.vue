@@ -11,7 +11,7 @@ const { data: courses } = await useAsyncData(()=>queryCollection('courses').all(
 <template>
   <PageTitle :title="$t('teaching.title')" />
 
-  <h3 class="text-2xl font-bold mb-3">Cursos</h3>
+  <h3 class="text-2xl font-bold mb-3">{{ $t('courses')}}</h3>
 
   <CourseDescription v-if="courses" v-for="course in courses" v-bind="course"/>  
   

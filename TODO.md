@@ -9,8 +9,8 @@
 - [X] Construir el sitio de otros proyectos
 - [X] Hacer los botones de redes sociales
 - [ ] Implementar diseño en celulares
-- [ ] Terminar de pasar las publicaciones
-  - [ ] Implementar capítulos de libro y libro
+- [X] Terminar de pasar las publicaciones
+  - [X] Implementar capítulos de libro y libro
 - [ ] Arreglar el estilo de los links en About y Others
 
 ## Extra
