@@ -14,8 +14,8 @@ const openAbstract = () => {
       <a
         :href="pub.doi ? `https://doi.org/${pub.doi}` : pub.url ? pub.url : '#'"
       >
-        <strong>{{ pub.title }}</strong
-        >.<i
+        <strong>{{ pub.title }}</strong>
+        <i
           v-if="pub.openaccess"
           class="mx-2 text-2xl text-orange-600 ai ai-open-access"
         ></i
@@ -30,7 +30,10 @@ const openAbstract = () => {
         <span v-if="pub.doi">doi: {{ pub.doi }}</span>
         <span v-else="pub.url">{{ pub.url }}</span>
       </a>
-      <div v-if="isAbstractOpen" class="text-base my-3 max-w-[75ch] pl-5 border-l-2">
+      <div
+        v-if="isAbstractOpen"
+        class="text-base my-3 max-w-[75ch] pl-5 border-l-2"
+      >
         {{ pub.abstract }}
       </div>
     </div>
@@ -40,7 +43,7 @@ const openAbstract = () => {
       class="mx-4"
       :class="isAbstractOpen ? 'self-start' : ''"
     >
-     <Icon
+      <Icon
         v-if="isAbstractOpen"
         name="material-symbols:check-indeterminate-small"
         class="my-4"
