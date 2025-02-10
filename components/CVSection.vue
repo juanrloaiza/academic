@@ -6,11 +6,11 @@ defineProps({
 </script>
 
 <template>
-  <div class="md:grid grid-cols-8 items-baseline mb-4">
-    <div class="md:col-span-1 text-base">
+  <div class="md:grid grid-cols-6 gap-x-6 items-baseline mb-4">
+    <div class="col-span-2 lg:col-span-1 text-base">
       <CVDates :start="startYear" :end="endYear" />
     </div>
-    <div class="md:col-span-7">
+    <div class="col-span-5 lg:col-span-5">
       <slot />
     </div>
   </div>
