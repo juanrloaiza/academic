@@ -1,7 +1,7 @@
-type: service
+cvtype: service
 role:
     en: Communications coordinator
     es: Coordinador de comunicaciones
 institution: Asociación Latinoamericana de Filosofía Analítica (ALFAn)
 start_date: "10.2022"
-startYear: 2022
+start_year: 2022

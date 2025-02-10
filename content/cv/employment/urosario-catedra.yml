@@ -1,11 +1,11 @@
-type: employment
+cvtype: employment
 role:
   en: Adjunct lecturer
   es: Profesor de hora cátedra
 start_date: "01.2020"
 end_date: "12.2022"
-startYear: 2020
-endYear: 2022
+start_year: 2020
+end_year: 2022
 institution: Universidad del Rosario
 faculty: Escuela de Ciencias Humanas
 courses:

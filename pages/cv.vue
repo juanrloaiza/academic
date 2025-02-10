@@ -3,22 +3,22 @@ const { locale } = useI18n();
 
 const { data: education } = await useAsyncData(() =>
   queryCollection("cv")
-    .where("type", "=", "education")
-    .order("startYear", "DESC")
+    .where("cvtype", "=", "education")
+    .order("start_year", "DESC")
     .all()
 );
 
 const { data: employment } = await useAsyncData(() =>
   queryCollection("cv")
-    .where("type", "=", "employment")
-    .order("startYear", "DESC")
+    .where("cvtype", "=", "employment")
+    .order("start_year", "DESC")
     .all()
 );
 
 const { data: service } = await useAsyncData(() =>
   queryCollection("cv")
-    .where("type", "=", "service")
-    .order("startYear", "DESC")
+    .where("cvtype", "=", "service")
+    .order("start_year", "DESC")
     .all()
 );
 </script>
@@ -29,14 +29,14 @@ const { data: service } = await useAsyncData(() =>
   <h3 class="font-bold text-2xl mb-3">{{ $t("education") }}</h3>
   <CVSection
     v-for="ed in education"
-    :startYear="ed.startYear"
-    :endYear="ed.endYear"
+    :startYear=ed.start_year
+    :endYear=ed.end_year
   >
     <strong class="font-semibold">{{ ed.role[locale] }}</strong>
     <br />
     {{ ed.faculty }}, {{ ed.institution }}
     <br />
-    <span class="text-base">
+    <span class="text-base" v-if="ed.thesis">
       {{ $t("thesis") }}: "{{ ed.thesis.title }}"
       <br />
       {{ $t("supervisors") }}: {{ ed.thesis.supervisors?.join(", ") }}
@@ -54,8 +54,8 @@ const { data: service } = await useAsyncData(() =>
 
   <CVSection
     v-for="emp in employment"
-    :startYear="emp.startYear"
-    :endYear="emp.endYear"
+    :startYear="emp.start_year"
+    :endYear="emp.end_year"
   >
     <strong class="font-semibold">{{ emp.role[locale] }}</strong>
     <br />
@@ -67,15 +67,13 @@ const { data: service } = await useAsyncData(() =>
 
   <CVSection
     v-for="srv in service"
-    :startYear="srv.startYear"
-    :endYear="srv.endYear"
+    :startYear="srv.start_year"
+    :endYear="srv.end_year"
   >
-    <div class="col-span-7">
-      <strong class="font-semibold">{{ srv.role[locale] }}</strong>
-      <br />
-      <span v-if="srv.faculty">{{ srv.faculty }},</span>
-      {{ srv.institution }}
-      <br />
-    </div>
+    <strong class="font-semibold">{{ srv.role[locale] }}</strong>
+    <br />
+    <span v-if="srv.faculty">{{ srv.faculty }},</span>
+    {{ srv.institution }}
+    <br />
   </CVSection>
 </template>

@@ -1,9 +1,9 @@
-type: education
+cvtype: education
 role:
   en: Philosophy
   es: Filósofo
-startYear: 2009
-endYear: 2014
+start_year: 2009
+end_year: 2014
 dates: 07.2009 - 03.2014
 institution: Universidad del Rosario
 faculty: Escuela de Ciencias Humanas
