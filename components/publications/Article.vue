@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import PubTitle from './PubTitle.vue'
 defineProps(["pub"]);
 
 const isAbstractOpen = ref(false);
