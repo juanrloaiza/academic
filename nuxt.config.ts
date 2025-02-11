@@ -46,7 +46,15 @@ export default defineNuxtConfig({
     },
   },
   icon: {
-    localApiEndpoint: '/_nuxt_icon'
+    localApiEndpoint: '/_nuxt_icon',
+    clientBundle: {
+      icons: [
+        'material-symbols:arrow-back-rounded',
+        'material-symbols:add',
+        'material-symbols:check-indeterminate-small'
+      ],
+      scan: true
+    }
   },
   nitro: {
     prerender: {
