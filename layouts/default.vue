@@ -5,6 +5,7 @@ useSeoMeta({
   title: 'Juan R. Loaiza',
   description: "Académico en Filosofía · Professor of Philosophy",
   ogDescription: "Académico en Filosofía · Professor of Philosophy",
+  ogSiteName: 'Juan R. Loaiza',
   author: "Juan R. Loaiza"
 })
 
