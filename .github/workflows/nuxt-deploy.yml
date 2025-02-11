@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main
+      - nuxt
 jobs:
   build:
     runs-on: ubuntu-latest
