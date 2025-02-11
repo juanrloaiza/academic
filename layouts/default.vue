@@ -10,7 +10,7 @@ const config = useAppConfig();
           <NuxtLinkLocale to="/" class="md:flex items-center">
             <h1 class="block mb-1 md:inline md:m-0 text-4xl font-extrabold hover:text-primary">{{ config.title }}</h1>
             <span class="hidden md:inline text-2xl mx-4 text-gray-600"> · </span>
-            <span class="text-2xl text-gray-600 font-heading mt-1">Académico</span>
+            <span class="text-2xl text-gray-600 font-heading mt-1">{{ $t('academic')}}</span>
           </NuxtLinkLocale>
         </div>
         <div class="flex items-center justify-center">

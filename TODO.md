@@ -23,6 +23,8 @@
 - [ ] Blog and course sections are fairly similar (title with small description). Consider same styles?
 - [ ] Upload favicon
 - [ ] Make publication info smaller
+- [ ] Add SEO
+- [ ] Translate missing strings
 
 ## Refactor
 
