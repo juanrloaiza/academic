@@ -47,9 +47,7 @@ export default defineNuxtConfig({
   },
   icon: {
     localApiEndpoint: '/_nuxt_icon',
-    serverBundle: {
-      collections: ['material-symbols']
-    }
+    serverBundle: false
   },
   nitro: {
     prerender: {
