@@ -36,9 +36,9 @@ importers:
         specifier: latest
         version: 4.5.0(vue@3.5.13(typescript@5.7.3))
     devDependencies:
-      lorem-ipsum:
-        specifier: ^2.0.8
-        version: 2.0.8
+      '@iconify-json/material-symbols':
+        specifier: ^1.2.14
+        version: 1.2.14
 
 packages:
 
@@ -406,6 +406,9 @@ packages:
   '@humanwhocodes/retry@0.4.1':
     resolution: {integrity: sha512-c7hNEllBlenFTHBky65mhq8WD2kbN9Q6gk0bTk8lSBvc554jpXSkST1iePudpt7+A/AQvuHs9EMqjHDXMY1lrA==}
     engines: {node: '>=18.18'}
+
+  '@iconify-json/material-symbols@1.2.14':
+    resolution: {integrity: sha512-S0AAFFQPVr8Dkrprspz/otNjxdD3rJRXDGZjbO8a8zn8ZR5mO8jAF81lVoTfUWxPH6SCtH2lK1JQGXHGPxld7g==}
 
   '@iconify/collections@1.0.515':
     resolution: {integrity: sha512-4aJAgfv31fST8LYjuGy14ZQN8zIDQpKuHRQXZgilQMDh6SW2YFiIWMWKd7MSEmRXwRQdygwPrAydelBNHW+qqw==}
@@ -1520,10 +1523,6 @@ packages:
     resolution: {integrity: sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==}
     engines: {node: '>= 12'}
 
-  commander@9.5.0:
-    resolution: {integrity: sha512-KRs7WVDKg86PWiuAqhDrAQnTXZKraVcCc6vFdL14qrZ/DcWwuRo7VoiYXalXO7S5GKpqYiVEwCbgFDfxNHKJBQ==}
-    engines: {node: ^12.20.0 || >=14}
-
   commondir@1.0.1:
     resolution: {integrity: sha512-W9pAhw0ja1Edb5GVdIF1mjZw/ASI0AlShXM83UUGe2DVr5TdAPEA1OA8m/g8zWp9x6On7gqufY+FatDbC3MDQg==}
 
@@ -2585,11 +2584,6 @@ packages:
 
   longest-streak@3.1.0:
     resolution: {integrity: sha512-9Ri+o0JYgehTaVBBDoMqIl8GXtbWg711O3srftcHhZ0dqnETqLaoIK0x17fUw9rFSlK/0NlsKe0Ahhyl5pXE2g==}
-
-  lorem-ipsum@2.0.8:
-    resolution: {integrity: sha512-5RIwHuCb979RASgCJH0VKERn9cQo/+NcAi2BMe9ddj+gp7hujl6BI+qdOG4nVsLDpwWEJwTVYXNKP6BGgbcoGA==}
-    engines: {node: '>= 8.x', npm: '>= 5.x'}
-    hasBin: true
 
   lru-cache@10.4.3:
     resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
@@ -4639,6 +4633,10 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.1': {}
 
+  '@iconify-json/material-symbols@1.2.14':
+    dependencies:
+      '@iconify/types': 2.0.0
+
   '@iconify/collections@1.0.515':
     dependencies:
       '@iconify/types': 2.0.0
@@ -6125,8 +6123,6 @@ snapshots:
 
   commander@8.3.0: {}
 
-  commander@9.5.0: {}
-
   commondir@1.0.1: {}
 
   compatx@0.1.8: {}
@@ -7232,10 +7228,6 @@ snapshots:
   lodash@4.17.21: {}
 
   longest-streak@3.1.0: {}
-
-  lorem-ipsum@2.0.8:
-    dependencies:
-      commander: 9.5.0
 
   lru-cache@10.4.3: {}
 

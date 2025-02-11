@@ -27,5 +27,8 @@
       "better-sqlite3",
       "esbuild"
     ]
+  },
+  "devDependencies": {
+    "@iconify-json/material-symbols": "^1.2.14"
   }
 }
