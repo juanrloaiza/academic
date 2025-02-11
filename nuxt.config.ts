@@ -47,7 +47,11 @@ export default defineNuxtConfig({
   },
   icon: {
     localApiEndpoint: '/_nuxt_icon',
-    serverBundle: false
+    serverBundle: false,
+    clientBundle: {
+      scan: true,
+      sizeLimitKb: 256
+    }
   },
   nitro: {
     prerender: {
