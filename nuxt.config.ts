@@ -29,9 +29,6 @@ export default defineNuxtConfig({
       ],
     },
   },
-  seo: {
-    siteName: 'SITE NAME IN CONFIG'
-  },
   i18n: {
     vueI18n: "./i18n.config.ts",
     locales: ["es", "en"],
