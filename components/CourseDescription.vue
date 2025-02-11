@@ -3,10 +3,10 @@ const { locale } = useI18n();
 
 // Define the prop with Partial<Record<>> to allow missing translations
 defineProps<{
-  name: Partial<Record<'en' | 'es', string>>,
-  level: string,
-  description?: String,
-  syllabus?: string
+  name: Partial<Record<"en" | "es", string>>;
+  level: string;
+  description?: String;
+  syllabus?: string;
 }>();
 
 const isAbstractOpen = ref(false);
@@ -22,18 +22,20 @@ const openAbstract = () => {
       <h4 class="md:text-xl font-semibold">{{ name[locale] }}</h4>
 
       <AbstractOpenButton
-      v-if="description"
-      @click="openAbstract"
-      :isAbstractOpen="isAbstractOpen"
-    />
+        v-if="description"
+        @click="openAbstract"
+        :isAbstractOpen="isAbstractOpen"
+      />
     </div>
     <div>{{ $t(level) }}</div>
     <div
       v-if="isAbstractOpen"
       class="text-base my-3 max-w-[75ch] pl-5 border-l-2"
     >
-      <MDC v-if="description" :value='description' />
-      <div v-if="syllabus" class="text-blue-800 mt-3"><a>{{ $t('syllabus') }}</a></div>
+      <MDC v-if="description" :value="description" />
+      <div v-if="syllabus" class="text-blue-800 mt-3">
+        <a>{{ $t("syllabus") }}</a>
+      </div>
     </div>
   </div>
 </template>
