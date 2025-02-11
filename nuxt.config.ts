@@ -15,18 +15,27 @@ export default defineNuxtConfig({
   ],
   app: {
     head: {
-      titleTemplate: '%s · Juan R. Loaiza',
+      titleTemplate: "%s · Juan R. Loaiza",
       link: [
         {
           rel: "stylesheet",
           href: "https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css",
         },
         {
-          rel: 'icon',
-          type: 'image/png',
-          href: '/favicon.png'
-        }
+          rel: "icon",
+          type: "image/png",
+          href: "/favicon.png",
+        },
       ],
+    },
+  },
+  seo: {
+    meta: {
+      title: "Juan R. Loaiza",
+      description: "Académico en Filosofía · Professor of Philosophy",
+      ogDescription: "Académico en Filosofía · Professor of Philosophy",
+      ogSiteName: "Juan R. Loaiza",
+      author: "Juan R. Loaiza",
     },
   },
   i18n: {
