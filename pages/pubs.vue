@@ -1,4 +1,11 @@
 <script setup lang="ts">
+const { t } = useI18n();
+
+
+useSeoMeta({
+  title: t('pubs.title')
+})
+
 // Load Data
 const { data: pubArticles } = await useAsyncData(() =>
   queryCollection("publications")

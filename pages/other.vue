@@ -1,5 +1,9 @@
 <script setup lang="ts">
-const { locale } = useI18n();
+const { locale, t } = useI18n();
+
+useSeoMeta({
+  title: t('other.title')
+})
 
 const { data: content } = await useAsyncData(() =>
   queryCollection("otherProjects").where("lang", "=", locale.value).first()

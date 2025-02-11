@@ -26,6 +26,9 @@ importers:
       nuxt:
         specifier: ^3.15.4
         version: 3.15.4(@parcel/watcher@2.5.1)(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1))(eslint@9.20.0(jiti@2.4.2))(ioredis@5.5.0)(lightningcss@1.29.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.34.6)(terser@5.38.1)(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(lightningcss@1.29.1)(terser@5.38.1)(yaml@2.7.0))(yaml@2.7.0)
+      nuxt-seo-utils:
+        specifier: ^6.0.8
+        version: 6.0.8(magicast@0.3.5)(rollup@4.34.6)(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(lightningcss@1.29.1)(terser@5.38.1)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3))
       tailwindcss:
         specifier: ^4.0.5
         version: 4.0.5
@@ -1120,6 +1123,9 @@ packages:
 
   '@ungap/structured-clone@1.3.0':
     resolution: {integrity: sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g==}
+
+  '@unhead/addons@1.11.18':
+    resolution: {integrity: sha512-WIqqy3asQLvaNQlZd+P+IQ+y8Mu0YfGbnDBp8NW/ZzyeOYB/A5MjlfgC2wdX+J8Bk889VGvSZ0ymXm0N9Kd+ug==}
 
   '@unhead/dom@1.11.18':
     resolution: {integrity: sha512-zQuJUw/et9zYEV0SZWTDX23IgurwMaXycAuxt4L6OgNL0T4TWP3a0J/Vm3Q02hmdNo/cPKeVBrwBdnFUXjGU4w==}
@@ -2254,6 +2260,11 @@ packages:
   image-meta@0.2.1:
     resolution: {integrity: sha512-K6acvFaelNxx8wc2VjbIzXKDVB0Khs0QT35U6NkGfTdCmjLNcO2945m7RFNR9/RPVFm48hq7QPzK8uGH18HCGw==}
 
+  image-size@1.2.0:
+    resolution: {integrity: sha512-4S8fwbO6w3GeCVN6OPtA9I5IGKkcDMPcKndtUlpJuCwu7JLjtj7JZpwqLuyY2nrmQT3AWsCJLSKPsc2mPBSl3w==}
+    engines: {node: '>=16.x'}
+    hasBin: true
+
   import-fresh@3.3.1:
     resolution: {integrity: sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ==}
     engines: {node: '>=6'}
@@ -2931,6 +2942,15 @@ packages:
     resolution: {integrity: sha512-iq7hbSnfp4Ff/PTMYBF8pYabTQuF3u7HVN66Kb3hOnrnaPEdXEn/q6HkAn5V8UjOVSgXYpvycM0wSnwyADYNVA==}
     hasBin: true
 
+  nuxt-seo-utils@6.0.8:
+    resolution: {integrity: sha512-Gx2zqLpHBU5KZM8CZ91V/JxCHXR4sRlRwoPtRfWKqxPH+a35abe2l4YaIBz8YOwL23t9Yo3ww1+zUleLUExYMA==}
+
+  nuxt-site-config-kit@3.0.6:
+    resolution: {integrity: sha512-QBOFzAIo+D02avFQQ7gNlRyA372/PQlgW2IjL2nttvjfHapqYbvP6tIP55soL+1+D8YvF/bGZgS+vJtfQhroUg==}
+
+  nuxt-site-config@3.0.6:
+    resolution: {integrity: sha512-Mkyen81br21/nA2sxlLCOtJZ2L8sGL+YzxHlsVhLhEnC355CP2SwKVtYqJNJ4aYFbxeusqZXJFiD4KbveHhk0w==}
+
   nuxt@3.15.4:
     resolution: {integrity: sha512-hSbZO4mR0uAMJtZPNTnCfiAtgleoOu28gvJcBNU7KQHgWnNXPjlWgwMczko2O4Tmnv9zIe/CQged+2HsPwl2ZA==}
     engines: {node: ^18.20.5 || ^20.9.0 || >=22.0.0}
@@ -3323,6 +3343,9 @@ packages:
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
+  queue@6.0.2:
+    resolution: {integrity: sha512-iHZWu+q3IdFZFX36ro/lKBkSvfkztY5Y7HMiPlOUjhupPcG2JMfst2KKEpu5XndviX/3UhFbRngUPNKtgvtZiA==}
+
   radix3@1.1.2:
     resolution: {integrity: sha512-b484I/7b8rDEdSDKckSSBA8knMpcdsXudlE/LNL639wFoHKwLbEkQFZHWEYwDC0wa0FKUcCY+GAF73Z7wxNVFA==}
 
@@ -3557,6 +3580,11 @@ packages:
 
   sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
+
+  site-config-stack@3.0.6:
+    resolution: {integrity: sha512-lqNI6Xvbwf4NBFqGJ1gNUIe12SOYw8YOuhrbl52JTVwBgtZZzXYh/ZQAwBHwXC7pxULvfIPUd8AJA35WtqU5YA==}
+    peerDependencies:
+      vue: ^3
 
   skin-tone@2.0.0:
     resolution: {integrity: sha512-kUMbT1oBJCpgrnKoSr0o6wPtvRWT9W9UKvGLwfJYO2WuahZRHOpEyL1ckyMGgMWh0UdpmaoFqKKD29WTomNEGA==}
@@ -3868,6 +3896,10 @@ packages:
   universalify@2.0.1:
     resolution: {integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==}
     engines: {node: '>= 10.0.0'}
+
+  unplugin-ast@0.13.2:
+    resolution: {integrity: sha512-WXr7/8RKzeT+VFWrnHUoodWtd/w6xGWJzxXGEDI011ngxx2hjpaCQZqeVWiE/af+iCoAnOTvZH/fy42YynxUYQ==}
+    engines: {node: '>=18.12.0'}
 
   unplugin-utils@0.2.3:
     resolution: {integrity: sha512-unB2e2ogZwEoMw/X0Gq1vj2jaRKLmTh9wcSEJggESPllcrZI68uO7B8ykixbXqsSwG8r9T7qaHZudXIC/3qvhw==}
@@ -5631,6 +5663,20 @@ snapshots:
 
   '@ungap/structured-clone@1.3.0': {}
 
+  '@unhead/addons@1.11.18(rollup@4.34.6)':
+    dependencies:
+      '@rollup/pluginutils': 5.1.4(rollup@4.34.6)
+      '@unhead/schema': 1.11.18
+      '@unhead/shared': 1.11.18
+      estree-walker: 3.0.3
+      magic-string: 0.30.17
+      mlly: 1.7.4
+      ufo: 1.5.4
+      unplugin: 2.1.2
+      unplugin-ast: 0.13.2
+    transitivePeerDependencies:
+      - rollup
+
   '@unhead/dom@1.11.18':
     dependencies:
       '@unhead/schema': 1.11.18
@@ -6934,6 +6980,10 @@ snapshots:
 
   image-meta@0.2.1: {}
 
+  image-size@1.2.0:
+    dependencies:
+      queue: 6.0.2
+
   import-fresh@3.3.1:
     dependencies:
       parent-module: 1.0.1
@@ -7812,6 +7862,57 @@ snapshots:
       - magicast
       - supports-color
 
+  nuxt-seo-utils@6.0.8(magicast@0.3.5)(rollup@4.34.6)(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(lightningcss@1.29.1)(terser@5.38.1)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3)):
+    dependencies:
+      '@nuxt/kit': 3.15.4(magicast@0.3.5)
+      '@unhead/addons': 1.11.18(rollup@4.34.6)
+      '@unhead/schema': 1.11.18
+      defu: 6.1.4
+      escape-string-regexp: 5.0.0
+      fast-glob: 3.3.3
+      image-size: 1.2.0
+      mlly: 1.7.4
+      nuxt-site-config: 3.0.6(magicast@0.3.5)(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(lightningcss@1.29.1)(terser@5.38.1)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3))
+      pathe: 2.0.2
+      scule: 1.3.0
+      ufo: 1.5.4
+    transitivePeerDependencies:
+      - magicast
+      - rollup
+      - supports-color
+      - vite
+      - vue
+
+  nuxt-site-config-kit@3.0.6(magicast@0.3.5)(vue@3.5.13(typescript@5.7.3)):
+    dependencies:
+      '@nuxt/kit': 3.15.4(magicast@0.3.5)
+      '@nuxt/schema': 3.15.4
+      pkg-types: 1.3.1
+      site-config-stack: 3.0.6(vue@3.5.13(typescript@5.7.3))
+      std-env: 3.8.0
+      ufo: 1.5.4
+    transitivePeerDependencies:
+      - magicast
+      - supports-color
+      - vue
+
+  nuxt-site-config@3.0.6(magicast@0.3.5)(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(lightningcss@1.29.1)(terser@5.38.1)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3)):
+    dependencies:
+      '@nuxt/devtools-kit': 1.7.0(magicast@0.3.5)(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(lightningcss@1.29.1)(terser@5.38.1)(yaml@2.7.0))
+      '@nuxt/kit': 3.15.4(magicast@0.3.5)
+      '@nuxt/schema': 3.15.4
+      nuxt-site-config-kit: 3.0.6(magicast@0.3.5)(vue@3.5.13(typescript@5.7.3))
+      pathe: 1.1.2
+      pkg-types: 1.3.1
+      sirv: 3.0.0
+      site-config-stack: 3.0.6(vue@3.5.13(typescript@5.7.3))
+      ufo: 1.5.4
+    transitivePeerDependencies:
+      - magicast
+      - supports-color
+      - vite
+      - vue
+
   nuxt@3.15.4(@parcel/watcher@2.5.1)(@types/node@22.13.1)(better-sqlite3@11.8.1)(db0@0.2.3(better-sqlite3@11.8.1))(eslint@9.20.0(jiti@2.4.2))(ioredis@5.5.0)(lightningcss@1.29.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.34.6)(terser@5.38.1)(typescript@5.7.3)(vite@6.1.0(@types/node@22.13.1)(jiti@2.4.2)(lightningcss@1.29.1)(terser@5.38.1)(yaml@2.7.0))(yaml@2.7.0):
     dependencies:
       '@nuxt/cli': 3.21.1(magicast@0.3.5)
@@ -8321,6 +8422,10 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
+  queue@6.0.2:
+    dependencies:
+      inherits: 2.0.4
+
   radix3@1.1.2: {}
 
   randombytes@2.1.0:
@@ -8678,6 +8783,11 @@ snapshots:
       totalist: 3.0.1
 
   sisteransi@1.0.5: {}
+
+  site-config-stack@3.0.6(vue@3.5.13(typescript@5.7.3)):
+    dependencies:
+      ufo: 1.5.4
+      vue: 3.5.13(typescript@5.7.3)
 
   skin-tone@2.0.0:
     dependencies:
@@ -9046,6 +9156,15 @@ snapshots:
       unist-util-visit-parents: 6.0.1
 
   universalify@2.0.1: {}
+
+  unplugin-ast@0.13.2:
+    dependencies:
+      '@antfu/utils': 8.1.0
+      '@babel/generator': 7.26.8
+      ast-kit: 1.4.0
+      magic-string-ast: 0.7.0
+      unplugin: 2.1.2
+      unplugin-utils: 0.2.3
 
   unplugin-utils@0.2.3:
     dependencies:

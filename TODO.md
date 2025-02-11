@@ -24,7 +24,7 @@
 - [ ] Upload favicon
 - [ ] Make publication info smaller
 - [ ] Add SEO
-- [ ] Translate missing strings
+- [X] Translate missing strings
 
 ## Refactor
 

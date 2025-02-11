@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: true,
   css: ["/assets/css/main.css"],
-  modules: ["@nuxt/content", "@nuxtjs/i18n", "@nuxt/icon"],
+  modules: ["@nuxt/content", "@nuxtjs/i18n", "@nuxt/icon", "nuxt-seo-utils"],
   components: [
     {
       path: "~/components",
@@ -15,6 +15,7 @@ export default defineNuxtConfig({
   ],
   app: {
     head: {
+      titleTemplate: '%s · Juan R. Loaiza',
       link: [
         {
           rel: "stylesheet",
@@ -22,6 +23,9 @@ export default defineNuxtConfig({
         },
       ],
     },
+  },
+  seo: {
+    siteName: 'SITE NAME IN CONFIG'
   },
   i18n: {
     vueI18n: "./i18n.config.ts",
@@ -46,16 +50,16 @@ export default defineNuxtConfig({
     },
   },
   icon: {
-    localApiEndpoint: '/_nuxt_icon',
+    localApiEndpoint: "/_nuxt_icon",
     serverBundle: false,
     clientBundle: {
       scan: true,
-      sizeLimitKb: 256
-    }
+      sizeLimitKb: 256,
+    },
   },
   nitro: {
     prerender: {
-      routes: ['/']
+      routes: ["/"],
     },
   },
 });

@@ -1,5 +1,9 @@
 <script setup lang="ts">
-const { locale } = useI18n();
+const { locale, t } = useI18n();
+
+useSeoMeta({
+  title: "CV"
+})
 
 const { data: education } = await useAsyncData(() =>
   queryCollection("cv")

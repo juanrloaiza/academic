@@ -1,5 +1,9 @@
 <script setup lang="ts">
-const config = useAppConfig();
+const { t } = useI18n();
+
+useSeoMeta({
+  title: t('home')
+})
 </script>
 
 <template>

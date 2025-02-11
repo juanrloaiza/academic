@@ -1,5 +1,12 @@
 <script setup lang="ts">
 const config = useAppConfig();
+
+useSeoMeta({
+  title: 'Juan R. Loaiza',
+  description: "Académico en Filosofía · Professor of Philosophy",
+  author: "Juan R. Loaiza"
+})
+
 </script>
 
 <template>

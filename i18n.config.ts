@@ -48,7 +48,8 @@ export default defineI18nConfig(() => ({
       phd: "Doctorate",
       syllabus: "Syllabus",
       courses: "Courses",
-      academic: "Professor of Philosophy"
+      academic: "Professor of Philosophy",
+      home: "Home",
     },
     es: {
       homePage: "¡Este es el inicio!",
@@ -96,7 +97,8 @@ export default defineI18nConfig(() => ({
       phd: "Doctorado",
       syllabus: "Programa",
       courses: "Cursos",
-      academic: "Académico en Filosofía"
+      academic: "Académico en Filosofía",
+      home: 'Inicio'
     },
   },
 }));

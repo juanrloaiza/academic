@@ -1,4 +1,10 @@
 <script setup lang="ts">
+const { t } = useI18n();
+
+useSeoMeta({
+  title: t('teaching.title')
+})
+
 import { CourseDescription } from '#components';
 
 const { data: courses } = await useAsyncData(()=>queryCollection('courses').all(),

@@ -10,6 +10,10 @@ const { data: post } = await useAsyncData(() =>
 );
 
 const formatDate = (dateString: string) => dayjs(dateString).format('YYYY.MM.DD');
+
+useSeoMeta({
+  title: post.value.title
+})
 </script>
 
 <template>

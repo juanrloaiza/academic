@@ -1,4 +1,8 @@
 <script setup lang="ts">
+useSeoMeta({
+  title: "Blog"
+})
+
 import dayjs from "dayjs";
 
 const { data: blogpostsByYear } = await useAsyncData(

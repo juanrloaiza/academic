@@ -1,10 +1,13 @@
 <script setup lang="ts">
-const config = useAppConfig();
-const { locale } = useI18n();
+const { locale, t } = useI18n();
 
 const { data: content } = await useAsyncData(() =>
   queryCollection("about").where("lang", "=", locale.value).first()
 );
+
+useSeoMeta({
+  title: t('about.title')
+})
 </script>
 
 <template>
