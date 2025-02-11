@@ -45,6 +45,9 @@ export default defineNuxtConfig({
       },
     },
   },
+  icon: {
+    localApiEndpoint: '/_nuxt_icon'
+  },
   nitro: {
     prerender: {
       routes: ['/']
