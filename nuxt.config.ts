@@ -21,6 +21,11 @@ export default defineNuxtConfig({
           rel: "stylesheet",
           href: "https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css",
         },
+        {
+          rel: 'icon',
+          type: 'image/png',
+          href: '/favicon.png'
+        }
       ],
     },
   },
