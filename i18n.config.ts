@@ -50,6 +50,9 @@ export default defineI18nConfig(() => ({
       courses: "Courses",
       academic: "Professor of Philosophy",
       home: "Home",
+      articles: "Journal articles",
+      bookchapters: "Book chapters",
+      monographs: "Monographs",
     },
     es: {
       homePage: "¡Este es el inicio!",
@@ -98,7 +101,10 @@ export default defineI18nConfig(() => ({
       syllabus: "Programa",
       courses: "Cursos",
       academic: "Académico en Filosofía",
-      home: 'Inicio'
+      home: "Inicio",
+      articles: "Artículos en revistas especializadas",
+      bookchapters: "Capítulos de libro",
+      monographs: "Libros y monografías",
     },
   },
 }));
