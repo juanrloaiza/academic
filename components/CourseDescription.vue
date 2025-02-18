@@ -27,12 +27,12 @@ const openAbstract = () => {
     <h6 class="text-sm">{{ $t(level) }}</h6>
       <MDC v-if="description" :value="description" class="text-base mt-1" />
 
-      <NuxtLink
+      <a
         v-for="syllabus in syllabi"
-        :to="syllabus.route"
+        :href="syllabus.route"
         class="inline-block mt-2 text-primary/70 hover:text-accent py-1 px-2 rounded-md border-1 text-sm"
       >
         {{ $t("syllabus") }} ({{ syllabus.semester }})
-      </NuxtLink>
+      </a>
   </div>
 </template>
