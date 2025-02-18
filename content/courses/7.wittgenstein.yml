@@ -3,3 +3,6 @@ name:
   en: "Seminar: Wittgenstein"
 level: pregrado
 description: "Seminario de autor dedicado a las _Investigaciones Filosóficas_ de Wittgenstein. Sigue la división de parágrafos de Baker & Hacker (1980)."
+syllabi:
+  - semester: 2024-II
+    route: "/programas/2024.2.Wittgenstein.pdf"

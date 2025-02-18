@@ -21,9 +21,9 @@
 - [ ] Implement stricter zod schemas in collection definitions
 - [ ] Have translations for course abstracts
 - [ ] Blog and course sections are fairly similar (title with small description). Consider same styles?
-- [ ] Upload favicon
+- [X] Upload favicon
 - [ ] Make publication info smaller
-- [ ] Add SEO
+- [X] Add SEO
 - [X] Translate missing strings
 
 ## Refactor

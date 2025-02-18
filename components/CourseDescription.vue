@@ -1,12 +1,17 @@
 <script setup lang="ts">
 const { locale } = useI18n();
 
+interface Syllabus {
+  semester: string;
+  route: string;
+}
+
 // Define the prop with Partial<Record<>> to allow missing translations
 defineProps<{
   name: Partial<Record<"en" | "es", string>>;
   level: string;
   description?: String;
-  syllabus?: string;
+  syllabi?: Array<Syllabus>;
 }>();
 
 const isAbstractOpen = ref(false);
@@ -17,25 +22,17 @@ const openAbstract = () => {
 </script>
 
 <template>
-  <div class="mb-4">
-    <div class="flex">
-      <h4 class="md:text-xl font-semibold">{{ name[locale] }}</h4>
+  <div class="mb-8">
+    <h4 class="md:text-xl font-semibold">{{ name[locale] }}</h4>
+    <h6 class="text-sm">{{ $t(level) }}</h6>
+      <MDC v-if="description" :value="description" class="text-base mt-1" />
 
-      <AbstractOpenButton
-        v-if="description"
-        @click="openAbstract"
-        :isAbstractOpen="isAbstractOpen"
-      />
-    </div>
-    <div>{{ $t(level) }}</div>
-    <div
-      v-if="isAbstractOpen"
-      class="text-base my-3 max-w-[75ch] pl-5 border-l-2"
-    >
-      <MDC v-if="description" :value="description" />
-      <div v-if="syllabus" class="text-blue-800 mt-3">
-        <a>{{ $t("syllabus") }}</a>
-      </div>
-    </div>
+      <NuxtLink
+        v-for="syllabus in syllabi"
+        :to="syllabus.route"
+        class="inline-block mt-2 text-primary/70 hover:text-accent py-1 px-2 rounded-md border-1 text-sm"
+      >
+        {{ $t("syllabus") }} ({{ syllabus.semester }})
+      </NuxtLink>
   </div>
 </template>

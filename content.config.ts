@@ -53,41 +53,48 @@ export default defineContentConfig({
         end_year: z.number().default(0),
         faculty: z.string().optional(),
         info: z.string().optional(),
-        thesis: z.object({
-          title: z.string(),
-          supervisors: z.array(z.string()).optional(),
-          examiners: z.array(z.string()).optional(),
-          qualification: z.string().optional(),
-        }).optional(),
+        thesis: z
+          .object({
+            title: z.string(),
+            supervisors: z.array(z.string()).optional(),
+            examiners: z.array(z.string()).optional(),
+            qualification: z.string().optional(),
+          })
+          .optional(),
         city: z.string().optional(),
       }),
     }),
     blog: defineCollection({
-      type: 'page',
-      source: 'blog/**/*.md',
+      type: "page",
+      source: "blog/**/*.md",
       schema: z.object({
         title: z.string(),
         date: z.string(),
         tags: z.array(z.string()).optional(),
-        summary: z.string().optional()
-      })
+        summary: z.string().optional(),
+      }),
     }),
     courses: defineCollection({
-      type: 'data',
-      source: 'courses/**/*.yml',
+      type: "data",
+      source: "courses/**/*.yml",
       schema: z.object({
-        name: z.object({en: z.string(), es: z.string()}),
+        name: z.object({ en: z.string(), es: z.string() }),
         level: z.string(),
         description: z.string().optional(),
-        syllabus: z.string().optional()
-      })
+        syllabi: z.array(
+            z.object({
+              semester: z.string(),
+              route: z.string(),
+            })
+          ).optional(),
+      }),
     }),
     otherProjects: defineCollection({
-      type: 'page',
-      source: 'others/*.md',
+      type: "page",
+      source: "others/*.md",
       schema: z.object({
-        lang: z.enum(['en', 'es'])
-      })
-    })
+        lang: z.enum(["en", "es"]),
+      }),
+    }),
   },
 });
