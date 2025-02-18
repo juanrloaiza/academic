@@ -1,5 +1,20 @@
 <script setup lang="ts">
-defineProps(["pub"]);
+defineProps({
+  title: {
+    type: String,
+    required: true,
+  },
+  authors: String,
+  year: [String, Number],
+  journal: String,
+  volume: [String, Number],
+  issue: [String, Number],
+  pages: String,
+  abstract: String,
+  doi: String,
+  url: String,
+  openaccess: Boolean,
+});
 
 const isAbstractOpen = ref(false);
 
@@ -11,31 +26,29 @@ const openAbstract = () => {
 <template>
   <div class="flex justify-between">
     <div>
-      <a
-        :href="pub.doi ? `https://doi.org/${pub.doi}` : pub.url ? pub.url : '#'"
-      >
-        <PubTitle :title="pub.title" :openaccess="pub.openaccess" />
+      <a :href="doi ? `https://doi.org/${doi}` : url ? url : '#'">
+        <PubTitle :title="title" :openaccess="openaccess" />
       </a>
-      <div class="text-base">{{ pub.authors }} ({{ pub.year }}).</div>
+      <div class="text-base">{{ authors }} ({{ year }}).</div>
       <div class="text-sm mt-0.5">
-        <em>{{ pub.journal }}</em>
-        <span v-if="pub.volume">
-          <em>, {{ pub.volume }}</em
-          >({{ pub.issue }})</span
-        ><span v-if="pub.pages">, {{ pub.pages }}</span
+        <em>{{ journal }}</em>
+        <span v-if="volume">
+          <em>, {{ volume }}</em
+          >({{ issue }})</span
+        ><span v-if="pages">, {{ pages }}</span
         >.
-        <a v-if="pub.doi" :href='`https://doi.org/${pub.doi}`'>doi: {{ pub.doi }}</a>
-        <a v-else="pub.url" :href="pub.url"> {{ pub.url }}</a>
+        <a v-if="doi" :href="`https://doi.org/${doi}`">doi: {{ doi }}</a>
+        <a v-else="url" :href="url"> {{ url }}</a>
       </div>
       <div
         v-if="isAbstractOpen"
         class="text-base my-3 max-w-[75ch] pl-5 border-l-2"
       >
-        {{ pub.abstract }}
+        {{ abstract }}
       </div>
     </div>
     <AbstractOpenButton
-      v-if="pub.abstract"
+      v-if="abstract"
       @click="openAbstract"
       :isAbstractOpen="isAbstractOpen"
     />

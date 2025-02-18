@@ -22,15 +22,15 @@
 - [ ] Have translations for course abstracts
 - [ ] Blog and course sections are fairly similar (title with small description). Consider same styles?
 - [X] Upload favicon
-- [ ] Make publication info smaller
+- [X] Make publication info smaller
 - [X] Add SEO
 - [X] Translate missing strings
 
 ## Refactor
 
-- [ ] Pubs and teaching items have abstracts with the same styles. We can abstract to a component.
+- [-] Pubs and teaching items have abstracts with the same styles. We can abstract to a component.
 - [X] Pubs and teaching items reveal the abstract with a button. We can abstract to a component.
-- [ ] Pubs are passed entirely to component, not bound to the component. Binding would simplify syntax.
+- [X] Pubs are passed entirely to component, not bound to the component. Binding would simplify syntax.
 
 ## Future
 
