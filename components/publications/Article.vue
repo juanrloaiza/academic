@@ -16,16 +16,17 @@ const openAbstract = () => {
       >
         <PubTitle :title="pub.title" :openaccess="pub.openaccess" />
       </a>
-      {{ pub.authors }} ({{ pub.year }}).
-      <em>{{ pub.journal }}</em>
-      <span v-if="pub.volume">
-        <em>, {{ pub.volume }}</em
-        >({{ pub.issue }})</span
-      ><span v-if="pub.pages">, {{ pub.pages }}</span
-      >.
-      <span v-if="pub.doi">doi: {{ pub.doi }}</span>
-      <span v-else="pub.url">{{ pub.url }}</span>
-
+      <div class="text-base">{{ pub.authors }} ({{ pub.year }}).</div>
+      <div class="text-sm mt-0.5">
+        <em>{{ pub.journal }}</em>
+        <span v-if="pub.volume">
+          <em>, {{ pub.volume }}</em
+          >({{ pub.issue }})</span
+        ><span v-if="pub.pages">, {{ pub.pages }}</span
+        >.
+        <a v-if="pub.doi" :href='`https://doi.org/${pub.doi}`'>doi: {{ pub.doi }}</a>
+        <a v-else="pub.url" :href="pub.url"> {{ pub.url }}</a>
+      </div>
       <div
         v-if="isAbstractOpen"
         class="text-base my-3 max-w-[75ch] pl-5 border-l-2"
