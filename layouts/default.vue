@@ -13,7 +13,7 @@ useSeoMeta({
 
 <template>
   <div>
-    <div class="max-w-6xl mx-auto pt-6 px-6">
+    <div class="bg-white dark:bg-gray-300 max-w-6xl mx-auto pt-6 px-6">
       <div class="block text-center md:flex md:justify-between items-center min-h-[5rem]">
         <div>
           <NuxtLinkLocale to="/" class="md:flex items-center">
@@ -25,6 +25,7 @@ useSeoMeta({
         <div class="flex items-center justify-center">
           <SocialMediaButtons />
           <LangSwitcher />
+          <DarkThemeToggle />
         </div>
       </div>
       <div class="mt-6 text-lg">

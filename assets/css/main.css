@@ -5,8 +5,7 @@
 @import "./markdown.css"; /* Custom for markdown related stuff */
 @import "./blogcontent.css";
 
-@import "./nord-palette.css";
-@import "./atom-one-light.css";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 @theme {
   --font-sans: "Schibsted Grotesk", ui-sans-serif, system-ui, sans-serif,
