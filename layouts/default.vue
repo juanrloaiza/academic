@@ -12,14 +12,16 @@ useSeoMeta({
 </script>
 
 <template>
-  <div>
-    <div class="bg-white dark:bg-gray-300 max-w-6xl mx-auto pt-6 px-6">
+  <Body class="bg-background dark:bg-neutral-800 dark:text-gray-100">
+    <div class="max-w-6xl mx-auto pt-6 px-6">
       <div class="block text-center md:flex md:justify-between items-center min-h-[5rem]">
         <div>
           <NuxtLinkLocale to="/" class="md:flex items-center">
             <h1 class="block mb-1 md:inline md:m-0 text-4xl font-extrabold hover:text-primary">{{ config.title }}</h1>
-            <span class="hidden md:inline text-2xl mx-4 text-gray-600"> · </span>
-            <span class="text-2xl text-gray-600 font-heading mt-1">{{ $t('academic')}}</span>
+            <span class="text-2xl text-gray-600 dark:text-gray-400">
+            <span class="hidden md:inline mx-4"> · </span>
+            <span class="font-heading mt-1">{{ $t('academic')}}</span>
+          </span>
           </NuxtLinkLocale>
         </div>
         <div class="flex items-center justify-center">
@@ -32,5 +34,5 @@ useSeoMeta({
         <slot />
       </div>
     </div>
-  </div>
+  </Body>
 </template>

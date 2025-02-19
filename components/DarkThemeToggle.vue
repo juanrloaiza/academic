@@ -7,14 +7,18 @@ onMounted(() => {
   if (savedTheme) {
     theme.value = savedTheme;
     document.documentElement.setAttribute("data-theme", savedTheme);
+    document.documentElement.classList.add(savedTheme);
   }
 });
 
 // Toggle theme and save preference
 const toggleTheme = () => {
+  const currentTheme = theme.value;
   theme.value = theme.value === "light" ? "dark" : "light";
   document.documentElement.setAttribute("data-theme", theme.value);
   localStorage.setItem("theme", theme.value);
+  document.documentElement.classList.remove(currentTheme);
+  document.documentElement.classList.add(theme.value);
 };
 </script>
 

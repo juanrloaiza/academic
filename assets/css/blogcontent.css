@@ -66,8 +66,8 @@
   blockquote::before {
     content: "\“";
     position: absolute;
-    margin-right: 1rem;
-    font-size: 8rem;
+    margin-right: 0.75rem;
+    font-size: 6rem;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     color: var(--color-slate-200);
     left: 5px;
@@ -103,5 +103,31 @@
   }
   img {
     margin: auto;
+  }
+}
+
+[data-theme="dark"] {
+  .blog-content {
+    h2 a {
+      color: var(--color-orange-200);
+      font-weight: 500
+    }
+  }
+  blockquote {
+    background-color: var(--color-zinc-700);
+    border-left: 10px solid var(--color-zinc-600);
+    color: var(--color-zinc-300);
+
+  }
+
+  blockquote::before {
+    color: var(--color-zinc-600);
+ 
+  }
+  pre {
+    border: 1px solid var(--color-zinc-600);
+  }
+  .footnotes {
+    border-top: 1px solid var(--color-zinc-500);
   }
 }

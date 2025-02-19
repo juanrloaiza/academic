@@ -54,7 +54,7 @@ export default defineNuxtConfig({
         highlight: {
           theme: {
             default: "one-light",
-            dark: "nord",
+            dark: "catppuccin-frappe",
           },
           langs: ["python", "js", "md", "yaml"],
         },

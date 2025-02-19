@@ -8,33 +8,27 @@ useHead({
   <div class="mx-4 justify-self-end">
     <NuxtLink to="https://hcommons.social/@juanrloaiza" class="mx-2"
       ><i
-        class="fa-brands fa-mastodon text-2xl text-gray-800 hover:text-primary"
+        class="fa-brands fa-mastodon text-2xl text-gray-800 hover:text-primary dark:text-gray-400"
       ></i
     ></NuxtLink>
     <NuxtLink
       to="https://www.researchgate.net/profile/Juan_Loaiza5"
-      class="mx-2 text-2xl text-gray-800 hover:text-primary"
+      class="mx-2"
       ><i
-        class="ai ai-researchgate text-2xl text-gray-800 hover:text-primary"
+        class="ai ai-researchgate text-2xl text-gray-800 hover:text-primary dark:text-gray-400"
       ></i
     ></NuxtLink>
-    <NuxtLink
-      to="https://orcid.org/0000-0003-0570-3832"
-      class="mx-2 text-2xl text-gray-800 hover:text-primary"
-      ><i class="ai ai-orcid text-2xl text-gray-800 hover:text-primary"></i
+    <NuxtLink to="https://orcid.org/0000-0003-0570-3832" class="mx-2"
+      ><i class="ai ai-orcid text-2xl text-gray-800 hover:text-primary dark:text-gray-400"></i
     ></NuxtLink>
-    <NuxtLink
-      to="https://www.instagram.com/loaiza.filosofia"
-      class="mx-2 text-2xl text-gray-800 hover:text-primary"
+    <NuxtLink to="https://www.instagram.com/loaiza.filosofia" class="mx-2"
       ><i
-        class="fa-brands fa-instagram text-2xl text-gray-800 hover:text-primary"
+        class="fa-brands fa-instagram text-2xl text-gray-800 hover:text-primary dark:text-gray-400"
       ></i
     ></NuxtLink>
-    <NuxtLink
-      to="https://github.com/juanrloaiza"
-      class="mx-2 text-2xl text-gray-800 hover:text-primary"
+    <NuxtLink to="https://github.com/juanrloaiza" class="mx-2"
       ><i
-        class="fa-brands fa-github text-2xl text-gray-800 hover:text-primary"
+        class="fa-brands fa-github text-2xl text-gray-800 hover:text-primary dark:text-gray-400"
       ></i
     ></NuxtLink>
   </div>

@@ -20,9 +20,17 @@
   --color-accent: #bf616a;
 }
 
-html {
+[data-theme='dark']{
+  --color-primary: #ecb474;
+  --color-accent: #be7c82;
+
+  ::selection {
+    background-color: #455966;
+  }
+}
+
+body {
   padding-bottom: 50px;
-  background-color: var(--color-background);
 }
 
 h1,
