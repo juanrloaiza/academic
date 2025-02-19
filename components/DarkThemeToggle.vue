@@ -23,7 +23,19 @@ const toggleTheme = () => {
 </script>
 
 <template>
-  <button @click="toggleTheme">
-    {{ theme === "dark" ? "Light Mode" : "Dark Mode" }}
+  <button
+    @click="toggleTheme"
+    class="mx-2 px-3 py-1 border-1 border-black dark:border-gray-200 my-5 hover:border-2 rounded-sm"
+  >
+    <Icon
+      class="align-middle"
+      v-if="theme === 'dark'"
+      name="material-symbols:light-mode"
+    />
+    <Icon
+      class="align-middle"
+      v-if="theme !== 'dark'"
+      name="material-symbols:dark-mode"
+    />
   </button>
 </template>
