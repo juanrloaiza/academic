@@ -69,9 +69,7 @@ export default defineNuxtConfig({
       sizeLimitKb: 256,
     },
   },
-  nitro: {
-    prerender: {
-      routes: ["/"],
-    },
-  },
+  routeRules: {
+    "*/blog/**": {prerender: true}
+  }
 });

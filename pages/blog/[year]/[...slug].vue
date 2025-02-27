@@ -12,8 +12,15 @@ const { data: post } = await useAsyncData(() =>
 const formatDate = (dateString: string) =>
   dayjs(dateString).format("YYYY.MM.DD");
 
+
+const ogPostTitle = post.value?.title || "Juan R. Loaiza"
+const ogSummary = post.value?.summary
+
 useSeoMeta({
-  title: post.value.title,
+  title: ogPostTitle,
+  ogTitle: ogPostTitle,
+  description: ogSummary,
+  ogDescription: ogSummary
 });
 </script>
 
