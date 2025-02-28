@@ -17,7 +17,7 @@
 
 ## Extra
 
-- [ ] Implementar estilos de tema oscuro
+- [X] Implementar estilos de tema oscuro
 - [ ] Implement stricter zod schemas in collection definitions
 - [ ] Have translations for course abstracts
 - [ ] Blog and course sections are fairly similar (title with small description). Consider same styles?

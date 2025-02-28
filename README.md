@@ -1,75 +1,16 @@
-# Nuxt Minimal Starter
+# Academic website
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is my personal academic website! It is available at [juanrloaiza.com](www.juanrloaiza.com).
 
-## Setup
+I've coded this website many times over the years using:
 
-Make sure to install dependencies:
+* Plain HTML (yes, at some point it was plain HTML)
+* Jekyll (2018-2023)
+* Hugo (2023-2025)
+* Nuxt (2025-)
 
-```bash
-# npm
-npm install
+If for some reason you want to run this website on your computer, it works as with any other Nuxt project:
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+1. Clone this repository
+2. Run `pnpm install`
+3. Run `pnpm dev`
