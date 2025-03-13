@@ -13,11 +13,11 @@
     "@nuxt/content": "^3.3.0",
     "@nuxt/icon": "1.10.3",
     "@nuxtjs/i18n": "9.3.0",
-    "@tailwindcss/vite": "^4.0.5",
+    "@tailwindcss/vite": "^4.0.14",
     "dayjs": "^1.11.13",
     "nuxt": "^3.16.0",
-    "nuxt-seo-utils": "^6.0.8",
-    "tailwindcss": "^4.0.5",
+    "nuxt-seo-utils": "^6.0.13",
+    "tailwindcss": "^4.0.14",
     "vue": "latest",
     "vue-router": "latest"
   },
@@ -30,6 +30,6 @@
     ]
   },
   "devDependencies": {
-    "@iconify-json/material-symbols": "^1.2.14"
+    "@iconify-json/material-symbols": "^1.2.15"
   }
 }

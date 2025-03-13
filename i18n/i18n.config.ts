@@ -1,6 +1,6 @@
 export default defineI18nConfig(() => ({
   legacy: false,
-  locale: "es",
+  locale: 'es',
   messages: {
     en: {
       homePage: "¡Este es el inicio!",

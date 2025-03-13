@@ -39,7 +39,7 @@ export default defineNuxtConfig({
     },
   },
   i18n: {
-    vueI18n: "./i18n.config.ts",
+    vueI18n: "i18n.config.ts",
     baseUrl: "https://www.juanrloaiza.com",
     locales: ["es", "en"],
     defaultLocale: "es",
