@@ -31,11 +31,7 @@ const { data: service } = await useAsyncData(() =>
   <PageTitle title="CV" />
 
   <h3 class="font-bold text-2xl mb-3">{{ $t("education") }}</h3>
-  <CVSection
-    v-for="ed in education"
-    :startYear=ed.start_year
-    :endYear=ed.end_year
-  >
+  <LazyCVSection hydrate-never v-for="ed in education" :startYear=ed.start_year :endYear=ed.end_year>
     <strong class="font-semibold">{{ ed.role[locale] }}</strong>
     <br />
     {{ ed.faculty }}, {{ ed.institution }}
@@ -52,32 +48,24 @@ const { data: service } = await useAsyncData(() =>
       {{ $t("qualification") }}:
       {{ ed.thesis.qualification }}
     </span>
-  </CVSection>
+  </LazyCVSection>
 
   <h3 class="font-bold text-2xl mb-3">{{ $t("employment") }}</h3>
 
-  <CVSection
-    v-for="emp in employment"
-    :startYear="emp.start_year"
-    :endYear="emp.end_year"
-  >
+  <LazyCVSection hydrate-never v-for="emp in employment" :startYear="emp.start_year" :endYear="emp.end_year">
     <strong class="font-semibold">{{ emp.role[locale] }}</strong>
     <br />
     {{ emp.faculty }}, {{ emp.institution }}
     <br />
-  </CVSection>
+  </LazyCVSection>
 
   <h3 class="font-bold text-2xl mb-3 mt-8">{{ $t("service") }}</h3>
 
-  <CVSection
-    v-for="srv in service"
-    :startYear="srv.start_year"
-    :endYear="srv.end_year"
-  >
+  <LazyCVSection hydrate-never v-for="srv in service" :startYear="srv.start_year" :endYear="srv.end_year">
     <strong class="font-semibold">{{ srv.role[locale] }}</strong>
     <br />
     <span v-if="srv.faculty">{{ srv.faculty }},</span>
     {{ srv.institution }}
     <br />
-  </CVSection>
+  </LazyCVSection>
 </template>

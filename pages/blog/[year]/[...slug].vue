@@ -39,6 +39,6 @@ useSeoMeta({
         {{ tag }}
       </PubTag>
     </div>
-    <ContentRenderer v-if="post" :value="post" class="blog-content" />
+    <LazyContentRenderer hydrate-never  v-if="post" :value="post" class="blog-content" />
   </div>
 </template>

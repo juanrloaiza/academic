@@ -25,10 +25,10 @@ const openAbstract = () => {
   <div class="mb-8">
     <h4 class="md:text-xl font-semibold">{{ name[locale] }}</h4>
     <h6 class="text-sm">{{ $t(level) }}</h6>
-    <MDC v-if="description" :value="description" class="text-base mt-1" />
+    <LazyMDC hydrate-never v-if="description" :value="description" class="text-base mt-1" />
 
-    <LinkButton v-for="syllabus in syllabi" :to="syllabus.route">
+    <LazyLinkButton hydrate-never v-for="syllabus in syllabi" :to="syllabus.route">
       {{ $t("syllabus") }} ({{ syllabus.semester }})
-    </LinkButton>
+    </LazyLinkButton>
   </div>
 </template>

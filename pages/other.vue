@@ -13,7 +13,8 @@ const { data: content } = await useAsyncData(() =>
 <template>
   <PageTitle :title="$t('other.title')" />
 
-    <ContentRenderer
+    <LazyContentRenderer
+    hydrate-never
       v-if="content"
       :value="content"
       class="md-content"
