@@ -5,7 +5,7 @@ import dayjs from "dayjs";
 
 const { slug, year } = useRoute().params;
 
-const { status, data: post } = await useLazyAsyncData(() =>
+const { status, data: post } = useLazyAsyncData(() =>
   queryCollection("blog").path(`/blog/${year}/${slug}`).first()
 );
 
@@ -25,20 +25,25 @@ useSeoMeta({
 </script>
 
 <template>
-  <div v-if="post" class="mx-auto max-w-[60ch]">
+
+  <div v-if="status === 'pending'" class="flex justify-center">
+    <LoadingIcon />
+  </div>
+
+
+  <div v-else-if="post" class="mx-auto max-w-[60ch]">
     <NuxtLink :to="localePath('/blog')" class="block my-4 text-gray-500 text-sm">
       <Icon name="material-symbols:arrow-back-rounded" class="align-middle mr-3" />{{ $t("backblog") }}
     </NuxtLink>
-    <LoadingIcon v-if="status === 'pending'" />
-    <span v-else>
-      <h2 class="font-bold text-3xl mb-5">{{ post.title }}</h2>
-      <div class="flex mb-10 items-baseline">
-        <div class="text-base mr-4">{{ formatDate(post.date) }}</div>
-        <PubTag v-for="tag in post.tags">
-          {{ tag }}
-        </PubTag>
-      </div>
-      <LazyContentRenderer hydrate-never v-if="post" :value="post" class="blog-content" />
-    </span>
+
+    <h2 class="font-bold text-3xl mb-5">{{ post.title }}</h2>
+    <div class="flex mb-10 items-baseline">
+      <div class="text-base mr-4">{{ formatDate(post.date) }}</div>
+      <PubTag v-for="tag in post.tags">
+        {{ tag }}
+      </PubTag>
+    </div>
+    <ContentRenderer v-if="post" :value="post" class="blog-content" />
+
   </div>
 </template>
