@@ -15,12 +15,6 @@ defineProps({
   url: String,
   openaccess: Boolean,
 });
-
-const isAbstractOpen = ref(false);
-
-const openAbstract = () => {
-  isAbstractOpen.value = !isAbstractOpen.value;
-};
 </script>
 
 <template>
@@ -40,17 +34,7 @@ const openAbstract = () => {
         <a v-if="doi" :href="`https://doi.org/${doi}`">doi: {{ doi }}</a>
         <a v-else="url" :href="url"> {{ url }}</a>
       </div>
-      <div
-        v-if="isAbstractOpen"
-        class="text-base my-3 max-w-[75ch] pl-5 border-l-2"
-      >
-        {{ abstract }}
-      </div>
     </div>
-    <AbstractOpenButton
-      v-if="abstract"
-      @click="openAbstract"
-      :isAbstractOpen="isAbstractOpen"
-    />
+
   </div>
 </template>
