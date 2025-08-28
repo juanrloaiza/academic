@@ -1,35 +1,31 @@
 {
-  "name": "nuxt-app",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "dependencies": {
-    "@nuxt/content": "~3.3.0",
-    "@nuxt/icon": "1.10.3",
-    "@nuxtjs/i18n": "9.3.0",
-    "@tailwindcss/vite": "~4.0.14",
-    "dayjs": "~1.11.13",
-    "nuxt": "~3.16.0",
-    "nuxt-seo-utils": "^6.0.13",
-    "tailwindcss": "~4.0.14",
-    "vue": "~3.5.13",
-    "vue-router": "~4.5.0"
-  },
-  "packageManager": "pnpm@10.2.0+sha512.0d27364e0139c6aadeed65ada153135e0ca96c8da42123bd50047f961339dc7a758fc2e944b428f52be570d1bd3372455c1c65fa2e7aa0bfbf931190f9552001",
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@parcel/watcher",
-      "better-sqlite3",
-      "esbuild"
-    ]
-  },
-  "devDependencies": {
-    "@iconify-json/material-symbols": "^1.2.15"
-  }
+	"name": "nuxt-app",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare"
+	},
+	"dependencies": {
+		"@nuxt/content": "^3.6.3",
+		"@nuxt/icon": "^2.0.0",
+		"@nuxtjs/i18n": "^10.0.6",
+		"@nuxtjs/mdc": "^0.17.2",
+		"@tailwindcss/vite": "^4.1.12",
+		"dayjs": "^1.11.15",
+		"nuxt": "^4.0.3",
+		"nuxt-seo-utils": "^7.0.14",
+		"tailwindcss": "^4.1.12"
+	},
+	"pnpm": {
+		"ignoredBuiltDependencies": [
+			"@tailwindcss/oxide"
+		],
+		"onlyBuiltDependencies": [
+			"@tailwindcss/oxide"
+		]
+	}
 }
