@@ -27,5 +27,6 @@
 		"onlyBuiltDependencies": [
 			"@tailwindcss/oxide"
 		]
-	}
+	},
+	"packageManager": "^pnpm@10.5.2"
 }
