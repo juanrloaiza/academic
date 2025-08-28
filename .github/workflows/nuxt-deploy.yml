@@ -14,6 +14,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "20"
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
       # Pick your own package manager and build script
       - run: pnpm install
       - run: pnpm dlx nuxt generate --preset github_pages
