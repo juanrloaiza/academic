@@ -41,9 +41,9 @@ if (blogpostsByYear.value) {
     </div>
     <div class="col-span-11">
       <div v-if="blogpostsByYear" v-for="post of blogpostsByYear[Number(year)]" class="mb-6">
-        <NuxtLink :to="post.path">
+        <NuxtLinkLocale :to="post.path">
           <MDC :value="post.title" class="text-primary hover:text-accent" />
-        </NuxtLink>
+        </NuxtLinkLocale>
         
         <div v-if="post.summary" class="text-base">{{ post.summary }}</div>
         <div class="flex mt-2">
