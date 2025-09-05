@@ -11,6 +11,7 @@ const { status: artsStatus, data: pubArticles } = await useLazyAsyncData(() =>
     .where('year', '>', '2000')
     .where('pubType', '=', 'article')
     .order("year", "DESC")
+    .order("title", "ASC")
     .all()
 );
 
