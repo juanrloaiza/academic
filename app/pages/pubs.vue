@@ -15,6 +15,15 @@ const { status: artsStatus, data: pubArticles } = await useLazyAsyncData(() =>
     .all()
 );
 
+const { status: commentStatus, data: pubComments } = await useLazyAsyncData(() =>
+  queryCollection("publications")
+    .where('year', '>', '2000')
+    .where('pubType', '=', 'comment')
+    .order("year", "DESC")
+    .all()
+);
+
+
 const { status: chapterStatus, data: pubChapters } = await useLazyAsyncData(() =>
   queryCollection("publications")
     .where('year', '>', '2000')
@@ -55,6 +64,16 @@ const { status: forthcomingStatus, data: forthcoming } = await useLazyAsyncData(
     <LazyArticle hydrate-never v-for="(pub, index) in pubArticles" v-bind="pub" :key="`pub-${index}-p`"
       class="mb-4 md:mb-2" />
   </span>
+
+  <h3 class="text-2xl font-bold mt-6 mb-4 md:mb-2">{{ $t('comments') }}</h3>
+
+  <LoadingIcon v-if="chapterStatus
+    === 'pending'">
+    ...
+  </LoadingIcon>
+  <LazyArticle hydrate-never v-for="(pub, index) in pubComments" v-bind="pub" :key="`pub-${index}-f`"
+    class="mb-4 md:mb-2" />
+
 
   <h3 class="text-2xl font-bold mt-6 mb-4 md:mb-2">{{ $t('bookchapters') }}</h3>
 

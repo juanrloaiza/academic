@@ -53,6 +53,7 @@ export default defineI18nConfig(() => ({
       articles: "Journal articles",
       bookchapters: "Book chapters",
       monographs: "Monographs",
+      comments: "Comments"
     },
     es: {
       homePage: "¡Este es el inicio!",
@@ -105,6 +106,7 @@ export default defineI18nConfig(() => ({
       articles: "Artículos en revistas especializadas",
       bookchapters: "Capítulos de libro",
       monographs: "Libros y monografías",
+      comments: "Comentarios"
     },
   },
 }));

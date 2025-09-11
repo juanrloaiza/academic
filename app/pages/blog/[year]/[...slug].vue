@@ -5,21 +5,16 @@ import dayjs from "dayjs";
 const route = useRoute();
 const { slug, year } = route.params;
 
-// Ensure slug is a string (it might be an array)
-const slugString = Array.isArray(slug) ? slug.join('/') : slug;
-
-console.log('Route params:', { year, slug: slugString, fullPath: route.path });
+console.log('Route params:', { year, slug, fullPath: route.path });
 
 // Use a unique key for each post to prevent caching issues during static generation
-const { status, data: post } = await useAsyncData(`blog-${year}-${slugString}`, async () => {
-  console.log(`Querying for: /blog/${year}/${slugString}`);
+const { status, data: post } = await useAsyncData(`blog-${year}-${slug}`, async () => {
+  console.log(`Querying for: /blog/${year}/${slug}`);
   
   const result = await queryCollection("blog")
-    .path(`/blog/${year}/${slugString}`)
+    .path(`/blog/${year}/${slug}`)
     .first();
-  
-  console.log('Query result:', result?.title || 'Not found');
-  
+
   // If not found with the exact path, try to find it in all posts
   if (!result) {
     console.log('Exact path not found, searching in all posts...');
@@ -28,10 +23,10 @@ const { status, data: post } = await useAsyncData(`blog-${year}-${slugString}`, 
     
     // Try to find by matching path components
     const foundPost = allPosts.find(p => 
-      p.path === `/blog/${year}/${slugString}` ||
-      p.path === `blog/${year}/${slugString}` ||
-      p.path === `/${year}/${slugString}` ||
-      p.path.includes(`${year}/${slugString}`)
+      p.path === `/blog/${year}/${slug}` ||
+      p.path === `blog/${year}/${slug}` ||
+      p.path === `/${year}/${slug}` ||
+      p.path.includes(`${year}/${slug}`)
     );
     
     if (foundPost) {
@@ -71,7 +66,7 @@ useSeoMeta({
     <LoadingIcon />
   </div>
   
-  <div v-else-if="post" class="mx-auto max-w-[60ch]">   
+  <div v-else-if="post" class="mx-auto max-w-[60ch]">
     <NuxtLink :to="localePath('/blog')" class="block my-4 text-gray-500 text-sm">
       <Icon name="material-symbols:arrow-back-rounded" class="align-middle mr-3" />
       {{ $t("backblog") }}
@@ -92,7 +87,7 @@ useSeoMeta({
   <div v-else class="mx-auto max-w-[60ch] text-center py-12">
     <h1 class="text-2xl font-bold mb-4">Post Not Found</h1>
     <p class="text-gray-600 mb-4">
-      Could not find post: {{ year }}/{{ slugString }}
+      Could not find post: {{ year }}/{{ slug }}
     </p>
     <NuxtLink :to="localePath('/blog')" class="text-primary hover:text-accent">
       ← Back to Blog
