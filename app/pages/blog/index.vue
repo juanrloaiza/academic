@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const localePath = useLocalePath();
+
 useSeoMeta({
   title: "Blog",
 });
@@ -42,7 +44,7 @@ const years = computed(() =>
     </div>
     <div class="col-span-11">
       <div v-if="blogpostsByYear" v-for="post of blogpostsByYear[Number(year)]" :key="post.path" class="mb-6">
-        <NuxtLink :to="post.path">
+        <NuxtLink :to="localePath(post.path)">
           <MDC :value="post.title" class="text-primary hover:text-accent" />
         </NuxtLink>
 
