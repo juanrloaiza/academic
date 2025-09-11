@@ -5,9 +5,7 @@ useSeoMeta({
 
 import dayjs from "dayjs";
 
-const { data: posts, status } = await useAsyncData(
-  'blog-posts',
-  () => {
+const { data: posts, status } = await useAsyncData (() => {
     return queryCollection("blog")
       .select("title", "summary", "date", "tags", "path")
       .order("date", "DESC")
@@ -28,6 +26,7 @@ const blogpostsByYear = computed(() => {
     {}
   );
 });
+
 const years = computed(() =>
   blogpostsByYear.value ? Object.keys(blogpostsByYear.value).reverse() : []
 );
@@ -43,9 +42,9 @@ const years = computed(() =>
     </div>
     <div class="col-span-11">
       <div v-if="blogpostsByYear" v-for="post of blogpostsByYear[Number(year)]" :key="post.path" class="mb-6">
-        <NuxtLinkLocale :to="post.path">
+        <NuxtLink :to="post.path">
           <MDC :value="post.title" class="text-primary hover:text-accent" />
-        </NuxtLinkLocale>
+        </NuxtLink>
 
         <div v-if="post.summary" class="text-base">{{ post.summary }}</div>
         <div class="flex mt-2">

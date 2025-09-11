@@ -5,7 +5,7 @@ import dayjs from "dayjs";
 
 const { slug, year } = useRoute().params;
 
-const { status, data: post } = useAsyncData(() =>
+const { status, data: post } = await useAsyncData(() =>
   queryCollection("blog").path(`/blog/${year}/${slug}`).first()
 );
 
