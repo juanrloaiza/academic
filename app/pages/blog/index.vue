@@ -32,11 +32,6 @@ const years = computed(() =>
   blogpostsByYear.value ? Object.keys(blogpostsByYear.value).reverse() : []
 );
 
-// Debug the final data
-watch(blogpostsByYear, (newVal) => {
-  console.log('blogpostsByYear changed:', newVal);
-}, { immediate: true });
-
 </script>
 
 <template>
