@@ -68,5 +68,11 @@ export default defineNuxtConfig({
       scan: true,
       sizeLimitKb: 256,
     },
+  },  
+  // Ensure static generation
+  nitro: {
+    prerender: {
+      crawlLinks: true, // This helps discover routes automatically
+    }
   }
 });
