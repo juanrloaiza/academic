@@ -71,16 +71,7 @@ useSeoMeta({
     <LoadingIcon />
   </div>
   
-  <div v-else-if="post" class="mx-auto max-w-[60ch]">
-    <!-- Debug info (remove after fixing) -->
-    <div class="bg-yellow-100 p-2 mb-4 text-xs rounded border">
-      <p><strong>Year:</strong> {{ year }}</p>
-      <p><strong>Slug:</strong> {{ slugString }}</p>
-      <p><strong>Query path:</strong> /blog/{{ year }}/{{ slugString }}</p>
-      <p><strong>Post title:</strong> {{ post.title }}</p>
-      <p><strong>Post path:</strong> {{ post.path }}</p>
-    </div>
-    
+  <div v-else-if="post" class="mx-auto max-w-[60ch]">   
     <NuxtLink :to="localePath('/blog')" class="block my-4 text-gray-500 text-sm">
       <Icon name="material-symbols:arrow-back-rounded" class="align-middle mr-3" />
       {{ $t("backblog") }}
