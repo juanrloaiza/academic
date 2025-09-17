@@ -17,7 +17,7 @@
 		"@tailwindcss/vite": "^4.1.12",
 		"better-sqlite3": "^12.2.0",
 		"dayjs": "^1.11.15",
-		"nuxt": "^4.0.3",
+		"nuxt": "^4.1.0",
 		"nuxt-seo-utils": "^7.0.14",
 		"tailwindcss": "^4.1.12"
 	},
