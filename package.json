@@ -1,34 +1,15 @@
 {
-	"name": "nuxt-app",
-	"private": true,
-	"type": "module",
 	"scripts": {
-		"build": "nuxt build",
-		"dev": "nuxt dev",
-		"generate": "nuxt generate",
-		"preview": "nuxt preview",
-		"postinstall": "nuxt prepare"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview"
 	},
 	"dependencies": {
-		"@nuxt/content": "^3.6.3",
-		"@nuxt/icon": "^2.0.0",
-		"@nuxtjs/i18n": "^10.0.6",
-		"@nuxtjs/mdc": "^0.17.2",
-		"@tailwindcss/vite": "^4.1.12",
-		"better-sqlite3": "^12.2.0",
-		"dayjs": "^1.11.15",
-		"nuxt": "^4.0.3",
-		"nuxt-seo-utils": "^7.0.14",
-		"tailwindcss": "^4.1.12"
-	},
-	"pnpm": {
-		"ignoredBuiltDependencies": [
-			"@tailwindcss/oxide"
-		],
-		"onlyBuiltDependencies": [
-			"@tailwindcss/oxide",
-			"better-sqlite3"
-		]
-	},
-	"packageManager": "pnpm@10.5.2"
+		"@astrojs/vue": "^5.1.1",
+		"@tailwindcss/vite": "^4.1.13",
+		"astro": "^5.13.8",
+		"tailwindcss": "^4.1.13",
+		"vue": "^3.5.21"
+	}
 }
