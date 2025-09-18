@@ -86,3 +86,8 @@ export const ui = {
         comments: "Comentarios"
     },
 } as const;
+
+export const countries = {
+    es: {},
+    en: {}
+} as const;

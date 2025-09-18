@@ -1,0 +1,17 @@
+---
+import { languages } from "../i18n/ui";
+import { getLangFromUrl, getPageFromUrl } from "../i18n/utils";
+
+const page = getPageFromUrl(Astro.url);
+const lang = getLangFromUrl(Astro.url);
+
+const otherLang = lang === "en" ? "es" : "en";
+import { getRelativeLocaleUrl } from "astro:i18n";
+---
+
+<a
+    href={getRelativeLocaleUrl(otherLang, page)}
+    class="px-3 py-1 border-1 border-black dark:border-gray-200 my-5 hover:border-2 rounded-sm"
+>
+    <span class="text-black dark:text-gray-200"> {otherLang.toUpperCase()}</span>
+</a>
