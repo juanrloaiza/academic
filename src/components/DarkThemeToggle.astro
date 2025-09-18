@@ -1,0 +1,83 @@
+---
+
+---
+
+<button
+    id="theme-toggle"
+    class="mx-2 px-3 py-1 border border-black dark:border-gray-200 my-5 hover:border-2 rounded-sm"
+>
+    <svg
+        id="light-icon"
+        class="align-middle w-5 h-5"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+    >
+        <text>Light</text>
+    </svg>
+
+    <svg
+        id="dark-icon"
+        class="align-middle w-5 h-5 hidden"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+    >
+        <text>Dark</text>
+    </svg>
+</button>
+
+<script>
+    // Theme initialization and toggle functionality
+    function initTheme() {
+        const button = document.getElementById("theme-toggle");
+        const lightIcon = document.getElementById("light-icon");
+        const darkIcon = document.getElementById("dark-icon");
+
+        if (!button || !lightIcon || !darkIcon) return;
+
+        // Check for saved theme in localStorage, fallback to 'light'
+        let currentTheme = localStorage.getItem("theme") || "light";
+
+        // Apply initial theme
+        document.documentElement.setAttribute("data-theme", currentTheme);
+        document.documentElement.classList.remove("light", "dark");
+        document.documentElement.classList.add(currentTheme);
+
+        // Update icon visibility
+        updateIcons(currentTheme);
+
+        // Add click event listener
+        button.addEventListener("click", toggleTheme);
+
+        function updateIcons(theme) {
+            if (theme === "dark") {
+                lightIcon.classList.remove("hidden");
+                darkIcon.classList.add("hidden");
+            } else {
+                lightIcon.classList.add("hidden");
+                darkIcon.classList.remove("hidden");
+            }
+        }
+
+        function toggleTheme() {
+            // Toggle between light and dark
+            currentTheme = currentTheme === "light" ? "dark" : "light";
+
+            // Update DOM
+            document.documentElement.setAttribute("data-theme", currentTheme);
+            document.documentElement.classList.remove("light", "dark");
+            document.documentElement.classList.add(currentTheme);
+
+            // Save to localStorage
+            localStorage.setItem("theme", currentTheme);
+
+            // Update icons
+            updateIcons(currentTheme);
+        }
+    }
+
+    // Initialize on page load
+    document.addEventListener("DOMContentLoaded", initTheme);
+
+    // Re-initialize on navigation (for Astro's client-side navigation)
+    document.addEventListener("astro:page-load", initTheme);
+</script>
