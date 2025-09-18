@@ -2,18 +2,17 @@
 import { getRelativeLocaleUrl } from "astro:i18n";
 import { useTranslations } from "../i18n/utils";
 
-const { target, lang } = Astro.props;
+const { target, lang, class: className, ...rest } = Astro.props;
 
 const targetURL = getRelativeLocaleUrl(lang, target);
 
 const t = useTranslations(lang);
 
-const titleKey = `${target}Title`
-const titleDescription = `${target}Description`
-
+const titleKey = `${target}Title`;
+const titleDescription = `${target}Description`;
 ---
 
-<a href={targetURL}>
+<a href={targetURL} class={className}>
     <div
         class="md:min-h-35 md:max-h-50 lg:min-h-60 my-3 md:m-0 p-3 rounded-md border-2 border-black dark:border-gray-100 hover:border-3 hover:border-primary hover:text-primary"
     >

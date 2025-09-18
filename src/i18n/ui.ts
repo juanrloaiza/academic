@@ -12,19 +12,14 @@ export const ui = {
         aboutDescription: "Interests · Research areas · Contact",
         cvTitle: "CV",
         cvDescription: "Education · Experience · Service",
-
         pubsTitle: "Publications",
         pubsDescription: "Articles · Book chapters",
-
         teachingTitle: "Teaching",
         teachingDescription: "Courses · Programs",
-
         talksTitle: "Selected talks",
         talksDescription: "Latest selected talks",
-
         blogTitle: "Blog",
         blogDescription: "Notes on research, teaching, and other interests.",
-
         otherTitle: "Other projects",
         otherDescription: "Projects outside my main research",
         competence: "Areas of competence",
@@ -54,19 +49,14 @@ export const ui = {
         homePage: "¡Este es el inicio!",
         aboutTitle: "Sobre mí",
         aboutDescription: "Intereses · Áreas de investigación · Contacto",
-
         cvTitle: "CV",
         cvDescription: "Educación · Experiencia · Servicio",
-
         pubsTitle: "Publicaciones",
         pubsDescription: "Artículos · Capítulos",
-
         teachingTitle: "Docencia",
         teachingDescription: "Cursos · Programas",
-
         talksTitle: "Charlas selectas",
         talksDescription: "Mis últimas charlas académicas",
-
         blogTitle: "Blog",
         blogDescription: "Apuntes sobre investigación, docencia y otros intereses.",
 
