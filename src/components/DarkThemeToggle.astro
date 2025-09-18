@@ -2,27 +2,24 @@
 
 ---
 
+<head>
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=bedtime,clear_day"
+    />
+</head>
+
 <button
     id="theme-toggle"
     class="mx-2 px-3 py-1 border border-black dark:border-gray-200 my-5 hover:border-2 rounded-sm"
 >
-    <svg
-        id="light-icon"
-        class="align-middle w-5 h-5"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-    >
-        <text>Light</text>
-    </svg>
+   <span id="light-icon" class="hidden">
+        <span class="align-middle material-symbols-outlined"> clear_day </span>
+    </span>
 
-    <svg
-        id="dark-icon"
-        class="align-middle w-5 h-5 hidden"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-    >
-        <text>Dark</text>
-    </svg>
+    <span id="dark-icon" class="hidden">
+        <span class="align-middle material-symbols-outlined"> bedtime </span>
+    </span>
 </button>
 
 <script>
