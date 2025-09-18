@@ -1,0 +1,48 @@
+{
+  "$ref": "#/definitions/about",
+  "definitions": {
+    "about": {
+      "type": "object",
+      "properties": {
+        "photo": {
+          "type": "string"
+        },
+        "lang": {
+          "type": "string"
+        },
+        "areas": {
+          "type": "object",
+          "properties": {
+            "competence": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "specialization": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "competence",
+            "specialization"
+          ],
+          "additionalProperties": false
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "photo",
+        "lang",
+        "areas"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

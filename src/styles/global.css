@@ -3,6 +3,9 @@
 
 @import "tailwindcss";
 
+@import "./markdown.css";
+@import "./blogcontent.css";
+
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
