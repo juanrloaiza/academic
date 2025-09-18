@@ -2,7 +2,8 @@
 
 @import "tailwindcss";
 
-@import "./markdown.css"; /* Custom for markdown related stuff */
+@import "./markdown.css";
+/* Custom for markdown related stuff */
 @import "./blogcontent.css";
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
@@ -20,13 +21,12 @@
   --color-accent: #bf616a;
 }
 
-[data-theme='dark']{
+[data-theme='dark'] {
   --color-primary: #ecb474;
   --color-accent: #be7c82;
 
-  ::selection {
-    background-color: #455966;
-  }
+  background-color: #455966;
+
 }
 
 body {
