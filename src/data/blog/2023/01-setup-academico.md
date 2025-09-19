@@ -20,7 +20,6 @@ La lista de programas y complementos que uso es:
 - Zotero
 - Better BibTeX
 - Inciteful
-
 - Syncthing
 
 ## Escritura: Markdown, Pandoc y Visual Studio Code

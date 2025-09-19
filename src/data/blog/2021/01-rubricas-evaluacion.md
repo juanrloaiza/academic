@@ -1,5 +1,6 @@
 ---
 title: Usando rúbricas de evaluación
+summary: Por qué empecé a usar rúbricas para todas mis evaluaciones.
 tags: 
   - Docencia
 date: 2021-09-21

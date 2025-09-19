@@ -44,9 +44,10 @@ const years = Object.keys(blogsByYear).sort((a, b) => Number(b) - Number(a));
                                         <div
                                             v-if="post.summary"
                                             class="text-base"
-                                        >
-                                            {entry.data.summary}
-                                        </div>
+                                            set:html={marked.parseInline(
+                                                entry.data.summary,
+                                            )}
+                                        ></div>
                                     )}
                                     <div class="flex mt-2">
                                         {entry.data.tags &&

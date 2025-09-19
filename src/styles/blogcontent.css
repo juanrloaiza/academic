@@ -1,4 +1,16 @@
+@layer base {
+
+  ul,
+  ol {
+    list-style: revert;
+    margin: revert;
+    padding: revert;
+  }
+}
+
+
 .blog-content {
+
   h1,
   h2,
   h3 {
@@ -9,6 +21,7 @@
     font-size: var(--text-2xl);
     margin-bottom: 0.75rem;
     margin-top: 2rem;
+
     a {
       color: black;
     }
@@ -29,24 +42,18 @@
   }
 
   ol {
-    margin-top: 1rem;
     list-style: decimal;
-    padding-left: 1rem;
 
     li {
-      margin-bottom: 0.5rem;
+      line-height: 175%;
     }
   }
 
   ul {
-    margin: 1.5rem 0;
     list-style-type: disc;
-    margin-left: 1rem;
-    padding-left: 1rem;
 
     li {
-      margin-bottom: 0.5rem;
-      padding-left: 0.5rem;
+      line-height: 175%;
     }
   }
 
@@ -57,26 +64,14 @@
     background-color: var(--color-slate-50);
     border-left: 10px solid var(--color-slate-300);
     border-radius: 10px;
-    padding: 1rem 2rem 1rem 3.75rem;
+    padding: 1rem 1rem 1rem 2.75rem;
     font-size: 90%;
     color: var(--color-slate-700);
     z-index: 1;
 
-    p{
+    p {
       margin: 0;
     }
-  }
-
-  blockquote::before {
-    content: "\“";
-    position: absolute;
-    margin-right: 0.75rem;
-    font-size: 6rem;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    color: var(--color-slate-200);
-    left: 5px;
-    top: -30px;
-    z-index: -1;
   }
 
   table {
@@ -84,7 +79,9 @@
 
     tr {
       border: 1px solid var(--color-gray-400);
-      td, th{ 
+
+      td,
+      th {
         padding: 0.25rem 1rem
       }
     }
@@ -99,9 +96,11 @@
     font-size: var(--text-sm);
     padding: 1rem;
   }
+
   hr {
     margin: 2rem auto;
   }
+
   .footnotes {
     font-size: var(--text-sm);
     border-top: 1px solid var(--color-gray-300);
@@ -114,9 +113,11 @@
       padding-left: 10px;
     }
   }
+
   #footnote-label {
     display: none;
   }
+
   img {
     margin: auto;
   }
@@ -129,6 +130,7 @@
       font-weight: 500
     }
   }
+
   blockquote {
     background-color: var(--color-zinc-700);
     border-left: 10px solid var(--color-zinc-600);
@@ -138,11 +140,13 @@
 
   blockquote::before {
     color: var(--color-zinc-600);
- 
+
   }
+
   pre {
     border: 1px solid var(--color-zinc-600);
   }
+
   .footnotes {
     border-top: 1px solid var(--color-zinc-500);
   }

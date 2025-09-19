@@ -4,6 +4,7 @@ tags:
   - Docencia
 date: 2022-04-22
 slug: objetivos-aprendizaje-dn
+summary: Estableciendo otras formas de enseñar deducción natural atendiendo a diferentes objetivos de aprendizaje.
 ---
 
 Uno de los cursos que ofrezco es el curso de lógica formal para primer semestre de humanidades. En este curso la unidad más difícil —tanto para mí como docente como para mis estudiantes— es la unidad de [deducción natural](https://es.wikipedia.org/wiki/Deducci%C3%B3n_natural). La razón por la que hay tanta dificultad es algo elusiva, pero tras dos años ofreciendo la asignatura, he llegado a la siguiente hipótesis: hacer deducción natural (como la hemos planteado) exige creatividad.
