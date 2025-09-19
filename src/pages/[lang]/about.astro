@@ -22,7 +22,7 @@ const { Content } = await render(entry);
 const { competence, specialization } = await entry.data.areas;
 ---
 
-<Layout>
+<Layout pageTitle={t("aboutTitle")}>
     <div class="md:grid md:grid-cols-4 md:gap-x-7 lg:gap-x-15 gap-y-6">
         <Image
             class="mx-auto w-2/3 my-6 md:my-0 md:w-full"

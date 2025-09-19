@@ -18,7 +18,7 @@ const entry = await getEntry("other", lang);
 const { Content } = await render(entry);
 ---
 
-<Layout>
+<Layout pageTitle={t("otherTitle")}>
     <div class="md-content">
         <Content />
     </div>

@@ -7,6 +7,9 @@ import LangSwitcher from "../components/LangSwitcher.astro";
 import DarkThemeToggle from "../components/DarkThemeToggle.astro";
 
 import "../styles/global.css";
+import PageTitle from "../components/PageTitle.astro";
+
+const { pageTitle } = Astro.props;
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -54,6 +57,7 @@ const t = useTranslations(lang);
             </div>
         </div>
         <div class="mt-6 text-lg">
+            <PageTitle title={pageTitle} />
             <slot />
         </div>
     </div>
