@@ -1,15 +1,14 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
-import { languages } from "../../i18n/ui";
-import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import {
+    defaultStaticPathsFunction,
+    getLangFromUrl,
+    useTranslations,
+} from "../../i18n/utils";
 import CVSection from "../../components/CVSection.astro";
 
-export async function getStaticPaths() {
-    return Object.keys(languages).map((lang) => {
-        return { params: { lang }, props: lang };
-    });
-}
+export const getStaticPaths = defaultStaticPathsFunction;
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -36,7 +35,7 @@ const service = cv
     .sort((a, b) => b.data.end_year.valueOf() - a.data.end_year.valueOf());
 ---
 
-<Layout  pageTitle={t("cvTitle")}>
+<Layout pageTitle={t("cvTitle")}>
     <h3 class="font-bold text-2xl mb-3">{t("education")}</h3>
 
     {

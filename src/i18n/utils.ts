@@ -1,4 +1,4 @@
-import { ui, countries, defaultLang } from './ui';
+import { ui, countries, defaultLang, languages } from './ui';
 
 export function getLangFromUrl(url: URL) {
   const [, lang] = url.pathname.split('/');
@@ -21,4 +21,10 @@ export function useCountryTranslations(lang: keyof typeof countries) {
   return function t(key: keyof typeof countries[typeof defaultLang]) {
     return countries[lang][key] || countries[defaultLang][key];
   }
+}
+
+export async function defaultStaticPathsFunction() {
+    return Object.keys(languages).map((lang) => {
+        return { params: { lang }, props: lang };
+    });
 }

@@ -1,24 +1,17 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
-import { languages } from "../../i18n/ui";
-import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import { defaultStaticPathsFunction, getLangFromUrl, useTranslations } from "../../i18n/utils";
 import CourseDescription from "../../components/CourseDescription.astro";
 
-export async function getStaticPaths() {
-    return Object.keys(languages).map((lang) => {
-        return { params: { lang }, props: lang };
-    });
-}
+export const getStaticPaths = defaultStaticPathsFunction;
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-
-// Get pub collections
 
 const courses = (await getCollection("courses")).reverse();
 ---
 
 <Layout pageTitle={t("teachingTitle")}>
-    {courses.map(course => <CourseDescription course={course.data} />)}
+    {courses.map((course) => <CourseDescription course={course.data} />)}
 </Layout>

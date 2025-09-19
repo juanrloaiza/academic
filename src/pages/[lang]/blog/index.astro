@@ -2,17 +2,16 @@
 import { getCollection } from "astro:content";
 
 import Layout from "../../../layouts/Layout.astro";
-import { languages } from "../../../i18n/ui";
-import { getLangFromUrl, useTranslations } from "../../../i18n/utils";
+import {
+    defaultStaticPathsFunction,
+    getLangFromUrl,
+    useTranslations,
+} from "../../../i18n/utils";
 
 import { marked } from "marked";
 import Tag from "../../../components/Tag.astro";
 
-export function getStaticPaths() {
-    return Object.keys(languages).map((lang) => {
-        return { params: { lang }, props: lang };
-    });
-}
+export const getStaticPaths = defaultStaticPathsFunction;
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
