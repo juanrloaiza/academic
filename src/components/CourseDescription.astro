@@ -1,0 +1,39 @@
+---
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import { marked } from "marked";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+interface Course {
+  name: Partial<Record<"en" | "es", string>>;
+  level: "pregrado" | "master" | "phd";
+  description: string;
+  syllabi: Array<{ semester: string; route: string }>;
+}
+
+interface Props {
+  course: Course;
+}
+
+const { course } = Astro.props;
+
+const description = marked.parseInline(course.description);
+---
+
+<div class="mb-8">
+  <h4 class="md:text-xl font-semibold">{course.name[lang]}</h4>
+  <h6 class="text-sm">{t(course.level)}</h6>
+  <div set:html={description} class="text-base mt-1" />
+
+  {
+    course.syllabi &&
+      course.syllabi.map((syllabus) => (
+        <a href={syllabus.route}>
+          <div class="inline-block mt-2 text-primary/70 hover:text-accent py-1 px-2 mr-2 rounded-md border-1 text-sm">
+            {t("syllabus")} ({syllabus.semester})
+          </div>
+        </a>
+      ))
+  }
+</div>

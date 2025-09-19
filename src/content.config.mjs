@@ -59,7 +59,20 @@ const books = defineCollection({
 
 const other = defineCollection({
     loader: glob({ pattern: "*.md", base: "./src/data/others" })
+    // TODO: implement schema
+});
+
+const courses = defineCollection({
+    loader: glob({ pattern: "*.yml", base: "./src/data/courses" })
+    // TODO: implement schema
 });
 
 
-export const collections = { about, cv, articles, comments, bookChapters, books, other };
+
+export const collections = {
+    about,
+    cv,
+    articles, comments, bookChapters, books,
+    courses,
+    other
+};
