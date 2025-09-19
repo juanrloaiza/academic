@@ -14,14 +14,21 @@ const t = useTranslations(lang);
 
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/public/favicon.png" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.png" />
+
+    <script src="https://kit.fontawesome.com/56ed2b6624.js"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
     <title>Juan R. Loaiza</title>
 </head>
 
 <body class="bg-background dark:bg-neutral-800 dark:text-gray-100">
     <div class="max-w-6xl mx-auto pt-6 px-6">
-        <div class="block text-center md:flex md:justify-between items-center min-h-[5rem]"
+        <div
+            class="block text-center md:flex md:justify-between items-center min-h-[5rem]"
         >
             <div>
                 <a
@@ -37,17 +44,17 @@ const t = useTranslations(lang);
                         <span class="hidden md:inline mx-4"> · </span>
                         <span class="font-heading mt-1">{t("academic")}</span>
                     </span>
-                </a></div>
+                </a>
+            </div>
 
-                <div class="flex items-center justify-center">
-                    <SocialMediaButtons />
-                    <LangSwitcher />
-                    <DarkThemeToggle />
-                </div>
+            <div class="flex items-center justify-center">
+                <SocialMediaButtons />
+                <LangSwitcher />
+                <DarkThemeToggle />
             </div>
-            <div class="mt-6 text-lg">
-                <slot />
-            </div>
+        </div>
+        <div class="mt-6 text-lg">
+            <slot />
         </div>
     </div>
 </body>
