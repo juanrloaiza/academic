@@ -26,7 +26,7 @@ This site's code is available on GitHub! You can find it in [this repository](ht
 
 #### Santiago Mind and Cognition
 
-The website for our research group [_Santiago Mind and Cognition_](https://santiagomindandcognition.cl). This was my first website built with Nuxt using Nuxt Content and Nuxt i18n, the same stack as this version of my personal website. Here is the [repository](https://github.com/juanrloaiza/santiagomc).
+The website for our research group [_Santiago Mind and Cognition_](https://santiagomindandcognition.cl). Here is the [repository](https://github.com/juanrloaiza/santiagomc).
 
 #### Latin American Association of Analytic Philosophy (ALFAn)
 

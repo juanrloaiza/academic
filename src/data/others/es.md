@@ -26,7 +26,7 @@ Como un ejercicio de práctica hice algunos análisis de minería de texto con m
 
 #### Santiago Mind and Cognition
 
-La página web de nuestro grupo de investigación [_Santiago Mind and Cognition_](https://santiagomindandcognition.cl). Esta fue mi primera página en Nuxt usando Nuxt Content y Nuxt i18n, el mismo stack de esta versión de mi página web. Este es el [repositorio](https://github.com/juanrloaiza/santiagomc).
+La página web de nuestro grupo de investigación [_Santiago Mind and Cognition_](https://santiagomindandcognition.cl). Este es el [repositorio](https://github.com/juanrloaiza/santiagomc).
 
 #### Asociación Latinoamericana de Filosofía Analítica (ALFAn)
 
