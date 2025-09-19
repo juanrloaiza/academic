@@ -1,0 +1,34 @@
+---
+import type { BookChapterData } from "../../types/publications";
+import PubTitle from "./PubTitle.astro";
+
+interface Props {
+    bookChapter: BookChapterData,
+    className?: string;
+}
+
+const {
+    bookChapter,
+    className,
+} = Astro.props;
+---
+
+<div class={className}>
+    <a href={bookChapter.doi ? `https://doi.org/${bookChapter.doi}` : bookChapter.url ? bookChapter.url : "#"}>
+        <PubTitle title={bookChapter.title} openaccess={bookChapter.openaccess} />
+    </a>
+    <div class="text-base">{bookChapter.authors} ({bookChapter.year}).</div>
+    <div class="text-sm mt-0.5">
+        En: {bookChapter.editors && <span>{bookChapter.editors}, </span>}<em>{bookChapter.booktitle}</em>{
+            bookChapter.pages && <span>, {bookChapter.pages}</span>
+        }.
+        {bookChapter.publisher && <span>{bookChapter.publisher}.</span>}<br />
+        <span>
+            {bookChapter.isbn && <span>ISBN: {bookChapter.isbn}.</span>}
+            {
+                (bookChapter.doi && <a href={`https://doi.org/${bookChapter.doi}`}>doi: {bookChapter.doi}</a>) ||
+                    (bookChapter.url && <a href={bookChapter.url}> {bookChapter.url}</a>)
+            }
+        </span>
+    </div>
+</div>

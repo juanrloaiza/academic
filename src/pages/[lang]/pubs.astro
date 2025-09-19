@@ -1,0 +1,102 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import { languages } from "../../i18n/ui";
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import Article from "../../components/publications/Article.astro";
+import BookChapter from "../../components/publications/BookChapter.astro";
+import Book from "../../components/publications/Book.astro";
+import type {
+    ArticleData,
+    BookChapterData,
+    BookData,
+} from "../../types/publications";
+
+export async function getStaticPaths() {
+    return Object.keys(languages).map((lang) => {
+        return { params: { lang }, props: lang };
+    });
+}
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const sortPublications = (a, b) => {
+    const aYear = a.data.year;
+    const bYear = b.data.year;
+    const aYearIsString = typeof aYear === "string";
+    const bYearIsString = typeof bYear === "string";
+
+    // First priority: String years come before numeric years
+    if (aYearIsString && !bYearIsString) {
+        return -1; // a (string) comes first
+    }
+    if (!aYearIsString && bYearIsString) {
+        return 1; // b (string) comes first
+    }
+
+    // Both numbers - sort numerically (descending)
+    if (
+        typeof aYear === "number" &&
+        typeof bYear === "number" &&
+        bYear !== aYear
+    ) {
+        return bYear - aYear;
+    }
+
+    // Second priority: If years are equal, sort alphabetically by title
+    return a.data.title < b.data.title
+        ? -1
+        : a.data.title > b.data.title
+          ? 1
+          : 0;
+};
+
+// Get pub collections
+
+const articles = (await getCollection("articles")).sort(sortPublications);
+const comments = (await getCollection("comments")).sort(sortPublications);
+const bookChapters = (await getCollection("bookChapters")).sort(
+    sortPublications,
+);
+const books = (await getCollection("books")).sort(sortPublications);
+---
+
+<Layout>
+    <h3 class="text-2xl font-bold mt-6 mb-2">{t("articles")}</h3>
+    {
+        articles.map((article) => (
+            <Article
+                article={article.data as ArticleData}
+                className="mb-4 md:mb-2"
+            />
+        ))
+    }
+
+    <h3 class="text-2xl font-bold mt-6 mb-4 md:mb-2">{t("comments")}</h3>
+    {
+        comments.map((comment) => (
+            <Article
+                article={comment.data as ArticleData}
+                className="mb-4 md:mb-2"
+            />
+        ))
+    }
+
+    <h3 class="text-2xl font-bold mt-6 mb-4 md:mb-2">{t("bookchapters")}</h3>
+    {
+        bookChapters.map((bookChapter) => (
+            <BookChapter
+                bookChapter={bookChapter.data as BookChapterData}
+                className="mb-4 md:mb-2"
+            />
+        ))
+    }
+    <h3 class="text-2xl font-bold mt-6 mb-4 md:mb-2">{t("monographs")}</h3>
+
+    {
+        books.map((book) => (
+            <Book book={book.data as BookData} className="mb-4 md:mb-2" />
+        ))
+    }
+</Layout>

@@ -1,0 +1,41 @@
+---
+import PubTitle from "./PubTitle.astro";
+import type { ArticleData } from "../../types/publications";
+
+interface Props {
+    article: ArticleData;
+    className?: string;
+}
+
+const { article, className } = Astro.props;
+
+const getURL = () => {
+    if (article.doi !== undefined) return `https://doi.org/${article.doi}`;
+    else if (article.url !== undefined) return article.url;
+    else return "#";
+};
+---
+
+<div class={className}>
+    <a href={getURL()}>
+        <PubTitle title={article.title} openaccess={article.openaccess} />
+    </a>
+    <div class="text-base">{article.authors} ({article.year}).</div>
+    <div class="text-sm mt-0.5">
+        <em>{article.journal}</em>{
+            article.volume && article.issue && (
+                <span>
+                    <em>, {article.volume}</em>({article.issue})
+                </span>
+            )
+        }{article.pages && <span>, {article.pages}</span>}.
+        {
+            (article.doi && (
+                <a href={`https://doi.org/${article.doi}`}>
+                    doi: {article.doi}
+                </a>
+            )) ||
+                (article.url && <a href={article.url}> {article.url}</a>)
+        }
+    </div>
+</div>

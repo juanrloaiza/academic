@@ -1,6 +1,7 @@
 import { defineCollection, z } from 'astro:content';
+import { articlesSchema, bookChaptersSchema, booksSchema } from "./data/publications/publicationSchemas"
 
-import { glob, file } from 'astro/loaders';
+import { glob } from 'astro/loaders';
 
 const about = defineCollection({
     loader: glob({ pattern: "*.md", base: "./src/data/about" }),
@@ -39,5 +40,22 @@ const cv = defineCollection({
     }),
 });
 
-// 4. Export a single `collections` object to register your collection(s)
-export const collections = { about, cv };
+const articles = defineCollection({
+    loader: glob({ pattern: "**/*.yml", base: "./src/data/publications/articles" }),
+    schema: articlesSchema,
+});
+const comments = defineCollection({
+    loader: glob({ pattern: "**/*.yml", base: "./src/data/publications/comments" }),
+    schema: articlesSchema,
+});
+const bookChapters = defineCollection({
+    loader: glob({ pattern: "**/*.yml", base: "./src/data/publications/bookChapters" }),
+    schema: bookChaptersSchema,
+});
+const books = defineCollection({
+    loader: glob({ pattern: "**/*.yml", base: "./src/data/publications/books" }),
+    schema: booksSchema,
+});
+
+
+export const collections = { about, cv, articles, comments, bookChapters, books };

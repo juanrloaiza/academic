@@ -1,0 +1,20 @@
+---
+import { marked } from "marked";
+
+interface Props {
+    title: string;
+    openaccess: boolean;
+}
+
+const { title, openaccess } = Astro.props;
+
+const renderedTitle = marked.parseInline(title);
+---
+
+<div class="text-primary hover:text-accent">
+    <span set:html={renderedTitle} />{
+        openaccess && (
+            <i class="mx-2 text-xl text-orange-600 ai ai-open-access" />
+        )
+    }
+</div>
