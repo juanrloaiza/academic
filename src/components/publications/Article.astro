@@ -1,6 +1,6 @@
 ---
+import type { ArticleData } from "../../data/publications/publicationSchemas";
 import PubTitle from "./PubTitle.astro";
-import type { ArticleData } from "../../types/publications";
 
 interface Props {
     article: ArticleData;
@@ -24,9 +24,7 @@ const getURL = () => {
     <div class="text-sm mt-0.5">
         <em>{article.journal}</em>{
             article.volume && article.issue && (
-                <span>
-                    <em>, {article.volume}</em>({article.issue})
-                </span>
+                <span><em>, {article.volume}</em>({article.issue})</span>
             )
         }{article.pages && <span>, {article.pages}</span>}.
         {

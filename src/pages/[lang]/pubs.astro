@@ -1,5 +1,4 @@
 ---
-import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import {
     defaultStaticPathsFunction,
@@ -9,56 +8,22 @@ import {
 import Article from "../../components/publications/Article.astro";
 import BookChapter from "../../components/publications/BookChapter.astro";
 import Book from "../../components/publications/Book.astro";
-import type {
-    ArticleData,
-    BookChapterData,
-    BookData,
-} from "../../types/publications";
+import {
+    getPublicationCollections,
+    type ArticleData,
+    type BookChapterData,
+    type BookData,
+} from "../../data/publications/publicationSchemas";
 
 export const getStaticPaths = defaultStaticPathsFunction;
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-const sortPublications = (a, b) => {
-    const aYear = a.data.year;
-    const bYear = b.data.year;
-    const aYearIsString = typeof aYear === "string";
-    const bYearIsString = typeof bYear === "string";
-
-    // First priority: String years come before numeric years
-    if (aYearIsString && !bYearIsString) {
-        return -1; // a (string) comes first
-    }
-    if (!aYearIsString && bYearIsString) {
-        return 1; // b (string) comes first
-    }
-
-    // Both numbers - sort numerically (descending)
-    if (
-        typeof aYear === "number" &&
-        typeof bYear === "number" &&
-        bYear !== aYear
-    ) {
-        return bYear - aYear;
-    }
-
-    // Second priority: If years are equal, sort alphabetically by title
-    return a.data.title < b.data.title
-        ? -1
-        : a.data.title > b.data.title
-          ? 1
-          : 0;
-};
-
 // Get pub collections
 
-const articles = (await getCollection("articles")).sort(sortPublications);
-const comments = (await getCollection("comments")).sort(sortPublications);
-const bookChapters = (await getCollection("bookChapters")).sort(
-    sortPublications,
-);
-const books = (await getCollection("books")).sort(sortPublications);
+const { articles, comments, bookChapters, books } =
+    await getPublicationCollections();
 ---
 
 <Layout pageTitle={t("pubsTitle")}>

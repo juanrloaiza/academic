@@ -1,5 +1,7 @@
-import { z } from 'astro:content';
+import { getCollection, z } from 'astro:content';
+import { sortPublications } from './sortPublications';
 
+// Schema definitions for each publication type
 const basePublicationSchema = z.object({
     title: z.string(),
     authors: z.string(),
@@ -28,3 +30,20 @@ export const booksSchema = basePublicationSchema.extend({
     publisher: z.string().optional(),
     isbn: z.string().optional(),
 })
+
+// Types to enforce data according to the schemas
+export type ArticleData = z.infer<typeof articlesSchema>
+export type BookChapterData = z.infer<typeof bookChaptersSchema>
+export type BookData = z.infer<typeof booksSchema>
+
+// Function to get all publications
+export async function getPublicationCollections() {
+    const articles = (await getCollection("articles")).sort(sortPublications);
+    const comments = (await getCollection("comments")).sort(sortPublications);
+    const bookChapters = (await getCollection("bookChapters")).sort(
+        sortPublications,
+    );
+    const books = (await getCollection("books")).sort(sortPublications);
+
+    return { articles, comments, bookChapters, books }
+}
