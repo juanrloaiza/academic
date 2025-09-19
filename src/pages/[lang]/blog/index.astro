@@ -6,6 +6,7 @@ import { languages } from "../../../i18n/ui";
 import { getLangFromUrl, useTranslations } from "../../../i18n/utils";
 
 import { marked } from "marked";
+import Tag from "../../../components/Tag.astro";
 
 export function getStaticPaths() {
     return Object.keys(languages).map((lang) => {
@@ -58,9 +59,7 @@ const years = Object.keys(blogsByYear).sort((a, b) => Number(b) - Number(a));
                                     <div class="flex mt-2">
                                         {entry.data.tags &&
                                             entry.data.tags.map((tag) => (
-                                                <div class="inline text-xs bg-gray-200 dark:bg-zinc-700 dark:text-gray-300 align-baseline mr-3 py-0.5 px-1.5 rounded-sm">
-                                                    {tag}
-                                                </div>
+                                                <Tag>{tag}</Tag>
                                             ))}
                                     </div>
                                 </div>

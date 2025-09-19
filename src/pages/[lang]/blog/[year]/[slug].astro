@@ -7,6 +7,7 @@ import { getRelativeLocaleUrl } from "astro:i18n";
 import { getLangFromUrl, useTranslations } from "../../../../i18n/utils";
 import dayjs from "dayjs";
 import { marked } from "marked";
+import Tag from "../../../../components/Tag.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -63,11 +64,7 @@ const renderedTitle = marked.parseInline(entry.data.title);
             <div class="flex mt-2">
                 {
                     entry.data.tags &&
-                        entry.data.tags.map((tag) => (
-                            <div class="inline text-xs bg-gray-200 dark:bg-zinc-700 dark:text-gray-300 align-baseline mr-3 py-0.5 px-1.5 rounded-sm">
-                                {tag}
-                            </div>
-                        ))
+                        entry.data.tags.map((tag) => <Tag>{tag}</Tag>)
                 }
             </div>
         </div>
