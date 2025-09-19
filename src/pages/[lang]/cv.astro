@@ -76,9 +76,10 @@ const service = cv
                 endYear={emp.data.end_year}
             >
                 <strong class="font-semibold">{emp.data.role[lang]}</strong>
-                <br />
-                {emp.data.faculty}, {emp.data.institution}
-                <br />
+                <span class="text-base">
+                    <br />
+                    {emp.data.faculty}, {emp.data.institution}
+                </span>
             </CVSection>
         ))
     }
@@ -93,8 +94,10 @@ const service = cv
             >
                 <strong class="font-semibold">{srv.data.role[lang]}</strong>
                 <br />
-                {srv.data.faculty && <span>{srv.data.faculty},</span>}
-                {srv.data.institution}
+                <span class="text-base">
+                    {srv.data.faculty && <span>{srv.data.faculty},</span>}
+                    {srv.data.institution}
+                </span>
             </CVSection>
         ))
     }
