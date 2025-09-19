@@ -5,6 +5,7 @@ tags:
   - Tech
   - Academia
 summary: Qué programas uso para escribir textos académicos, desde mi editor de texto hasta mi configuración de Zotero.
+slug: setup-academico
 ---
 
 A lo largo de los años he usado una variedad de sistemas, programas y mecanismos para mi trabajo académico. Escribí mis tesis de máster y de doctorado en LaTeX, sincronizando entre equipos con Git y manejando mi bibliografía con Zotero y JabRef. Pero quien haya usado LaTeX sabe que puede ser un dolor de cabeza, y que una simple lista de elementos puede llevar toda una mañana (aunque sea una buena excusa para no sentirnos tan mal al procrastinar). Con todo eso, desde entonces he estado buscando un nuevo *setup* que me sirva para mi trabajo académico. La idea es que sea simple, portátil, e idealmente que no dependa de software propietario (e.g., Microsoft Word). Aquí entonces está mi configuración actual, que por el momento me tiene muy satisfecho y quizás pueda servirle a alguien.

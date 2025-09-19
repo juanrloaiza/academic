@@ -67,12 +67,16 @@ const courses = defineCollection({
     // TODO: implement schema
 });
 
-
+const blog = defineCollection({
+    loader: glob({ pattern: "**/*.md", base: "./src/data/blog" })
+    // TODO: implement schema
+});
 
 export const collections = {
     about,
     cv,
     articles, comments, bookChapters, books,
     courses,
-    other
+    other,
+    blog
 };

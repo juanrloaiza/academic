@@ -1,9 +1,10 @@
 ---
 title: Un poco de lógica sobre el rector Cheyne
-draft: false
+draft: true
 tags: 
   - Docencia
 date: 2024-04-17
+slug: logica-cheyne
 ---
 
 En el espíritu reciente de críticas al rector de la Universidad del Rosario, Alejandro Cheyne, llevo días recordando mi último paso por la universidad como profesor de hora cátedra. En el Rosario di clase de Lógica y de Argumentación (y de Metodologías de Investigación) durante tres años, haciéndole frente a la precaria posición de la hora cátedra, exacerbada en parte además por las decisiones de esta rectoría particular (recortes de hora cátedra, congelamiento de ascenso en el escalafón, salvar a un restaurante mientras sacrificaban al cuerpo de hora cátedra, etc.). Sin embargo, recuerdo con cariño a quienes fueron mis estudiantes, y pensé en dejarles un pequeño ejercicio digno de una clase de Lógica o de Argumentación.

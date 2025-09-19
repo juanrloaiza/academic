@@ -3,6 +3,7 @@ title: Procesos de aprendizaje en _Metodologías de Investigación_
 tags: 
   - Docencia
 date: 2021-09-21
+slug: procesos-aprendizaje-metodologias
 ---
 
 Llevo dos años ofreciendo el curso de *Metodologías de Investigación* para la Escuela de Ciencias Humanas en la Universidad del Rosario. Este curso supone retos importantes para quien lo ofrece, pues es un curso altamente interdisciplinar e introductorio a un componente importante de la formación profesional de los y las estudiantes. 

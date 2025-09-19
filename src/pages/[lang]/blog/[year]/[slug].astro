@@ -1,0 +1,79 @@
+---
+import { getCollection } from "astro:content";
+import { render } from "astro:content";
+import { languages } from "../../../../i18n/ui";
+import Layout from "../../../../layouts/Layout.astro";
+import { getRelativeLocaleUrl } from "astro:i18n";
+import { getLangFromUrl, useTranslations } from "../../../../i18n/utils";
+import dayjs from "dayjs";
+import { marked } from "marked";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+export const getStaticPaths = async () => {
+    const blogEntries = await getCollection("blog");
+    const langArray = Object.keys(languages);
+
+    const paths = [];
+
+    langArray.forEach((lang) => {
+        blogEntries.forEach((entry) => {
+            const year = new Date(entry.data.date).getFullYear();
+
+            paths.push({
+                params: {
+                    lang,
+                    year: year.toString(),
+                    slug: entry.data.slug,
+                },
+                props: {
+                    entry,
+                    lang,
+                },
+            });
+        });
+    });
+
+    return paths;
+};
+
+const formatDate = (dateString: string) =>
+    dayjs(dateString).format("YYYY.MM.DD");
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+
+const renderedTitle = marked.parseInline(entry.data.title);
+---
+
+<Layout>
+    <div class="mx-auto max-w-[60ch]">
+        <a
+            href={getRelativeLocaleUrl(lang, "blog")}
+            class="block my-4 text-gray-500 text-sm mr-3"
+        >
+            <i class="fa-solid fa-arrow-left"></i>
+            {t("backblog")}
+        </a>
+        <h2 class="font-bold text-3xl mb-5" set:html={renderedTitle} />
+
+        <div class="flex mb-10 items-baseline">
+            <div class="text-base mr-4">{formatDate(entry.data.date)}</div>
+            <div class="flex mt-2">
+                {
+                    entry.data.tags &&
+                        entry.data.tags.map((tag) => (
+                            <div class="inline text-xs bg-gray-200 dark:bg-zinc-700 dark:text-gray-300 align-baseline mr-3 py-0.5 px-1.5 rounded-sm">
+                                {tag}
+                            </div>
+                        ))
+                }
+            </div>
+        </div>
+
+        <div class="blog-content">
+            <Content />
+        </div>
+    </div>
+</Layout>

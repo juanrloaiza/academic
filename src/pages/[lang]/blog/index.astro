@@ -1,0 +1,73 @@
+---
+import { getCollection } from "astro:content";
+
+import Layout from "../../../layouts/Layout.astro";
+import { languages } from "../../../i18n/ui";
+import { getLangFromUrl, useTranslations } from "../../../i18n/utils";
+
+import { marked } from "marked";
+
+export function getStaticPaths() {
+    return Object.keys(languages).map((lang) => {
+        return { params: { lang }, props: lang };
+    });
+}
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const blogEntries = await getCollection("blog");
+
+const blogsByYear = blogEntries.reduce((acc, entry) => {
+    const year = new Date(entry.data.date).getFullYear();
+    if (!acc[year]) acc[year] = [];
+    acc[year].push(entry);
+    return acc;
+}, {});
+
+const years = Object.keys(blogsByYear).sort((a, b) => Number(b) - Number(a));
+---
+
+<Layout pageTitle="Blog">
+    {
+        years.map((year) => (
+            <div class="blog-list md:grid grid-cols-12 gap-x-4 items-baseline">
+                <div class="col-span-1 text-xl font-semibold md:font-normal mb-2 md:text-sm">
+                    {year}
+                </div>
+                <div class="col-span-11">
+                    {blogsByYear[year].map(
+                        (entry) =>
+                            !entry.data.draft && (
+                                <div class="mb-6">
+                                    <a
+                                        href={`${year}/${entry.data.slug}`}
+                                        class="text-primary hover:text-accent"
+                                        set:html={marked.parseInline(
+                                            entry.data.title,
+                                        )}
+                                    />
+                                    {entry.data.summary && (
+                                        <div
+                                            v-if="post.summary"
+                                            class="text-base"
+                                        >
+                                            {entry.data.summary}
+                                        </div>
+                                    )}
+                                    <div class="flex mt-2">
+                                        {entry.data.tags &&
+                                            entry.data.tags.map((tag) => (
+                                                <div class="inline text-xs bg-gray-200 dark:bg-zinc-700 dark:text-gray-300 align-baseline mr-3 py-0.5 px-1.5 rounded-sm">
+                                                    {tag}
+                                                </div>
+                                            ))}
+                                    </div>
+                                </div>
+                            ),
+                    )}
+                </div>
+            </div>
+        ))
+    }
+</Layout>
