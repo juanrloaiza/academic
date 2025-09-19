@@ -16,24 +16,27 @@
     --font-heading: "Fira Sans";
 
     /* CSS HEX */
-    --color-background: #fdfdfd;
+    --color-background: #fafaff;
     --color-primary: #2467b2;
     --color-primary-light: #b8bccc;
     --color-accent: #bf616a;
+    --color-text: #252535;
 }
 
 [data-theme='dark'] {
     --color-primary: #ecb474;
     --color-accent: #be7c82;
-
+    --color-text: #eaeae0;
+    --color-primary-light: #c8c6bc;
+  
     ::selection {
         background-color: #455966;
     }
 }
 
 body {
+    color: var(--color-text);
     padding-bottom: 50px;
-    color: #252525
 }
 
 h1,
