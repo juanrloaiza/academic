@@ -17,7 +17,7 @@ Para enfrentar la dificultad de enseñar esta unidad, este semestre me propuse r
 - ¿Cuál es el objetivo de enseñar deducción natural en el marco del curso (y del programa del ciclo básico de humanidades en el que la clase se inscribe)?
 - ¿Qué formas concretas de evaluación pueden acompañar estos objetivos?
 
-Sobre la primera pregunta, la respuesta que había adoptado hasta el momento, y que mencioné antes, es que enseñamos deducción natural como entrenamiento de habilidades de razonamiento. Sin embargo, si esto fuese el caso, hay otras maneras menos complicadas de entrenar estas habilidades (e.g., haciendo otra clase de juegos sobre razonamiento formal). Esto me llevó a perseguir con más cuidado mi intuición de que la deducción natural es valiosa pedagógicamente, pero a buscar un argumento diferente. La conclusión a la que he llegado es que enseñar deducción natural sirve para dos objetivos concretos: 
+Sobre la primera pregunta, la respuesta que había adoptado hasta el momento, y que mencioné antes, es que enseñamos deducción natural como entrenamiento de habilidades de razonamiento. Sin embargo, si esto fuese el caso, hay otras maneras menos complicadas de entrenar estas habilidades (e.g., haciendo otra clase de juegos sobre razonamiento formal). Esto me llevó a perseguir con más cuidado mi intuición de que la deducción natural es valiosa pedagógicamente, pero a buscar un argumento diferente. La conclusión a la que he llegado es que enseñar deducción natural sirve para dos objetivos concretos:
 
 1. Explicar paso a paso cómo funciona una inferencia determinada; y
 2. Demostrar la validez de un argumento deductivo (objetivo que ya se había mencionado antes y se mantiene).
@@ -35,10 +35,10 @@ Habiendo hecho esta revaluación de los objetivos de aprendizaje para la unidad,
 | 1.0    | Con ayuda, el/la estudiante demuestra reconocimiento de algunas reglas de inferencia. |                                                                                        |
 | 0.0    | El/la estudiante no reconoce ninguna regla de deducción.                              |                                                                                        |
 
-
 El diseño de esta escala de evaluación tiene varias virtudes. Por un lado, nos ubica a los profesores y las profesoras de lógica en unos objetivos más claros y mejor enmarcados en el resto del curso. Por otro lado, y más importante, nos da nuevas luces sobre las formas de evaluación de estas competencias. Primero, ya no aparece como importante que los y las estudiantes resuelvan deducciones particularmente difíciles, pues el objetivo ya no es el mero manejo de formalismos avanzados (objetivo que sería pertinente en otras áreas de la lógica). Más bien, el objetivo avanzado va ligado al uso de la herramienta en el contexto de la argumentación, objetivo que sí encaja con otras actividades que los y las estudiantes realizarán en su carrera (teniendo en cuenta que son estudiantes de distintas carreras de humanidades). Segundo, esto invita a variar el tipo de ejercicios con los que los y las estudiantes aprenden las competencias en cuestión. Por ejemplo, ya no se trata de que los estudiantes completen deducciones dadas entre fáciles y sencillas, sino que también identifiquen reglas en deducciones ya completadas o que practiquen cómo plantear una deducción por cuenta propia.
 
 Como docente, este proceso de pensar mejor las unidades de mis cursos y plantear objetivos de aprendizaje más claros ha sido increíblemente iluminador, y me ha servido para organizar mejor mis ideas y diseñar mejores estrategias para mis clases. En otra reflexión reportaré los resultados de estos cambios, pero tengo confianza en que serán muy positivos tanto para los y las estudiantes como para mi ejercicio docente.
 
-## Referencias:
-* Marzano, R. (2007). _The Art and Science of Teaching_. ASCD.
+## Referencias
+
+- Marzano, R. (2007). _The Art and Science of Teaching_. ASCD.

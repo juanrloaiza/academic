@@ -11,14 +11,14 @@ En el espíritu reciente de críticas al rector de la Universidad del Rosario, A
 
 Un argumento general de crítica a Cheyne, que creo que está mejor expresado en el comunicado de profesores de la Facultad de Jurisprudencia de la universidad, va de la siguiente manera:
 
-> (1) La universidad está en problemas financieros o no lo está. 
-> 
-> (2) Si la universidad está en problemas financieros, Cheyne debe renunciar (pues ha administrado mal los recursos financieros de la universidad). 
-> 
+> (1) La universidad está en problemas financieros o no lo está.
+>
+> (2) Si la universidad está en problemas financieros, Cheyne debe renunciar (pues ha administrado mal los recursos financieros de la universidad).
+>
 > (3) Si la universidad no está en problemas financieros, ha priorizado gastos innecesarios frente a gastos en la labor académica de la universidad.
-> 
+>
 > (4) Un rector que priorice gastos innecesarios frente a gastos en la labor académica de una universidad debe renunciar.
-> 
+>
 > (5) En conclusión, Cheyne debe renunciar.
 
 Este argumento, primero, es deductivamente válido. Le queda la tarea a los y las estudiantes de Lógica y Argumentación demostrar que así es. Bono para quien me describa la estructura lógica del argumento.

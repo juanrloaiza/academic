@@ -6,7 +6,7 @@ date: 2021-09-21
 slug: procesos-aprendizaje-metodologias
 ---
 
-Llevo dos años ofreciendo el curso de *Metodologías de Investigación* para la Escuela de Ciencias Humanas en la Universidad del Rosario. Este curso supone retos importantes para quien lo ofrece, pues es un curso altamente interdisciplinar e introductorio a un componente importante de la formación profesional de los y las estudiantes. 
+Llevo dos años ofreciendo el curso de *Metodologías de Investigación* para la Escuela de Ciencias Humanas en la Universidad del Rosario. Este curso supone retos importantes para quien lo ofrece, pues es un curso altamente interdisciplinar e introductorio a un componente importante de la formación profesional de los y las estudiantes.
 
 Tras dos años de estar a cargo del curso, detecté dos dificultades constantes:
 
@@ -32,7 +32,7 @@ Al finalizar esta lluvia de ideas, noté algo importante: las habilidades se div
 
 ![Diagrama](/blog-assets/2022-01-25-Objetivos-MDG/%5BMDG%5D%20Habilidades.png)
 
-Esta manera de entender el proceso del curso llevó naturalmente a la formulación de actividades de evaluación que me permitieron reconfigurar el curso. Nuevamente, listé cada una de estas habilidades y formulé ideas sobre cómo evaluar cada una. En este punto ajusté actividades que había implementado en cursos pasados, pero esta nueva estructura me permitió pensar en otras actividades adicionales y a eliminar otras. 
+Esta manera de entender el proceso del curso llevó naturalmente a la formulación de actividades de evaluación que me permitieron reconfigurar el curso. Nuevamente, listé cada una de estas habilidades y formulé ideas sobre cómo evaluar cada una. En este punto ajusté actividades que había implementado en cursos pasados, pero esta nueva estructura me permitió pensar en otras actividades adicionales y a eliminar otras.
 
 | Actividad                                 | Habilidad que evalúa                                                                                                                                             |
 | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -60,5 +60,5 @@ Este orden se prestaba fácilmente a la estructura temporal del semestre: activi
 
 ## Referencias
 
-* Anderson, L. W., & Krathwohl, D. R. (2001). *A Taxonomy for Learning, Teaching and Assessing: A Revision of Bloom’s Taxonomy of Educational Objectives: Complete Edition*. New York: Longman.
-* Bloom, B. S., Englehart, M. D., Furst, E. J., Hill, W. H., & Krathwohl, D. R. (1956). *The Taxonomy of educational objectives, Handbook I: The Cognitive Domain*. New York: David McKay Co., Inc.
+- Anderson, L. W., & Krathwohl, D. R. (2001). *A Taxonomy for Learning, Teaching and Assessing: A Revision of Bloom’s Taxonomy of Educational Objectives: Complete Edition*. New York: Longman.
+- Bloom, B. S., Englehart, M. D., Furst, E. J., Hill, W. H., & Krathwohl, D. R. (1956). *The Taxonomy of educational objectives, Handbook I: The Cognitive Domain*. New York: David McKay Co., Inc.

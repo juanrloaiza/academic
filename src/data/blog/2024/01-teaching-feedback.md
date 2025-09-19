@@ -12,16 +12,16 @@ There was a [post](https://octodon.social/@derwinmcgeary/111921298436478955) on 
 The post invited the reader to do the following:
 
 > Grab a couple of dice. Roll them.
-> 
+>
 > If you get below 5, those are rookie numbers. Shout at the dice, let them know they're underperforming.
-> 
+>
 > If you get above 9, that's what we want to see! They're good dice, and you should acknowledge that.
-> 
+>
 > Repeat that and keep a record. You'll notice that negative feedback often results in better performance on the next roll. Positive feedback, conversely, can make them get lazy.
 
 If you run the simulation and calculate how much change occurs after each type of feedback (I'll post the code at the end), the results are the following:
 
-![](/blog/2024.teaching-feedback-example.png)
+![Bar graph showing the results of the simulation of comparing change after different types of feedback. There is change by 3 points after negative feedback, -4 points after positive feedback, and 0 points after no feedback.](/blog/2024.teaching-feedback-example.png)
 
 Amazing! The dice that performed poorly, after receiving negative feedback, improved substantially! Conversely, the dice that did well, after receiving positive feedback, did worse at the next try. One could therefore conclude that negative feedback improves performance, while positive feedback hinders it. This aligns well with the intuition some teachers may have that we should focus on negative feedback and prevent our students from becoming lazy after getting positive feedback. However, it would be very strange to think that giving the dice feedback somehow changed their performance. Therefore, we must conclude that something else is going on.
 
