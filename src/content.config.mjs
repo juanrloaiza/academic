@@ -57,5 +57,9 @@ const books = defineCollection({
     schema: booksSchema,
 });
 
+const other = defineCollection({
+    loader: glob({ pattern: "*.md", base: "./src/data/others" })
+});
 
-export const collections = { about, cv, articles, comments, bookChapters, books };
+
+export const collections = { about, cv, articles, comments, bookChapters, books, other };

@@ -1,0 +1,25 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getEntry, render } from "astro:content";
+
+import { languages } from "../../i18n/ui";
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+
+export async function getStaticPaths() {
+    return Object.keys(languages).map((lang) => {
+        return { params: { lang }, props: lang };
+    });
+}
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const entry = await getEntry("other", lang);
+const { Content } = await render(entry);
+---
+
+<Layout>
+    <div class="md-content">
+        <Content />
+    </div>
+</Layout>
