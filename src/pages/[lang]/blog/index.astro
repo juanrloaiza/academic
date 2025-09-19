@@ -2,19 +2,12 @@
 import { getCollection } from "astro:content";
 
 import Layout from "../../../layouts/Layout.astro";
-import {
-    defaultStaticPathsFunction,
-    getLangFromUrl,
-    useTranslations,
-} from "../../../i18n/utils";
+import { defaultStaticPathsFunction } from "../../../i18n/utils";
 
 import { marked } from "marked";
 import Tag from "../../../components/Tag.astro";
 
 export const getStaticPaths = defaultStaticPathsFunction;
-
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
 
 const blogEntries = await getCollection("blog");
 
