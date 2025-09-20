@@ -68,8 +68,15 @@ const courses = defineCollection({
 });
 
 const blog = defineCollection({
-    loader: glob({ pattern: "**/*.md", base: "./src/data/blog" })
-    // TODO: implement schema
+    loader: glob({ pattern: "**/*.md", base: "./src/data/blog" }),
+    schema: z.object({
+        title: z.string(),
+        slug: z.string(),
+        date: z.date(),
+        summary: z.string().optional(),
+        tags: z.array(z.string()).optional(),
+        draft: z.boolean().optional()
+    })
 });
 
 export const collections = {

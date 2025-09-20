@@ -10,7 +10,13 @@ import "../styles/global.css";
 import PageTitle from "../components/PageTitle.astro";
 import SEO from "../components/SEO.astro";
 
-const { pageTitle } = Astro.props;
+interface Props {
+    pageTitle?: string;
+    SEOTitle?: string;
+    SEODescription?: string;
+}
+
+const { pageTitle, SEOTitle, SEODescription } = Astro.props;
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -22,7 +28,7 @@ const t = useTranslations(lang);
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" type="image/svg+xml" href="/public/favicon.png" />
 
-        <SEO />
+        <SEO title={SEOTitle || pageTitle } description={SEODescription} />
 
         <script src="https://kit.fontawesome.com/56ed2b6624.js"></script>
         <link

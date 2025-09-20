@@ -48,7 +48,10 @@ const { Content } = await render(entry);
 const renderedTitle = marked.parseInline(entry.data.title);
 ---
 
-<Layout>
+<Layout
+    SEOTitle={`${entry.data.title} — Blog`}
+    SEODescription={entry.data.summary}
+>
     <div class="mx-auto max-w-[70ch]">
         <a
             href={getRelativeLocaleUrl(lang, "blog")}
