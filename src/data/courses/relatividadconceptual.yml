@@ -1,0 +1,8 @@
+name: 
+  es: "Seminario: Relatividad Conceptual"
+  en: "Seminar: Conceptual Relativity"
+level: pregrado
+description: "Seminario sobre qué es la relatividad conceptual y sus consecuencias ontológicas, epistemológicas y políticas."
+syllabi:
+  - semester: 2025-I
+    route: "/programas/2025-I_RelatividadConceptual.pdf"
