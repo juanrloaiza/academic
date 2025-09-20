@@ -48,20 +48,24 @@ const service = cv
                     <strong class="font-semibold">{ed.data.role[lang]}</strong>
                     <br />
                 </>
-                <span class="text-base">
-                    {t("thesis")}: "{ed.data.thesis.title}"
-                    <br />
-                    {t("supervisors")}: {ed.data.thesis.supervisors?.join(", ")}
-                    <br />
-                    {ed.data.thesis.examiners && (
-                        <span>
-                            {t("examiners")}:{" "}
-                            {ed.data.thesis.examiners?.join(", ")}
-                            <br />
-                            {t("qualification")}: {ed.data.thesis.qualification}
-                        </span>
-                    )}
-                </span>
+                {ed.data.thesis && (
+                    <span class="text-base">
+                        {t("thesis")}: "{ed.data.thesis.title}"
+                        <br />
+                        {t("supervisors")}:{" "}
+                        {ed.data.thesis.supervisors?.join(", ")}
+                        <br />
+                        {ed.data.thesis.examiners && (
+                            <span>
+                                {t("examiners")}:{" "}
+                                {ed.data.thesis.examiners?.join(", ")}
+                                <br />
+                                {t("qualification")}:{" "}
+                                {ed.data.thesis.qualification}
+                            </span>
+                        )}
+                    </span>
+                )}
             </CVSection>
         ))
     }

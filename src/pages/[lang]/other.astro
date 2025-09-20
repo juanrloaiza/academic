@@ -14,11 +14,12 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 const entry = await getEntry("other", lang);
-const { Content } = await render(entry);
+
+const { Content } = entry ? await render(entry) : {};
 ---
 
 <Layout pageTitle={t("otherTitle")}>
     <div class="md-content">
-        <Content />
+        {Content && <Content />}
     </div>
 </Layout>

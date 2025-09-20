@@ -17,8 +17,10 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 const entry = await getEntry("about", lang);
-const { Content } = await render(entry);
-const { competence, specialization } = await entry.data.areas;
+const { Content } = entry ? await render(entry) : {};
+const { competence, specialization } = entry
+    ? await entry.data.areas
+    : { competence: [], specialization: [] };
 ---
 
 <Layout pageTitle={t("aboutTitle")}>
@@ -30,7 +32,7 @@ const { competence, specialization } = await entry.data.areas;
         />
 
         <div class="col-span-3 md-content">
-            <Content />
+            {Content && <Content />}
         </div>
 
         <div
