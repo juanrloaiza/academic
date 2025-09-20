@@ -63,8 +63,16 @@ const other = defineCollection({
 });
 
 const courses = defineCollection({
-    loader: glob({ pattern: "*.yml", base: "./src/data/courses" })
-    // TODO: implement schema
+    loader: glob({ pattern: "*.yml", base: "./src/data/courses" }),
+    schema: z.object({
+        name: z.object({ en: z.string(), es: z.string() }),
+        level: z.enum(["pregrado", "master", "phd"]),
+        description: z.string(),
+        syllabi: z.array(z.object({
+            semester: z.string(),
+            route: z.string()
+        })).optional()
+    })
 });
 
 const blog = defineCollection({

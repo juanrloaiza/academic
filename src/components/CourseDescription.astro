@@ -5,17 +5,6 @@ import { marked } from "marked";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-interface Course {
-  name: Partial<Record<"en" | "es", string>>;
-  level: "pregrado" | "master" | "phd";
-  description: string;
-  syllabi: Array<{ semester: string; route: string }>;
-}
-
-interface Props {
-  course: Course;
-}
-
 const { course } = Astro.props;
 
 const description = marked.parseInline(course.description);
