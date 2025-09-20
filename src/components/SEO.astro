@@ -1,0 +1,29 @@
+---
+import { SEO as AstroSEO } from "astro-seo";
+import { getLangFromUrl } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+
+const title = "Juan R. Loaiza";
+const description = {
+    es: "Profesor asociado · Departamento de Filosofía · Universidad Alberto Hurtado",
+    en: "Associate professor · Departament of Philosophy · Universidad Alberto Hurtado",
+};
+---
+
+<AstroSEO
+    description={description[lang]}
+    titleDefault={title}
+    titleTemplate={`%s — ${title}`}
+    openGraph={{
+        basic: {
+            title: title,
+            type: "website",
+            image: "https://unsplash.com/photos/pVq6YhmDPtk/download?ixid=M3wxMjA3fDB8MXx0b3BpY3x8aVVJc25WdGpCMFl8fHx8fDJ8fDE3NTgzMjcxMzV8&force=true&w=640",
+        },
+        optional: {
+            description: description[lang],
+            locale: lang == "es" ? "es-CO" : "en-US",
+        },
+    }}
+/>
