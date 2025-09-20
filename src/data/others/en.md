@@ -10,7 +10,7 @@ Besides my academic work in philosophy, I sometimes like to code and engage in s
 
 In collaboration with [Miguel González Duque](https://www.miguelgondu.com), we apply text mining methods to Latin American philosophy journals. We started with [_Ideas y Valores_](https://revistas.unal.edu.co/index.php/idval/) (Colombia). The aim is to get some insight on the development of philosophy in Latin America in the last decades using topic modeling. You can find out about our progress in [this repository](https://github.com/juanrloaiza/latinamerican-philosophy-mining).
 
-#### Mining the Stanford Encyclopedia of Philosophy.
+#### Mining the Stanford Encyclopedia of Philosophy
 
 I've been visiting the Stanford Encyclopedia of Philosophy to do some text analyses. Some of these you can find in [this repository](https://github.com/juanrloaiza/SEP_TextMining). Any help or suggestions are more than welcome!
 

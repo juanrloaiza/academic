@@ -58,8 +58,10 @@ const books = defineCollection({
 });
 
 const other = defineCollection({
-    loader: glob({ pattern: "*.md", base: "./src/data/others" })
-    // TODO: implement schema
+    loader: glob({ pattern: "*.md", base: "./src/data/others" }),
+    schema: z.object({
+        lang: z.string()
+    })
 });
 
 const courses = defineCollection({
