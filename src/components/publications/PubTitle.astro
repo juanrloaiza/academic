@@ -11,10 +11,6 @@ const { title, openaccess } = Astro.props;
 const renderedTitle = marked.parseInline(title);
 ---
 
-<div class="text-primary hover:text-accent">
-    <span set:html={renderedTitle} />{
-        openaccess && (
-            <i class="mx-2 text-xl text-orange-600 ai ai-open-access" />
-        )
-    }
-</div>
+<span set:html={renderedTitle} class="text-primary hover:text-accent" />{
+    openaccess && <i class="mx-2 text-2xl text-orange-500 ai ai-open-access" />
+}

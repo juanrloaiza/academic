@@ -32,7 +32,7 @@ const { articles, comments, bookChapters, books } =
         articles.map((article) => (
             <Article
                 article={article.data as ArticleData}
-                className="mb-4 md:mb-2"
+                className="mb-4 md:mb-3"
             />
         ))
     }
@@ -42,7 +42,7 @@ const { articles, comments, bookChapters, books } =
         comments.map((comment) => (
             <Article
                 article={comment.data as ArticleData}
-                className="mb-4 md:mb-2"
+                className="mb-4 md:mb-3"
             />
         ))
     }
@@ -52,7 +52,7 @@ const { articles, comments, bookChapters, books } =
         bookChapters.map((bookChapter) => (
             <BookChapter
                 bookChapter={bookChapter.data as BookChapterData}
-                className="mb-4 md:mb-2"
+                className="mb-4 md:mb-3"
             />
         ))
     }
@@ -60,7 +60,7 @@ const { articles, comments, bookChapters, books } =
 
     {
         books.map((book) => (
-            <Book book={book.data as BookData} className="mb-4 md:mb-2" />
+            <Book book={book.data as BookData} className="mb-4 md:mb-3" />
         ))
     }
 </Layout>
