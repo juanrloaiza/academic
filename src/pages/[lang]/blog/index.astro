@@ -14,7 +14,7 @@ const blogEntries = await getCollection("blog");
 const blogsByYear = blogEntries.reduce((acc, entry) => {
     const year = new Date(entry.data.date).getFullYear();
     if (!acc[year]) acc[year] = [];
-    acc[year].push(entry);
+    acc[year].unshift(entry);
     return acc;
 }, {});
 
