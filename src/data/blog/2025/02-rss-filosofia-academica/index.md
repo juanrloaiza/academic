@@ -30,9 +30,9 @@ Una vez tenemos un lector de RSS, tenemos que suscribirnos a una fuente. Podemos
 
 <div class="lg:grid grid-cols-2 gap-x-10 p-6">
   
-![](01-screenshot-rss.jpg)
+![Screenshot of RSS search based on URL.](01-screenshot-rss.jpg)
 
-![](02-screenshot-suscribed.jpg)
+![Screenshot of RSS feed subscription](02-screenshot-suscribed.jpg)
 
 </div>
 
