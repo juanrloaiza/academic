@@ -4,6 +4,7 @@ import { sortPublications } from "../data/publications/sortPublications";
 import LinksPageBox from "../components/LinksPageBox.astro";
 import "../styles/global.css";
 import SocialMediaButtons from "../components/SocialMediaButtons.astro";
+import AcademicPhoto from "../components/AcademicPhoto.astro";
 
 const mainLinks = [
     { name: "Página personal", url: "https://www.juanrloaiza.com/" },
@@ -16,8 +17,6 @@ const mainLinks = [
 const latestPublications = (await getCollection("articles"))
     .sort(sortPublications)
     .slice(0, 3); // TODO: Check if I need to add books or other formats
-
-const social = [];
 ---
 
 <head>
@@ -35,7 +34,7 @@ const social = [];
 <body class="bg-gradient-to-b from-slate-300 to-slate-100">
     <div class="max-w-lg px-2 mx-auto py-20">
         <div class="text-center font-bold">
-            <img src="src/assets/academic.png" class="w-28 bg-white rounded-full p-1 mx-auto" />
+            <AcademicPhoto class_="w-28 bg-white rounded-full p-1 mx-auto"/>
             <h1 class="text-4xl my-6">Juan R. Loaiza</h1>
             <p>Filósofo y académico (U. Alberto Hurtado)</p>
             <div class="my-6">
