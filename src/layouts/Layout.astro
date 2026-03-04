@@ -28,7 +28,7 @@ const t = useTranslations(lang);
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" type="image/svg+xml" href="/favicon.png" />
 
-        <SEO title={SEOTitle || pageTitle } description={SEODescription} />
+        <SEO title={SEOTitle || pageTitle} description={SEODescription} />
 
         <script src="https://kit.fontawesome.com/56ed2b6624.js"></script>
         <link
@@ -63,7 +63,9 @@ const t = useTranslations(lang);
                 </div>
 
                 <div class="flex items-center justify-center">
-                    <SocialMediaButtons />
+                    <div class="mx-4 justify-self-end text-lg md:text-2xl">
+                        <SocialMediaButtons />
+                    </div>
                     <LangSwitcher />
                     <DarkThemeToggle />
                 </div>
