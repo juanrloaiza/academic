@@ -1,0 +1,16 @@
+---
+import { marked } from "marked";
+
+const { url, name, extra } = Astro.props;
+
+const parsedName = marked.parseInline(name);
+---
+
+<a href={url}>
+    <div
+        class="text-center py-5 px-8 border-2 border-slate-300 rounded-2xl m-1 hover:bg-slate-300 font-semibold bg-white text-lg"
+    >
+        <div set:html={parsedName} />
+        {extra && <div class="text-sm italic">{extra}</div>}
+    </div>
+</a>

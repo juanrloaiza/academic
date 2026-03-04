@@ -1,0 +1,67 @@
+---
+import { getCollection } from "astro:content";
+import { sortPublications } from "../data/publications/sortPublications";
+import LinksPageBox from "../components/LinksPageBox.astro";
+import "../styles/global.css";
+import SocialMediaButtons from "../components/SocialMediaButtons.astro";
+
+const mainLinks = [
+    { name: "Página personal", url: "https://www.juanrloaiza.com/" },
+    {
+        name: "Santiago Mind and Cognition",
+        url: "https://www.santiagomindandcognition.cl/",
+    },
+];
+
+const latestPublications = (await getCollection("articles"))
+    .sort(sortPublications)
+    .slice(0, 3); // TODO: Check if I need to add books or other formats
+
+const social = [];
+---
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+
+    <script src="https://kit.fontawesome.com/56ed2b6624.js"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
+    <title>Juan R. Loaiza</title>
+</head>
+<body class="bg-gradient-to-b from-slate-300 to-slate-100">
+    <div class="max-w-lg px-2 mx-auto py-20">
+        <div class="text-center font-bold">
+            <img src="src/assets/academic.png" class="w-28 bg-white rounded-full p-1 mx-auto" />
+            <h1 class="text-4xl my-6">Juan R. Loaiza</h1>
+            <p>Filósofo y académico (U. Alberto Hurtado)</p>
+            <div class="my-6">
+        <SocialMediaButtons />
+     </div> 
+        </div>
+        <div class="">
+            {
+                mainLinks.map((link) => {
+                    return <LinksPageBox url={link.url} name={link.name} />;
+                })
+            }
+            {
+                latestPublications.map((pub) => {
+                    return (
+                        <LinksPageBox
+                            url={
+                                pub.data.url ||
+                                `https://doi.org/${pub.data.doi}`
+                            }
+                            name=`${pub.data.title} (${pub.data.year})`
+                            extra={pub.data.journal}
+                        />
+                    );
+                })
+            }
+        </div>
+    </div>
+</body>
