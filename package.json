@@ -6,15 +6,14 @@
 		"preview": "astro preview"
 	},
 	"dependencies": {
-		"@astrojs/rss": "^4.0.15",
-		"@tailwindcss/vite": "^4.1.13",
-		"astro": "^5.18.0",
+		"@astrojs/rss": "^4.0.17",
+		"@tailwindcss/vite": "^4.2.2",
+		"astro": "^5.18.1",
 		"astro-seo": "^0.8.4",
-		"dayjs": "^1.11.18",
-		"marked": "^16.3.0",
-		"sanitize-html": "^2.17.0",
-		"sharp": "^0.34.4",
-		"tailwindcss": "^4.1.13",
-		"vue": "^3.5.21"
+		"dayjs": "^1.11.20",
+		"marked": "^16.4.2",
+		"sanitize-html": "^2.17.2",
+		"sharp": "^0.34.5",
+		"tailwindcss": "^4.2.2"
 	}
 }
