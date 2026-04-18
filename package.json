@@ -7,13 +7,13 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@astrojs/rss": "^4.0.17",
+    "@astrojs/rss": "^4.0.18",
     "@tailwindcss/vite": "^4.2.2",
     "astro": "^5.18.1",
     "astro-seo": "^0.8.4",
     "dayjs": "^1.11.20",
     "marked": "^16.4.2",
-    "sanitize-html": "^2.17.2",
+    "sanitize-html": "^2.17.3",
     "sharp": "^0.34.5",
     "tailwindcss": "^4.2.2"
   },
