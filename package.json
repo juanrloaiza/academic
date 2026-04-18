@@ -1,19 +1,30 @@
 {
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"dev": "astro dev",
-		"build": "astro build",
-		"preview": "astro preview"
-	},
-	"dependencies": {
-		"@astrojs/rss": "^4.0.17",
-		"@tailwindcss/vite": "^4.2.2",
-		"astro": "^5.18.1",
-		"astro-seo": "^0.8.4",
-		"dayjs": "^1.11.20",
-		"marked": "^16.4.2",
-		"sanitize-html": "^2.17.2",
-		"sharp": "^0.34.5",
-		"tailwindcss": "^4.2.2"
-	}
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@astrojs/rss": "^4.0.17",
+    "@tailwindcss/vite": "^4.2.2",
+    "astro": "^5.18.1",
+    "astro-seo": "^0.8.4",
+    "dayjs": "^1.11.20",
+    "marked": "^16.4.2",
+    "sanitize-html": "^2.17.2",
+    "sharp": "^0.34.5",
+    "tailwindcss": "^4.2.2"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "knip": "^6.4.1",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.8.3"
+  },
+  "lint-staged": {
+    "*.md": "prettier --write",
+    "*.{js,ts,json}": "prettier --write"
+  }
 }
