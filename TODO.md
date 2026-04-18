@@ -2,35 +2,35 @@
 
 ## Hacia el MVP
 
-- [X] Construir el sitio de docencia
-  - [X] Implementar lógica para programas
-  - [X] Arreglar el markdown de la descripción
-- [X] Arreglar las imágenes del blog
-- [X] Construir el sitio de otros proyectos
-- [X] Hacer los botones de redes sociales
-- [X] Implementar diseño en celulares
-- [X] Terminar de pasar las publicaciones
-  - [X] Implementar capítulos de libro y libro
-- [X] Arreglar el estilo de los links en About y Others
-- [X] Decidir una paleta de color
-- [X] Decidir un subtítulo para la navegación
+- [x] Construir el sitio de docencia
+  - [x] Implementar lógica para programas
+  - [x] Arreglar el markdown de la descripción
+- [x] Arreglar las imágenes del blog
+- [x] Construir el sitio de otros proyectos
+- [x] Hacer los botones de redes sociales
+- [x] Implementar diseño en celulares
+- [x] Terminar de pasar las publicaciones
+  - [x] Implementar capítulos de libro y libro
+- [x] Arreglar el estilo de los links en About y Others
+      - [X] Decidir una paleta de color
+- [x] Decidir un subtítulo para la navegación
 
 ## Extra
 
-- [X] Implementar estilos de tema oscuro
+- [x] Implementar estilos de tema oscuro
 - [ ] Implement stricter zod schemas in collection definitions
 - [ ] Have translations for course abstracts
 - [ ] Blog and course sections are fairly similar (title with small description). Consider same styles?
-- [X] Upload favicon
-- [X] Make publication info smaller
-- [X] Add SEO
-- [X] Translate missing strings
+- [x] Upload favicon
+- [x] Make publication info smaller
+- [x] Add SEO
+- [x] Translate missing strings
 
 ## Refactor
 
 - [-] Pubs and teaching items have abstracts with the same styles. We can abstract to a component.
-- [X] Pubs and teaching items reveal the abstract with a button. We can abstract to a component.
-- [X] Pubs are passed entirely to component, not bound to the component. Binding would simplify syntax.
+- [x] Pubs and teaching items reveal the abstract with a button. We can abstract to a component.
+- [x] Pubs are passed entirely to component, not bound to the component. Binding would simplify syntax.
 
 ## Future
 

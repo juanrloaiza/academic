@@ -1,12 +1,13 @@
 ---
 title: Teaching, feedback, and regression toward the mean
 date: 2024-03-08T03:00:00.000Z
-tags: 
+tags:
   - Teaching
   - Statistics
 summary: Why negative feedback by itself does not mean better teaching (even if it somehow means better results).
 slug: teaching-feedback
 ---
+
 There was a [post](https://octodon.social/@derwinmcgeary/111921298436478955) on Mastodon recently about why negative feedback in teaching does not cause better learning. I thought the post was clear and concise, and could elicit the right intuition, but it didn't exactly explain the background that was being applied (the purpose was to be funny and intuitive, not explanatory). I also thought it would be a great opportunity to practice my programming and stats again, so here's the simulation, an explanation, and some lessons to draw from it.
 
 The post invited the reader to do the following:
