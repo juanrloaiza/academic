@@ -9,7 +9,7 @@
   "dependencies": {
     "@astrojs/rss": "^4.0.18",
     "@tailwindcss/vite": "^4.2.2",
-    "astro": "^5.18.1",
+    "astro": "^6.1.6",
     "astro-seo": "^0.8.4",
     "dayjs": "^1.11.20",
     "marked": "^16.4.2",
