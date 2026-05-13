@@ -1,7 +1,7 @@
 ---
 title: Discriminación y algunos sesgos cognitivos
 date: 2024-03-05T03:00:00.000Z
-tags: 
+tags:
   - Política
   - Ciencia cognitiva
 summary: Cómo se presenta la información, incluso cuando se presente sin falsedad, puede tener consecuencias problemáticas.
@@ -16,9 +16,9 @@ La cifra resulta preocupante, por supuesto, y estudiar la estructura de la migra
 
 Para ver por qué la presentación de esta información es problemática, partamos de la base de que hay varias maneras de presentar un mismo hecho. La descripción que se hace arriba es que 303 personas de 2.780 detenidas eran extranjeras. Bien podríamos haber dicho que 2.477 personas de 2.780 no eran extranjeras (al menos no de los países mencionados). Ambas descripciones son verdaderas, pero difieren sustancialmente en el efecto que generan. Para efectos dramáticos, podríamos decir que "no extranjero de Venezuela, Colombia y Bolivia" equivale a chileno (sería razonable asumir que por lo menos en una alta proporción). Pero incluso concediendo que no hay tal equivalencia, de todas maneras la información podría presentarse bajo las siguientes descripciones:
 
-* 2.477 de 2.780 de las personas detenidas por porte ilegal de arma de fuego en Chile no eran extranjeras de Venezuela, Colombia y Bolivia.
-* 89.1% de las personas detenidas por porte ilegal de arma de fuego en Chile no eran extranjeras de Venezuela, Colombia y Bolivia.
-* La gran mayoría de las personas detenidas por porte ilegal de arma de fuego en Chile el año pasado no eran extranjeras de Venezuela, Colombia y Bolivia.
+- 2.477 de 2.780 de las personas detenidas por porte ilegal de arma de fuego en Chile no eran extranjeras de Venezuela, Colombia y Bolivia.
+- 89.1% de las personas detenidas por porte ilegal de arma de fuego en Chile no eran extranjeras de Venezuela, Colombia y Bolivia.
+- La gran mayoría de las personas detenidas por porte ilegal de arma de fuego en Chile el año pasado no eran extranjeras de Venezuela, Colombia y Bolivia.
 
 Y así con muchas otras descripciones más. El punto es que a pesar de haber muchas descripciones disponibles, la descripción escogida era aquella que hacía énfasis en la violencia que sí era producida por migrantes, y además migrantes de algunos países específicos.
 

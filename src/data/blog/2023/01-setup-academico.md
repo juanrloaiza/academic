@@ -1,14 +1,14 @@
 ---
 title: Mi setup académico
 date: 2023-11-29T03:25:12.000Z
-tags: 
+tags:
   - Tech
   - Academia
 summary: Qué programas uso para escribir textos académicos, desde mi editor de texto hasta mi configuración de Zotero.
 slug: setup-academico
 ---
 
-A lo largo de los años he usado una variedad de sistemas, programas y mecanismos para mi trabajo académico. Escribí mis tesis de máster y de doctorado en LaTeX, sincronizando entre equipos con Git y manejando mi bibliografía con Zotero y JabRef. Pero quien haya usado LaTeX sabe que puede ser un dolor de cabeza, y que una simple lista de elementos puede llevar toda una mañana (aunque sea una buena excusa para no sentirnos tan mal al procrastinar). Con todo eso, desde entonces he estado buscando un nuevo *setup* que me sirva para mi trabajo académico. La idea es que sea simple, portátil, e idealmente que no dependa de software propietario (e.g., Microsoft Word). Aquí entonces está mi configuración actual, que por el momento me tiene muy satisfecho y quizás pueda servirle a alguien.
+A lo largo de los años he usado una variedad de sistemas, programas y mecanismos para mi trabajo académico. Escribí mis tesis de máster y de doctorado en LaTeX, sincronizando entre equipos con Git y manejando mi bibliografía con Zotero y JabRef. Pero quien haya usado LaTeX sabe que puede ser un dolor de cabeza, y que una simple lista de elementos puede llevar toda una mañana (aunque sea una buena excusa para no sentirnos tan mal al procrastinar). Con todo eso, desde entonces he estado buscando un nuevo _setup_ que me sirva para mi trabajo académico. La idea es que sea simple, portátil, e idealmente que no dependa de software propietario (e.g., Microsoft Word). Aquí entonces está mi configuración actual, que por el momento me tiene muy satisfecho y quizás pueda servirle a alguien.
 
 ## TL;DR
 
@@ -46,7 +46,7 @@ El segundo complemento que uso en Zotero es el [plugin](https://github.com/incit
 
 ## Sincronización: Syncthing
 
-Finalmente, agrego un apartado final para mencionar cómo sincronizo todos estos archivos. Hasta hace muy poco, mi equipo principal de trabajo era un ThinkPad E480 que conseguí con descuento cuando era estudiante de doctorado. En este ThinkPad uso Linux como sistema operativo, específicamente Fedora con KDE. Me encanta Linux (aunque no faltará quien venga a corregirme porque es *GNU/Linux*) y me encanta Fedora, y no planeo volver a Windows si puedo evitarlo. Quizás en otra nota cuente mis andanzas por el mundo de Linux y el *distro hopping*.
+Finalmente, agrego un apartado final para mencionar cómo sincronizo todos estos archivos. Hasta hace muy poco, mi equipo principal de trabajo era un ThinkPad E480 que conseguí con descuento cuando era estudiante de doctorado. En este ThinkPad uso Linux como sistema operativo, específicamente Fedora con KDE. Me encanta Linux (aunque no faltará quien venga a corregirme porque es _GNU/Linux_) y me encanta Fedora, y no planeo volver a Windows si puedo evitarlo. Quizás en otra nota cuente mis andanzas por el mundo de Linux y el _distro hopping_.
 
 A pesar de mi cariño por Linux y Fedora, hace unos meses adopté un MacBook Air del 2017 que mi pareja me dejó. La razón por la que lo recibí es por la constante frustración que me provoca que el mundo académico y laboral dependa tanto de archivos de Microsoft Word (.docx), Excel (.xlsx), o a veces de la suite de Adobe. Si bien hay alternativas como Microsoft 365 (que es en línea) o LibreOffice, es fácil que el formato de los documentos se altere, que no todas las funciones estén disponibles, y en general me provocaba un dolor de cabeza lidiar con estos archivos haciendo malabares informáticos. El MacBook además es algo más liviano, tiene una pantalla excelente y desafortunadamente tiene mejor soporte para la mayoría de aplicaciones (o al menos mis quejas son recibidas como más razonables que cuando las hago desde Linux).
 

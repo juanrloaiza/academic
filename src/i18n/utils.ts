@@ -1,30 +1,30 @@
-import { ui, countries, defaultLang, languages } from './ui';
+import { ui, countries, defaultLang, languages } from "./ui";
 
 export function getLangFromUrl(url: URL) {
-  const [, lang] = url.pathname.split('/');
+  const [, lang] = url.pathname.split("/");
   if (lang in ui) return lang as keyof typeof ui;
   return defaultLang;
 }
 
 export function getPageFromUrl(url: URL) {
-  const [, lang, ...page] = url.pathname.split('/');
-  return page.join('/')
+  const [, lang, ...page] = url.pathname.split("/");
+  return page.join("/");
 }
 
 export function useTranslations(lang: keyof typeof ui) {
-  return function t(key: keyof typeof ui[typeof defaultLang]) {
+  return function t(key: keyof (typeof ui)[typeof defaultLang]) {
     return ui[lang][key] || ui[defaultLang][key];
-  }
+  };
 }
 
 export function useCountryTranslations(lang: keyof typeof countries) {
-  return function t(key: keyof typeof countries[typeof defaultLang]) {
+  return function t(key: keyof (typeof countries)[typeof defaultLang]) {
     return countries[lang][key] || countries[defaultLang][key];
-  }
+  };
 }
 
 export async function defaultStaticPathsFunction() {
-    return Object.keys(languages).map((lang) => {
-        return { params: { lang }, props: lang };
-    });
+  return Object.keys(languages).map((lang) => {
+    return { params: { lang }, props: lang };
+  });
 }
