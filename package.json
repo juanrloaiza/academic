@@ -6,9 +6,9 @@
 		"preview": "astro preview"
 	},
 	"dependencies": {
-		"@astrojs/rss": "^4.0.17",
+		"@astrojs/rss": "^4.0.18",
 		"@tailwindcss/vite": "^4.2.2",
-		"astro": "^5.18.1",
+		"astro": "^6.3.1",
 		"astro-seo": "^0.8.4",
 		"dayjs": "^1.11.20",
 		"marked": "^16.4.2",
