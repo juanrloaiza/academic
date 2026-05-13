@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, type CollectionEntry } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import {
     defaultStaticPathsFunction,
@@ -13,26 +13,22 @@ export const getStaticPaths = defaultStaticPathsFunction;
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-// Get CV collection
-
 const cv = await getCollection("cv");
 
+const byEndYear = (a: CollectionEntry<"cv">, b: CollectionEntry<"cv">) =>
+    (b.data.end_year || Infinity) - (a.data.end_year || Infinity);
+
 const education = cv
-    .filter((section) => {
-        return section.data.cvtype == "education";
-    })
-    .sort((a, b) => b.data.end_year.valueOf() - a.data.end_year.valueOf());
+    .filter((section) => section.data.cvtype == "education")
+    .sort(byEndYear);
 
 const employment = cv
-    .filter((section) => {
-        return section.data.cvtype == "employment";
-    })
-    .sort((a, b) => b.data.end_year.valueOf() - a.data.end_year.valueOf());
+    .filter((section) => section.data.cvtype == "employment")
+    .sort(byEndYear);
+
 const service = cv
-    .filter((section) => {
-        return section.data.cvtype == "service";
-    })
-    .sort((a, b) => b.data.end_year.valueOf() - a.data.end_year.valueOf());
+    .filter((section) => section.data.cvtype == "service")
+    .sort(byEndYear);
 ---
 
 <Layout pageTitle={t("cvTitle")}>

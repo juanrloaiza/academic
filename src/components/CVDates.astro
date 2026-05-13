@@ -6,18 +6,17 @@ const t = useTranslations(lang)
 
 interface Props {
     start: number,
-    end: number
+    end?: number
 }
 
 const { start, end } = Astro.props;
 ---
 
-{(start == end ) &&
-<span>{ start }</span>
-||
-end &&
-	<span v-else-if="end">{ start } - { end }</span>
-||
-	<span v-else>{ start } - { t('present') }</span>
-}
+{start === end ? (
+    <span>{start}</span>
+) : end ? (
+    <span>{start} - {end}</span>
+) : (
+    <span>{start} - {t('present')}</span>
+)}
 
