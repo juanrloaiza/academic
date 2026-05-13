@@ -1,6 +1,7 @@
 ---
 import type { BookChapterData } from "../../data/publications/publicationSchemas";
 import PubTitle from "./PubTitle.astro";
+import { getPublicationUrl } from "../../utils/publications";
 
 interface Props {
     bookChapter: BookChapterData,
@@ -14,7 +15,7 @@ const {
 ---
 
 <div class={className}>
-    <a href={bookChapter.doi ? `https://doi.org/${bookChapter.doi}` : bookChapter.url ? bookChapter.url : "#"}>
+    <a href={getPublicationUrl(bookChapter)}>
         <PubTitle title={bookChapter.title} openaccess={bookChapter.openaccess} />
     </a>
     <div class="text-base">{bookChapter.authors} ({bookChapter.year}).</div>
