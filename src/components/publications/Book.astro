@@ -9,12 +9,12 @@ interface Props {
 }
 
 const { book, className } = Astro.props;
+const url = getPublicationUrl(book)
 ---
 
 <div class={className}>
-    <a href={getPublicationUrl(book)}>
-        <PubTitle title={book.title} openaccess={book.openaccess} />
-    </a>
+
+    <PubTitle title={book.title} openaccess={book.openaccess} url={url} />
     <div class="text-base">{book.authors} ({book.year}).</div>
     <div class="text-sm mt-0.5">
         {book.publisher && <span>{book.publisher}</span>}.

@@ -12,12 +12,12 @@ const {
     bookChapter,
     className,
 } = Astro.props;
+const url = getPublicationUrl(bookChapter)
 ---
 
 <div class={className}>
-    <a href={getPublicationUrl(bookChapter)}>
-        <PubTitle title={bookChapter.title} openaccess={bookChapter.openaccess} />
-    </a>
+
+    <PubTitle title={bookChapter.title} openaccess={bookChapter.openaccess} url={url} />
     <div class="text-base">{bookChapter.authors} ({bookChapter.year}).</div>
     <div class="text-sm mt-0.5">
         En: {bookChapter.editors && <span>{bookChapter.editors}, </span>}<em>{bookChapter.booktitle}</em>{

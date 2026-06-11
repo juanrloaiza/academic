@@ -10,12 +10,13 @@ interface Props {
 
 const { article, className } = Astro.props;
 
+const url = getPublicationUrl(article)
 ---
 
 <div class={className}>
-    <a href={getPublicationUrl(article)}>
-        <PubTitle title={article.title} openaccess={article.openaccess} />
-    </a>
+
+    <PubTitle title={article.title} openaccess={article.openaccess} url={url} />
+
     <div class="text-base">{article.authors} ({article.year}).</div>
     <div class="text-sm mt-0.5">
         <em>{article.journal}</em>{
