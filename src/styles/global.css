@@ -24,9 +24,9 @@
 }
 
 [data-theme='dark'] {
-    --color-primary: #ecb788;
-    --color-accent: #b36e46;
-    --color-text: #eaeae0;
+    --color-primary: #88d3ec;
+    --color-accent: #4673b3;
+    --color-text: #ffffff;
     --color-primary-light: #c8c6bc;
   
     ::selection {
