@@ -15,5 +15,11 @@
 		"sanitize-html": "^2.17.2",
 		"sharp": "^0.34.5",
 		"tailwindcss": "^4.2.2"
+	},
+	"devDependencies": {
+		"lint-staged": "^17.0.7"
+	},
+	"lint-staged": {
+		"*.js,*.ts,*.astro": "prettier --write"
 	}
 }
