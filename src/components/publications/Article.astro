@@ -11,6 +11,10 @@ interface Props {
 const { article, className } = Astro.props;
 
 const url = getPublicationUrl(article)
+
+const volume = article.volume ? `, <em>${article.volume}</em>` : "";
+const issue = article.issue ? `(${article.issue})` : "";
+const volumeIssue = article.volume || article.issue ? `<span>${volume}${issue}</span>` : "";
 ---
 
 <div class={className}>
@@ -19,11 +23,7 @@ const url = getPublicationUrl(article)
 
     <div class="text-base">{article.authors} ({article.year}).</div>
     <div class="text-sm mt-0.5">
-        <em>{article.journal}</em>{
-            article.volume && article.issue && (
-                <span><em>, {article.volume}</em>({article.issue})</span>
-            )
-        }{article.pages && <span>, {article.pages}</span>}.
+        <em>{article.journal}</em><span set:html={volumeIssue} />{article.pages && <span>, {article.pages}</span>}.
         {
             (article.doi && (
                 <a href={`https://doi.org/${article.doi}`}>
