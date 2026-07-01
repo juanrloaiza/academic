@@ -86,7 +86,5 @@ export const ui = {
   },
 } as const;
 
-export const countries = {
-  es: {},
-  en: {},
-} as const;
+export type TranslationKey = keyof (typeof ui)[typeof defaultLang];
+export type LanguageKey = keyof typeof languages

@@ -1,8 +1,9 @@
-import { ui, countries, defaultLang, languages } from "./ui";
+import { ui, defaultLang, languages } from "./ui";
+import type { TranslationKey, LanguageKey } from "./ui";
 
 export function getLangFromUrl(url: URL) {
   const [, lang] = url.pathname.split("/");
-  if (lang in ui) return lang as keyof typeof ui;
+  if (lang in ui) return lang as LanguageKey;
   return defaultLang;
 }
 
@@ -11,15 +12,9 @@ export function getPageFromUrl(url: URL) {
   return page.join("/");
 }
 
-export function useTranslations(lang: keyof typeof ui) {
-  return function t(key: keyof (typeof ui)[typeof defaultLang]) {
+export function useTranslations(lang: LanguageKey) {
+  return function t(key: TranslationKey) {
     return ui[lang][key] || ui[defaultLang][key];
-  };
-}
-
-export function useCountryTranslations(lang: keyof typeof countries) {
-  return function t(key: keyof (typeof countries)[typeof defaultLang]) {
-    return countries[lang][key] || countries[defaultLang][key];
   };
 }
 
