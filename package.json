@@ -6,20 +6,21 @@
 		"preview": "astro preview"
 	},
 	"dependencies": {
-		"@astrojs/rss": "^4.0.18",
-		"@tailwindcss/vite": "^4.3.1",
-		"astro": "^6.4.8",
+		"@astrojs/rss": "^4.0.19",
+		"@tailwindcss/vite": "^4.3.3",
+		"astro": "^7.1.6",
 		"astro-seo": "^1.1.0",
 		"dayjs": "^1.11.21",
 		"marked": "^16.4.2",
-		"sanitize-html": "^2.17.5",
+		"sanitize-html": "^2.17.6",
 		"sharp": "^0.34.5",
-		"tailwindcss": "^4.3.1"
+		"tailwindcss": "^4.3.3"
 	},
 	"devDependencies": {
-		"lint-staged": "^17.0.8"
+		"lint-staged": "^17.3.0"
 	},
 	"lint-staged": {
 		"*.js,*.ts,*.astro": "prettier --write"
-	}
+	},
+	"packageManager": "pnpm@11.18.0+sha512.33d83c77da82f49fba836925c6f1b841181ec3132b670639bd012f7075f5c7cf634c5f870147c19aae7478fac01df09d8892e880454896edd23ee9b33757563c"
 }
