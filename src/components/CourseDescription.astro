@@ -2,6 +2,11 @@
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 import { marked } from "marked";
 
+interface Syllabus {
+  route: string;
+  semester: string;
+}
+
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
@@ -17,7 +22,7 @@ const description = marked.parseInline(course.description);
 
   {
     course.syllabi &&
-      course.syllabi.map((syllabus) => (
+      course.syllabi.map((syllabus: Syllabus) => (
         <a href={syllabus.route}>
           <div class="inline-block mt-2 text-primary/70 hover:text-accent py-1 px-2 mr-2 rounded-md border-1 text-sm">
             {t("syllabus")} ({syllabus.semester})

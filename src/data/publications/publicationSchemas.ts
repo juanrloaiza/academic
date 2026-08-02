@@ -1,5 +1,7 @@
-import { getCollection, z } from "astro:content";
+import { getCollection } from "astro:content";
+import { z } from "astro/zod";
 import { sortPublications } from "./sortPublications";
+import { keyof } from "astro:schema";
 
 // Schema definitions for each publication type
 const basePublicationSchema = z.object({
@@ -32,6 +34,7 @@ export const booksSchema = basePublicationSchema.extend({
 });
 
 // Types to enforce data according to the schemas
+export type BasePublicationData = z.infer<typeof basePublicationSchema>;
 export type ArticleData = z.infer<typeof articlesSchema>;
 export type BookChapterData = z.infer<typeof bookChaptersSchema>;
 export type BookData = z.infer<typeof booksSchema>;

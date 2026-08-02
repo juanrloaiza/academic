@@ -1,15 +1,22 @@
 ---
 import { getRelativeLocaleUrl } from "astro:i18n";
 import { useTranslations } from "../i18n/utils";
+import type { TranslationKey, LanguageKey } from "../i18n/ui";
 
-const { target, lang, class: className, ...rest } = Astro.props;
+interface Props {
+    target: string;
+    lang: LanguageKey;
+    class?: string;
+}
+
+const { target, lang, class: className } = Astro.props;
 
 const targetURL = getRelativeLocaleUrl(lang, target);
 
 const t = useTranslations(lang);
 
-const titleKey = `${target}Title`;
-const titleDescription = `${target}Description`;
+const titleKey = `${target}Title` as TranslationKey;
+const titleDescription = `${target}Description` as TranslationKey;
 ---
 
 <a href={targetURL} class={className}>

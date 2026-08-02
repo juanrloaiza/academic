@@ -10,20 +10,24 @@ interface Props {
 
 const { article, className } = Astro.props;
 
-const url = getPublicationUrl(article)
+const url = getPublicationUrl(article);
 
-const volume = article.volume ? `, <em>${article.volume}</em>` : "";
-const issue = article.issue ? `(${article.issue})` : "";
-const volumeIssue = article.volume || article.issue ? `<span>${volume}${issue}</span>` : "";
+function formatVolumeIssue() {
+  if (!article.volume && !article.issue) return "";
+  const vol = article.volume ? `<em>${article.volume}</em>` : "";
+  const issue = article.issue ? `(${article.issue})` : "";
+  return `<span>, ${vol}${issue}</span>`;
+}
 ---
 
 <div class={className}>
-
     <PubTitle title={article.title} openaccess={article.openaccess} url={url} />
 
     <div class="text-base">{article.authors} ({article.year}).</div>
     <div class="text-sm mt-0.5">
-        <em>{article.journal}</em><span set:html={volumeIssue} />{article.pages && <span>, {article.pages}</span>}.
+        <em>{article.journal}</em><span set:html={formatVolumeIssue()} />{
+            article.pages && <span>, {article.pages}</span>
+        }.
         {
             (article.doi && (
                 <a href={`https://doi.org/${article.doi}`}>
