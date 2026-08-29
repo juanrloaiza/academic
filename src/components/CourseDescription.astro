@@ -15,19 +15,26 @@ const { course } = Astro.props;
 const description = marked.parseInline(course.description);
 ---
 
-<div class="mb-8">
-  <h4 class="md:text-xl font-semibold">{course.name[lang]}</h4>
-  <h6 class="text-sm">{t(course.level)}</h6>
-  <div set:html={description} class="text-base mt-1" />
+<div class="md:mt-0 mt-6">
+  <h4 class="font-semibold">{course.name[lang]}</h4>
+  <div set:html={description} class="text-base text-gray-500 mt-1" />
+</div>
 
+<h6 class="text-gray-500 md:text-sm text-xs uppercase md:normal-case my-2 md:my-0">{t(course.level)}</h6>
+
+<div class="flex gap-x-4">
   {
-    course.syllabi &&
+    course.syllabi ? (
       course.syllabi.map((syllabus: Syllabus) => (
-        <a href={syllabus.route}>
-          <div class="inline-block mt-2 text-primary/70 hover:text-accent py-1 px-2 mr-2 rounded-md border-1 text-sm">
-            {t("syllabus")} ({syllabus.semester})
-          </div>
+        <a
+          class="text-primary/70 hover:text-accent text-sm "
+          href={syllabus.route}
+        >
+          {syllabus.semester}
         </a>
       ))
+    ) : (
+      <div />
+    )
   }
 </div>
