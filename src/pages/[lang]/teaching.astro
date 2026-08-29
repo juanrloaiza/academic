@@ -36,9 +36,7 @@ const sortedCourses = courses.sort((a, b) => {
 
 <Layout pageTitle={t("teachingTitle")}>
   <h3 class="font-bold text-2xl md:mb-3">{t("courses")}</h3>
-  <div
-    class="flex flex-col md:grid md:w-220 grid-cols-[50ch_minmax(10px,1fr)_minmax(10px,1fr)] md:gap-4"
-  >
+  <div class="flex flex-col md:grid grid-cols-[50ch_minmax(20ch,1fr)] md:gap-6">
     {sortedCourses.map((course) => <CourseDescription course={course.data} />)}
   </div>
 </Layout>
