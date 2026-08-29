@@ -1,7 +1,11 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
-import { defaultStaticPathsFunction, getLangFromUrl, useTranslations } from "../../i18n/utils";
+import {
+  defaultStaticPathsFunction,
+  getLangFromUrl,
+  useTranslations,
+} from "../../i18n/utils";
 import CourseDescription from "../../components/CourseDescription.astro";
 
 export const getStaticPaths = defaultStaticPathsFunction;
@@ -9,22 +13,32 @@ export const getStaticPaths = defaultStaticPathsFunction;
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-const courses = await getCollection('courses');
+const courses = await getCollection("courses");
 const sortedCourses = courses.sort((a, b) => {
-  const aLatestSemester = a.data.syllabi?.length ? 
-    a.data.syllabi[a.data.syllabi.length - 1].semester : null;
-  const bLatestSemester = b.data.syllabi?.length ? 
-    b.data.syllabi[b.data.syllabi.length - 1].semester : null;
-  
+  const aLatestSemester = a.data.syllabi?.length
+    ? a.data.syllabi[a.data.syllabi.length - 1].semester
+    : null;
+  const bLatestSemester = b.data.syllabi?.length
+    ? b.data.syllabi[b.data.syllabi.length - 1].semester
+    : null;
+
   if (!aLatestSemester && !bLatestSemester) return -1;
   if (!aLatestSemester) return 1;
   if (!bLatestSemester) return -1;
-  
-  return bLatestSemester < aLatestSemester ? -1 : bLatestSemester > aLatestSemester ? 1 : 0; // Descending order (latest first)
-});
 
+  return bLatestSemester < aLatestSemester
+    ? -1
+    : bLatestSemester > aLatestSemester
+      ? 1
+      : 0; // Descending order (latest first)
+});
 ---
 
 <Layout pageTitle={t("teachingTitle")}>
+  <h3 class="font-bold text-2xl md:mb-3">Clases</h3>
+  <div
+    class="flex flex-col md:grid md:w-220 grid-cols-[50ch_minmax(10px,1fr)_minmax(10px,1fr)] md:gap-4"
+  >
     {sortedCourses.map((course) => <CourseDescription course={course.data} />)}
+  </div>
 </Layout>
