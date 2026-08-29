@@ -17,17 +17,18 @@ const description = marked.parseInline(course.description);
 
 <div class="md:mt-0 mt-6">
   <h4 class="font-semibold">{course.name[lang]}</h4>
-  <div set:html={description} class="text-base text-gray-500 mt-1" />
+  <h6 class="text-gray-500 text-xs">
+    {t(course.level)}
+  </h6>
+  <div set:html={description} class="text-base text-gray-500 mt-2" />
 </div>
 
-<h6 class="text-gray-500 md:text-sm text-xs uppercase md:normal-case my-2 md:my-0">{t(course.level)}</h6>
-
-<div class="flex gap-x-4">
+<div class="flex gap-x-4 md:mt-0 mt-2">
   {
     course.syllabi ? (
       course.syllabi.map((syllabus: Syllabus) => (
         <a
-          class="text-primary/70 hover:text-accent text-sm "
+          class="text-primary/70 hover:text-accent text-sm"
           href={syllabus.route}
         >
           {syllabus.semester}
