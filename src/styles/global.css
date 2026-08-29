@@ -21,6 +21,7 @@
     --color-primary-light: #b8bccc;
     --color-accent: #bf616a;
     --color-text: #252535;
+    --color-gray: #666;
 }
 
 [data-theme='dark'] {
@@ -28,6 +29,7 @@
     --color-accent: #4673b3;
     --color-text: #ffffff;
     --color-primary-light: #c8c6bc;
+    --color-gray: #afb8be;
   
     ::selection {
         background-color: #455966;
