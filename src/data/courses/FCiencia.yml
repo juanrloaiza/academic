@@ -8,3 +8,6 @@ syllabi:
     route: "/programas/2024.2.FCiencia.pdf"
   - semester: 2025-II
     route: "/programas/2025.2.FCiencia.pdf"
+  - semester: 2026-II
+    route: "/programas/2026-II_FCiencia.pdf"
+
