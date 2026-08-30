@@ -28,7 +28,7 @@ const description = marked.parseInline(course.description);
     course.syllabi ? (
       course.syllabi.map((syllabus: Syllabus) => (
         <a
-          class="text-primary/70 hover:text-accent text-sm"
+          class="h-fit text-primary/70 hover:text-accent text-sm"
           href={syllabus.route}
         >
           {syllabus.semester}
