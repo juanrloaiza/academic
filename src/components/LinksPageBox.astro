@@ -1,5 +1,10 @@
 ---
 import { marked } from "marked";
+interface Props {
+    name: string;
+    url: string;
+    extra?: string;
+}
 
 const { url, name, extra } = Astro.props;
 

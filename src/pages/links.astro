@@ -5,8 +5,11 @@ import LinksPageBox from "../components/LinksPageBox.astro";
 import "../styles/global.css";
 import SocialMediaButtons from "../components/SocialMediaButtons.astro";
 import AcademicPhoto from "../components/AcademicPhoto.astro";
+import type { ComponentProps } from "astro/types";
 
-const mainLinks = [
+type Link = ComponentProps<typeof LinksPageBox>
+
+const mainLinks: Link[] = [
     { name: "Página personal", url: "https://www.juanrloaiza.com/" },
     {
         name: "Santiago Mind and Cognition",
