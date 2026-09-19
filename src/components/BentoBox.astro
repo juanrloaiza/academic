@@ -8,10 +8,10 @@ import { useTranslations } from "../i18n/utils";
 interface Props {
   target: string;
   lang: LanguageKey;
-  class?: string;
+  className: string;
 }
 
-const { target, lang, class: className } = Astro.props;
+const { target, lang, className } = Astro.props;
 
 const targetURL = getRelativeLocaleUrl(lang, target);
 
