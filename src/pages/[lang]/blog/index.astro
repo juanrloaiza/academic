@@ -3,11 +3,10 @@ import { getCollection } from "astro:content";
 import { marked } from "marked";
 
 import { getLangFromUrl } from "../../../i18n/utils";
+import { defaultStaticPathsFunction } from "../../../utils/getStaticPaths";
 
 import Layout from "../../../layouts/Layout.astro";
 import Tag from "../../../components/Tag.astro";
-
-import { defaultStaticPathsFunction } from "../../../utils/getStaticPaths";
 
 export const getStaticPaths = defaultStaticPathsFunction;
 

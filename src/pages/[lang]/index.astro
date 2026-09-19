@@ -1,10 +1,9 @@
 ---
 import { getLangFromUrl } from "../../i18n/utils";
+import { defaultStaticPathsFunction } from "../../utils/getStaticPaths";
 
 import Layout from "../../layouts/Layout.astro";
 import BentoBox from "../../components/BentoBox.astro";
-
-import { defaultStaticPathsFunction } from "../../utils/getStaticPaths";
 
 export const getStaticPaths = defaultStaticPathsFunction;
 

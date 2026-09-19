@@ -5,11 +5,10 @@ import dayjs from "dayjs";
 import { marked } from "marked";
 
 import { getLangFromUrl, useTranslations } from "../../../../i18n/utils";
+import { getBlogStaticPaths } from "../../../../utils/getStaticPaths";
 
 import Layout from "../../../../layouts/Layout.astro";
 import Tag from "../../../../components/Tag.astro";
-
-import { getBlogStaticPaths } from "../../../../utils/getStaticPaths";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);

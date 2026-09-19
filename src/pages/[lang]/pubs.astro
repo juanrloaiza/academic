@@ -6,6 +6,7 @@ import type {
 } from "../../data/publications/publicationSchemas";
 
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import { defaultStaticPathsFunction } from "../../utils/getStaticPaths";
 
 import Layout from "../../layouts/Layout.astro";
 import Article from "../../components/publications/Article.astro";
@@ -13,7 +14,6 @@ import Book from "../../components/publications/Book.astro";
 import BookChapter from "../../components/publications/BookChapter.astro";
 
 import { getPublicationCollections } from "../../data/publications/publicationSchemas";
-import { defaultStaticPathsFunction } from "../../utils/getStaticPaths";
 
 export const getStaticPaths = defaultStaticPathsFunction;
 

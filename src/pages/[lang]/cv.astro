@@ -4,11 +4,10 @@ import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
 
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import { defaultStaticPathsFunction } from "../../utils/getStaticPaths";
 
 import Layout from "../../layouts/Layout.astro";
 import CVSection from "../../components/CVSection.astro";
-
-import { defaultStaticPathsFunction } from "../../utils/getStaticPaths";
 
 export const getStaticPaths = defaultStaticPathsFunction;
 

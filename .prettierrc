@@ -17,6 +17,7 @@
     "<THIRD_PARTY_MODULES>",
     "",
     "i18n/(.*)$",
+    "utils/(.*)$",
     "",
     "layouts/(.*)$",
     "components/(.*)$",
