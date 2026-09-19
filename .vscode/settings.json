@@ -1,10 +1,10 @@
 {
-    "[markdown]": {
-        "editor.formatOnSave": true,
-        "editor.formatOnPaste": true,
-    },
-    "markdownlint.config": {
-        "first-line-h1": false,
-        "no-inline-html": false
-    }
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+  },
+  "markdownlint.config": {
+    "first-line-h1": false,
+    "no-inline-html": false
+  }
 }

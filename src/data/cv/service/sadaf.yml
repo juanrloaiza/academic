@@ -1,7 +1,7 @@
 cvtype: service
 role:
-    en: Visiting scholar
-    es: Investigador visitante
+  en: Visiting scholar
+  es: Investigador visitante
 institution: Instituto de Investigaciones Filosóficas - SADAF
 city: Buenos Aires, Argentina
 start_date: "04.2019"

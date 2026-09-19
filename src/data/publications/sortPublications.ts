@@ -1,10 +1,13 @@
 import type { BasePublicationData } from "./publicationSchemas";
 
 type PublicationCollectionData = {
-  data: BasePublicationData
-}
+  data: BasePublicationData;
+};
 
-export const sortPublications = (a: PublicationCollectionData, b: PublicationCollectionData) => {
+export const sortPublications = (
+  a: PublicationCollectionData,
+  b: PublicationCollectionData,
+) => {
   const aYear = a.data.year;
   const bYear = b.data.year;
   const aYearIsString = typeof aYear === "string";

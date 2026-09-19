@@ -12,9 +12,9 @@ thesis:
     - Michael Pauen
     - Jesse Prinz
     - Isabel Dziobek
-  examiners: 
-  - Michael Pauen
-  - Jesse Prinz
-  - Henrik Walter
+  examiners:
+    - Michael Pauen
+    - Jesse Prinz
+    - Henrik Walter
   qualification: Summa Cum Laude
 dates: 10.2016 - 07.2020

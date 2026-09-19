@@ -29,7 +29,7 @@ Hay muchos tipos de lectores de RSS. Por un lado, podríamos usar un servicio we
 Una vez tenemos un lector de RSS, tenemos que suscribirnos a una fuente. Podemos hacer esto de dos maneras. Para muchos sitios web, basta con poner la URL base del sitio en la aplicación para que ella detecte una fuente de RSS, en caso de que la página implemente bien su feed. Por ejemplo, podemos darle simplemente la URL `nyt.com` (para el New York Times) y la aplicación encontrará el feed que la página tenga configurado por defecto. Una vez nos suscribimos, la aplicación nos presentará las últimas publicaciones y las actualizará cada tanto.
 
 <div class="lg:grid grid-cols-2 gap-x-10 p-6">
-  
+
 ![Screenshot of RSS search based on URL.](01-screenshot-rss.jpg)
 
 ![Screenshot of RSS feed subscription](02-screenshot-suscribed.jpg)
