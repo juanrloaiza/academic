@@ -7,6 +7,7 @@ import {
   useTranslations,
 } from "../../i18n/utils";
 import CourseDescription from "../../components/CourseDescription.astro";
+import TeachingResource from "../../components/TeachingResource.astro";
 
 export const getStaticPaths = defaultStaticPathsFunction;
 
@@ -35,30 +36,35 @@ const sortedCourses = courses.sort((a, b) => {
 ---
 
 <Layout pageTitle={t("teachingTitle")}>
-  <div class="flex gap-6">
+  <div class="">
+    <div class="mb-8">
+      <h3 class="font-bold text-2xl md:mb-3">Recursos docentes</h3>
+
+      <div class="flex flex-col md:grid grid-cols-3 gap-4">
+        <TeachingResource
+          href="/public/Loaiza_ManualParaTesistas_v1.0.pdf"
+          title="Manual para tesistas"
+          >Documento con instrucciones, consejos y expectativas para estudiantes
+          que quieren hacer su conmigo.
+        </TeachingResource>
+
+        <TeachingResource
+          href="/public/Loaiza_GuiaParaAbstracts.pdf"
+          title="¿Cómo escribir un resumen para un artículo académico en filosofía?"
+        >
+          Guía para escribir resúmenes de artículos o charlas en filosofía.
+        </TeachingResource>
+      </div>
+    </div>
+
     <div class="">
-      <h3 class="font-bold text-2xl md:mb-3">{t("courses")}</h3>
-      <div
-        class="flex flex-col md:grid grid-cols-[50ch_minmax(20ch,1fr)] md:gap-6"
-      >
+      <h3 class="font-bold text-2xl mb-2">{t("courses")}</h3>
+      <div class="flex flex-col md:grid grid-cols-2 gap-y-6">
         {
           sortedCourses.map((course) => (
             <CourseDescription course={course.data} />
           ))
         }
-      </div>
-    </div>
-
-    <div>
-      <h3 class="font-bold text-2xl md:mb-3">Recursos docentes</h3>
-
-      <div class="flex flex-col gap-y-2">
-        <a class="block" href="/public/Loaiza_ManualParaTesistas_v1.0.pdf"
-          >Manual para tesistas</a
-        >
-        <a class="block" href="/public/Loaiza_GuiaParaAbstracts.pdf"
-          >¿Cómo escribir un resumen para un artículo académico en filosofía?</a
-        >
       </div>
     </div>
   </div>
