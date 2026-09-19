@@ -17,10 +17,12 @@
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
     "lint-staged": "^17.4.1",
-    "prettier": "3.9.8"
+    "prettier": "3.9.8",
+    "prettier-plugin-astro": "1.0.1"
   },
   "lint-staged": {
-    "*.js,*.ts,*.astro": "prettier --write"
+    "*.{js,jsx,ts,tsx,md,html,astro}": "prettier --write"
   }
 }
