@@ -1,6 +1,15 @@
 ---
 import { Image } from "astro:assets";
 import academicPhoto from "/src/assets/academic.png";
+
+interface Props {
+    className: string;
+}
+const { className = "" } = Astro.props;
 ---
 
-<Image src={academicPhoto} alt="Photo of Juan R. Loaiza" class="border-2" />
+<Image
+    src={academicPhoto}
+    alt="Photo of Juan R. Loaiza"
+    class=`border-2 ${className}`
+/>
