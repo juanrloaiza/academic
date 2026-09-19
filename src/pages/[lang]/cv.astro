@@ -1,11 +1,15 @@
 ---
-import { getCollection, type CollectionEntry } from "astro:content";
-import Layout from "../../layouts/Layout.astro";
+import type { CollectionEntry } from "astro:content";
+
+import { getCollection } from "astro:content";
+
 import {
   defaultStaticPathsFunction,
   getLangFromUrl,
   useTranslations,
 } from "../../i18n/utils";
+
+import Layout from "../../layouts/Layout.astro";
 import CVSection from "../../components/CVSection.astro";
 
 export const getStaticPaths = defaultStaticPathsFunction;

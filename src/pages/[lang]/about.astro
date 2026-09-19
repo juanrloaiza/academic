@@ -1,12 +1,13 @@
 ---
-import Layout from "../../layouts/Layout.astro";
 import { getEntry, render } from "astro:content";
 
 import {
+  defaultStaticPathsFunction,
   getLangFromUrl,
   useTranslations,
-  defaultStaticPathsFunction,
 } from "../../i18n/utils";
+
+import Layout from "../../layouts/Layout.astro";
 import AcademicPhoto from "../../components/AcademicPhoto.astro";
 
 export const getStaticPaths = defaultStaticPathsFunction;

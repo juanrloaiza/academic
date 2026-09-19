@@ -1,5 +1,4 @@
 ---
-import Layout from "../../layouts/Layout.astro";
 import { getEntry, render } from "astro:content";
 
 import {
@@ -7,6 +6,8 @@ import {
   getLangFromUrl,
   useTranslations,
 } from "../../i18n/utils";
+
+import Layout from "../../layouts/Layout.astro";
 
 export const getStaticPaths = defaultStaticPathsFunction;
 

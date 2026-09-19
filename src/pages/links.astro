@@ -1,11 +1,16 @@
 ---
 import { getCollection } from "astro:content";
-import { sortPublications } from "../data/publications/sortPublications";
+
 import LinksPageBox from "../components/LinksPageBox.astro";
+
+import { sortPublications } from "../data/publications/sortPublications";
+
 import "../styles/global.css";
-import SocialMediaButtons from "../components/SocialMediaButtons.astro";
-import AcademicPhoto from "../components/AcademicPhoto.astro";
+
 import type { ComponentProps } from "astro/types";
+
+import AcademicPhoto from "../components/AcademicPhoto.astro";
+import SocialMediaButtons from "../components/SocialMediaButtons.astro";
 
 type Link = ComponentProps<typeof LinksPageBox>;
 

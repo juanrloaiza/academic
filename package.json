@@ -17,6 +17,7 @@
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.7.1",
     "husky": "^9.1.7",
     "lint-staged": "^17.4.1",
     "prettier": "3.9.8",

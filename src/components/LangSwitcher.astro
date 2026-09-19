@@ -1,11 +1,12 @@
 ---
+import { getRelativeLocaleUrl } from "astro:i18n";
+
 import { getLangFromUrl, getPageFromUrl } from "../i18n/utils";
 
 const page = getPageFromUrl(Astro.url);
 const lang = getLangFromUrl(Astro.url);
 
 const otherLang = lang === "en" ? "es" : "en";
-import { getRelativeLocaleUrl } from "astro:i18n";
 ---
 
 <a

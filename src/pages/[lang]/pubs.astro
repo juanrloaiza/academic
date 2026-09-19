@@ -1,19 +1,22 @@
 ---
-import Layout from "../../layouts/Layout.astro";
+import type {
+  ArticleData,
+  BookChapterData,
+  BookData,
+} from "../../data/publications/publicationSchemas";
+
 import {
   defaultStaticPathsFunction,
   getLangFromUrl,
   useTranslations,
 } from "../../i18n/utils";
+
+import Layout from "../../layouts/Layout.astro";
 import Article from "../../components/publications/Article.astro";
-import BookChapter from "../../components/publications/BookChapter.astro";
 import Book from "../../components/publications/Book.astro";
-import {
-  getPublicationCollections,
-  type ArticleData,
-  type BookChapterData,
-  type BookData,
-} from "../../data/publications/publicationSchemas";
+import BookChapter from "../../components/publications/BookChapter.astro";
+
+import { getPublicationCollections } from "../../data/publications/publicationSchemas";
 
 export const getStaticPaths = defaultStaticPathsFunction;
 

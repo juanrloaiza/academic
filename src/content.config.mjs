@@ -1,12 +1,12 @@
 import { defineCollection } from "astro:content";
+import { glob } from "astro/loaders";
 import { z } from "astro/zod";
+
 import {
   articlesSchema,
   bookChaptersSchema,
   booksSchema,
 } from "./data/publications/publicationSchemas";
-
-import { glob } from "astro/loaders";
 
 const about = defineCollection({
   loader: glob({ pattern: "*.md", base: "./src/data/about" }),

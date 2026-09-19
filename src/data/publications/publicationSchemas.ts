@@ -1,7 +1,7 @@
 import { getCollection } from "astro:content";
 import { z } from "astro/zod";
+
 import { sortPublications } from "./sortPublications";
-import { keyof } from "astro:schema";
 
 // Schema definitions for each publication type
 const basePublicationSchema = z.object({

@@ -1,12 +1,13 @@
 ---
-import { getCollection } from "astro:content";
-import { render } from "astro:content";
-import { languages } from "../../../../i18n/ui";
-import Layout from "../../../../layouts/Layout.astro";
+import { getCollection, render } from "astro:content";
 import { getRelativeLocaleUrl } from "astro:i18n";
-import { getLangFromUrl, useTranslations } from "../../../../i18n/utils";
 import dayjs from "dayjs";
 import { marked } from "marked";
+
+import { languages } from "../../../../i18n/ui";
+import { getLangFromUrl, useTranslations } from "../../../../i18n/utils";
+
+import Layout from "../../../../layouts/Layout.astro";
 import Tag from "../../../../components/Tag.astro";
 
 const lang = getLangFromUrl(Astro.url);

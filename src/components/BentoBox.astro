@@ -1,7 +1,9 @@
 ---
+import type { LanguageKey, TranslationKey } from "../i18n/ui";
+
 import { getRelativeLocaleUrl } from "astro:i18n";
+
 import { useTranslations } from "../i18n/utils";
-import type { TranslationKey, LanguageKey } from "../i18n/ui";
 
 interface Props {
   target: string;
