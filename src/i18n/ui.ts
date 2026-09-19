@@ -88,3 +88,4 @@ export const ui = {
 
 export type TranslationKey = keyof (typeof ui)[typeof defaultLang];
 export type LanguageKey = keyof typeof languages
+export type TranslatedString = Record<LanguageKey, string>
