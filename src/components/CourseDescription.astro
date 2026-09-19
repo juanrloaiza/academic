@@ -1,10 +1,22 @@
 ---
+import type { TranslatedString } from "../i18n/ui";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 import { marked } from "marked";
+
+interface Course {
+  name: TranslatedString;
+  level: "pregrado" | "master" | "phd";
+  description: string;
+  syllabi?: Syllabus[];
+}
 
 interface Syllabus {
   route: string;
   semester: string;
+}
+
+interface Props {
+  course: Course;
 }
 
 const lang = getLangFromUrl(Astro.url);
@@ -15,27 +27,26 @@ const { course } = Astro.props;
 const description = marked.parseInline(course.description);
 ---
 
-<div class="md:mt-0 mt-6">
+<div>
   <h4 class="font-semibold">{course.name[lang]}</h4>
-  <h6 class="text-gray-500 text-xs">
+  <h6 class="text-gray-500 text-xs mb-1">
     {t(course.level)}
   </h6>
-  <div set:html={description} class="text-base text-gray mt-2" />
-</div>
-
-<div class="flex gap-x-4 md:mt-0 mt-2">
-  {
-    course.syllabi ? (
-      course.syllabi.map((syllabus: Syllabus) => (
-        <a
-          class="h-fit text-primary/70 hover:text-accent text-sm"
-          href={syllabus.route}
-        >
-          {syllabus.semester}
-        </a>
-      ))
-    ) : (
-      <div />
-    )
-  }
+  <div class="flex gap-x-4 md:mt-0 my-1">
+    {
+      course.syllabi ? (
+        course.syllabi.map((syllabus: Syllabus) => (
+          <a
+            class="h-fit text-primary/70 hover:text-accent text-sm"
+            href={syllabus.route}
+          >
+            {syllabus.semester}
+          </a>
+        ))
+      ) : (
+        <div />
+      )
+    }
+  </div>
+  <div set:html={description} class="text-base text-gray" />
 </div>
