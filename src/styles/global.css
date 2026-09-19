@@ -44,3 +44,7 @@ h1,
 h2 {
   font-family: var(--font-heading);
 }
+
+pre {
+  border-radius: 1em
+}
