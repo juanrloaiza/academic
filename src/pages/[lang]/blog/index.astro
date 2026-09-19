@@ -13,12 +13,17 @@ export const getStaticPaths = defaultStaticPathsFunction;
 
 const blogEntries = await getCollection("blog");
 
-const blogsByYear = blogEntries.reduce((acc, entry) => {
-  const year = new Date(entry.data.date).getFullYear();
-  if (!acc[year]) acc[year] = [];
-  acc[year].unshift(entry);
-  return acc;
-}, {});
+const blogsByYear = blogEntries.reduce(
+  (acc, currentEntry) => {
+    const year = new Date(currentEntry.data.date).getFullYear();
+
+    if (!acc[year]) acc[year] = [];
+    acc[year].unshift(currentEntry);
+
+    return acc;
+  },
+  {} as Record<string, typeof blogEntries>,
+);
 
 const years = Object.keys(blogsByYear).sort((a, b) => Number(b) - Number(a));
 
