@@ -4,8 +4,8 @@ import PubTitle from "./PubTitle.astro";
 import { getPublicationUrl } from "../../utils/publications";
 
 interface Props {
-    article: ArticleData;
-    className?: string;
+  article: ArticleData;
+  className?: string;
 }
 
 const { article, className } = Astro.props;
@@ -21,20 +21,18 @@ function formatVolumeIssue() {
 ---
 
 <div class={className}>
-    <PubTitle title={article.title} openaccess={article.openaccess} url={url} />
+  <PubTitle title={article.title} openaccess={article.openaccess} url={url} />
 
-    <div class="text-base">{article.authors} ({article.year}).</div>
-    <div class="text-sm mt-0.5">
-        <em>{article.journal}</em><span set:html={formatVolumeIssue()} />{
-            article.pages && <span>, {article.pages}</span>
-        }.
-        {
-            (article.doi && (
-                <a href={`https://doi.org/${article.doi}`}>
-                    doi: {article.doi}
-                </a>
-            )) ||
-                (article.url && <a href={article.url}> {article.url}</a>)
-        }
-    </div>
+  <div class="text-base">
+    {article.authors} ({article.year}).
+  </div>
+  <div class="text-sm mt-0.5">
+    <em>{article.journal}</em>
+    <span set:html={formatVolumeIssue()} />
+    {article.pages && <span>, {article.pages}</span>}.
+    {(article.doi && (
+      <a href={`https://doi.org/${article.doi}`}>doi: {article.doi}</a>
+    )) ||
+      (article.url && <a href={article.url}> {article.url}</a>)}
+  </div>
 </div>

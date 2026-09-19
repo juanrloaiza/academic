@@ -4,32 +4,37 @@ import PubTitle from "./PubTitle.astro";
 import { getPublicationUrl } from "../../utils/publications";
 
 interface Props {
-    bookChapter: BookChapterData,
-    className?: string;
+  bookChapter: BookChapterData;
+  className?: string;
 }
 
-const {
-    bookChapter,
-    className,
-} = Astro.props;
-const url = getPublicationUrl(bookChapter)
+const { bookChapter, className } = Astro.props;
+const url = getPublicationUrl(bookChapter);
 ---
 
 <div class={className}>
-
-    <PubTitle title={bookChapter.title} openaccess={bookChapter.openaccess} url={url} />
-    <div class="text-base">{bookChapter.authors} ({bookChapter.year}).</div>
-    <div class="text-sm mt-0.5">
-        En: {bookChapter.editors && <span>{bookChapter.editors}, </span>}<em>{bookChapter.booktitle}</em>{
-            bookChapter.pages && <span>, {bookChapter.pages}</span>
-        }.
-        {bookChapter.publisher && <span>{bookChapter.publisher}.</span>}<br />
-        <span>
-            {bookChapter.isbn && <span>ISBN: {bookChapter.isbn}.</span>}
-            {
-                (bookChapter.doi && <a href={`https://doi.org/${bookChapter.doi}`}>doi: {bookChapter.doi}</a>) ||
-                    (bookChapter.url && <a href={bookChapter.url}> {bookChapter.url}</a>)
-            }
-        </span>
-    </div>
+  <PubTitle
+    title={bookChapter.title}
+    openaccess={bookChapter.openaccess}
+    url={url}
+  />
+  <div class="text-base">
+    {bookChapter.authors} ({bookChapter.year}).
+  </div>
+  <div class="text-sm mt-0.5">
+    En: {bookChapter.editors && <span>{bookChapter.editors}, </span>}
+    <em>{bookChapter.booktitle}</em>
+    {bookChapter.pages && <span>, {bookChapter.pages}</span>}.
+    {bookChapter.publisher && <span>{bookChapter.publisher}.</span>}
+    <br />
+    <span>
+      {bookChapter.isbn && <span>ISBN: {bookChapter.isbn}.</span>}
+      {(bookChapter.doi && (
+        <a href={`https://doi.org/${bookChapter.doi}`}>
+          doi: {bookChapter.doi}
+        </a>
+      )) ||
+        (bookChapter.url && <a href={bookChapter.url}> {bookChapter.url}</a>)}
+    </span>
+  </div>
 </div>

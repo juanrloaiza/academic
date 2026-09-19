@@ -2,7 +2,10 @@
 import { getCollection } from "astro:content";
 
 import Layout from "../../../layouts/Layout.astro";
-import { defaultStaticPathsFunction, getLangFromUrl } from "../../../i18n/utils";
+import {
+  defaultStaticPathsFunction,
+  getLangFromUrl,
+} from "../../../i18n/utils";
 
 import { marked } from "marked";
 import Tag from "../../../components/Tag.astro";
@@ -12,61 +15,53 @@ export const getStaticPaths = defaultStaticPathsFunction;
 const blogEntries = await getCollection("blog");
 
 const blogsByYear = blogEntries.reduce((acc, entry) => {
-    const year = new Date(entry.data.date).getFullYear();
-    if (!acc[year]) acc[year] = [];
-    acc[year].unshift(entry);
-    return acc;
+  const year = new Date(entry.data.date).getFullYear();
+  if (!acc[year]) acc[year] = [];
+  acc[year].unshift(entry);
+  return acc;
 }, {});
 
 const years = Object.keys(blogsByYear).sort((a, b) => Number(b) - Number(a));
 
 const SEODescription = {
-    en: "Juan R. Loaiza's Blog",
-    es: "Blog de Juan R. Loaiza"
-}
+  en: "Juan R. Loaiza's Blog",
+  es: "Blog de Juan R. Loaiza",
+};
 
-const lang = getLangFromUrl(Astro.url)
+const lang = getLangFromUrl(Astro.url);
 ---
 
 <Layout pageTitle="Blog" SEODescription={SEODescription[lang]}>
-    {
-        years.map((year) => (
-            <div class="blog-list md:grid grid-cols-12 gap-x-4 items-baseline">
-                <div class="col-span-1 text-xl font-semibold md:font-normal mb-2 md:text-sm">
-                    {year}
+  {years.map((year) => (
+    <div class="blog-list md:grid grid-cols-12 gap-x-4 items-baseline">
+      <div class="col-span-1 text-xl font-semibold md:font-normal mb-2 md:text-sm">
+        {year}
+      </div>
+      <div class="col-span-11">
+        {blogsByYear[year].map(
+          (entry) =>
+            !entry.data.draft && (
+              <div class="mb-6">
+                <a
+                  href={`${year}/${entry.data.slug}`}
+                  class="text-primary hover:text-accent"
+                  set:html={marked.parseInline(entry.data.title)}
+                />
+                {entry.data.summary && (
+                  <div
+                    v-if="post.summary"
+                    class="text-base"
+                    set:html={marked.parseInline(entry.data.summary)}
+                  />
+                )}
+                <div class="flex mt-2">
+                  {entry.data.tags &&
+                    entry.data.tags.map((tag) => <Tag>{tag}</Tag>)}
                 </div>
-                <div class="col-span-11">
-                    {blogsByYear[year].map(
-                        (entry) =>
-                            !entry.data.draft && (
-                                <div class="mb-6">
-                                    <a
-                                        href={`${year}/${entry.data.slug}`}
-                                        class="text-primary hover:text-accent"
-                                        set:html={marked.parseInline(
-                                            entry.data.title,
-                                        )}
-                                    />
-                                    {entry.data.summary && (
-                                        <div
-                                            v-if="post.summary"
-                                            class="text-base"
-                                            set:html={marked.parseInline(
-                                                entry.data.summary,
-                                            )}
-                                        ></div>
-                                    )}
-                                    <div class="flex mt-2">
-                                        {entry.data.tags &&
-                                            entry.data.tags.map((tag) => (
-                                                <Tag>{tag}</Tag>
-                                            ))}
-                                    </div>
-                                </div>
-                            ),
-                    )}
-                </div>
-            </div>
-        ))
-    }
+              </div>
+            ),
+        )}
+      </div>
+    </div>
+  ))}
 </Layout>

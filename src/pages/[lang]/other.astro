@@ -3,9 +3,9 @@ import Layout from "../../layouts/Layout.astro";
 import { getEntry, render } from "astro:content";
 
 import {
-    defaultStaticPathsFunction,
-    getLangFromUrl,
-    useTranslations,
+  defaultStaticPathsFunction,
+  getLangFromUrl,
+  useTranslations,
 } from "../../i18n/utils";
 
 export const getStaticPaths = defaultStaticPathsFunction;
@@ -19,7 +19,5 @@ const { Content } = entry ? await render(entry) : {};
 ---
 
 <Layout pageTitle={t("otherTitle")}>
-    <div class="md-content">
-        {Content && <Content />}
-    </div>
+  <div class="md-content">{Content && <Content />}</div>
 </Layout>

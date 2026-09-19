@@ -29,24 +29,20 @@ const description = marked.parseInline(course.description);
 
 <div>
   <h4 class="font-semibold">{course.name[lang]}</h4>
-  <h6 class="text-gray-500 text-xs mb-1">
-    {t(course.level)}
-  </h6>
+  <h6 class="text-gray-500 text-xs mb-1">{t(course.level)}</h6>
   <div class="flex gap-x-4 md:mt-0 my-1">
-    {
-      course.syllabi ? (
-        course.syllabi.map((syllabus: Syllabus) => (
-          <a
-            class="h-fit text-primary/70 hover:text-accent text-sm"
-            href={syllabus.route}
-          >
-            {syllabus.semester}
-          </a>
-        ))
-      ) : (
-        <div />
-      )
-    }
+    {course.syllabi ? (
+      course.syllabi.map((syllabus: Syllabus) => (
+        <a
+          class="h-fit text-primary/70 hover:text-accent text-sm"
+          href={syllabus.route}
+        >
+          {syllabus.semester}
+        </a>
+      ))
+    ) : (
+      <div />
+    )}
   </div>
   <div set:html={description} class="text-base text-gray" />
 </div>

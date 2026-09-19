@@ -4,23 +4,24 @@ import PubTitle from "./PubTitle.astro";
 import { getPublicationUrl } from "../../utils/publications";
 
 interface Props {
-    book: BookData;
-    className?: string;
+  book: BookData;
+  className?: string;
 }
 
 const { book, className } = Astro.props;
-const url = getPublicationUrl(book)
+const url = getPublicationUrl(book);
 ---
 
 <div class={className}>
-
-    <PubTitle title={book.title} openaccess={book.openaccess} url={url} />
-    <div class="text-base">{book.authors} ({book.year}).</div>
-    <div class="text-sm mt-0.5">
-        {book.publisher && <span>{book.publisher}</span>}.
-        {
-            (book.doi && <a href={`https://doi.org/${book.doi}`}>doi: {book.doi}</a>) ||
-                (book.url && <a href={book.url}> {book.url}</a>)
-        }
-    </div>
+  <PubTitle title={book.title} openaccess={book.openaccess} url={url} />
+  <div class="text-base">
+    {book.authors} ({book.year}).
+  </div>
+  <div class="text-sm mt-0.5">
+    {book.publisher && <span>{book.publisher}</span>}.
+    {(book.doi && (
+      <a href={`https://doi.org/${book.doi}`}>doi: {book.doi}</a>
+    )) ||
+      (book.url && <a href={book.url}> {book.url}</a>)}
+  </div>
 </div>

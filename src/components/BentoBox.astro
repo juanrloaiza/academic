@@ -4,9 +4,9 @@ import { useTranslations } from "../i18n/utils";
 import type { TranslationKey, LanguageKey } from "../i18n/ui";
 
 interface Props {
-    target: string;
-    lang: LanguageKey;
-    class?: string;
+  target: string;
+  lang: LanguageKey;
+  class?: string;
 }
 
 const { target, lang, class: className } = Astro.props;
@@ -20,12 +20,8 @@ const titleDescription = `${target}Description` as TranslationKey;
 ---
 
 <a href={targetURL} class={className}>
-    <div
-        class="md:min-h-35 md:max-h-50 lg:min-h-60 my-3 md:m-0 p-3 rounded-md border-2 border-black dark:border-gray-100 hover:border-3 hover:border-primary hover:text-primary"
-    >
-        <h4 class="text-xl md:text-2xl font-bold mb-1">
-            {t(titleKey)}
-        </h4>
-        <div class="text-lg md:text-xl">{t(titleDescription)}</div>
-    </div>
+  <div class="md:min-h-35 md:max-h-50 lg:min-h-60 my-3 md:m-0 p-3 rounded-md border-2 border-black dark:border-gray-100 hover:border-3 hover:border-primary hover:text-primary">
+    <h4 class="text-xl md:text-2xl font-bold mb-1">{t(titleKey)}</h4>
+    <div class="text-lg md:text-xl">{t(titleDescription)}</div>
+  </div>
 </a>

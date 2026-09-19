@@ -9,10 +9,8 @@ import { getRelativeLocaleUrl } from "astro:i18n";
 ---
 
 <a
-    href={getRelativeLocaleUrl(otherLang, page)}
-    class="px-3 py-1 border-1 border-black dark:border-gray-200 my-5 hover:border-2 rounded-sm"
+  href={getRelativeLocaleUrl(otherLang, page)}
+  class="px-3 py-1 border-1 border-black dark:border-gray-200 my-5 hover:border-2 rounded-sm"
 >
-    <span class="text-black dark:text-gray-200">
-        {otherLang.toUpperCase()}</span
-    >
+  <span class="text-black dark:text-gray-200">{otherLang.toUpperCase()}</span>
 </a>

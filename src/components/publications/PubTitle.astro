@@ -2,9 +2,9 @@
 import { marked } from "marked";
 
 interface Props {
-    title: string;
-    openaccess?: boolean;
-    url: string | null;
+  title: string;
+  openaccess?: boolean;
+  url: string | null;
 }
 
 const { title, openaccess, url } = Astro.props;
@@ -12,12 +12,11 @@ const { title, openaccess, url } = Astro.props;
 const renderedTitle = marked.parseInline(title);
 ---
 
-{
-    url ? (
-        <a href={url} class="text-primary hover:text-accent">
-            <span set:html={renderedTitle} />
-        </a>
-    ) : (
-        <span set:html={renderedTitle} class="" />
-    )
-}{openaccess && <i class="mx-2 text-2xl text-orange-500 ai ai-open-access" />}
+{url ? (
+  <a href={url} class="text-primary hover:text-accent">
+    <span set:html={renderedTitle} />
+  </a>
+) : (
+  <span set:html={renderedTitle} class="" />
+)}
+{openaccess && <i class="mx-2 text-2xl text-orange-500 ai ai-open-access" />}

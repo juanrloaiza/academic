@@ -5,33 +5,34 @@ import { getLangFromUrl } from "../i18n/utils";
 const lang = getLangFromUrl(Astro.url);
 
 interface Props {
-    title?: string;
-    description?: string;
+  title?: string;
+  description?: string;
 }
 
 const { title, description } = Astro.props;
 const titleDefault = "Juan R. Loaiza";
 const descriptionDefault = {
-    es: "Profesor asociado · Departamento de Filosofía · Universidad Alberto Hurtado",
-    en: "Associate professor · Departament of Philosophy · Universidad Alberto Hurtado",
+  es: "Profesor asociado · Departamento de Filosofía · Universidad Alberto Hurtado",
+  en: "Associate professor · Departament of Philosophy · Universidad Alberto Hurtado",
 };
 ---
 
 <AstroSEO
-    title={title}
-    description={description || descriptionDefault[lang]}
-    titleDefault={titleDefault}
-    titleTemplate={`%s — ${titleDefault}`}
-    openGraph={{
-        basic: {
-            title: title || titleDefault,
-            type: "website",
-            image: "https://unsplash.com/photos/pVq6YhmDPtk/download?ixid=M3wxMjA3fDB8MXx0b3BpY3x8aVVJc25WdGpCMFl8fHx8fDJ8fDE3NTgzMjcxMzV8&force=true&w=640",
-        },
-        optional: {
-            description: description || descriptionDefault[lang],
-            locale: lang == "es" ? "es-CO" : "en-US",
-            siteName: titleDefault
-        },
-    }}
+  title={title}
+  description={description || descriptionDefault[lang]}
+  titleDefault={titleDefault}
+  titleTemplate={`%s — ${titleDefault}`}
+  openGraph={{
+    basic: {
+      title: title || titleDefault,
+      type: "website",
+      image:
+        "https://unsplash.com/photos/pVq6YhmDPtk/download?ixid=M3wxMjA3fDB8MXx0b3BpY3x8aVVJc25WdGpCMFl8fHx8fDJ8fDE3NTgzMjcxMzV8&force=true&w=640",
+    },
+    optional: {
+      description: description || descriptionDefault[lang],
+      locale: lang == "es" ? "es-CO" : "en-US",
+      siteName: titleDefault,
+    },
+  }}
 />

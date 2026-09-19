@@ -2,9 +2,9 @@
 import { getCollection, type CollectionEntry } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import {
-    defaultStaticPathsFunction,
-    getLangFromUrl,
-    useTranslations,
+  defaultStaticPathsFunction,
+  getLangFromUrl,
+  useTranslations,
 } from "../../i18n/utils";
 import CVSection from "../../components/CVSection.astro";
 
@@ -16,97 +16,82 @@ const t = useTranslations(lang);
 const cv = await getCollection("cv");
 
 const fullCVs = {
-    en: "https://github.com/juanrloaiza/cv/releases/download/latest/LoaizaCV_en.pdf",
-    es: "https://github.com/juanrloaiza/cv/releases/download/latest/LoaizaCV_es.pdf",
+  en: "https://github.com/juanrloaiza/cv/releases/download/latest/LoaizaCV_en.pdf",
+  es: "https://github.com/juanrloaiza/cv/releases/download/latest/LoaizaCV_es.pdf",
 };
 
 const byEndYear = (a: CollectionEntry<"cv">, b: CollectionEntry<"cv">) =>
-    (b.data.end_year || Infinity) - (a.data.end_year || Infinity);
+  (b.data.end_year || Infinity) - (a.data.end_year || Infinity);
 
 const education = cv
-    .filter((section) => section.data.cvtype == "education")
-    .sort(byEndYear);
+  .filter((section) => section.data.cvtype == "education")
+  .sort(byEndYear);
 
 const employment = cv
-    .filter((section) => section.data.cvtype == "employment")
-    .sort(byEndYear);
+  .filter((section) => section.data.cvtype == "employment")
+  .sort(byEndYear);
 
 const service = cv
-    .filter((section) => section.data.cvtype == "service")
-    .sort(byEndYear);
+  .filter((section) => section.data.cvtype == "service")
+  .sort(byEndYear);
 ---
 
 <Layout pageTitle={t("cvTitle")}>
-    <a href={fullCVs[lang]} class="inline-block pb-6 hover:text-accent italic text-base"
-        >{t("cvLink")}</a
-    >
+  <a
+    href={fullCVs[lang]}
+    class="inline-block pb-6 hover:text-accent italic text-base"
+  >
+    {t("cvLink")}
+  </a>
 
-    <h3 class="font-bold text-2xl mb-3">{t("education")}</h3>
+  <h3 class="font-bold text-2xl mb-3">{t("education")}</h3>
 
-    {
-        education.map((ed) => (
-            <CVSection
-                startYear={ed.data.start_year}
-                endYear={ed.data.end_year}
-            >
-                <>
-                    <strong class="font-semibold">{ed.data.role[lang]}</strong>
-                    <br />
-                </>
-                {ed.data.thesis && (
-                    <span class="text-base">
-                        {t("thesis")}: "{ed.data.thesis.title}"
-                        <br />
-                        {t("supervisors")}:{" "}
-                        {ed.data.thesis.supervisors?.join(", ")}
-                        <br />
-                        {ed.data.thesis.examiners && (
-                            <span>
-                                {t("examiners")}:{" "}
-                                {ed.data.thesis.examiners?.join(", ")}
-                                <br />
-                                {t("qualification")}:{" "}
-                                {ed.data.thesis.qualification}
-                            </span>
-                        )}
-                    </span>
-                )}
-            </CVSection>
-        ))
-    }
+  {education.map((ed) => (
+    <CVSection startYear={ed.data.start_year} endYear={ed.data.end_year}>
+      <>
+        <strong class="font-semibold">{ed.data.role[lang]}</strong>
+        <br />
+      </>
+      {ed.data.thesis && (
+        <span class="text-base">
+          {t("thesis")}: "{ed.data.thesis.title}"
+          <br />
+          {t("supervisors")}: {ed.data.thesis.supervisors?.join(", ")}
+          <br />
+          {ed.data.thesis.examiners && (
+            <span>
+              {t("examiners")}: {ed.data.thesis.examiners?.join(", ")}
+              <br />
+              {t("qualification")}: {ed.data.thesis.qualification}
+            </span>
+          )}
+        </span>
+      )}
+    </CVSection>
+  ))}
 
-    <h3 class="font-bold text-2xl mb-3">{t("employment")}</h3>
+  <h3 class="font-bold text-2xl mb-3">{t("employment")}</h3>
 
-    {
-        employment.map((emp) => (
-            <CVSection
-                startYear={emp.data.start_year}
-                endYear={emp.data.end_year}
-            >
-                <strong class="font-semibold">{emp.data.role[lang]}</strong>
-                <span class="text-base">
-                    <br />
-                    {emp.data.faculty}, {emp.data.institution}
-                </span>
-            </CVSection>
-        ))
-    }
+  {employment.map((emp) => (
+    <CVSection startYear={emp.data.start_year} endYear={emp.data.end_year}>
+      <strong class="font-semibold">{emp.data.role[lang]}</strong>
+      <span class="text-base">
+        <br />
+        {emp.data.faculty}, {emp.data.institution}
+      </span>
+    </CVSection>
+  ))}
 
-    <h3 class="font-bold text-2xl mb-3 mt-8">{t("service")}</h3>
+  <h3 class="font-bold text-2xl mb-3 mt-8">{t("service")}</h3>
 
-    {
-        service.map((srv) => (
-            <CVSection
-                startYear={srv.data.start_year}
-                endYear={srv.data.end_year}
-            >
-                <strong class="font-semibold">{srv.data.role[lang]}</strong>
-                <br />
-                <span class="text-base">
-                    {srv.data.faculty && <span>{srv.data.faculty},</span>}
-                    {srv.data.institution}
-                </span>
-            </CVSection>
-        ))
-    }
+  {service.map((srv) => (
+    <CVSection startYear={srv.data.start_year} endYear={srv.data.end_year}>
+      <strong class="font-semibold">{srv.data.role[lang]}</strong>
+      <br />
+      <span class="text-base">
+        {srv.data.faculty && <span>{srv.data.faculty},</span>}
+        {srv.data.institution}
+      </span>
+    </CVSection>
+  ))}
 </Layout>

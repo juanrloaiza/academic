@@ -1,18 +1,18 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import {
-    defaultStaticPathsFunction,
-    getLangFromUrl,
-    useTranslations,
+  defaultStaticPathsFunction,
+  getLangFromUrl,
+  useTranslations,
 } from "../../i18n/utils";
 import Article from "../../components/publications/Article.astro";
 import BookChapter from "../../components/publications/BookChapter.astro";
 import Book from "../../components/publications/Book.astro";
 import {
-    getPublicationCollections,
-    type ArticleData,
-    type BookChapterData,
-    type BookData,
+  getPublicationCollections,
+  type ArticleData,
+  type BookChapterData,
+  type BookData,
 } from "../../data/publications/publicationSchemas";
 
 export const getStaticPaths = defaultStaticPathsFunction;
@@ -23,44 +23,30 @@ const t = useTranslations(lang);
 // Get pub collections
 
 const { articles, comments, bookChapters, books } =
-    await getPublicationCollections();
+  await getPublicationCollections();
 ---
 
 <Layout pageTitle={t("pubsTitle")}>
-    <h3 class="text-2xl font-bold mt-6 mb-2">{t("articles")}</h3>
-    {
-        articles.map((article) => (
-            <Article
-                article={article.data as ArticleData}
-                className="mb-4 md:mb-3"
-            />
-        ))
-    }
+  <h3 class="text-2xl font-bold mt-6 mb-2">{t("articles")}</h3>
+  {articles.map((article) => (
+    <Article article={article.data as ArticleData} className="mb-4 md:mb-3" />
+  ))}
 
-    <h3 class="text-2xl font-bold mt-6 mb-4 md:mb-2">{t("comments")}</h3>
-    {
-        comments.map((comment) => (
-            <Article
-                article={comment.data as ArticleData}
-                className="mb-4 md:mb-3"
-            />
-        ))
-    }
+  <h3 class="text-2xl font-bold mt-6 mb-4 md:mb-2">{t("comments")}</h3>
+  {comments.map((comment) => (
+    <Article article={comment.data as ArticleData} className="mb-4 md:mb-3" />
+  ))}
 
-    <h3 class="text-2xl font-bold mt-6 mb-4 md:mb-2">{t("bookchapters")}</h3>
-    {
-        bookChapters.map((bookChapter) => (
-            <BookChapter
-                bookChapter={bookChapter.data as BookChapterData}
-                className="mb-4 md:mb-3"
-            />
-        ))
-    }
-    <h3 class="text-2xl font-bold mt-6 mb-4 md:mb-2">{t("monographs")}</h3>
+  <h3 class="text-2xl font-bold mt-6 mb-4 md:mb-2">{t("bookchapters")}</h3>
+  {bookChapters.map((bookChapter) => (
+    <BookChapter
+      bookChapter={bookChapter.data as BookChapterData}
+      className="mb-4 md:mb-3"
+    />
+  ))}
+  <h3 class="text-2xl font-bold mt-6 mb-4 md:mb-2">{t("monographs")}</h3>
 
-    {
-        books.map((book) => (
-            <Book book={book.data as BookData} className="mb-4 md:mb-3" />
-        ))
-    }
+  {books.map((book) => (
+    <Book book={book.data as BookData} className="mb-4 md:mb-3" />
+  ))}
 </Layout>

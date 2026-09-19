@@ -44,7 +44,8 @@ const sortedCourses = courses.sort((a, b) => {
         <TeachingResource
           href="/public/Loaiza_ManualParaTesistas_v1.0.pdf"
           title="Manual para tesistas"
-          >Documento con instrucciones, consejos y expectativas para estudiantes
+        >
+          Documento con instrucciones, consejos y expectativas para estudiantes
           que quieren hacer su conmigo.
         </TeachingResource>
 
@@ -60,11 +61,9 @@ const sortedCourses = courses.sort((a, b) => {
     <div class="">
       <h3 class="font-bold text-2xl mb-2">{t("courses")}</h3>
       <div class="flex flex-col md:grid grid-cols-2 gap-y-6">
-        {
-          sortedCourses.map((course) => (
-            <CourseDescription course={course.data} />
-          ))
-        }
+        {sortedCourses.map((course) => (
+          <CourseDescription course={course.data} />
+        ))}
       </div>
     </div>
   </div>
