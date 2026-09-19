@@ -1,6 +1,6 @@
 ---
 title: Teaching, feedback, and regression toward the mean
-date: 2024-03-08T03:00:00.000Z
+date: "2024-03-08T03:00:00.000Z"
 tags:
   - Teaching
   - Statistics

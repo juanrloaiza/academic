@@ -3,7 +3,7 @@ title: Un poco de lógica sobre el rector Cheyne
 draft: true
 tags:
   - Docencia
-date: 2024-04-17
+date: "2024-04-17"
 slug: logica-cheyne
 ---
 

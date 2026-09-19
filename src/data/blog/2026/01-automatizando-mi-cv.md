@@ -1,6 +1,6 @@
 ---
 title: Automatizando mi CV con Typst y GitHub Actions
-date: 2026-09-19T03:00:00.000Z
+date: "2026-09-19T03:00:00.000Z"
 tags:
   - Tech
   - Typst

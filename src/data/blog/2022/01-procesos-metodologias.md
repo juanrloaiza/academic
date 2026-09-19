@@ -2,7 +2,7 @@
 title: Procesos de aprendizaje en _Metodologías de Investigación_
 tags:
   - Docencia
-date: 2021-09-21
+date: "2021-09-21"
 slug: procesos-aprendizaje-metodologias
 summary: Cómo repensé mi curso de _Metodologías de Investigación_ analizando los procesos de aprendizaje.
 ---

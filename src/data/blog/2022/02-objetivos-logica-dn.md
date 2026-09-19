@@ -2,7 +2,7 @@
 title: Objetivos de aprendizaje en Deducción Natural
 tags:
   - Docencia
-date: 2022-04-22
+date: "2022-04-22"
 slug: objetivos-aprendizaje-dn
 summary: Estableciendo otras formas de enseñar deducción natural atendiendo a diferentes objetivos de aprendizaje.
 ---

@@ -1,6 +1,6 @@
 ---
 title: Mi setup académico
-date: 2023-11-29T03:25:12.000Z
+date: "2023-11-29T03:25:12.000Z"
 tags:
   - Tech
   - Academia

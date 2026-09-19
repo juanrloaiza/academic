@@ -3,7 +3,7 @@ title: Innovando en la virtualidad
 draft: true
 tags:
   - Docencia
-date: 2021-09-21
+date: "2021-09-21"
 slug: virtualidad
 ---
 

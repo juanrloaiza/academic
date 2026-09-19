@@ -1,6 +1,6 @@
 ---
 title: RSS para la filosofía académica
-date: 2025-10-04T03:00:00.000Z
+date: "2025-10-04T03:00:00.000Z"
 tags:
   - Academia
   - Tech

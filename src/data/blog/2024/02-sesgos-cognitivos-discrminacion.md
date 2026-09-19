@@ -1,6 +1,6 @@
 ---
 title: Discriminación y algunos sesgos cognitivos
-date: 2024-03-05T03:00:00.000Z
+date: "2024-03-05T03:00:00.000Z"
 tags:
   - Política
   - Ciencia cognitiva

@@ -1,6 +1,6 @@
 ---
 title: ¿Cómo usar fechas originales de publicación en Zotero?
-date: 2025-02-25T03:00:00.000Z
+date: "2025-02-25T03:00:00.000Z"
 tags:
   - Tech
   - Zotero

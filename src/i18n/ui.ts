@@ -1,7 +1,4 @@
-export const languages = {
-  en: "English",
-  es: "Español",
-};
+export const languages = ["es", "en"] as const;
 
 export const defaultLang = "es";
 
@@ -89,5 +86,5 @@ export const ui = {
 } as const;
 
 export type TranslationKey = keyof (typeof ui)[typeof defaultLang];
-export type LanguageKey = keyof typeof languages;
+export type LanguageKey = (typeof languages)[number];
 export type TranslatedString = Record<LanguageKey, string>;
