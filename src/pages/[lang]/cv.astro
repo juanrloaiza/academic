@@ -15,6 +15,11 @@ const t = useTranslations(lang);
 
 const cv = await getCollection("cv");
 
+const fullCVs = {
+    en: "https://github.com/juanrloaiza/cv/releases/download/latest/LoaizaCV_en.pdf",
+    es: "https://github.com/juanrloaiza/cv/releases/download/latest/LoaizaCV_es.pdf",
+};
+
 const byEndYear = (a: CollectionEntry<"cv">, b: CollectionEntry<"cv">) =>
     (b.data.end_year || Infinity) - (a.data.end_year || Infinity);
 
@@ -32,6 +37,10 @@ const service = cv
 ---
 
 <Layout pageTitle={t("cvTitle")}>
+    <a href={fullCVs[lang]} class="inline-block pb-6 hover:text-accent italic text-base"
+        >{t("cvLink")}</a
+    >
+
     <h3 class="font-bold text-2xl mb-3">{t("education")}</h3>
 
     {
