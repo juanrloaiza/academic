@@ -9,7 +9,8 @@ export function getLangFromUrl(url: URL) {
 }
 
 export function getPageFromUrl(url: URL) {
-  const [, lang, ...page] = url.pathname.split("/");
+  // URLs have form juanrloaiza.com/[lang]/[page]
+  const [, _, ...page] = url.pathname.split("/");
   return page.join("/");
 }
 
