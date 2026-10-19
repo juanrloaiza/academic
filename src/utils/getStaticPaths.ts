@@ -1,6 +1,5 @@
-import type { CollectionEntry } from "astro:content";
-
 import type { LanguageKey } from "../i18n/ui";
+import type { CollectionEntry } from "astro:content";
 
 import { getCollection } from "astro:content";
 

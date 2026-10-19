@@ -13,7 +13,7 @@ const parsedName = marked.parseInline(name);
 ---
 
 <a href={url}>
-  <div class="text-center py-5 px-8 border-2 border-slate-300 rounded-2xl m-1 hover:bg-slate-300 font-semibold bg-white text-lg">
+  <div class="m-1 rounded-2xl border-2 border-slate-300 bg-white px-8 py-5 text-center text-lg font-semibold hover:bg-slate-300">
     <div set:html={parsedName} />
     {extra && <div class="text-sm italic">{extra}</div>}
   </div>

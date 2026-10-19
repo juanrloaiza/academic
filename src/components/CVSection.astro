@@ -9,8 +9,8 @@ interface Props {
 const { startYear, endYear } = Astro.props;
 ---
 
-<div class="md:grid grid-cols-6 gap-x-6 items-baseline mb-4">
-  <div class="col-span-2 lg:col-span-1 text-base">
+<div class="mb-4 grid-cols-6 items-baseline gap-x-6 md:grid">
+  <div class="col-span-2 text-base lg:col-span-1">
     <CVDates start={startYear} end={endYear} />
   </div>
   <div class="col-span-5 lg:col-span-5">

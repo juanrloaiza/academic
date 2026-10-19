@@ -3,11 +3,11 @@ import type { CollectionEntry } from "astro:content";
 
 import { getCollection } from "astro:content";
 
+import CVSection from "../../components/CVSection.astro";
+import Layout from "../../layouts/Layout.astro";
+
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 import { defaultStaticPathsFunction } from "../../utils/getStaticPaths";
-
-import Layout from "../../layouts/Layout.astro";
-import CVSection from "../../components/CVSection.astro";
 
 export const getStaticPaths = defaultStaticPathsFunction;
 
@@ -40,12 +40,12 @@ const service = cv
 <Layout pageTitle={t("cvTitle")}>
   <a
     href={fullCVs[lang]}
-    class="inline-block pb-6 hover:text-accent italic text-base"
+    class="hover:text-accent inline-block pb-6 text-base italic"
   >
     {t("cvLink")}
   </a>
 
-  <h3 class="font-bold text-2xl mb-3">{t("education")}</h3>
+  <h3 class="mb-3 text-2xl font-bold">{t("education")}</h3>
 
   {education.map((ed) => (
     <CVSection startYear={ed.data.start_year} endYear={ed.data.end_year}>
@@ -71,7 +71,7 @@ const service = cv
     </CVSection>
   ))}
 
-  <h3 class="font-bold text-2xl mb-3">{t("employment")}</h3>
+  <h3 class="mb-3 text-2xl font-bold">{t("employment")}</h3>
 
   {employment.map((emp) => (
     <CVSection startYear={emp.data.start_year} endYear={emp.data.end_year}>
@@ -83,7 +83,7 @@ const service = cv
     </CVSection>
   ))}
 
-  <h3 class="font-bold text-2xl mb-3 mt-8">{t("service")}</h3>
+  <h3 class="mt-8 mb-3 text-2xl font-bold">{t("service")}</h3>
 
   {service.map((srv) => (
     <CVSection startYear={srv.data.start_year} endYear={srv.data.end_year}>

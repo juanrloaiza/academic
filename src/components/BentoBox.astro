@@ -22,8 +22,8 @@ const titleDescription = `${target}Description` as TranslationKey;
 ---
 
 <a href={targetURL} class={className}>
-  <div class="md:min-h-35 md:max-h-50 lg:min-h-60 my-3 md:m-0 p-3 rounded-md border-2 border-black dark:border-gray-100 hover:border-3 hover:border-primary hover:text-primary">
-    <h4 class="text-xl md:text-2xl font-bold mb-1">{t(titleKey)}</h4>
+  <div class="hover:border-primary hover:text-primary my-3 rounded-md border-2 border-black p-3 hover:border-3 md:m-0 md:max-h-50 md:min-h-35 lg:min-h-60 dark:border-gray-100">
+    <h4 class="mb-1 text-xl font-bold md:text-2xl">{t(titleKey)}</h4>
     <div class="text-lg md:text-xl">{t(titleDescription)}</div>
   </div>
 </a>

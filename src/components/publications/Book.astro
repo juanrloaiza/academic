@@ -1,9 +1,9 @@
 ---
 import type { BookData } from "../../data/publications/publicationSchemas";
 
-import { getPublicationUrl } from "../../utils/publications";
-
 import PubTitle from "./PubTitle.astro";
+
+import { getPublicationUrl } from "../../utils/publications";
 
 interface Props {
   book: BookData;
@@ -19,7 +19,7 @@ const url = getPublicationUrl(book);
   <div class="text-base">
     {book.authors} ({book.year}).
   </div>
-  <div class="text-sm mt-0.5">
+  <div class="mt-0.5 text-sm">
     {book.publisher && <span>{book.publisher}</span>}.
     {(book.doi && (
       <a href={`https://doi.org/${book.doi}`}>doi: {book.doi}</a>

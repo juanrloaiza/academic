@@ -31,12 +31,12 @@ const description = marked.parseInline(course.description);
 
 <div>
   <h4 class="font-semibold">{course.name[lang]}</h4>
-  <h6 class="text-gray-500 text-xs mb-1">{t(course.level)}</h6>
-  <div class="flex gap-x-4 md:mt-0 my-1">
+  <h6 class="mb-1 text-xs text-gray-500">{t(course.level)}</h6>
+  <div class="my-1 flex gap-x-4 md:mt-0">
     {course.syllabi ? (
       course.syllabi.map((syllabus: Syllabus) => (
         <a
-          class="h-fit text-primary/70 hover:text-accent text-sm"
+          class="text-primary/70 hover:text-accent h-fit text-sm"
           href={syllabus.route}
         >
           {syllabus.semester}
@@ -46,5 +46,5 @@ const description = marked.parseInline(course.description);
       <div />
     )}
   </div>
-  <div set:html={description} class="text-base text-gray" />
+  <div set:html={description} class="text-gray text-base" />
 </div>

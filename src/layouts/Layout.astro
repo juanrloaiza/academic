@@ -1,16 +1,15 @@
 ---
 import { getRelativeLocaleUrl } from "astro:i18n";
 
-import { getLangFromUrl, useTranslations } from "../i18n/utils";
-
 import DarkThemeToggle from "../components/DarkThemeToggle.astro";
 import LangSwitcher from "../components/LangSwitcher.astro";
-import SocialMediaButtons from "../components/SocialMediaButtons.astro";
-
-import "../styles/global.css";
-
 import PageTitle from "../components/PageTitle.astro";
 import SEO from "../components/SEO.astro";
+import SocialMediaButtons from "../components/SocialMediaButtons.astro";
+
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+import "../styles/global.css";
 
 interface Props {
   pageTitle?: string;
@@ -41,18 +40,18 @@ const t = useTranslations(lang);
   </head>
 
   <body class="bg-background dark:bg-slate-900 dark:text-slate-100">
-    <div class="max-w-6xl mx-auto pt-6 px-6">
-      <div class="block text-center md:flex md:justify-between items-center min-h-[5rem]">
+    <div class="mx-auto max-w-6xl px-6 pt-6">
+      <div class="block min-h-[5rem] items-center text-center md:flex md:justify-between">
         <div>
           <a
             href={getRelativeLocaleUrl(lang, "/")}
-            class="md:flex items-center"
+            class="items-center md:flex"
           >
-            <h1 class="block mb-1 md:inline md:m-0 text-4xl font-extrabold hover:text-primary">
+            <h1 class="hover:text-primary mb-1 block text-4xl font-extrabold md:m-0 md:inline">
               Juan R. Loaiza
             </h1>
             <span class="text-2xl text-gray-600 dark:text-gray-400">
-              <span class="hidden md:inline mx-4"> · </span>
+              <span class="mx-4 hidden md:inline"> · </span>
               <span class="font-heading mt-1">{t("academic")}</span>
             </span>
           </a>

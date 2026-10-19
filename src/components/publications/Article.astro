@@ -1,9 +1,9 @@
 ---
 import type { ArticleData } from "../../data/publications/publicationSchemas";
 
-import { getPublicationUrl } from "../../utils/publications";
-
 import PubTitle from "./PubTitle.astro";
+
+import { getPublicationUrl } from "../../utils/publications";
 
 interface Props {
   article: ArticleData;
@@ -28,7 +28,7 @@ function formatVolumeIssue() {
   <div class="text-base">
     {article.authors} ({article.year}).
   </div>
-  <div class="text-sm mt-0.5">
+  <div class="mt-0.5 text-sm">
     <em>{article.journal}</em>
     <span set:html={formatVolumeIssue()} />
     {article.pages && <span>, {article.pages}</span>}.

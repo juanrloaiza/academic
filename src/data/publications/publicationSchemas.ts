@@ -1,5 +1,5 @@
-import { getCollection } from "astro:content";
 import { z } from "astro/zod";
+import { getCollection } from "astro:content";
 
 import { sortPublications } from "./sortPublications";
 

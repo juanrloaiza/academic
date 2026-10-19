@@ -8,6 +8,21 @@ export default defineConfig({
   },
   fmt: {
     printWidth: 80,
+    sortImports: {
+      newlinesBetween: true,
+      customGroups: [
+        { groupName: "component", elementNamePattern: ["**/*.astro"] },
+      ],
+      groups: [
+        "type",
+        ["builtin", "external"],
+        "component",
+        ["internal", "subpath", "parent", "sibling", "index"],
+        "style",
+        "unknown",
+      ],
+    },
+    sortTailwindcss: true,
     sortPackageJson: false,
     astro: {},
     associations: [
