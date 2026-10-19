@@ -21,10 +21,9 @@
     "@types/sanitize-html": "^2.16.1",
     "husky": "^9.1.7",
     "lint-staged": "^17.4.1",
-    "prettier": "3.9.8",
-    "prettier-plugin-astro": "1.0.1"
+    "vite-plus": "catalog:"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,md,html,astro}": "prettier --write"
+    "*.{js,jsx,ts,tsx,md,html,astro}": "vp fmt"
   }
 }
