@@ -21,7 +21,7 @@ const links = [
 
 <Layout>
   <div class="flex min-h-[60vh] items-center lg:min-h-[80vh]">
-    <div class="lg:h-60vh grid-flow-dense gap-4 md:my-6 md:grid md:grid-cols-8 lg:grid-cols-12">
+    <div class="lg:h-60vh mx-auto grid-flow-dense gap-4 md:my-6 md:grid md:grid-cols-8 lg:grid-cols-12">
       {links.map((link) => (
         <BentoBox className=`${link.span}` target={link.target} lang={lang} />
       ))}

@@ -76,7 +76,7 @@ export const ui = {
     phd: "Doctorado",
     syllabus: "Programa",
     courses: "Cursos",
-    academic: "Académico en Filosofía",
+    academic: "Profesor investigador en Filosofía",
     home: "Inicio",
     articles: "Artículos en revistas especializadas",
     bookchapters: "Capítulos de libro",
