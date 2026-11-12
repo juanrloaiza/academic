@@ -2,6 +2,13 @@
   "extends": "astro/tsconfigs/base",
   "compilerOptions": {
     "jsx": "preserve",
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@layouts/*": ["./src/layouts/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@i18n/*": ["./src/i18n/*"],
+      "@utils/*": ["./src/utils/*"]
+    }
   }
 }
