@@ -1,12 +1,11 @@
 ---
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import { defaultStaticPathsFunction } from "@utils/getStaticPaths";
 import { getCollection } from "astro:content";
 
 import CourseDescription from "@components/CourseDescription.astro";
 import TeachingResource from "@components/TeachingResource.astro";
 import Layout from "@layouts/Layout.astro";
-
-import { getLangFromUrl, useTranslations } from "../../i18n/utils";
-import { defaultStaticPathsFunction } from "../../utils/getStaticPaths";
 
 export const getStaticPaths = defaultStaticPathsFunction;
 
